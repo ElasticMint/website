@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/blog/2018/03/03/why-small-teams/</loc>
+    <lastmod>2018-03-03T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/agile/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/blog/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/ourstory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/values/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/planning/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/planning/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/project/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/</loc>
+    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

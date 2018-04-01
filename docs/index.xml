@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elastic Mint</title>
+    <link>https://www.elasticmint.com/</link>
+    <description>Recent content on Elastic Mint</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 30 Mar 2018 15:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using impact maps to improve product delivery</title>
+      <link>https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/</link>
+      <pubDate>Fri, 30 Mar 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/</guid>
+      <description>Like me haven&amp;rsquo;t you at times been frustrated by software that has been delivered late and not made the business impact you expected. A lot of time and money had been wasted due to assumptions being made with inadequate requirements; poor communication of team objectives and an overall lack of understanding, focus and misalignment with the overall business goals. As a developer I use interative delivery and this places emphasis on integrating learning from delivery and refining the scope and requirements.</description>
+    </item>
+    
+    <item>
+      <title>Why we think smaller teams are better</title>
+      <link>https://www.elasticmint.com/blog/2018/03/03/why-small-teams/</link>
+      <pubDate>Sat, 03 Mar 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/03/03/why-small-teams/</guid>
+      <description>Over the years I&amp;rsquo;ve worked on lots of teams. Some good, and some not so. But what is it that makes a team successful?
+There are the obvious things like the kind of people you have on the team. If the team members just don&amp;rsquo;t get on, if they don&amp;rsquo;t have the skills required to do the job, or they just aren&amp;rsquo;t interested in working hard then it&amp;rsquo;s clear the team will suffer.</description>
+    </item>
+    
+    <item>
+      <title>Our Story</title>
+      <link>https://www.elasticmint.com/ourstory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/ourstory/</guid>
+      <description>Andy, Jon and Gordon are software developers. It&amp;rsquo;s what they do. They enjoy developing good quality software. It makes them happy. They&amp;rsquo;ve been developing software individually for more than twenty years. Fate brought them together when, as individuals, they worked with Just Eat. Andy, Jon and Gordon got on well together. Jon and Gordon worked in the same team. Jon, Gordon and Andy worked in the same office space. They ate lunch together and had many, many conversations about the process of software development and the tools and technolgies that help with that.</description>
+    </item>
+    
+    <item>
+      <title>Our Values</title>
+      <link>https://www.elasticmint.com/values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/values/</guid>
+      <description>You might recognise our values. When we came together as a partnership one of the first things we did was to list all the things we would always do and all the things we would never do. For example, some of things that appeared in the &amp;lsquo;always do&amp;rsquo; list were to be open and transparent about what we do, communicate both good and bad news, work collaboratively and deliver software we are proud of.</description>
+    </item>
+    
+    <item>
+      <title>Ready to start?</title>
+      <link>https://www.elasticmint.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/contact/</guid>
+      <description>As always, the best way to start is with a conversation.  Send us your details and let&#39;s start talking!  </description>
+    </item>
+    
+  </channel>
+</rss>
