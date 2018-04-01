@@ -7,4 +7,6 @@ hugo server -b https://www.elasticmint.com/ --appendPort=false --renderToDisk
 Set-Location ..
 
 git add .
+#git commit and push
+
 
