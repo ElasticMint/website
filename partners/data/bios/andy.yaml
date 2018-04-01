@@ -2,10 +2,16 @@ weight: 1
 name: "Andy Garner"
 position: "Partner"
 description: >
-  <p>Andy has been developing software professionally since 2001. Having experienced both success and failure on projects, he believes passionately that getting the basics right is vital to delivering quality working software. He champions automating the path to tested and deployed software in order to give us the confidence and flexibility to adapt to changing needs and requirements.</p>
+  Andy has been developing software professionally since 2001 starting off with Visual Basic and C++,
+    and then continuing with C# and the various incarnations of ASP.Net. He has delivered software
+    for companies both big and small including Just Eat, ASOS, Capita, Imperial Civil Engineering and the Cotswold Group.
+    
+    Having experienced both success and failure on projects, he believes passionately that getting the basics right is 
+    vital to delivering quality working software. He champions automating the path to tested and deployed software in order 
+    to provide the confidence and flexibility to adapt to changing needs and requirements.
 photo: "img/bios/andy.jpg"
 
-github : ""
+github : "https://github.com/Anduszek"
 twitter: "http://twitter.com/anduszek"
 email :  "andy.garner@argsoftware.co.uk"
 linkedin: "https://uk.linkedin.com/in/andy-garner-95677821"
