@@ -1,0 +1,33 @@
+{{ if isset .Site.Params "ourstory" }}
+{{ if .Site.Params.ourstory.enable }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="heading text-center">
+                <h2>{{ .Site.Params.ourstory.title }}</h2>
+               
+            </div>
+            <div class="heading text-center">
+                    <p> {{ .Site.Params.ourstory.synopsis}}</p> 
+            </div>
+
+            <p class="lead text-center">
+               
+                <a href="{{.Site.Params.ourstory.link_url}}">
+                    {{ .Site.Params.ourstory.link_text}}
+                </a>
+                
+            </p>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- *** BLOG HOMEPAGE END *** -->
+
+    </div>    
+<!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}

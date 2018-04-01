@@ -1,0 +1,11 @@
+weight: 3
+title: "Software"
+description: >
+  <ul class="list-style-none">
+    <li>.NET</li>
+    <li>NodeJS</li>
+    <li>AWS</li>
+    <li>Azure</li>
+    <li>...</li>
+  </ul>
+image: "img/carousel/software.png"

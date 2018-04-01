@@ -1,0 +1,53 @@
+{{ if isset .Site.Params "bios" }}
+{{ if .Site.Params.bios.enable }}
+{{ if gt (len .Site.Data.bios) 0 }}
+
+<section class="bar background-white no-mb">
+        <div class="container">
+
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.bios.title }}</h2>
+                </div>
+
+                <p class="lead">
+                  {{ .Site.Params.bios.subtitle | markdownify }}
+                </p>
+            </div>
+
+            {{ range $index, $element := sort .Site.Data.bios "weight" }}
+
+            <div class="post">
+                <div class="row">
+                    <div class="col-md-4 box-simple">
+                        <div class="image">
+                            <img src="{{ $element.photo }}" class="grayscale"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-8 box-simple">
+                        <h4>{{ $element.name }} - {{ $element.position }}</h4>
+                        <p>{{ $element.description | markdownify }}</p>
+                        <div class="social">
+                            {{ if $element.linkedin }}
+                            <a href="{{ $element.linkedin }}" target="_blank" style="opacity: 1;"><i class='fa fa-2x fa-linkedin'></i></a>
+                            {{ end }}
+                            {{ if $element.github }}
+                                <a href="{{ $element.github }}" target="_blank" style="opacity: 1;"><i class='fa fa-2x fa-github'></i></a>
+                            {{ end }}
+                            {{ if $element.twitter }}
+                                <a href="{{ $element.twitter }}" target="_blank" style="opacity: 1;"><i class='fa fa-2x fa-twitter'></i></a>
+                            {{ end }}
+                            {{ if $element.email }}
+                            <a href="mailto:{{ $element.email }}" target="_blank" style="opacity: 1;"><i class='fa fa-2x fa-envelope'></i></a>
+                            {{ end }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

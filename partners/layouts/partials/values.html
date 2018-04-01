@@ -1,0 +1,42 @@
+{{ if isset .Site.Params "values" }} {{ if .Site.Params.values.enable }}
+<section class="bar background-gray no-mb no-mb">
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="heading text-center">
+                <h2>{{ .Site.Params.values.title }}</h2>
+            </div>
+
+            <p class="lead">
+                {{ .Site.Params.values.subtitle | markdownify }}
+            </p>
+
+        </div>
+
+        <div class="col-md-12">
+            <div class="panel-heading text-center">
+                <!-- <ul class="heading nav nav-stacked"> -->
+                <ul class="heading nav nav-stacked">
+                    <li>Simplicity</li>
+                    <li>.</li>
+                    <li>Communication</li>
+                    <li>.</li>
+                    <li>Feedback</li>
+                    <li>.</li>
+                    <li>Respect</li>
+                    <li>.</li>
+                    <li>Courage</li>
+                </ul>
+                <a href="{{.Site.Params.values.link_url}}">
+                        {{ .Site.Params.values.link_text}}
+                </a>
+            </div>            
+        </div>
+
+    </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }} {{ end }}

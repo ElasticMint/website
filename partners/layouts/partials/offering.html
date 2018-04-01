@@ -1,0 +1,27 @@
+{{ if isset .Site.Params "values" }} {{ if .Site.Params.values.enable }}
+<section class="bar background-white no-mb no-mb">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="heading text-center">
+        <h2>Our Offer</h2>
+      </div>
+      <div class="panel-heading text-center">
+        <ul class="heading nav nav-stacked">
+          <li>We are a small, pop-up team of cloud software development specialists.</li>
+          <li>.</li>
+          <li>If you need to develop new, cloud-based applications, we can help.</li>
+          <li>.</li>
+          <li>If you need to migrate your existing applications to the cloud, we can help.</li>
+          <li>.</li>
+          <li>If you need to develop on-premise applications, we can help.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="read-more text-center">
+        <a href="{{ .Site.BaseURL }}contact" class="btn btn-template-main">Get Me Started</a>
+    </p>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }} {{ end }}
