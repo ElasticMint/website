@@ -26,7 +26,9 @@
                     </div>
                     <div class="col-md-8 box-simple">
                         <h4>{{ $element.name }} - {{ $element.position }}</h4>
-                        <p>{{ $element.description | markdownify }}</p>
+                        <div class="text-left">
+                            <p>{{ $element.description | markdownify }}</p>
+                        </div>
                         <div class="social">
                             {{ if $element.linkedin }}
                             <a href="{{ $element.linkedin }}" target="_blank" style="opacity: 1;"><i class='fa fa-2x fa-linkedin'></i></a>
