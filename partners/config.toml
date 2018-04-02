@@ -104,7 +104,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-md hidden-md">Call us on <i class="fa fa-phone"></i> <a href="tel:07845 663 874">+44 (0)7845 663 874</a> or <i class="fa fa-envelope"></i> at <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
+    text = """<p class="hidden-sm hidden-xs">Call us on <i class="fa fa-phone"></i> <a href="tel:07845 663 874">+44 (0)7845 663 874</a> or <i class="fa fa-envelope"></i> at <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
       <p class="hidden-md hidden-lg"><a href="tel:07845 663 874" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
