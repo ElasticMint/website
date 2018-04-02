@@ -36,27 +36,21 @@ paginate = 10
 # Top bar social links menu
 
 [[menu.topbar]]
-    weight = 1
+    weight = 3
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = "https://github.com/elasticmint"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
-    weight = 2
-    name = "Facebook"
-    url = "http://facebook.com"
-    pre = "<i class='fa fa-2x fa-facebook'></i>"
-
-[[menu.topbar]]
-    weight = 3
+    weight = 4
     name = "Twitter"
-    url = "http://twitter.com"
+    url = "http://twitter.com/elasticmint"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
-    weight = 4
+    weight = 2
     name = "Email"
-    url = "mailto:jon@thinkexpedite.com"
+    url = "mailto:info@elasticmint.com"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
@@ -97,6 +91,8 @@ paginate = 10
         <br>Bristol
         <br>
         <strong>UK</strong>
+        <br>Tel: <a href="tel:07845 663 874">+44 (0)7845 663 874</a>
+        <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
       </p>
       """
     latitude = "51.450676"
@@ -108,9 +104,9 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +44 (0)7845 663 874 or info@elasticmint.com.</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+    text = """<p class="hidden-md hidden-md">Call us on <i class="fa fa-phone"></i> <a href="tel:07845 663 874">+44 (0)7845 663 874</a> or <i class="fa fa-envelope"></i> at <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
+      <p class="hidden-md hidden-lg"><a href="tel:07845 663 874" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
 
