@@ -16,6 +16,7 @@
                 <div id="contact-message"></div>
 
                 <form id="contact-form" class="contact-form">
+                  
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -37,17 +38,21 @@
                         </div>
 
                         <div class="col-sm-12 text-center">
-                          <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>{{ i18n "contactSend" }}</button>
-
+                                <div class="form-group">                                    
+                                    <button type="submit" class="btn btn-template-main text-right" ><i class="fa fa-envelope-o"></i>{{ i18n "contactSend" }}</button>
+                                    <div class="g-recaptcha" data-sitekey="6LcaeVAUAAAAADN7AOg_XBBK6WIaGsxPUCTDnlJ6"></div>
+                                </div>
                         </div>
 
                         <div class="col-sm-12 text-center panel-heading">
                                 <div class="form-group">
+                                   
                                     <div id="successmessage" class="alert alert-success" style="display: none;">Details successfully submitted. We'll be in touch</div>
                                 </div>  
                         </div>
 
                     </div>
+                    
                     <!-- /.row -->
                 </form>
 
