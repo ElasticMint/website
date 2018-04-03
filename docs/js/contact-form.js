@@ -4,6 +4,11 @@ $(document).ready(function () {
     
     $('#contact-form').submit(function (event) {
         event.preventDefault()
+
+        if(grecaptcha.getResponse().length == 0){
+            $("#errormessage").show();
+            return;
+        }
         
         var data = {
             name: $('#name').val(),
@@ -18,6 +23,7 @@ $(document).ready(function () {
             dataType: 'json',
             contentType: 'application/json',
             data: JSON.stringify(data),
+            captcha: grecaptcha.getResponse(),
             success: function () {
                 $("#successmessage").show();
                 $('#contact-form').trigger("reset");
