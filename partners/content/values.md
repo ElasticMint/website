@@ -8,7 +8,7 @@ keywords = ["about","our","story","elastic mint", "andy garner", "jon reynolds",
 
 **Communication** is a big part of bringing our values to life. We believe smaller teams communicate and work more effectively than larger teams. Everyone is part of the team and we communicate daily. We work together on everything from requirements to code. We create the best solution to your problem we can, together.
 
-**Simplicity** is about doing just enough and no more than what is needed. Working in small, simple steps means we can get feedback sooner.  This, in turn, allows people we work with to make more informed decisions about what to develop next and allows the early mitigation of failures.  Another benefit of simplicty is that the cost of change is lowered, making our software easier to maintain and extend.
+**Simplicity** is about doing just enough and no more than is needed. Working in small, simple steps means we can get feedback sooner.  This, in turn, allows people we work with to make more informed decisions about what to develop next and allows the early mitigation of failures.  Another benefit of simplicty is that the cost of change is lowered, making our software easier to maintain and extend.
 
 **Feedback** is about delivering working software in each iteration so that we can demonstrate our software early and often. In doing so we are able to gain feedback from the people we are working with and can plan what to do next based on that feedback. We will talk about the project and remain flexible enough to adapt our process to it, not the other way around.
 
