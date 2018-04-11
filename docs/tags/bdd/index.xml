@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bdd on Elastic Mint</title>
+    <link>https://www.elasticmint.com/tags/bdd/</link>
+    <description>Recent content in Bdd on Elastic Mint</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 11 Apr 2018 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.elasticmint.com/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BDD frameworks compared - SpecFlow and BDDfy</title>
+      <link>https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/</link>
+      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/</guid>
+      <description>I first learnt about writing unit tests following a project where we missed the deadline and spent far too long fixing and then refixing the code. I became frustrated that we would fix one thing and then something else would go wrong. When I saw how tools like NUnit and Rhino Mocks gave me the confidence to fix bugs and refactor it genuinely changed my working life. On my next project I determined to write tests as I went along and to be honest I&amp;rsquo;ve never looked back.</description>
+    </item>
+    
+  </channel>
+</rss>
