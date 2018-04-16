@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/</loc>
     <lastmod>2018-04-11T09:00:00+00:00</lastmod>
   </url>
@@ -19,19 +24,19 @@
   
   <url>
     <loc>https://www.elasticmint.com/tags/.net/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/.net/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/agile/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,31 +54,37 @@
   
   <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/frameworks/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/frameworks/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/ncrunch/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,19 +120,19 @@
   
   <url>
     <loc>https://www.elasticmint.com/tags/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/testing/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/testing/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

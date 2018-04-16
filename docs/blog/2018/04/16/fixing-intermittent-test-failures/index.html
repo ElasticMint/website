@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agile</title>
+  <title>Fixing Intermittent Test Failures With NCrunch</title>
   <meta name="author" content="" />
 
   
@@ -56,9 +56,9 @@
   <link rel="alternate" href="https://www.elasticmint.com/index.xml" type="application/rss+xml" title="Elastic Mint">
 
   
-  <meta property="og:title" content="Agile" />
+  <meta property="og:title" content="Fixing Intermittent Test Failures With NCrunch" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/tags/agile//" />
+  <meta property="og:url" content="/blog/2018/04/16/fixing-intermittent-test-failures//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -81,12 +81,12 @@
                         
                         
                     <h2>
-                        <img src="https://www.elasticmint.com/img/logo-sm.png" alt="Agile logo" />
+                        <img src="https://www.elasticmint.com/img/logo-sm.png" alt="Fixing Intermittent Test Failures With NCrunch logo" />
                         
                         <span style="color:#7CC8C3">Elastic</span>
                         <span style="color:#61C492">Mint</span>
                     </h2>
-                    <span class="sr-only">Agile - go to homepage</span>
+                    <span class="sr-only">Fixing Intermittent Test Failures With NCrunch - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -147,7 +147,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Agile</h1>
+                <h1>Fixing Intermittent Test Failures With NCrunch</h1>
             </div>
         </div>
     </div>
@@ -156,168 +156,174 @@
 
         <div id="content">
             <div class="container">
+
                 <div class="row">
+
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-9" id="blog-post">
 
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Gordon Barrs</a> | Apr 16 2018</p>
+
+                        <div id="post-content">
+                          <p>I was working with a company recently where we were using Xunit as our test framework,  NSubstitute for mocks, stubs etc and we ran our tests using NCrunch whilst developing in Visual Studio.  At one point during the project we noticed that some of our unit tests were failing intermittently.  This is more common in longer running integration tests but not so common in unit tests.  When we do see this behaviour in unit tests the cause is often shared state being accessed when unit tests are being run in parallel.  In this particular instance that did not seem to be the cause.  Our tests appeared to be well isolated with no obvious shared state.</p>
+
+<p>The error messages we were seeing were:</p>
+
+<pre><code class="language-c#">NSubstitute.Exceptions.AmbiguousArgumentsException: Cannot determine argument specifications to use.
+Please use specifications for all arguments of the same type.
+</code></pre>
+
+<pre><code class="language-c#">NSubstitute.Exceptions.UnexpectedArgumentMatcherException: Argument matchers (Arg.Is, Arg.Any) should only be used in place of member arguments. Do not use in a Returns() statement or anywhere else outside of a member call.
+Correct use:
+  sub.MyMethod(Arg.Any&lt;string&gt;()).Returns(&quot;hi&quot;)
+Incorrect use:
+  sub.MyMethod(&quot;hi&quot;).Returns(Arg.Any&lt;string&gt;())
+</code></pre>
+
+<p>A quick search revealed</p>
+
+<p><a href="https://stackoverflow.com/questions/26805420/nsubstitute-testfixture-1-causes-ambiguousargumentsexception-in-testfixture-2#26856185"> Ambiguous arguments is when NSubstitute compares the arguments to the call it is currently working with, to the stack of &ldquo;argument matchers&rdquo; it has (each time Arg.Blah is called, an the argument matcher is added to that stack), and it is unable to resolve which argument goes where.</a></p>
+
+<p>Finding the cause of this type of intermittent failure is notoriously hard.  Often, tests run concurrently and in a different sequence during each test run.  Test runs will succeed most of the time, with a test failing occasionally. When the failed test is re-run then it usually passes. Such is the nature of intermittently-failing tests.</p>
+
+<p>Enter a new NCrunch feature introduced in version 3.13, <code>Activate Endless Churn Mode</code>.</p>
+
+<p><a href="http://blog.ncrunch.net/post/NCrunch-v313-Churn-mode-and-UI-enhancements.aspx">The intention of Churn Mode is to take the intermittency out of the failure, bringing it up in a way that the failure can be more easily investigated and resolved.  Churn Mode does this by employing the brute-force approach of running tests endlessly until they fail</a></p>
+
+<p>Churn mode runs the tests over and over again until you tell it to stop. Any time a test fails NCrunch removes it from the tests being run so that you can identify the failed test and read the associated error message.</p>
+
+<p>Using this feature showed us we had more than just one intermittently failing unit test, which was both surprising and worrying.  Some more searching uncovered a <a href="//https://stackoverflow.com/questions/42971704/nsubstitute-please-use-specifications-for-all-arguments-of-the-same-type-issu#43380486">Stack Overflow post</a>  with a link to an incredibly useful piece of code, <a href="https://gist.github.com/zvirja/56543e5c35cf910e4d1eec87d0fd02f3/">a Diagnostic Substitution Context for NSubstitute</a>. This code allows us to intercept any <code>AmbiguousArgumentsException</code> and inspect the state of the Argument Matcher stack.  We amended the code to include both exception types we were seeing and added some trace statements to output the diagnostics to the NCrunch test output window.</p>
+
+<p>To troubleshoot our issue we used the following process:</p>
+
+<ul>
+<li>Run the tests in endless churn mode</li>
+<li>For each test that breaks, add a diagnostics initialiser to the fixture setup</li>
+<li>Run the tests in endless churn mode again</li>
+<li>Inspect the output</li>
+<li>Fix the problem</li>
+</ul>
+
+<p>Our diagnostics gave us information similar to</p>
+
+<pre><code class="language-c#">######################
+NSubstitute.Exceptions.UnexpectedArgumentMatcherException
+any Object
+######################
+
+   at System.Environment.get_StackTrace()
+   at DiagnosticsSubstitutionContext.ArgumentInfo..ctor() in C:\my-app\src\Tests.Unit\DiagnosticsSubstitutionContext.cs:line 29
+   at DiagnosticsSubstitutionContext.EnqueueArgumentSpecification(IArgumentSpecification spec) in C:\my-app\src\Tests.Unit\DiagnosticsSubstitutionContext.cs:line 81
+   at NSubstitute.Core.Arguments.ArgumentSpecificationQueue.EnqueueSpecFor[T](IArgumentMatcher matcher)
+   at my-app.Tests.Unit.MessagingTests.When_message_handler_processes_a_message.&lt;No_price_events_are_found_then_message_is_logged_and_processing_is_skipped&gt;d__10.MoveNext() in C:\my-app\src\Tests.Unit\MessagingTests\When_message_handler_processes_a_message.cs:line 90
+   
+   ... (elided for clarity)
+   
+   NSubstitute.Exceptions.UnexpectedArgumentMatcherException: Argument matchers (Arg.Is, Arg.Any) should only be used in place of member arguments. Do not use in a Returns() statement or anywhere else outside of a member call.
+Correct use:
+  sub.MyMethod(Arg.Any&lt;string&gt;()).Returns(&quot;hi&quot;)
+Incorrect use:
+  sub.MyMethod(&quot;hi&quot;).Returns(Arg.Any&lt;string&gt;())
+   at NSubstitute.Core.SubstitutionContext.LastCallShouldReturn(IReturn value, MatchArgs matchArgs)
+   at DiagnosticsSubstitutionContext.LastCallShouldReturn(IReturn value, MatchArgs matchArgs) in C:\my-app\src\Tests.Unit\DiagnosticsSubstitutionContext.cs:line 105
+   at my-app.Tests.Unit.When_scheduling_processor_run..ctor() in C:\my-app\src\Tests.Unit\When_scheduling_processor_run.cs:line 27
+
+   
+</code></pre>
+
+<p>The interesting thing to note here is that the failing test is <code>When_scheduling_processor_run</code> but a matcher is enqueued at <code>When_message_handler_processes_a_message</code>.  These are two completely unrelated tests. This output shows the NSubstitute argument matcher stack getting out-of-sync due to an arg matcher being used outside of call configuration, or as an argument to a non-virtual method.  Taking a look at line 90, we saw the following:</p>
+
+<pre><code class="language-c#"> mapper
+    .DidNotReceiveWithAnyArgs()
+    .Map&lt;IEnumerable&lt;PriceChange&gt;&gt;(Arg.Any&lt;object&gt;());
+</code></pre>
+
+<p>Here, we see the <code>Arg.Any&lt;object&gt;</code> argument matcher being used as a parameter. On first inspection, this might seem reasonable. On closer inspection we find out the parameter is ignored by NSubstitute due to the call to <code>DidNotReceiveWithAnyArgs</code> for this test run, although it is added to the argument matcher stack. This causes the argument matcher to be left on the stack when the next test is run and this causes the exception in the next test.  To fix this issue we changed the code to</p>
+
+<pre><code class="language-c#"> var ignoredByNSubstitute = 
+    new object(); 
+ 
+mapper
+    .DidNotReceiveWithAnyArgs()
+    .Map&lt;IEnumerable&lt;PriceChange&gt;&gt;(ignoredByNSubstitute); 
+</code></pre>
+
+<p>After this we repeated the churn mode process. This highlighted other errors. Another example of the type of error we came across is:</p>
+
+<pre><code class="language-c#"> var priceChange = 
+    new PriceChange
+        {
+            EffectiveDateTimeUtc = Arg.Any&lt;DateTime&gt;(), 
+            EndDateTimeUtc = Arg.Any&lt;DateTime&gt;(), 
+            CurrentPrice = Arg.Any&lt;decimal&gt;() 
+        };
+ 
+var priceChangeTransformation = 
+    new PriceChangeTransformation(mapper);
+
+transformedPrice = 
+    priceChangeTransformation.Apply(
+        priceChange,
+        startDateTime,
+        endDateTime,
+        HighestPrice);
+</code></pre>
+
+<p>In this case <code>Arg.Any</code> is being used outside the context of NSubstitute call configuration, although the argument matchers will still be added to the argument matcher stack.  To fix this we change the code to:</p>
+
+<pre><code class="language-c#"> var priceChange = 
+    new PriceChange
+        {
+            EffectiveDateTimeUtc = DateTime.MinValue, 
+            EndDateTimeUtc = DateTime.MaxValue, 
+            CurrentPrice = CurrentPrice = 99.99M 
+        };
+ 
+var priceChangeTransformation = 
+    new PriceChangeTransformation(mapper);
+
+transformedPrice = 
+    priceChangeTransformation.Apply(
+        priceChange,
+        startDateTime,
+        endDateTime,
+        HighestPrice);
+</code></pre>
+
+<p>We repeated the churn mode process until the tests stopped failing.</p>
+
+<p>In every case the cause of failure was an <a href="http://nsubstitute.github.io/help/argument-matchers/#how_not_to_use_argument_matchers">incorrect use of NSubstitute argument matchers</a>, although it is easy to see how this might have happened if a developer is new to using NSubstitute.</p>
+
+<p>A big thanks goes to <a href="https://twitter.com/remcomulder">Remco</a> for introducing such a <a href="http://blog.ncrunch.net/post/NCrunch-v313-Churn-mode-and-UI-enhancements.aspx">useful feature</a> to an already great product and to Alex Povar for taking the time to share a <a href="https://gist.github.com/zvirja/56543e5c35cf910e4d1eec87d0fd02f3/">very useful script</a>.</p>
+
+                        </div>
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/">
-                                          
-                                          <img src="https://www.elasticmint.com/img/banners/banner-7.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/">Fixing Intermittent Test Failures With NCrunch</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">Gordon Barrs</a>
-                                          
-                                          
-                                          
-                                          in <a href="https://www.elasticmint.com/categories/testing">testing</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/"><i class="fa fa-calendar-o"></i> Apr 16 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">I was working with a company recently where we were using Xunit as our test framework, NSubstitute for mocks, stubs etc and we ran our tests using NCrunch whilst developing in Visual Studio. At one point during the project we noticed that some of our unit tests were failing intermittently. This is more common in longer running integration tests but not so common in unit tests. When we do see this behaviour in unit tests the cause is often shared state being accessed when unit tests are being run in parallel.</p>
-                                    <p class="read-more"><a href="https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/">
-                                          
-                                          <img src="https://www.elasticmint.com/img/banners/blogs/BddfyAddScenario.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/">BDD frameworks compared - SpecFlow and BDDfy</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">Andy Garner</a>
-                                          
-                                          
-                                          
-                                          in <a href="https://www.elasticmint.com/categories/testing">testing</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/"><i class="fa fa-calendar-o"></i> Apr 11 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">I first learnt about writing unit tests following a project where we missed the deadline and spent far too long fixing and then refixing the code. I became frustrated that we would fix one thing and then something else would go wrong. When I saw how tools like NUnit and Rhino Mocks gave me the confidence to fix bugs and refactor it genuinely changed my working life. On my next project I determined to write tests as I went along and to be honest I&rsquo;ve never looked back.</p>
-                                    <p class="read-more"><a href="https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/">
-                                          
-                                          <img src="https://www.elasticmint.com/img/banners/blogs/wwhw.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/">Using impact maps to improve product delivery</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">Jon Reynolds</a>
-                                          
-                                          
-                                          
-                                          in <a href="https://www.elasticmint.com/categories/planning">planning</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/"><i class="fa fa-calendar-o"></i> Mar 30 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">Like me haven&rsquo;t you at times been frustrated by software that has been delivered late and not made the business impact you expected. A lot of time and money had been wasted due to assumptions being made with inadequate requirements; poor communication of team objectives and an overall lack of understanding, focus and misalignment with the overall business goals. As a developer I use interative delivery and this places emphasis on integrating learning from delivery and refining the scope and requirements.</p>
-                                    <p class="read-more"><a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://www.elasticmint.com/blog/2018/03/03/why-small-teams/">
-                                          
-                                          <img src="https://www.elasticmint.com/img/banners/banner-6.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://www.elasticmint.com/blog/2018/03/03/why-small-teams/">Why we think smaller teams are better</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">Andy Garner</a>
-                                          
-                                          
-                                          
-                                          in <a href="https://www.elasticmint.com/categories/planning">planning</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://www.elasticmint.com/blog/2018/03/03/why-small-teams/"><i class="fa fa-calendar-o"></i> Mar  3 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">Over the years I&rsquo;ve worked on lots of teams. Some good, and some not so. But what is it that makes a team successful?
-There are the obvious things like the kind of people you have on the team. If the team members just don&rsquo;t get on, if they don&rsquo;t have the skills required to do the job, or they just aren&rsquo;t interested in working hard then it&rsquo;s clear the team will suffer.</p>
-                                    <p class="read-more"><a href="https://www.elasticmint.com/blog/2018/03/03/why-small-teams/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "elasticmint" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
                         
 
-                        <ul class="pager">
-                            
-                            <li class="previous disabled"><a href="#">&larr; Newer</a></li>
-                            
-
-                            
-                            <li class="next disabled"><a href="#">Older &rarr;</a></li>
-                            
-                        </ul>
                     </div>
                     
 
@@ -441,6 +447,7 @@ There are the obvious things like the kind of people you have on the team. If th
 
                 </div>
                 
+
             </div>
             
         </div>

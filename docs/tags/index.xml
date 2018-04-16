@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 11 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Apr 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>.Net</title>
       <link>https://www.elasticmint.com/tags/.net/</link>
-      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/tags/.net/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Agile</title>
       <link>https://www.elasticmint.com/tags/agile/</link>
-      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/tags/agile/</guid>
       <description></description>
@@ -41,9 +41,18 @@
     <item>
       <title>Frameworks</title>
       <link>https://www.elasticmint.com/tags/frameworks/</link>
-      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/tags/frameworks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ncrunch</title>
+      <link>https://www.elasticmint.com/tags/ncrunch/</link>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/ncrunch/</guid>
       <description></description>
     </item>
     
@@ -68,7 +77,7 @@
     <item>
       <title>Testing</title>
       <link>https://www.elasticmint.com/tags/testing/</link>
-      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/tags/testing/</guid>
       <description></description>
