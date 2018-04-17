@@ -88,15 +88,19 @@ paginate = 10
 
     logo = "img/logo.png"
     address = """<p><strong>Elastic Mint</strong>
+        <br>13-14 Orchard Street
         <br>Bristol
-        <br>
-        <strong>UK</strong>
+        <br>BS1 5EH
+        <br>UK
+        </p>
         <br>Tel: <a href="tel:07845 663 874">+44 (0)7845 663 874</a>
         <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
       </p>
       """
-    latitude = "51.450676"
-    longitude = "-2.594746"
+
+    latitude = "51.453868"
+    longitude = "-2.599787"
+
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"

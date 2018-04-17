@@ -306,13 +306,17 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
+  margin: 5px;
+  background: #b9e8d1;
+  color: #357935;
 }
 .navbar ul.nav > li > a:hover {
   border-top: solid 5px #38a7bb;
+  text-decoration: underline
 }
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
