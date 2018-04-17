@@ -1,8 +1,8 @@
 +++
 title = "BDD frameworks compared - SpecFlow and BDDfy"
 date = "2018-04-11T09:00:00+00:00"
-tags = ["agile", "testing", "BDD", ".Net", "Frameworks"]
-categories = ["testing", "BDD", ".Net", "Frameworks"]
+tags = ["agile", "testing", "BDD", "dotNet", "Frameworks"]
+categories = ["testing", "BDD", "dotNet", "Frameworks"]
 banner = "img/banners/blogs/BddfyAddScenario.png"
 author = "Andy Garner"
 +++

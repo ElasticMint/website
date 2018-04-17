@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>.Net</title>
-      <link>https://www.elasticmint.com/tags/.net/</link>
-      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Agile</title>
       <link>https://www.elasticmint.com/tags/agile/</link>
       <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
@@ -35,6 +26,15 @@
       <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/tags/bdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dotnet</title>
+      <link>https://www.elasticmint.com/tags/dotnet/</link>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/dotnet/</guid>
       <description></description>
     </item>
     

@@ -1,8 +1,8 @@
 +++
 title = "Fixing Intermittent Test Failures With NCrunch"
 date = "2018-04-16T09:00:00+00:00"
-tags = ["agile", "testing", "NCrunch", ".Net", "Frameworks"]
-categories = ["testing", ".Net", "Frameworks"]
+tags = ["agile", "testing", "NCrunch", "dotNet", "Frameworks"]
+categories = ["testing", "dotNet", "Frameworks"]
 banner = "img/banners/banner-7.jpg"
 author = "Gordon Barrs"
 +++
