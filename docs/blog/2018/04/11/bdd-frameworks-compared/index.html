@@ -17,7 +17,7 @@
   <meta name="description" content="Site powered by Elastic Mint">	
   
 
-  <meta name="generator" content="Hugo 0.37" />
+  <meta name="generator" content="Hugo 0.37.1" />
 
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
 
@@ -179,9 +179,9 @@
 <p><a href="http://specflow.org/">SpecFlow</a> uses the Gherkin language to write tests in human readable language. It allows problems to be expressed using the language of the domain stakeholders. This language is then bound to code.</p>
 
 <pre><code>Scenario Outline: Add two numbers
-    Given values &lt;value1&gt; and &lt;value2&gt;
-    When I add the values
-    Then the result should be &lt;result&gt;
+	Given values &lt;value1&gt; and &lt;value2&gt;
+	When I add the values
+	Then the result should be &lt;result&gt;
 
 Examples: 
 | value1 | value2 | result |
@@ -236,9 +236,9 @@ internal void WhenIAddTheValues()
 }
 
 Scenario: Should be able to add two numbers
-    Given I have two values 1.2, 2.3
-    When I add them
-    Then I get the expected result 3.5
+	Given I have two values 1.2, 2.3
+	When I add them
+	Then I get the expected result 3.5
 </code></pre>
 
 <p>The idea here seems to be a recognition that often stakeholders don&rsquo;t actually create the scenarios, but developers do and so perhaps it is easier for them to do so in code and then output a report in human readable form.</p>
@@ -322,7 +322,13 @@ Scenario: Should be able to add two numbers
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
+            <li><a href="https://www.elasticmint.com/categories/agile">agile (1)</a>
+            </li>
+            
             <li><a href="https://www.elasticmint.com/categories/bdd">bdd (1)</a>
+            </li>
+            
+            <li><a href="https://www.elasticmint.com/categories/cyber-dojo">cyber-dojo (1)</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/categories/dotnet">dotnet (2)</a>
@@ -331,7 +337,13 @@ Scenario: Should be able to add two numbers
             <li><a href="https://www.elasticmint.com/categories/frameworks">frameworks (2)</a>
             </li>
             
+            <li><a href="https://www.elasticmint.com/categories/pair-programming">pair-programming (1)</a>
+            </li>
+            
             <li><a href="https://www.elasticmint.com/categories/planning">planning (2)</a>
+            </li>
+            
+            <li><a href="https://www.elasticmint.com/categories/tdd">tdd (1)</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/categories/testing">testing (2)</a>
@@ -362,6 +374,9 @@ Scenario: Should be able to add two numbers
             <li><a href="https://www.elasticmint.com/tags/bdd"><i class="fa fa-tags"></i> bdd</a>
             </li>
             
+            <li><a href="https://www.elasticmint.com/tags/cyber-dojo"><i class="fa fa-tags"></i> cyber-dojo</a>
+            </li>
+            
             <li><a href="https://www.elasticmint.com/tags/dotnet"><i class="fa fa-tags"></i> dotnet</a>
             </li>
             
@@ -371,10 +386,16 @@ Scenario: Should be able to add two numbers
             <li><a href="https://www.elasticmint.com/tags/ncrunch"><i class="fa fa-tags"></i> ncrunch</a>
             </li>
             
+            <li><a href="https://www.elasticmint.com/tags/pair-programming"><i class="fa fa-tags"></i> pair-programming</a>
+            </li>
+            
             <li><a href="https://www.elasticmint.com/tags/planning"><i class="fa fa-tags"></i> planning</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/tags/project"><i class="fa fa-tags"></i> project</a>
+            </li>
+            
+            <li><a href="https://www.elasticmint.com/tags/tdd"><i class="fa fa-tags"></i> tdd</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/tags/testing"><i class="fa fa-tags"></i> testing</a>
@@ -431,6 +452,19 @@ Scenario: Should be able to add two numbers
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
+                        <a href="https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/">
+                          
+                            <img src="https://www.elasticmint.com/img/banners/blogs/CodeRetreat_1.jpg" class="img-responsive" alt="agile code (retreat on the beach)">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/">agile code (retreat on the beach)</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
                         <a href="https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/">
                           
                             <img src="https://www.elasticmint.com/img/banners/banner-7.jpg" class="img-responsive" alt="Fixing Intermittent Test Failures With NCrunch">
@@ -452,19 +486,6 @@ Scenario: Should be able to add two numbers
                     </div>
                     <div class="name same-height-always">
                         <h5><a href="https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/">BDD frameworks compared - SpecFlow and BDDfy</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/">
-                          
-                            <img src="https://www.elasticmint.com/img/banners/blogs/wwhw.png" class="img-responsive" alt="Using impact maps to improve product delivery">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://www.elasticmint.com/blog/2018/03/30/using-impact-mapping/">Using impact maps to improve product delivery</a></h5>
                     </div>
                 </div>
                 
@@ -560,5 +581,5 @@ ga('send', 'pageview');
 <script src="https://www.elasticmint.com/js/owl.carousel.min.js"></script>
 
 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=57154&mindelay=10"></' + 'script>')</script></body>
 </html>

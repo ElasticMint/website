@@ -6,10 +6,19 @@
     <description>Recent content in Agile on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 16 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/tags/agile/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>agile code (retreat on the beach)</title>
+      <link>https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/</guid>
+      <description>On 19th March Gordon and I attended a 2 day agile coding retreat in St Austell, Cornwall. Hosted by Kevlin Henney and Jon Jagger the retreat was organised for developers to discuss, practice and improve their software craftsmanship, communication and creativity. Having personally never attended such an event before I was interested to see if there was an opportunity for me to hone my programming skills to ultimately improve my performance as a developer.</description>
+    </item>
     
     <item>
       <title>Fixing Intermittent Test Failures With NCrunch</title>

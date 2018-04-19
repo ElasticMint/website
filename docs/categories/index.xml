@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 11 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>https://www.elasticmint.com/categories/agile/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/categories/agile/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bdd</title>
@@ -17,6 +26,15 @@
       <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/categories/bdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyber Dojo</title>
+      <link>https://www.elasticmint.com/categories/cyber-dojo/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/categories/cyber-dojo/</guid>
       <description></description>
     </item>
     
@@ -39,11 +57,29 @@
     </item>
     
     <item>
+      <title>Pair Programming</title>
+      <link>https://www.elasticmint.com/categories/pair-programming/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/categories/pair-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Planning</title>
       <link>https://www.elasticmint.com/categories/planning/</link>
       <pubDate>Fri, 30 Mar 2018 15:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/categories/planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tdd</title>
+      <link>https://www.elasticmint.com/categories/tdd/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/categories/tdd/</guid>
       <description></description>
     </item>
     
