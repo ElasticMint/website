@@ -8,3 +8,12 @@
 .box-simple {
   min-height: 250px;
 }
+
+.box-image-text.blog .content h4 {
+  height: 75px;
+}
+
+.box-image-text.blog .intro {
+  height: 200px;
+  overflow-y: hidden;
+}
