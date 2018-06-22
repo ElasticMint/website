@@ -34,6 +34,11 @@ paginate = 10
     weight = 3
 
 # Top bar social links menu
+[[menu.topbar]]
+    weight = 2
+    name = "LinkedIn"
+    url="https://www.linkedin.com/company/elastic-mint-ltd/"
+    pre = "<i class='fa fa-2x fa-linkedin'></i>"
 
 [[menu.topbar]]
     weight = 3
@@ -52,6 +57,7 @@ paginate = 10
     name = "Email"
     url = "mailto:info@elasticmint.com"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
+
 
 [params]
     viewMorePostLink = "/blog/"
