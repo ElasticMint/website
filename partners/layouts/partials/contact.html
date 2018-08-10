@@ -1,16 +1,21 @@
-<div class="container" id="contact">
+
+<section class="bar background-gray no-mb no-mb " id="contact">
+<div class="container">
 
     <div class="row">
         <div class="col-md-8">
 
             <section>
 
-                {{ .Content }}
-
                 {{ if isset .Site.Params "email" }}
 
                 <div class="heading">
-                  <h3>{{ i18n "contactForm" }}</h3>
+                  <h3>Ready to talk?</h3>
+                </div>
+
+                <div class="panel-heading ">
+                    As always, the best way to start is with a conversation. 
+                    Send us your details and let's start talking!
                 </div>
 
                 <div id="contact-message"></div>
@@ -84,4 +89,5 @@
 </div>
 
 {{ partial "map.html" . }}
+</section>  
 

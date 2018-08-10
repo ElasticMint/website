@@ -17,21 +17,32 @@ paginate = 10
 
 # Main menu
 
+
 [[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
+    name = "Our Offer"
+    url  = "/#ouroffer"
     weight = 1
 
-# [[menu.main]]
-#     name = "FAQ"
-#     identifier = "faq"
-#     url  = "/faq/"
-#     weight = 2
+[[menu.main]]
+    name = "Our Values"
+    url  = "/#ourvalues"
+    weight = 2
+
+[[menu.main]]
+    name = "Technologies"
+    url  = "/#tech"
+    weight = 3
 
 [[menu.main]]
     name = "Contact"
-    url  = "/contact/"
-    weight = 3
+    url  = "/#contact"
+    #link_url = "contact"
+    weight = 4
+
+[[menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 5
 
 # Top bar social links menu
 [[menu.topbar]]
@@ -147,9 +158,22 @@ paginate = 10
     link_url = "/values"
     link_text = "Read about how our values shape the way we work"
 
+[params.tech]
+    enable = true
+    title = "Technologies"
+    subtitle = ""
+    link_url = "/#tech"
+
+[params.casestudy]
+    enable = true
+    title = "Case Study"
+    subtitle = ""
+    link_url = "/#casestudy"
+
+
 [params.bios]
     enable = true
-    title = "Who are we?"
+    title = "Meet the team"
     subtitle = ""
 
 
