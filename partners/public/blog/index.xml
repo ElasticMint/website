@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on </title>
+    <link>https://www.elasticmint.com/blog/</link>
+    <description>Recent content in Blogs on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 19 Apr 2018 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.elasticmint.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>agile code (retreat on the beach)</title>
+      <link>https://www.elasticmint.com/blog/agile-code-retreat/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/agile-code-retreat/</guid>
+      <description>On 19th March Gordon and I attended a 2 day agile coding retreat in St Austell, Cornwall. Hosted by Kevlin Henney and Jon Jagger the retreat was organised for developers to discuss, practice and improve their software craftsmanship, communication and creativity. Having personally never attended such an event before I was interested to see if there was an opportunity for me to hone my programming skills to ultimately improve my performance as a developer.</description>
+    </item>
+    
+    <item>
+      <title>Fixing Intermittent Test Failures With NCrunch</title>
+      <link>https://www.elasticmint.com/blog/fixing-intermittent-test-failures/</link>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/fixing-intermittent-test-failures/</guid>
+      <description>I was working with a company recently where we were using Xunit as our test framework, NSubstitute for mocks, stubs etc and we ran our tests using NCrunch whilst developing in Visual Studio. At one point during the project we noticed that some of our unit tests were failing intermittently. This is more common in longer running integration tests but not so common in unit tests. When we do see this behaviour in unit tests the cause is often shared state being accessed when unit tests are being run in parallel.</description>
+    </item>
+    
+    <item>
+      <title>BDD frameworks compared - SpecFlow and BDDfy</title>
+      <link>https://www.elasticmint.com/blog/bdd-frameworks-compared/</link>
+      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/bdd-frameworks-compared/</guid>
+      <description>I first learnt about writing unit tests following a project where we missed the deadline and spent far too long fixing and then refixing the code. I became frustrated that we would fix one thing and then something else would go wrong. When I saw how tools like NUnit and Rhino Mocks gave me the confidence to fix bugs and refactor it genuinely changed my working life. On my next project I determined to write tests as I went along and to be honest I&amp;rsquo;ve never looked back.</description>
+    </item>
+    
+    <item>
+      <title>Using impact maps to improve product delivery</title>
+      <link>https://www.elasticmint.com/blog/using-impact-mapping/</link>
+      <pubDate>Fri, 30 Mar 2018 15:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/using-impact-mapping/</guid>
+      <description>Like me haven&amp;rsquo;t you at times been frustrated by software that has been delivered late and not made the business impact you expected. A lot of time and money had been wasted due to assumptions being made with inadequate requirements; poor communication of team objectives and an overall lack of understanding, focus and misalignment with the overall business goals. As a developer I use interative delivery and this places emphasis on integrating learning from delivery and refining the scope and requirements.</description>
+    </item>
+    
+    <item>
+      <title>Why we think smaller teams are better</title>
+      <link>https://www.elasticmint.com/blog/why-small-teams/</link>
+      <pubDate>Sat, 03 Mar 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/why-small-teams/</guid>
+      <description>Over the years I&amp;rsquo;ve worked on lots of teams. Some good, and some not so. But what is it that makes a team successful?
+There are the obvious things like the kind of people you have on the team. If the team members just don&amp;rsquo;t get on, if they don&amp;rsquo;t have the skills required to do the job, or they just aren&amp;rsquo;t interested in working hard then it&amp;rsquo;s clear the team will suffer.</description>
+    </item>
+    
+  </channel>
+</rss>

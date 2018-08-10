@@ -73,8 +73,8 @@ paginate = 10
 [params]
     viewMorePostLink = "/blog/"
     author = "GBR"
-    defaultKeywords = ["Elastic Mint", "hugo", "go"]
-    defaultDescription = "Site powered by Elastic Mint"
+    defaultKeywords = ["Elastic Mint", ".NET", "team", "MVP"]
+    defaultDescription = "Proven, trusted team of experienced developers delivering bespoke, high-quality software"
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = "AIzaSyCHysmrMKbu76mbHEktN3dztD6BpYJMV3Y"
