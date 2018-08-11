@@ -9,7 +9,7 @@ description: >
     Having experienced both success and failure on projects, he believes passionately that getting the basics right is 
     vital to delivering quality working software. He champions automating the path to tested and deployed software in order 
     to provide the confidence and flexibility to adapt to changing needs and requirements.
-photo: "img/bios/andy.jpg"
+photo: "/img/bios/andy.jpg"
 
 github : "https://github.com/Anduszek"
 twitter: "http://twitter.com/anduszek"

@@ -3,7 +3,7 @@ name: "Gordon Barrs"
 position: "Partner"
 description: >
   <p>Gordon has been a professional software developer for over 20 years. He has developed software for many companies including Just-Eat, ASOS, Tesco.com and Clarks.com. In recent years Gordon has been developing Cloud applications for deployment into Microsoft Azure and Amazon AWS ( for which he holds AWS Solutions Architect certification). He believes strongly in collaboration between developers and product stakeholders, excellence in technical practices and continuous improvement. He believes that paying constant attention to these 3 things results in software of excellent quality that is built to do the right thing in a way that is more easily maintained and extended in the future.</p>
-photo: "img/bios/gordon.jpg"
+photo: "/img/bios/gordon.jpg"
 github : "https://github.com/britebit"
 twitter: "http://twitter.com/gbarrs"
 email: "gordon.barrs@elasticmint.com"

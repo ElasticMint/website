@@ -1,6 +1,4 @@
-{{ if isset .Site.Params "bios" }}
-{{ if .Site.Params.bios.enable }}
-{{ if gt (len .Site.Data.bios) 0 }}
+
 
 <section class="bar background-white no-mb">
         <div class="container">
@@ -14,7 +12,9 @@
                   {{ .Site.Params.bios.subtitle | markdownify }}
                 </p>
             </div>
-
+            {{ if isset .Site.Params "bios" }}
+            {{ if .Site.Params.bios.enable }}
+            {{ if gt (len .Site.Data.bios) 0 }}
             {{ range $index, $element := sort .Site.Data.bios "weight" }}
 
             <div class="post">
@@ -48,8 +48,8 @@
                 </div>
             </div>
         {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
     </div>
 </section>
-{{ end }}
-{{ end }}
-{{ end }}

@@ -3,7 +3,7 @@ name: "Jon Reynolds"
 position: "Partner"
 description: >
   <p>After graduating with a PhD in Biochemistry in 2000, Jon decided to change careers and join the IT software industry and re-train as a web developer. Through his conscientious nature and passion to learn new technologies and practices, Jon has been able to deliver effective online, desktop and cloud-based application software on time and on budget for customers of all sizes including Just-Eat, Dyson and ADP. Through years of experience of working with businesses in the engineering, insurance, marketing, media and retail sectors he believes passionately about listening, learning and collaborating regularly with his stakeholders to organically shape and deliver the right software solution that meets their ever-changing needs and excels their expectations.</p>
-photo: "img/bios/jon.jpg"
+photo: "/img/bios/jon.jpg"
 github : "https://github.com/thinkexpedite"
 twitter: "http://twitter.com/jonreynolds"
 email :  "jon.reynolds@elasticmint.com"

@@ -1152,7 +1152,7 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
-  padding: 40px;
+  padding: 80px;
 }
 .home-slogan .dark-mask {
   position: absolute;
@@ -1744,7 +1744,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #heading-breadcrumbs {
   background: url('../img/slogan/photogrid_.jpg') center center repeat;
-  padding: 40px;
+  background-size: cover;
+  padding: 80px;
   margin-bottom: 40px;
 }
 #heading-breadcrumbs.no-mb {
