@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/2018/08/12/are-experienced-software-developers-better/</loc>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
   </url>
@@ -53,7 +58,7 @@
   
   <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -89,7 +94,7 @@
   
   <url>
     <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,19 +138,19 @@
   
   <url>
     <loc>https://www.elasticmint.com/tags/planning/</loc>
-    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/planning/</loc>
-    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/project/</loc>
-    <lastmod>2018-03-30T15:00:00+00:00</lastmod>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

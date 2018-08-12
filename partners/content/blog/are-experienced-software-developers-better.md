@@ -1,11 +1,12 @@
 +++
 title = "Are experienced software developers better?"
-date = "2018-08-12T09:00:00+00:00"
+date = "2018-08-12T09:00:00+01:00"
 tags = ["project", "planning"]
 categories = ["planning"]
 banner = "img/banners/blogs/desktop-glasses.jpg"
 author = "Andy Garner"
 +++
+
 
 In short, it depends!
 
@@ -22,5 +23,5 @@ Elastic Mint was founded by 3 developers each with 15+ years of experience. We b
 If you have a problem that could benefit from our team, contact us here to receive a no-obligation consultation. Alternatively email us at [info@elasticmint.com](mailto:info@elasticmint.com) if you would like more information about how we can help you.
 
 ##### Further reading
-[Peter Knepo - It's official: developers get better with age. And scarcer.](http://coding-and-more.blogspot.com/2011/06/its-official-developers-get-better-with.html)
-[Robert C. Martin - My Lawn](http://blog.cleancoder.com/uncle-bob/2014/06/20/MyLawn.html)
+* [Peter Knepo - It's official: developers get better with age. And scarcer.](http://coding-and-more.blogspot.com/2011/06/its-official-developers-get-better-with.html)
+* [Robert C. Martin - My Lawn](http://blog.cleancoder.com/uncle-bob/2014/06/20/MyLawn.html)

@@ -6,10 +6,21 @@
     <description>Recent content in Project on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 30 Mar 2018 15:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Aug 2018 08:54:11 +0100</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Are Experienced Software Developers Better?</title>
+      <link>https://www.elasticmint.com/blog/2018/08/12/are-experienced-software-developers-better/</link>
+      <pubDate>Sun, 12 Aug 2018 08:54:11 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/08/12/are-experienced-software-developers-better/</guid>
+      <description>In short, it depends!
+At Elastic Mint we take experience seriously. It’s one of the things that informs everything we do. We find that a good developer with a wealth of experience will make better decisions. They will reflect on things they have seen and done, learn from them, and then use that knowledge as and when appropriate.
+Although it’s a bit old now, Peter Knego makes this point in his blog here, where he analyses reputation statistics on Stack Overflow.</description>
+    </item>
     
     <item>
       <title>Using impact maps to improve product delivery</title>
