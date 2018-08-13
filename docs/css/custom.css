@@ -21,3 +21,20 @@
 .panel-heading {
   padding-left: 0;
 }
+
+.btn-template-main-blue {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #38a7bb;
+}
+.btn-template-main-blue:hover,
+.btn-template-main-blue:focus,
+.btn-template-main-blue:active,
+.btn-template-main-blue.active,
+.open > .dropdown-toggle.btn-template-main-blue {
+  color: #38a7bb;
+  border-color: #38a7bb;
+  background-color: #ffffff;
+}
+
+.recaptcha-panel {margin: 20px 0;}
