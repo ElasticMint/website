@@ -5,10 +5,21 @@
     <link>https://www.elasticmint.com/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Aug 2018 09:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Are experienced software developers better?</title>
+      <link>https://www.elasticmint.com/blog/are-experienced-software-developers-better/</link>
+      <pubDate>Sun, 12 Aug 2018 09:00:00 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/are-experienced-software-developers-better/</guid>
+      <description>In short, it depends!
+At Elastic Mint we take experience seriously. It’s one of the things that informs everything we do. We find that a good developer with a wealth of experience will make better decisions. They will reflect on things they have seen and done, learn from them, and then use that knowledge as and when appropriate.
+Although it’s a bit old now, Peter Knego makes this point in his blog here, where he analyses reputation statistics on Stack Overflow.</description>
+    </item>
     
     <item>
       <title>agile code (retreat on the beach)</title>
@@ -62,7 +73,8 @@ There are the obvious things like the kind of people you have on the team. If th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/ourstory/</guid>
-      <description>We&amp;rsquo;ve each been developing software for between fifteen and twenty years and met whilst working as contractors at the same company. We kept in touch as we each moved on to various other companies and, through discussions over time, we had the idea that a small team of expert software developers could be very effective and cost-efficient at designing and delivering software. With all the experience we had acquired over the years we felt the time was right to set up a company that could help others achieve their business goals, with the help of software, in a way that offers tangible value very early on.</description>
+      <description>Elastic Mint was born from the desire to deliver excellent software using smaller teams of extremely experienced developers. Collaboration, communication and a shared understanding of business goals feature highly in our way of working.
+As founders of Elastic Mint we’ve been developing software for between fifteen and twenty years. We met whilst working as contractors at the same company and kept in touch as we each moved on to various other opportunities.</description>
     </item>
     
     <item>
