@@ -37,3 +37,4 @@ This is an extreme example, but there are a number of challenges common to most 
 Despite our best efforts it is very rare for all the requirements of any software application to be known and understood, and so if we're not careful we end up a bit like Dilbert - http://dilbert.com/strip/2009-12-07. The project manager asks for an estimate while admitting she has no scope or design yet. Dilbert responds with a very large number plucked out of the air. The project manager asks how he has come up with that estimate as he knows nothing about the project. "That makes two of us!" he replies.
 
 The first step in estimating the cost has to be getting a feel for the size of the project. A very small project with a clearly defined scope can be relatively easily priced. This would be something like a line of business web application which allows users to view and modify data held in a database on perhaps 10 or 20 pages and without any complicated user interface behaviour.
+sdf
