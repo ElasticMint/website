@@ -4,29 +4,29 @@ Software is taking over the world.  Everywhere you look there is new technology.
 
 Successful businesses recognise the need for software to enable their business processes to become automated and more efficient, to help collate data into information enabling better decisions to be made sooner, to engage with their customers more easily and more regularly.  
 
-Businesses that don't take the opportunity to improve their business processes, their customer engagement and their business partner collaborations will find it harder keep up and, ultimately, survive in a world that is becoming smaller by the year, thanks to technology and the software that drives it.
+Businesses that don't take the opportunity to improve their business processes, their customer engagement and their business partner collaborations will find it harder to keep up and, ultimately, survive in a world that is becoming smaller by the year, thanks to technology and the software that drives it.
 
-Customers expect to have instant access to information about a business. They want instant access product information and product availability. They use technology driven by software to buy things now. Business partners expect quicker, more efficient, automated ways of working together. 
+Customers expect to have instant access to information about a business. They want instant access to product information and product availability. They use technology driven by software to buy things now. Business partners expect quicker, more efficient, automated ways of working together. 
 
-Developing good quality software isn't easy.  If it was there wouldn't be so many stories in the press of failed software projects. But it can be done. With an understanding of the business goal, just enough analysis and development model that allows experienced developers to deliver a solution that evolves through working feedback. A successful software development project can help your business improve and thrive.
+Developing good quality software isn't easy.  If it was there wouldn't be so many stories in the press of failed software projects. But it can be done. With an understanding of the business goal, just enough analysis and a development model that allows experienced developers to deliver a solution that evolves through working feedback. A successful software development project can help your business improve and thrive.
 
-Two popular options for developing software specifically for your business are to hire contractors or to partner with a software development company. Which of these options to choose should be a decision based on more than price alone.  
+Two popular options for developing software specifically for your business are to hire contractors or to partner with a software development company. Which of these options you choose should be a decision based on more than price alone.  
 
-Hiring freelance contractors is genrally a little cheaper and work as an independant entity. If you have more than one contractor then you will need to manage the group and hope that they work well together. Once the contract is complete there is no obligation for a contractor to continue working with you, even if there is more work required to complete your project. Hiring a feelance contractor could be a good choice if you have a small, highly specialised piece of work.
+Hiring freelance contractors is generally a little cheaper and as they work as an independent entity. If you have more than one contractor then you will need to manage the group and hope that they work well together. Once the contract is complete there is no obligation for a contractor to continue working with you, even if there is more work required to complete your project. Hiring a freelance contractor could be a good choice if you have a small, highly specialised piece of work.
 
-Software development companies are generally a little more expensive but behave more like a technology partner. They work with you to understand your vision and business goals and help develop software that meets your needs.  They value their reputation and look to form long-lasting relationships in the form of new project development, feature updates, maintenance and bug-fixes for current products.  Software development companies are a good choice for startups and more involved projects.
+Software development companies are generally more expensive but will look to become long-term technology partners. They work with you to understand your vision and business goals and help develop software that meets your needs.  They value their reputation and look to form long-lasting relationships in the form of new project development, feature updates, maintenance and bug-fixes for current products.  Software development companies are a good choice for startups and more involved projects.
 
 Who are we?
 
 Elastic Mint is a small software company founded by Andy Garner, Gordon Barrs and Jon Reynolds. We each have 15+ years of experience as software developers in both permanent and contract roles.  Companies we have worked for include high profile names such as Just Eat, ASOS, Dyson and Clarkes. We have experience with the Microsoft stack of technologies, together with others like NodeJS, Docker, AWS.
 
-We to provide expert small teams to take on projects from design and requirements gathering through to completion, and to enable companies to complete projects they might not have either the people or expertise to complete otherwise. We work from our office in central Bristol, visiting clients when needed especially during the early stages of a project.
+We provide expert small teams to take on projects from design and requirements gathering through to completion, and to enable companies to complete projects they might not have either the people or expertise to complete otherwise. We work from our office in central Bristol, visiting clients when needed especially during the early stages of a project.
 
 How we work
 
 Having worked on many software projects we have learnt that there is no simple formula to a successful project. However, we have found the following things to be common to the most successful projects:
 
-Engagement with customer to understand the problem they are trying to solve
+Engagement with the customer to understand the problem they are trying to solve
 Early delivery of a working thin slice of the solution
 Regular delivery of new features and reviewing them with the customer
 Automated testing, build and deployment of software to an environment similar to the live environment

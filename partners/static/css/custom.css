@@ -18,6 +18,42 @@
   overflow-y: hidden;
 }
 
+@media (min-width: 1200px) {
+  .box-image-text.blog .content .author-category {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-image-text.blog .content .author-category {
+    margin-top: 36px;
+  }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .offering-help {
+    margin-top: 20px;
+  }
+}
+
+.offering {
+  margin-bottom: 40px;
+}
+
+.offering-help {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.offering-need > ul > li {
+  padding: 10px 0;
+}
+
 .panel-heading {
   padding-left: 0;
 }
@@ -37,4 +73,10 @@
   background-color: #ffffff;
 }
 
-.recaptcha-panel {margin: 20px 0;}
+.recaptcha-panel {
+  margin: 20px 0;
+}
+
+.home-slogan-section {
+  margin-bottom: 0;
+}

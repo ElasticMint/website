@@ -1,0 +1,25 @@
+{{ if isset .Site.Params "howwework" }} {{ if .Site.Params.howwework.enable }}
+<section class="bar background-white no-mb no-mb" id="howwework">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="heading text-center">
+        <h2>How we work</h2>
+      </div>
+      <h3>Engage</h3>
+      <p>We engage with our customers to properly understand the problem they are trying to solve rather than providing a
+        premature solution.</p>
+      <h3>Automate</h3>
+      <p>We automate the testing, build and deployment process so we can concentrate on developing new features.</p>
+      <h3>Deliver</h3>
+      <p>We work with businesses to identify which features add the most value and regularly deliver fully working, usable
+        software.</p>
+      <br/>
+    </div>
+    <p class="read-more text-center">
+      <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
+    </p>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }} {{ end }}
