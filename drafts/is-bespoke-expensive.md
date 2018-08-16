@@ -22,3 +22,18 @@ Even if we had the answer to these basic questions, we would still only be able 
 What's the right level of detail?  I probably wouldn't want to specify the exact make of rivets or the exact length of brake hose to use.  These are details that the car builder can deal with.  There are some decisions I might have to make early on and some I can defer.  If I have an exotic material and colour for seats then I might have to make that decision earlier so that the materials can be ordered and the seats made in time to be fitted.
 
 Software development is similar in that we can provide very broad estimates for different types of software development based on other similar projects we may have worked on.  If these estimates are acceptable then we can work with you to further understand the scope of work and come up with a plan of work and a cost associated with that plan.
+
+
+Version 2
+How much does bespoke software cost?
+
+One of the challenges for the software industry over the years has been estimating accurately how long a project will take to deliver and how much it will cost. It seems that every few months there is a news article about an abandoned project or one that has gone way over budget e.g. £12.7 billion was spent on the NHS National Programme for IT before it was finally abandoned (https://www.digitalhealth.net/2016/07/national-programme-for-it-ends-but-not-for-everyone/). The UK government's Universal Credit system was due to be introduced in 2017 at a cost of £2 billion. It is currently not expected to be fully operational until 2022 at a cost of £15.8 billion.
+
+This is an extreme example, but there are a number of challenges common to most software projects.
+* Changing technologies
+* Incomplete or poorly-understood requirements
+* Scope creep
+
+Despite our best efforts it is very rare for all the requirements of any software application to be known and understood, and so if we're not careful we end up a bit like Dilbert - http://dilbert.com/strip/2009-12-07. The project manager asks for an estimate while admitting she has no scope or design yet. Dilbert responds with a very large number plucked out of the air. The project manager asks how he has come up with that estimate as he knows nothing about the project. "That makes two of us!" he replies.
+
+The first step in estimating the cost has to be getting a feel for the size of the project. A very small project with a clearly defined scope can be relatively easily priced. This would be something like a line of business web application which allows users to view and modify data held in a database on perhaps 10 or 20 pages and without any complicated user interface behaviour.
