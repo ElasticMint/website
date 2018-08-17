@@ -1,41 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
+<body>
 
-    <div id="all">
+  <div id="all">
 
-        <header>
+    <header>
 
-          {{ partial "top.html" . }}
+      {{ partial "top.html" . }} {{ partial "nav.html" . }}
 
-          {{ partial "nav.html" . }}
+    </header>
 
-        </header>
+    {{ partial "slogan.html" . }}
 
-        {{ partial "slogan.html" . }}
+    <!-- {{ partial "offering.html" . }} -->
 
-        {{ partial "offering.html" . }}
+    {{ partial "howwework.html" . }} {{ partial "values.html" . }} {{ partial "tech.html" . }}
 
-        {{ partial "values.html" . }}
-        
-        {{ partial "tech.html" . }}
+    <!--{{ partial "casestudy.html" . }}-->
 
-        <!--{{ partial "casestudy.html" . }}-->        
-        
-        {{ partial "contact.html" . }}
+    {{ partial "contact.html" . }} {{ partial "recent_posts.html" . }} {{ partial "footer.html" . }}
 
-        {{ partial "recent_posts.html" . }}   
+  </div>
 
-        {{ partial "footer.html" . }}
+  <!-- /#all -->
 
-    </div>
+  {{ partial "scripts.html" . }}
 
-    <!-- /#all -->
+</body>
 
-    {{ partial "scripts.html" . }}
-
-  </body>
 </html>

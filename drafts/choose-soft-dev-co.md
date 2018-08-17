@@ -4,29 +4,29 @@ Software is taking over the world.  Everywhere you look there is new technology.
 
 Successful businesses recognise the need for software to enable their business processes to become automated and more efficient, to help collate data into information enabling better decisions to be made sooner, to engage with their customers more easily and more regularly.  
 
-Businesses that don't take the opportunity to improve their business processes, their customer engagement and their business partner collaborations will find it harder keep up and, ultimately, survive in a world that is becoming smaller by the year, thanks to technology and the software that drives it.
+Businesses that don't take the opportunity to improve their business processes, their customer engagement and their business partner collaborations will find it harder to keep up and, ultimately, survive in a world that is becoming smaller by the year, thanks to technology and the software that drives it.
 
-Customers expect to have instant access to information about a business. They want instant access product information and product availability. They use technology driven by software to buy things now. Business partners expect quicker, more efficient, automated ways of working together. 
+Customers expect to have instant access to information about a business. They want instant access to product information and product availability. They use technology driven by software to buy things now. Business partners expect quicker, more efficient, automated ways of working together. 
 
-Developing good quality software isn't easy.  If it was there wouldn't be so many stories in the press of failed software projects. But it can be done. With an understanding of the business goal, just enough analysis and development model that allows experienced developers to deliver a solution that evolves through working feedback. A successful software development project can help your business improve and thrive.
+Developing good quality software isn't easy.  If it was there wouldn't be so many stories in the press of failed software projects. But it can be done. With an understanding of the business goal, just enough analysis and a development model that allows experienced developers to deliver a solution that evolves through working feedback. A successful software development project can help your business improve and thrive.
 
-Two popular options for developing software specifically for your business are to hire contractors or to partner with a software development company. Which of these options to choose should be a decision based on more than price alone.  
+Two popular options for developing software specifically for your business are to hire contractors or to partner with a software development company. Which of these options you choose should be a decision based on more than price alone.  
 
-Hiring freelance contractors is genrally a little cheaper and work as an independant entity. If you have more than one contractor then you will need to manage the group and hope that they work well together. Once the contract is complete there is no obligation for a contractor to continue working with you, even if there is more work required to complete your project. Hiring a feelance contractor could be a good choice if you have a small, highly specialised piece of work.
+Hiring freelance contractors is generally a little cheaper and as they work as an independent entity. If you have more than one contractor then you will need to manage the group and hope that they work well together. Once the contract is complete there is no obligation for a contractor to continue working with you, even if there is more work required to complete your project. Hiring a freelance contractor could be a good choice if you have a small, highly specialised piece of work.
 
-Software development companies are generally a little more expensive but behave more like a technology partner. They work with you to understand your vision and business goals and help develop software that meets your needs.  They value their reputation and look to form long-lasting relationships in the form of new project development, feature updates, maintenance and bug-fixes for current products.  Software development companies are a good choice for startups and more involved projects.
+Software development companies are generally more expensive but will look to become long-term technology partners. They work with you to understand your vision and business goals and help develop software that meets your needs.  They value their reputation and look to form long-lasting relationships in the form of new project development, feature updates, maintenance and bug-fixes for current products.  Software development companies are a good choice for startups and more involved projects.
 
 Who are we?
 
 Elastic Mint is a small software company founded by Andy Garner, Gordon Barrs and Jon Reynolds. We each have 15+ years of experience as software developers in both permanent and contract roles.  Companies we have worked for include high profile names such as Just Eat, ASOS, Dyson and Clarkes. We have experience with the Microsoft stack of technologies, together with others like NodeJS, Docker, AWS.
 
-We to provide expert small teams to take on projects from design and requirements gathering through to completion, and to enable companies to complete projects they might not have either the people or expertise to complete otherwise. We work from our office in central Bristol, visiting clients when needed especially during the early stages of a project.
+We provide expert small teams to take on projects from design and requirements gathering through to completion, and to enable companies to complete projects they might not have either the people or expertise to complete otherwise. We work from our office in central Bristol, visiting clients when needed especially during the early stages of a project.
 
 How we work
 
 Having worked on many software projects we have learnt that there is no simple formula to a successful project. However, we have found the following things to be common to the most successful projects:
 
-Engagement with customer to understand the problem they are trying to solve
+Engagement with the customer to understand the problem they are trying to solve
 Early delivery of a working thin slice of the solution
 Regular delivery of new features and reviewing them with the customer
 Automated testing, build and deployment of software to an environment similar to the live environment
@@ -45,3 +45,30 @@ Website: www.elasticmint.com
 
 "Elastic Mint exceeded our expectations in how quickly they got up to speed and started contributing. I look forward to working with them again on future projects" - Daniel Barnes, Senior Vice President Engineering 
 
+
+Version 2
+Contractors or a Software Development Company
+
+We live in a world where businesses cannot survive without software. Successful businesses recognise the need for software to enable their business processes to become automated and more efficient. There are many great off-the-shelf packages, but a time often comes when something custom is required. This might be a web service enabling business to business communication, or an application to manage a process, or something specific to the product a business sells.
+
+Once the decision has been made to build an application what are the choices?
+
+Freelance contractors can be a really good choice for small, highly specialised pieces of work. Typically with a contractor, you will get an experienced developer who will work in your office and just slot in to how you want to work. Once you get a few contractors in, you then have to start managing them, plus there is no guarantee that they will work well together. When their contract finishes, a contractor is under no obligation to continue working with you, and may decide to move on even though the project hasn't finished yet.
+
+Another consideration is the expected changes to the IR35 legislation. It is expected that the responsibility for deciding whether a contractor is an employee in all but name will shift from the contractor to the business employing the company the contractor works through. In practice many contractors look very similar to employees and companies find it hard to treat them differently to permanent employees. Assuming the expected legislation comes in ut will be interesting to see how it impacts the contractor market.
+
+An alternative to contractors, is to hire a software development company. While being more expensive than contractors, a good software development company will want to become a long-term partner. They will work with you to understand your vision and business goals and help develop software that meets your needs.  They value their reputation and look to form long-lasting relationships in the form of new project development, feature updates, maintenance and bug-fixes for current products. Unlike contractors, they will typically work from their own office using their own equipment, thus having minimal impact on the day-to-day running of your business.  Software development companies are a good choice for startups and more involved projects. 
+
+Working with Elastic Mint
+
+We are an experienced and approachable team with many years of experience. We engage with our customers to properly understand the problem they are trying to solve rather than providing a premature solution. We automate the testing, build and deployment process so we can concentrate on developing new features. We work with businesses to identify which features add the most value and regularly deliver fully working, usable software.
+
+We want our customers to love working with us, and so we will always be transparent, respond quickly, and focus on providing the solution that best fits your needs.
+
+**Contact**
+
+Email: info@elasticmint.com
+
+Tel: 07845 663874
+
+Website: www.elasticmint.com 
