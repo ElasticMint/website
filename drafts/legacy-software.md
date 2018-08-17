@@ -11,3 +11,17 @@ These legacy applications are a time-bomb. The Visual Basic 6 runtime may still 
 The first task is to understand these applications and what they do. Public interfaces and any applications calling into those interfaces need to documented. You need to work through the source code and trace the logic. You may find it helpful to write some tests to demonstrate the behaviour which can then be compared with any replacement you write in the future.
 
 Having understood and documented what a legacy application does, the next task is to decide whether you want a like-for-like replacement but in a modern technology or something different that better supports how you wish to work now. How many business processes have been held back from changing because they rely on a legacy component which works in a specific way and can't be changed?
+
+Finally, it's time to develop the replacement. This is where any tests you've written around the original will come into their own. The last thing you want is for things to go wrong because the behaviour of the application you're replacing wasn't understood properly.
+
+# Elastic Mint Can Help
+
+We understand that your legacy software is vitally important to you. After all, that's one of the reasons it's lasted so long! We also understand that many of your developers either do not know about older technologies, and have little interest in working with them. Our experienced team have seen many technologies come and go - the chances are we will have worked your legacy technology when it was new!
+
+We will take the time to understand what your legacy applications do, how they work, and what other components may depend on them.
+
+We will write a report detailing all we have learnt, so that even if you don't want to go any further now, at least you know what you've got.
+
+We will work with you to design and develop the right replacement, ensuring that it is thoroughly tested and it fits into how you want to work.
+
+If you have some legacy software, why not get in touch to see how we can help?
