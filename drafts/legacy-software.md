@@ -1,4 +1,6 @@
 # The problem with legacy software
+or
+# We need to talk about legacy software
 
 Sometimes we forget how much old software is out there. We talk about the software industry still being young and perhaps quite immature, but actually word processing software started reaching offices in the early 1970s - over 40 years ago. The first version of PowerPoint was released in 1987, public use of the internet began in 1989 and then exploded during the 1990s.
 
