@@ -1,3 +1,20 @@
+# Developing software is hard. Pricing it is even harder!
+
+Software development is a complex process and can end up being costly and ineffective if not done right.
+
+Once the decision has been made to invest in new software, the next questions are how much it will cost and how long it will take?  The answer to these questions will determine whether the ROI (return on investment) makes the project worthwhile. 
+
+Arriving at the answer to these questions takes a bit of thought and a lot of communication.
+
+Let's use car building as an analogy. In order to work out how much it would cost to build a car some basic details would be needed e.g. how many passengers it should carry, how many wheels it should have, how big the engine should be, and what fuel it should run on.
+
+Even with the answer to these basic questions, it's still only possible to give a very broad range in terms of cost and time. If this broad range is within car-building budget then more detailed conversation with the car builder can start in order to arrive at a narrower range. Once we get to a range and level of detail that is comfortable for both parties, contracts can be signed and building can start. 
+
+In order to price software, it is vital to have conversations with your software partner about what you need. The more detailed these conversations the easier it will be to estimate a price. It's important though to remember that this will only be an estimate, as there will always be things that were unforeseen. 
+
+To find out how much it would cost to develop your software contact us now and let's talk.
+
+
 # How much does custom software cost?
 Technology is moving on at an ever increasing rate and forcing businesses to re-evaluate how to operate effectively.  The processes and software that were fit for purpose five or ten years ago were created for a different world. 
 
@@ -23,9 +40,10 @@ What's the right level of detail?  I probably wouldn't want to specify the exact
 
 Software development is similar in that we can provide very broad estimates for different types of software development based on other similar projects we may have worked on.  If these estimates are acceptable then we can work with you to further understand the scope of work and come up with a plan of work and a cost associated with that plan.
 
+To find out how much it would cost to develop your software contact us now.
 
-Version 2
-How much does bespoke software cost?
+# Version 2
+# How much does bespoke software cost?
 
 One of the challenges for the software industry over the years has been estimating accurately how long a project will take to deliver and how much it will cost. It seems that every few months there is a news article about an abandoned project or one that has gone way over budget e.g. £12.7 billion was spent on the NHS National Programme for IT before it was finally abandoned (https://www.digitalhealth.net/2016/07/national-programme-for-it-ends-but-not-for-everyone/). The UK government's Universal Credit system was due to be introduced in 2017 at a cost of £2 billion. It is currently not expected to be fully operational until 2022 at a cost of £15.8 billion.
 
