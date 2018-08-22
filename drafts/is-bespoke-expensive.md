@@ -6,7 +6,7 @@ Once the decision has been made to invest in new software, the next questions ar
 
 Arriving at the answer to these questions takes a bit of thought and a lot of communication.
 
-To get the best value from your new software you need to work with a partner that understands what your business goals are and what type of software can add the most value to help you achive those goals. Once you've had those conversations and reached a common understanding your software development partner should be able to come up with a plan to help realise those goals.  It's at this stage that estimating the price becomes a little easier. 
+To get the best value from your new software you need to work with a partner that understands what your business goals are and what type of software can add the most value. Once you've had those conversations and reached a common understanding your software development partner should be able to come up with a plan to help realise your goals.  It's at this stage that estimating the price becomes a little easier. 
 
 If the project is small and very well defined then a fixed price can be a good approach.  Your software partner will deliver the software by a date for an agreed price. There will be little, if any, chance to change the specification and if changes are required then it usually adds to the cost.
 
