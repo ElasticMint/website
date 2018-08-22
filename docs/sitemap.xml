@@ -33,25 +33,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/agile/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/agile/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/bdd/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/agile/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/bdd/</loc>
+    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/bdd/</loc>
     <lastmod>2018-04-11T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -69,25 +69,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/cyber-dojo/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/dotnet/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -99,13 +99,13 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
+    <loc>https://www.elasticmint.com/categories/frameworks/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/frameworks/</loc>
+    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -125,25 +125,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/pair-programming/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/planning/</loc>
-    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/planning/</loc>
+    <lastmod>2018-08-12T09:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/planning/</loc>
     <lastmod>2018-08-12T09:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -161,25 +161,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/tdd/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/tdd/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/testing/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/tdd/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/testing/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/testing/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
