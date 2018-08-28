@@ -278,15 +278,19 @@ function utils () {
     var parts = fullUrl.split('#')
     var trgt = parts[1]
     var targetOffset = $('#' + trgt).offset()
-    var targetTop = targetOffset ? targetOffset.top - 210 : 0;
+    var targetTop = targetOffset ? targetOffset.top - 180 : 0;
 
     if (targetTop < 0) {
       targetTop = 0
     }
 
-    $('html, body').animate({
-      scrollTop: targetTop
-    }, 1000)
+    if(targetOffset){
+      $('html, body').animate({
+        scrollTop: targetTop
+      }, 1000)
+    } else {
+      location.href = fullUrl;
+    }
   }
 }
 
