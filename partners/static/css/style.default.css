@@ -1154,15 +1154,6 @@ fieldset[disabled] .btn-template-primary.active {
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
   padding: 0;
 }
-.home-slogan .dark-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background: radial-gradient(circle at 6.7% 75%, rgb(0, 142, 191), rgba(0,0,255,0) 70.71%), radial-gradient(circle at 93.3% 75%, rgb(17, 185, 146), rgba(0,255,0,0) 70.71%) #6fe0bb;
-}
 
 .slogan-banner {
   display: block;
@@ -1170,7 +1161,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 }
 
-  .slogan-banner h2 { color: white; font-size: 40px; text-transform: uppercase;}
+.slogan-banner h2 { color: white; font-size: 40px; text-transform: uppercase;}
 
 .home-carousel .owl-carousel {
   padding-top: 60px;
@@ -1763,16 +1754,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 #heading-breadcrumbs.no-mb {
   margin-bottom: 0;
-}
-
-#heading-breadcrumbs .dark-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 6.7% 75%, rgb(0, 142, 191), rgba(0,0,255,0) 70.71%), radial-gradient(circle at 93.3% 75%, rgb(17, 185, 146), rgba(0,255,0,0) 70.71%) #6fe0bb;
-  opacity: 0.6;
 }
 
 #heading-breadcrumbs .title {

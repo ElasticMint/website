@@ -44,14 +44,19 @@ paginate = 10
     weight = 5
 
 [[menu.main]]
+    name = "Case study"
+    url  = "/#casestudy"
+    weight = 6
+
+[[menu.main]]
     name = "Contact"
     url  = "/#contact"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     name = "Blog"
     url  = "/blog/"
-    weight = 7
+    weight = 8
 
 # Top bar social links menu
 [[menu.topbar]]
