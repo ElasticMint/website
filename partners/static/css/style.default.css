@@ -1161,8 +1161,6 @@ fieldset[disabled] .btn-template-primary.active {
 
 }
 
-.slogan-banner h2 { color: white; font-size: 40px; text-transform: uppercase;}
-
 .home-carousel .owl-carousel {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -1761,13 +1759,6 @@ fieldset[disabled] .btn-template-primary.active {
   display: inline-block;
 }
 
-#heading-breadcrumbs .title h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
 
 @media (max-width: 991px) {
   #heading-breadcrumbs h1 {
