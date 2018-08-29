@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agile on Elastic Mint</title>
-    <link>https://www.elasticmint.com/categories/agile/</link>
-    <description>Recent content in Agile on Elastic Mint</description>
+    <title>Project on Elastic Mint</title>
+    <link>https://www.elasticmint.com/categories/project/</link>
+    <description>Recent content in Project on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 29 Aug 2018 09:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.elasticmint.com/categories/agile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.elasticmint.com/categories/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://www.elasticmint.com/blog/2018/08/29/we-need-to-talk-about-legacy-software/</guid>
       <description>We Need to Talk about Legacy Software Sometimes we forget how much old software is out there. We talk about the software industry still being young and perhaps quite immature, but actually word processing software started reaching offices in the early 1970s - over 40 years ago. The first version of PowerPoint was released in 1987, public use of the internet began in 1989 and then exploded during the 1990s.</description>
-    </item>
-    
-    <item>
-      <title>agile code (retreat on the beach)</title>
-      <link>https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/</link>
-      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/blog/2018/04/19/agile-code-retreat/</guid>
-      <description>On 19th March Gordon and I attended a 2 day agile coding retreat in St Austell, Cornwall. Hosted by Kevlin Henney and Jon Jagger the retreat was organised for developers to discuss, practice and improve their software craftsmanship, communication and creativity. Having personally never attended such an event before I was interested to see if there was an opportunity for me to hone my programming skills to ultimately improve my performance as a developer.</description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 19 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Aug 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Agile</title>
       <link>https://www.elasticmint.com/categories/agile/</link>
-      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/categories/agile/</guid>
       <description></description>
@@ -68,9 +68,18 @@
     <item>
       <title>Planning</title>
       <link>https://www.elasticmint.com/categories/planning/</link>
-      <pubDate>Sun, 12 Aug 2018 09:00:00 +0100</pubDate>
+      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/categories/planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://www.elasticmint.com/categories/project/</link>
+      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/categories/project/</guid>
       <description></description>
     </item>
     

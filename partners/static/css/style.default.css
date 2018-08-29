@@ -1743,13 +1743,6 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
-  #heading-breadcrumbs,
-  .home-slogan {
-    padding: 80px;
-  }
-}
-
 #heading-breadcrumbs.no-mb {
   margin-bottom: 0;
 }

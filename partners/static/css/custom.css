@@ -5,8 +5,6 @@ a {
   text-decoration: none;
 }
 
-.slogan-banner h2 { color: white; font-size: 40px; text-transform: uppercase;}
-
 #heading-breadcrumbs .title h1 {
   color: #fff;
   text-transform: uppercase;
@@ -128,6 +126,16 @@ a {
   }
 }
 
+a.navbar-brand.home img  {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  a.navbar-brand.home img  {
+    width: 200px;
+  }
+}
+
 .affix-top a.navbar-brand.home img {
   margin: 10px 0 0;
 }
@@ -135,7 +143,6 @@ a {
 .affix a.navbar-brand.home img {
   margin: 0 0;
 }
-
 
 .navbar-brand {
   float: left;
@@ -190,3 +197,35 @@ a {
   margin-top: 50px;
 }
  .tech-stats img { width: 350px;} 
+
+ .box-text {
+  margin-bottom: 20px; padding: 10px; min-height: 160px;
+  color: #555;
+ }
+
+ .deliver {background-color: #18CC9C}
+ .automate {background-color: aquamarine}
+ .engage {background-color: #84d7cf}
+ 
+ @media (min-width: 768px) {
+  #heading-breadcrumbs,
+  .home-slogan {
+    padding: 80px;
+  }
+}
+
+
+.slogan-banner h2 { color: white; font-size: 24px; text-transform: uppercase;}
+
+@media (min-width: 768px) {
+  .slogan-banner h2 { font-size: 40px;}
+}
+
+.peopleprocesstech img { height: 200px;}
+
+@media (min-width: 768px) {
+  .peopleprocesstech img {
+    height: 300px;
+  }
+}
+
