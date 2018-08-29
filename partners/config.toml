@@ -20,17 +20,17 @@ paginate = 10
 
 # [[menu.main]]
 #     name = "Our Offer"
-#     url  = "/#ouroffer"
+#     url  = "/index.html#ouroffer"
 #     weight = 1
     
 [[menu.main]]
     name = "How We Work"
-    url  = "/#howwework"
+    url  = "/index.html#howwework"
     weight = 2
 
 [[menu.main]]
     name = "Our Values"
-    url  = "/#ourvalues"
+    url  = "/index.html#ourvalues"
     weight = 3
 
 [[menu.main]]
@@ -40,18 +40,23 @@ paginate = 10
 
 [[menu.main]]
     name = "Technologies"
-    url  = "/#tech"
+    url  = "/index.html#tech"
     weight = 5
+
+[[menu.main]]
+    name = "Case study"
+    url  = "/index.html#casestudy"
+    weight = 6
 
 [[menu.main]]
     name = "Contact"
     url  = "/#contact"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     name = "Blog"
     url  = "/blog/"
-    weight = 7
+    weight = 8
 
 # Top bar social links menu
 [[menu.topbar]]
