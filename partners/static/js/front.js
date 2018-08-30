@@ -284,8 +284,7 @@ function utils () {
     var parts = fullUrl.split('#')
     var trgt = parts[1]
     var targetOffset = $('#' + trgt).offset();
-    var affixHeight = $('#navigation').outerHeight();
-    var targetTop = targetOffset ? targetOffset.top - (affixHeight) : 0;
+    var targetTop = targetOffset ? targetOffset.top : 0;
 
     if (targetTop < 0) {
       targetTop = 0

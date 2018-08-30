@@ -196,7 +196,8 @@ a.navbar-brand.home img  {
 {
   margin-top: 50px;
 }
- .tech-stats img { width: 350px;} 
+ 
+.tech-stats img { width: 200px;} 
 
  .box-text {
   margin-bottom: 20px; padding: 10px; min-height: 160px;
@@ -211,7 +212,9 @@ a.navbar-brand.home img  {
 
 .peopleprocesstech img { height: 200px;}
 
-a.navbar-brand { display: none}
+
+#navbar {  position: fixed;  top : 50px;  right: 0;  z-index: 1000;}
+
 
 .navbar-default {
   border: none;
@@ -226,18 +229,27 @@ a.navbar-brand { display: none}
   box-shadow: none;
 }
 
+a.navbar-brand { display: none;}
+.logo-inverted {height: 40px; display: inline-block; margin-top: -10px;}
+
 @media (min-width: 768px) {
 
   .slogan-banner h2 { font-size: 40px;}
   #heading-breadcrumbs, .home-slogan { padding: 80px; }
   .peopleprocesstech img { height: 300px;}
 
-  a.navbar-brand { display: block;}
-
   .navbar-default {
     border: none;
-    background-color: white;
+    background-color: white;    
   }
+
+  .tech-stats img { width: 350px;} 
+
+  a.navbar-brand { display: block;}
+
+  #navbar {  position: relative;  top : 0px;  right: 0;  z-index: 0;}
+
+  .logo-inverted {display: inline-block; height: 30px; display: none;}
 }
 
 .navbar-toggle {
@@ -247,10 +259,10 @@ a.navbar-brand { display: none}
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #18CC9C;
+  padding: 5px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border: none;
   background-color: white;
 }
 

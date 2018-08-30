@@ -140,7 +140,7 @@ paginate = 10
 [params.topbar]
     enable = true
     text = """<p class="hidden-sm hidden-xs">Call us on <i class="fa fa-phone"></i> <a href="tel:07845 663 874">+44 (0)7845 663 874</a> or <i class="fa fa-envelope"></i> at <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
-      <p class="hidden-md hidden-lg"><a href="tel:07845 663 874" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <p class="hidden-md hidden-lg"><img src="/img/logo-bw.jpg" class="logo-inverted" alt="Elastic Mint"> <a href="tel:07845 663 874" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
