@@ -275,10 +275,17 @@ function utils () {
   })
 
   function scrollTo (fullUrl) {
+
+    if ($(window).width() < 700){
+      location.href = fullUrl;
+      return;
+    }
+
     var parts = fullUrl.split('#')
     var trgt = parts[1]
-    var targetOffset = $('#' + trgt).offset()
-    var targetTop = targetOffset ? targetOffset.top - 150 : 0;
+    var targetOffset = $('#' + trgt).offset();
+    var affixHeight = $('#navigation').outerHeight();
+    var targetTop = targetOffset ? targetOffset.top - (affixHeight) : 0;
 
     if (targetTop < 0) {
       targetTop = 0

@@ -25,7 +25,7 @@ paginate = 10
     
 [[menu.main]]
     name = "How We Work"
-    url  = "/index.html#howwework"
+    url  = "/index.html"
     weight = 2
 
 [[menu.main]]
