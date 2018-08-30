@@ -130,18 +130,10 @@ a.navbar-brand.home img  {
   width: 100px;
 }
 
-
-.navbar-default {
-  opacity: 0.7;
-}
-
 @media (min-width: 768px) {
   a.navbar-brand.home img  {
     width: 200px;
-  }  
-  .navbar-default {
-    opacity: 1;
-  }
+  }   
 }
 
 .affix-top a.navbar-brand.home img {
@@ -215,25 +207,63 @@ a.navbar-brand.home img  {
  .automate {background-color: aquamarine}
  .engage {background-color: #84d7cf}
  
- @media (min-width: 768px) {
-  #heading-breadcrumbs,
-  .home-slogan {
-    padding: 80px;
-  }
-}
-
-
 .slogan-banner h2 { color: white; font-size: 24px; text-transform: uppercase;}
-
-@media (min-width: 768px) {
-  .slogan-banner h2 { font-size: 40px;}
-}
 
 .peopleprocesstech img { height: 200px;}
 
+a.navbar-brand { display: none}
+
+.navbar-default {
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 @media (min-width: 768px) {
-  .peopleprocesstech img {
-    height: 300px;
+
+  .slogan-banner h2 { font-size: 40px;}
+  #heading-breadcrumbs, .home-slogan { padding: 80px; }
+  .peopleprocesstech img { height: 300px;}
+
+  a.navbar-brand { display: block;}
+
+  .navbar-default {
+    border: none;
+    background-color: white;
   }
 }
+
+.navbar-toggle {
+  background-color: white;
+  margin: 20px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #18CC9C;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+  background-color: white;
+}
+
+
+.navbar-brand {
+  padding: 0 15px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
 
