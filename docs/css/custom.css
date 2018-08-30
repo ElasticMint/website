@@ -253,12 +253,12 @@ a.navbar-brand { display: none;}
 }
 
 .navbar-toggle {
-  background-color: white;
+  background-color: transparent;
   margin: 20px;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #18CC9C;
+  background-color: transparent;
   padding: 5px;
 }
 
@@ -266,6 +266,16 @@ a.navbar-brand { display: none;}
   background-color: white;
 }
 
+.btn-template-main {
+  color: #18cc9c;
+}
+.btn-template-main:hover, .btn-template-main:focus, .btn-template-main:active, .btn-template-main.active {
+  color: #18cc9c;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #18cc9c;
+}
 
 .navbar-brand {
   padding: 0 15px;
