@@ -7,6 +7,8 @@ banner = "img/banners/banner-legacy.jpg"
 author = "Andy Garner"
 +++
 
+![We need to talk about legacy software](/img/banners/banner-legacy.jpg)
+
 Sometimes we forget how much old software is out there. We talk about the software industry still being young and perhaps quite immature, but actually, word processing software started reaching offices in the early 1970s - over 40 years ago. The first version of PowerPoint was released in 1987, public use of the internet began in 1989 and then exploded during the 1990s.
 
 Looking back it is striking how much has changed in a short period of time. 15 years ago most people didn't write automated tests or use tools like Team City and Octopus to manage continuous building and deployment. There are many horror stories about problems caused by practices we wouldn't even consider now.
