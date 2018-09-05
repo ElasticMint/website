@@ -17,7 +17,7 @@
   <meta name="description" content="Helping businesses deliver their digital strategy with bespoke software">	
   
 
-  <meta name="generator" content="Hugo 0.37.1" />
+  <meta name="generator" content="Hugo 0.37" />
 
   <link href="https://fonts.googleapis.com/css?family=Signika|Signika+Negative" rel="stylesheet">
   
@@ -235,9 +235,9 @@
 <p><a href="http://specflow.org/">SpecFlow</a> uses the Gherkin language to write tests in human readable language. It allows problems to be expressed using the language of the domain stakeholders. This language is then bound to code.</p>
 
 <pre><code>Scenario Outline: Add two numbers
-	Given values &lt;value1&gt; and &lt;value2&gt;
-	When I add the values
-	Then the result should be &lt;result&gt;
+    Given values &lt;value1&gt; and &lt;value2&gt;
+    When I add the values
+    Then the result should be &lt;result&gt;
 
 Examples: 
 | value1 | value2 | result |
@@ -292,9 +292,9 @@ internal void WhenIAddTheValues()
 }
 
 Scenario: Should be able to add two numbers
-	Given I have two values 1.2, 2.3
-	When I add them
-	Then I get the expected result 3.5
+    Given I have two values 1.2, 2.3
+    When I add them
+    Then I get the expected result 3.5
 </code></pre>
 
 <p>The idea here seems to be a recognition that often stakeholders don&rsquo;t actually create the scenarios, but developers do and so perhaps it is easier for them to do so in code and then output a report in human readable form.</p>
@@ -753,5 +753,5 @@ ga('send', 'pageview');
 
 
 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=56358&mindelay=10"></' + 'script>')</script></body>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
 </html>
