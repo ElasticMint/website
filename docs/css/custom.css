@@ -210,9 +210,6 @@ a.navbar-brand.home img  {
  
 .slogan-banner h2 { color: white; font-size: 24px; text-transform: uppercase;}
 
-.peopleprocesstech img { height: 200px;}
-
-
 #navbar {  position: fixed;  top : 50px;  right: 0;  z-index: 1000;}
 
 
@@ -232,11 +229,26 @@ a.navbar-brand.home img  {
 a.navbar-brand { display: none;}
 .logo-inverted {height: 40px; display: inline-block; margin-top: -10px;}
 
+
+
+.background-preqin {
+  background: url('../img/assetmngt.jpg') bottom right no-repeat;
+}
+
+.preqin img {width: 200px;}
+
+.peopleprocesstech {margin: 0 10px; padding-bottom: 10px; }
+.panel-box { margin-bottom: 10px;margin-left: 10px; margin-top: 10px;}
+.panel-heading { font-weight: 600;}
+
+.pad-people { padding-top: 50px;}
+.pad-process { padding-top: 70px;}
+.pad-communication {padding: 0px;}
+
 @media (min-width: 768px) {
 
   .slogan-banner h2 { font-size: 40px;}
   #heading-breadcrumbs, .home-slogan { padding: 80px; }
-  .peopleprocesstech img { height: 300px;}
 
   .navbar-default {
     border: none;
@@ -250,6 +262,9 @@ a.navbar-brand { display: none;}
   #navbar {  position: relative;  top : 0px;  right: 0;  z-index: 0;}
 
   .logo-inverted {display: inline-block; height: 30px; display: none;}
+  .preqin img {width: 300px;}
+  .peopleprocesstech {margin: 0 50px; padding-bottom: 20px; }
+  .pad-communication {padding-top: 20px; background-color: #f3f3f3;}
 }
 
 .navbar-toggle {
@@ -304,3 +319,5 @@ h6,
 .h6 {
   font-weight: 300;
 }
+
+
