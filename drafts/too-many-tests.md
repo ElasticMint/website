@@ -23,12 +23,13 @@ public void CallingFunctionAbcDoesStuff()
 }
 ```
 
-What does this test? It tests that a function is called on a dependent object when the function `Abc()` is called.
+What does this test? It tests that a function is called on a dependent object when the function `Abc()` is called. 
+
 Why is that important? I don't know.
 
 As a client of `ClassToBeTested` why is it important to me whether it delegates functionality to another object or performs it internally? It isn't. All I care about is that calling a method has the desired effect, whether it be storing some data somewhere, sending a message, or performing a calculation. How it does this is unimportant.
 
-Part of the problem here is that Dependency Injection and the use of IoC containers became popular at the same time as writing tests. Previously it was very common to see a dependent object be created inside a method. Interfaces were something of a rarity. Suddenly, with the advent of IoC, every class had an interface associated with it. The whole idea that an interface could have multiple implementations was forgotten. Instead each interface would have a single implementation, and each class would have a constructor with 5 or 10 interfaces as parameters. Obviously this was hard to manage and so we needed to have IoC containers to make it simple. The end result was that we could now easily write tests and because we were trying to test each class individually we mocked all the dependencies and ended up testing that methods on dependencies were called at the right time.
+Part of the problem here is that Dependency Injection and the use of IoC containers became popular at the same time as writing tests. Previously it was very common to see a dependent object be created inside a method. Interfaces were something of a rarity. Suddenly, with the advent of IoC, every class had an interface associated with it. The whole idea that an interface could have multiple implementations was forgotten. Instead each interface would have a single implementation, and each class would have a constructor with 5 or 10 interfaces as parameters. Obviously this was hard to manage and so we needed to have IoC containers to make it simple. The end result was that we could now easily write tests, and because we were trying to test each class individually, we mocked all the dependencies and ended up testing that methods on dependencies were called at the right time.
 
 This just leads to brittle tests that change whenever anyone does any refactoring!
 
@@ -66,11 +67,11 @@ In order to meet this requirement you will need a module for managing baskets. T
 
 If we write a test at the module level then this is easy to do before writing any code. If you really want to, you can use a tool like SpecFlow which converts human readable Gherkin into test methods. Personally though, I don't think anyone ever reads those tests, so I'm quite happy to use my unit testing tool which I use for testing classes.
 
-In writing code to make that test pass, I can make it as smelly and dirty as I want. It doesn't matter. I just need the test to pass. It might be there are already classes I can reuse to help me, or I could just write it all inside the public facing method which gets called.
+In writing code to make that test pass, I can make it as smelly and dirty as I want. It doesn't matter. I just need the test to pass. There might already be classes I can reuse to help me, or I can just write it all inside the public facing method which gets called.
 
-Once the test passes, it's refactoring time. There's no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be `internal`. 
+Once the test passes, it's refactoring time. There's no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be `internal`. Another thing we tend not to do!
 
-At this point it's ok to create dependencies inline. They don't need to be injected into the constructor. Nothing is gained by doing this. I realise this goes against all our current practices, but the simple truth is that it's very rare for there to be multiple implementations of an interface. We've been creating all these interfaces in the name of reusability, when actually very little reuse goes on.
+At this point it's ok to create dependencies inline. They don't need to be injected into the constructor. Nothing is gained by doing this. I realise this goes against all our current practices, but the simple truth is that it's very rare for there to be multiple implementations of an interface. We've been creating all these interfaces in the name of flexibility, when actually we just don't need it.
 
 As a result of this I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.
 
