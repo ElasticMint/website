@@ -35,9 +35,9 @@ This just leads to brittle tests that change whenever anyone does any refactorin
 
 For years, companies and developers have talked about how great TDD is and sometimes about their struggles with it. The simple truth is though, that many developers have no idea what it really is! 
 
-I first became interested in tests after working on a project which wasn't as successful as we all hoped. Despite it being greenfield development, parts of the code quickly became very complicated as they were poorly structured. We spent days (literally) testing and retesting as bugs were fixed and then new ones inadvertenly introduced.
+I first became interested in tests after working on a project which wasn't as successful as we all hoped. Despite it being greenfield development, parts of the code quickly became very complicated as they were poorly structured. We spent days (literally) testing and retesting as bugs were fixed and then new ones inadvertently introduced.
 
-I remember the excitement of realising I could test classes by injecting the dependencies as interfaces. Suddenly it became easy to have loosely-coupled testable code. As more and more people started doing this code quality improved, functionality became more reliable, and I no longer had to spend large amounts of time doing manual testing.
+I remember the excitement of realising I could test classes by injecting the dependencies as interfaces. Suddenly it became easy to have loosely-coupled testable code. As more and more people started doing this, code quality improved, functionality became more reliable, and I no longer had to spend large amounts of time doing manual testing.
 
 However, in spite of the articles I read about about TDD, I found I could never really do it. Occassionally I would start with the tests when I needed to write an algorithm, but generally I found it easier to write the tests afterwards to confirm my code did what I expected it to do.
 
@@ -71,7 +71,7 @@ In writing code to make that test pass, I can make it as smelly and dirty as I w
 
 Once the test passes, it's refactoring time. There's no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be `internal`. Another thing we tend not to do!
 
-At this point it's ok to create dependencies inline. They don't need to be injected into the constructor. Nothing is gained by doing this. I realise this goes against all our current practices, but the simple truth is that it's very rare for there to be multiple implementations of an interface. We've been creating all these interfaces in the name of flexibility, when actually we just don't need it.
+At this point it's ok to create dependencies inline. You might do this with a factory. They don't need to be injected into the constructor. Nothing is gained by doing this. I realise this goes against all our current practices, but the simple truth is that it's very rare for there to be multiple implementations of an interface. We've been creating all these interfaces in the name of flexibility, when actually we just don't need it.
 
 As a result of this I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.
 
