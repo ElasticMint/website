@@ -1,9 +1,81 @@
-/* your styles go here */
+/* Custom Styling */
 
+/* Standard */
 a {
   color: #18cc9c;
   text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 300;
+}
+
+/* Layout */
+.no-mt {margin-top: 0}
+
+/* Navigation */
+.navbar ul.nav > li > a {
+  margin: 0px;
+}
+
+.navbar ul.nav > li > a:hover {
+  background-color: white;
+  border-top: solid 1px #ffffff;
+  text-decoration: underline;
+  color: #18CC9C;
+}
+
+@media (min-width: 1200px) {
+  .navbar-nav > li > a {
+    padding: 60px 10px;
+  }
+}
+
+a.navbar-brand.home img  {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  a.navbar-brand.home img  {
+    width: 200px;
+  }  
+
+  .navbar-default .navbar-nav > li > a:active,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #18CC9C;
+    background-color: #fff;
+  }
+
+}
+
+.btn-template-main-blue {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #18CC9C;
+}
+.btn-template-main-blue:hover,
+.btn-template-main-blue:focus,
+.btn-template-main-blue:active,
+.btn-template-main-blue.active,
+.open > .dropdown-toggle.btn-template-main-blue {
+  color: #18CC9C;
+  border-color: aquamarine;
+  background-color: #ffffff;
+}
+
+
+
 
 #heading-breadcrumbs .title h1 {
   color: #fff;
@@ -69,39 +141,6 @@ a {
   padding-left: 0;
 }
 
-.navbar ul.nav > li > a {
-  margin: 0px;
-}
-
-.navbar-default .navbar-nav > li > a:active,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #18CC9C;
-  background-color: white;
-}
-
-.navbar ul.nav > li > a:hover {
-  background-color: white;
-  border-top: solid 1px #ffffff;
-  text-decoration: underline;
-  color: #18CC9C;
-}
-
-
-.btn-template-main-blue {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: #18CC9C;
-}
-.btn-template-main-blue:hover,
-.btn-template-main-blue:focus,
-.btn-template-main-blue:active,
-.btn-template-main-blue.active,
-.open > .dropdown-toggle.btn-template-main-blue {
-  color: #18CC9C;
-  border-color: aquamarine;
-  background-color: #ffffff;
-}
-
 .recaptcha-panel {
   margin: 20px 0;
 }
@@ -120,21 +159,6 @@ a {
   background: radial-gradient(circle at 6.7% 75%, rgb(132,215,207), rgba(24,204,156) 70.71%) #18CC9C;
 }
 
-@media (min-width: 1200px) {
-  .navbar-nav > li > a {
-    padding: 60px 10px;
-  }
-}
-
-a.navbar-brand.home img  {
-  width: 100px;
-}
-
-@media (min-width: 768px) {
-  a.navbar-brand.home img  {
-    width: 200px;
-  }   
-}
 
 .affix-top a.navbar-brand.home img {
   margin: 5px 0 0;
@@ -167,7 +191,6 @@ a.navbar-brand.home img  {
 #footer {
   background-color: black;
 }
-
 
 #copyright {
   color: aquamarine;
@@ -229,21 +252,17 @@ a.navbar-brand.home img  {
 a.navbar-brand { display: none;}
 .logo-inverted {height: 40px; display: inline-block; margin-top: -10px;}
 
-
-
-.background-preqin {
-  background: url('../img/assetmngt.jpg') bottom right no-repeat;
-}
+.background-preqin { background: url('../img/assetmngt.jpg') top right repeat;}
 
 .preqin img {width: 200px;}
 
-.peopleprocesstech {margin: 0 10px; padding-bottom: 10px; }
+.peopleprocesstech {margin: 0; padding-bottom: 10px; }
 .panel-box { margin-bottom: 10px;margin-left: 10px; margin-top: 10px;}
 .panel-heading { font-weight: 600;}
 
-.pad-people { padding-top: 50px;}
-.pad-process { padding-top: 70px;}
-.pad-communication {padding: 0px;}
+.pad-people { padding-top: 0;}
+.pad-process { padding-top: 0;}
+.pad-communication {padding: 0;}
 
 @media (min-width: 768px) {
 
@@ -261,10 +280,17 @@ a.navbar-brand { display: none;}
 
   #navbar {  position: relative;  top : 0px;  right: 0;  z-index: 0;}
 
+  .background-preqin {
+    background: url('../img/assetmngt.jpg') top right repeat;
+  }
+
   .logo-inverted {display: inline-block; height: 30px; display: none;}
   .preqin img {width: 300px;}
   .peopleprocesstech {margin: 0 50px; padding-bottom: 20px; }
+  .pad-people { padding-top: 50px;}
+  .pad-process { padding-top: 70px;}
   .pad-communication {padding-top: 20px; background-color: #f3f3f3;}
+
 }
 
 .navbar-toggle {
@@ -298,26 +324,10 @@ a.navbar-brand { display: none;}
 }
 
 .navbar-toggle {
-  /* (80px - button height 34px) / 2 = 23px */
   margin-top: 23px;
   padding: 9px 10px !important;
 }
 
-.no-mt {margin-top: 0}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 300;
-}
 
 
