@@ -2,7 +2,7 @@
 
 ## The Problem With Tests
 
-Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn't bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes they used test scripts, other times developers just played around trying to break functionally. And then they couldn't remember what they had done to break it!
+Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn't bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes we used test scripts, other times we just played around trying to break functionally. And then we couldn't remember what we had done to break it!
 
 Managers would roll their eyes in frustration when developers talked about writing unit tests. How would writing more code make applications more reliable and faster to develop? Until one day a critical mass was reached, and suddenly everyone was doing it. Automated tests proliferated. High code-coverage became a mark of pride. Some companies went a step further and required a certain level of code-coverage or the build would break and (presumably!) bad things would happen.
 
@@ -33,13 +33,13 @@ Part of the problem here is that Dependency Injection and the use of IoC contain
 
 This just leads to brittle tests that change whenever anyone does any refactoring!
 
-For years, companies and developers have talked about how great TDD is and sometimes about their struggles with it. The simple truth is though, that many developers have no idea what it really is! 
+For years, companies and developers have talked about how great TDD is and sometimes about their struggles with it. However, I think the original purpose and method of TDD has become distorted over time. TDD for many developers has morphed into a monster that hinders, rather than helps.
 
 I first became interested in tests after working on a project which wasn't as successful as we all hoped. Despite it being greenfield development, parts of the code quickly became very complicated as they were poorly structured. We spent days (literally) testing and retesting as bugs were fixed and then new ones inadvertently introduced.
 
 I remember the excitement of realising I could test classes by injecting the dependencies as interfaces. Suddenly it became easy to have loosely-coupled testable code. As more and more people started doing this, code quality improved, functionality became more reliable, and I no longer had to spend large amounts of time doing manual testing.
 
-However, in spite of the articles I read about about TDD, I found I could never really do it. Occassionally I would start with the tests when I needed to write an algorithm, but generally I found it easier to write the tests afterwards to confirm my code did what I expected it to do.
+However, in spite of the articles I read about TDD, I found I could never really do it. Occassionally I would start with the tests when I needed to write an algorithm, but generally, I found it easier to write the tests afterwards to confirm my code did what I expected it to do.
 
 Over time I became convinced there was something wrong. Tests and DI had given me some benefits, but it wasn't enough. Too many of the tests I wrote seemed worthless.
 
@@ -51,9 +51,9 @@ What does TDD look like?
 - Write code to make the test pass
 - Refactor
 
-Sounds simple. But when you are writing tests for each class it quickly becomes frustrating. Plus, the tests don't drive the design as you've already designed it in your head.
+Sounds simple. But when you are writing tests for each class, it quickly becomes frustrating. Plus, the tests don't drive the design as you've already designed it in your head.
 
-The problem is that most developers, myself included, tend to think of a class as being a unit. Any tests that you write at that level will only test part of the problem you are trying to solve. And when you come back to them 6 months down the line, the chances are you're not going to understand what they do.
+The problem is that many developers, myself included, tend to think of a class as being a unit. Any tests that you write at that level will only test part of the problem you are trying to solve. And when you come back to them 6 months down the line, the chances are you're not going to understand what they do.
 
 Imagine a requirement to manage a basket on an e-commerce website. It might look like this:
 
@@ -63,16 +63,18 @@ When I add an item to the basket
 Then my basket will contain the added item
 ```
 
-In order to meet this requirement you will need a module for managing baskets. This might be a microservice, or just one endpoint among many on a webservice. Regardless of how it's implemented, the observable outcome will be the same. Adding an item to the basket will cause the basket to contain that item.
+In order to meet this requirement you will need a module for managing baskets. This might be a microservice or just one endpoint among many on a webservice. Regardless of how it's implemented, the observable outcome will be the same. Adding an item to the basket will cause the basket to contain that item.
 
-If we write a test at the module level then this is easy to do before writing any code. If you really want to, you can use a tool like SpecFlow which converts human readable Gherkin into test methods. Personally though, I don't think anyone ever reads those tests, so I'm quite happy to use my unit testing tool which I use for testing classes.
+If we write a test at the module level then this is easy to do before writing any code. If you really want to, you can use a tool like SpecFlow which converts human-readable Gherkin into test methods. Personally though, I don't think anyone ever reads those tests, so I'm quite happy to use the unit testing tool which I use for testing classes.
 
 In writing code to make that test pass, I can make it as smelly and dirty as I want. It doesn't matter. I just need the test to pass. There might already be classes I can reuse to help me, or I can just write it all inside the public facing method which gets called.
 
-Once the test passes, it's refactoring time. There's no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be `internal`. Another thing we tend not to do!
+Once the test passes, it's refactoring time. There's no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be `internal`. (Another thing we tend not to do!)
 
-At this point it's ok to create dependencies inline. You might do this with a factory. They don't need to be injected into the constructor. Nothing is gained by doing this. I realise this goes against all our current practices, but the simple truth is that it's very rare for there to be multiple implementations of an interface. We've been creating all these interfaces in the name of flexibility, when actually we just don't need it.
+It might be appropriate to create instances of these extract classes inline with the `new` keyword, especially if construction is very simple and only uses data that is present at the point it is created. Sometimes, it will make sense to use a factory to create a dependency. I once extracted a calculation which involved a number of branches into a set of classes with one class for each combination of variables, and then used a factory to given the correct instance - see [Strategy pattern](http://www.blackwasp.co.uk/Strategy.aspx).
 
-As a result of this I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.
+In a lot of code that I see, most dependencies are simply injected into the constructor. We've become used to creating interfaces with only a single implementation. While there is still a place for dependency injection, maybe we don't need all these interfaces and not all these dependencies need to be injected.
+
+As a result of this approach I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.
 
 By changing where we write our tests and going back to TDD, we can stop them being such a burden, and get an increased benefit from them. We won't have as many, but code-coverage will remain high (never something to be relied on!), and we can realise the promise of being able to refactor with confidence.
