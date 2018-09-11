@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 29 Aug 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 13:37:01 +0100</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Agile</title>
       <link>https://www.elasticmint.com/tags/agile/</link>
-      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
       <guid>https://www.elasticmint.com/tags/agile/</guid>
       <description></description>
@@ -93,9 +93,18 @@
     </item>
     
     <item>
+      <title>Refactoring</title>
+      <link>https://www.elasticmint.com/tags/refactoring/</link>
+      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/refactoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tdd</title>
       <link>https://www.elasticmint.com/tags/tdd/</link>
-      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
       <guid>https://www.elasticmint.com/tags/tdd/</guid>
       <description></description>
@@ -104,7 +113,7 @@
     <item>
       <title>Testing</title>
       <link>https://www.elasticmint.com/tags/testing/</link>
-      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
       <guid>https://www.elasticmint.com/tags/testing/</guid>
       <description></description>

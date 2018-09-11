@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  <head>
+        <head>
   <meta charset="utf-8">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BDD frameworks compared - SpecFlow and BDDfy</title>
+  <title>Refactoring</title>
   <meta name="author" content="" />
 
   
@@ -57,9 +57,9 @@
   <link rel="alternate" href="https://www.elasticmint.com/index.xml" type="application/rss+xml" title="Elastic Mint">
 
   
-  <meta property="og:title" content="BDD frameworks compared - SpecFlow and BDDfy" />
+  <meta property="og:title" content="Refactoring" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/blog/2018/04/11/bdd-frameworks-compared//" />
+  <meta property="og:url" content="/tags/refactoring//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -70,7 +70,8 @@
     <div id="all">
 
         <header>
-            
+      
+                
 <div id="top">
   <div class="container">
     <div class="row">
@@ -99,7 +100,7 @@
 </div>
 
 
-            <div class="navbar">
+                <div class="navbar">
 
     <div class="navbar navbar-default yamn" role="navigation" id="navbar">
 
@@ -107,9 +108,9 @@
            <div class="navbar-header">
                <a class="navbar-brand home" href="https://www.elasticmint.com/">
 
-                    <img src="https://www.elasticmint.com/img/logo.jpg" alt="BDD frameworks compared - SpecFlow and BDDfy logo">
+                    <img src="https://www.elasticmint.com/img/logo.jpg" alt="Refactoring logo">
                     
-                    <span class="sr-only">BDD frameworks compared - SpecFlow and BDDfy - go to homepage</span>
+                    <span class="sr-only">Refactoring - go to homepage</span>
                 </a>
                 
                 <div class="navbar-buttons">
@@ -202,7 +203,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
-                        <h1>BDD frameworks compared - SpecFlow and BDDfy</h1>    
+                        <h1>Refactoring</h1>    
                 </div>                
             </div>
         </div>
@@ -212,148 +213,60 @@
 
         <div id="content">
             <div class="container">
-
                 <div class="row">
-
                     
 
-                    <div class="col-md-9" id="blog-post">
+                    <div class="col-md-9" id="blog-listing-medium">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Andy Garner</a> | Apr 11 2018</p>
-
-                        <div id="post-content">
-                          
-
-<p>I first learnt about writing unit tests following a project where we missed the deadline and spent far too long fixing and then refixing the code. I became frustrated that we would fix one thing and then something else would go wrong. When I saw how tools like NUnit and Rhino Mocks gave me the confidence to fix bugs and refactor it genuinely changed my working life. On my next project I determined to write tests as I went along and to be honest I&rsquo;ve never looked back.</p>
-
-<p>Writing unit tests went mainstream very quickly, but it was a long time until I started to work at companies where they used tools to write BDD style tests. The advantage of BDD has always been that you can write a scenario in normal language and then implement code to make it pass.</p>
-
-<p><img src="/img/banners/blogs/BddfyAddScenario.png" alt="Given When Then" /></p>
-
-<h3 id="specflow">SpecFlow</h3>
-
-<p><a href="http://specflow.org/">SpecFlow</a> uses the Gherkin language to write tests in human readable language. It allows problems to be expressed using the language of the domain stakeholders. This language is then bound to code.</p>
-
-<pre><code>Scenario Outline: Add two numbers
-    Given values &lt;value1&gt; and &lt;value2&gt;
-    When I add the values
-    Then the result should be &lt;result&gt;
-
-Examples: 
-| value1 | value2 | result |
-| 1      | 1      | 2      |
-| 1.2    | 2.3    | 3.5    |
-
-
-[When(@&quot;I add the values&quot;)]
-internal void WhenIAddTheValues()
-{
-    // Code to perform this step
-}
-</code></pre>
-
-<p>In theory this is a great idea. Stakeholders write their requirements in the form of user stories. Typically the acceptance criteria are written in the Given, When, Then format, which can be copied and pasted into a feature file for the developer or QA engineer to write the test.</p>
-
-<h3 id="bddfy">BDDfy</h3>
-
-<p><a href="https://github.com/TestStack/TestStack.BDDfy">BDDfy</a> has a different approach. Instead of starting off with a scenario written using natural language, the developer writes a test using their framework of choice e.g. NUnit, XUnit. The output is a report in the Given, When, Then format.</p>
-
-<pre><code>internal class Add
-{
-    private readonly Calculator calculator = new Calculator();
-    private readonly Values values = new Values();
-
-    [Test]
-    [TestCase(1, 1, 2)]
-    [TestCase(1.2, 2.3, 3.5)]
-    public void ShouldBeAbleToAddTwoNumbers(decimal value1, decimal value2, decimal result)
-    {
-        this.Given(_ =&gt; _.GivenIHaveTwoValues(value1, value2))
-            .When(_ =&gt; _.WhenIAddThem())
-            .Then(_ =&gt; _.ThenIGetTheExpectedResult(result))
-            .BDDfy();
-    }
-
-    private void GivenIHaveTwoValues(decimal value1, decimal value2)
-    {
-        values.Value1 = value1;
-        values.Value2 = value2;
-    }
-
-    private void WhenIAddThem()
-    {
-        values.Result = calculator.Add(values.Value1, values.Value2);
-    }
-
-    private void ThenIGetTheExpectedResult(decimal result)
-    {
-        values.Result.ShouldBe(result);
-    }
-}
-
-Scenario: Should be able to add two numbers
-    Given I have two values 1.2, 2.3
-    When I add them
-    Then I get the expected result 3.5
-</code></pre>
-
-<p>The idea here seems to be a recognition that often stakeholders don&rsquo;t actually create the scenarios, but developers do and so perhaps it is easier for them to do so in code and then output a report in human readable form.</p>
-
-<h3 id="comparison">Comparison</h3>
-
-<p>In order to explore some of the differences between SpecFlow and BDDfy I created a very simple class called Calculator which can perform basic mathematical operations on two numbers. I then created the same tests using both SpecFlow and BDDfy. You can get the code <a href="https://github.com/ElasticMint/specflow_bddfy_example">here</a>.</p>
-
-<p>I&rsquo;ve used SpecFlow for a number of years now, but this was my first experience with BDDfy.</p>
-
-<p>What I&rsquo;ve seen with SpecFlow is that the tests often become very hard to maintain. The idea of writing a test using natural language is great. However I&rsquo;m not convinced the same care and attention is usually applied to the test code as to the production code. I also think the features of the tool are often underused and perhaps not understood by those writing the code.</p>
-
-<p>SpecFlow has its own dependency injection engine. This means that reusable code can easily be pulled out into service classes. Instances of these classes can be injected into the constructor of any class within the test and don&rsquo;t need to be &ldquo;newed up&rdquo;. SpecFlow will create a single instance which lasts the lifetime of a test meaning any data such as parameters or return values can be persisted across the various test steps.</p>
-
-<p>Looking at the code I wrote, in what after all is a very trivial example, there seems to be a lot of it! There are Feature and Steps files for each mathematical operation. In addition there is a CommonSteps file for steps found in multiple features. Then there is a simple class to hold the data related to tests. In comparison, I created 5 files in total for the BDDfy version.</p>
-
-<p>As this is such a simple example, I haven&rsquo;t created files which contain steps to be run either before or after a test. Typically I would create classes with names like BeforeScenarioSteps and place well named methods in their which perform the required actions. The problem I have with this is that the code starts getting spread out all over the place. You really have to understand how SpecFlow works and be disciplined in how you structure your code in order to avoid spaghetti.</p>
-
-<p>BDDfy provides several ways of configuring the tests. I opted to use the Fluent configuration because I wanted to pass data in to my tests and this seemed the simplest way. As a complete novice to the framework I found I was able to very quickly get a test running and with minimal code. The one misgiving I had was that I repeated code. I would need to spend a bit more time thinking about how to organise things in order to avoid that. The other bugbear for me was that some of the documentation wasn&rsquo;t finished, although there are good examples in Git.</p>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>I really liked how BDDfy kept all the relevant code in one place whereas with SpecFlow I&rsquo;m often struggling to navigate around the codebase. For me SpecFlow works well when the code is well-organised, but I think that&rsquo;s hard to do. I&rsquo;m very keen to try BDDfy on something more substantial to see how I get on.</p>
-
-<h5 id="further-reading">Further reading</h5>
-
-<ul>
-<li><a href="http://specflow.org/">SpecFlow home page</a></li>
-<li><a href="https://github.com/TestStack/TestStack.BDDfy">BDDfy home page</a></li>
-<li><a href="https://github.com/ElasticMint/specflow_bddfy_example">Sample code</a></li>
-</ul>
-
-                        </div>
                         
                         
-                        <div id="comments">
-                            <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "elasticmint" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                        </div>
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://www.elasticmint.com/blog/2018/09/11/too-many-tests/">
+                                          
+                                          <img src="https://www.elasticmint.com/img/banners/blogs/GreyComputerMonitor.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://www.elasticmint.com/blog/2018/09/11/too-many-tests/">The Curse of IoC and Why We Write Too Many Useless Tests</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          By <a href="#">Andy Garner</a>
+                                          
+                                          
+                                          
+                                          in <a href="https://www.elasticmint.com/categories/agile">agile</a>
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://www.elasticmint.com/blog/2018/09/11/too-many-tests/"><i class="fa fa-calendar-o"></i> Sep 11 2018</a>
+                                        </p>
+                                    </div>
+                                    <p class="intro">Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn&rsquo;t bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes we used test scripts, other times we just played around trying to break functionally. And then we couldn&rsquo;t remember what we had done to break it!
+Managers would roll their eyes in frustration when developers talked about writing unit tests.</p>
+                                    <p class="read-more"><a href="https://www.elasticmint.com/blog/2018/09/11/too-many-tests/" class="btn btn-template-main-blue">Continue reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
                         
 
+                        <ul class="pager">
+                            
+                            <li class="previous disabled"><a href="#">&larr; Newer</a></li>
+                            
+
+                            
+                            <li class="next disabled"><a href="#">Older &rarr;</a></li>
+                            
+                        </ul>
                     </div>
                     
 
@@ -484,7 +397,6 @@ Scenario: Should be able to add two numbers
 
                 </div>
                 
-
             </div>
             
         </div>
@@ -606,7 +518,6 @@ Scenario: Should be able to add two numbers
 
 
 </section>
-
         <footer id="footer">
     <div class="container">
 

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/2018/09/11/too-many-tests/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/08/29/we-need-to-talk-about-legacy-software/</loc>
     <lastmod>2018-08-29T09:00:00+00:00</lastmod>
   </url>
@@ -39,13 +44,13 @@
   
   <url>
     <loc>https://www.elasticmint.com/tags/agile/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/agile/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -63,13 +68,13 @@
   
   <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,7 +104,7 @@
   
   <url>
     <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -166,32 +171,44 @@
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/tags/refactoring/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/refactoring/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/tags/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/tdd/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/tdd/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/tags/testing/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/testing/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   

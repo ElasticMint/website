@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BDD frameworks compared - SpecFlow and BDDfy</title>
+  <title>The Curse of IoC and Why We Write Too Many Useless Tests</title>
   <meta name="author" content="" />
 
   
@@ -57,9 +57,9 @@
   <link rel="alternate" href="https://www.elasticmint.com/index.xml" type="application/rss+xml" title="Elastic Mint">
 
   
-  <meta property="og:title" content="BDD frameworks compared - SpecFlow and BDDfy" />
+  <meta property="og:title" content="The Curse of IoC and Why We Write Too Many Useless Tests" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/blog/2018/04/11/bdd-frameworks-compared//" />
+  <meta property="og:url" content="/blog/2018/09/11/too-many-tests//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -107,9 +107,9 @@
            <div class="navbar-header">
                <a class="navbar-brand home" href="https://www.elasticmint.com/">
 
-                    <img src="https://www.elasticmint.com/img/logo.jpg" alt="BDD frameworks compared - SpecFlow and BDDfy logo">
+                    <img src="https://www.elasticmint.com/img/logo.jpg" alt="The Curse of IoC and Why We Write Too Many Useless Tests logo">
                     
-                    <span class="sr-only">BDD frameworks compared - SpecFlow and BDDfy - go to homepage</span>
+                    <span class="sr-only">The Curse of IoC and Why We Write Too Many Useless Tests - go to homepage</span>
                 </a>
                 
                 <div class="navbar-buttons">
@@ -202,7 +202,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
-                        <h1>BDD frameworks compared - SpecFlow and BDDfy</h1>    
+                        <h1>The Curse of IoC and Why We Write Too Many Useless Tests</h1>    
                 </div>                
             </div>
         </div>
@@ -219,113 +219,89 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Andy Garner</a> | Apr 11 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Andy Garner</a> | Sep 11 2018</p>
 
                         <div id="post-content">
                           
 
-<p>I first learnt about writing unit tests following a project where we missed the deadline and spent far too long fixing and then refixing the code. I became frustrated that we would fix one thing and then something else would go wrong. When I saw how tools like NUnit and Rhino Mocks gave me the confidence to fix bugs and refactor it genuinely changed my working life. On my next project I determined to write tests as I went along and to be honest I&rsquo;ve never looked back.</p>
+<p>Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn&rsquo;t bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes we used test scripts, other times we just played around trying to break functionally. And then we couldn&rsquo;t remember what we had done to break it!</p>
 
-<p>Writing unit tests went mainstream very quickly, but it was a long time until I started to work at companies where they used tools to write BDD style tests. The advantage of BDD has always been that you can write a scenario in normal language and then implement code to make it pass.</p>
+<p>Managers would roll their eyes in frustration when developers talked about writing unit tests. How would writing more code make applications more reliable and faster to develop? Until one day a critical mass was reached, and suddenly everyone was doing it. Automated tests proliferated. High code-coverage became a mark of pride. Some companies went a step further and required a certain level of code-coverage or the build would break and (presumably!) bad things would happen.</p>
 
-<p><img src="/img/banners/blogs/BddfyAddScenario.png" alt="Given When Then" /></p>
+<h3 id="the-problem-with-tests">The Problem With Tests</h3>
 
-<h3 id="specflow">SpecFlow</h3>
+<p>So what have all these tests achieved?</p>
 
-<p><a href="http://specflow.org/">SpecFlow</a> uses the Gherkin language to write tests in human readable language. It allows problems to be expressed using the language of the domain stakeholders. This language is then bound to code.</p>
+<p>Have you ever seen a test like this?</p>
 
-<pre><code>Scenario Outline: Add two numbers
-    Given values &lt;value1&gt; and &lt;value2&gt;
-    When I add the values
-    Then the result should be &lt;result&gt;
-
-Examples: 
-| value1 | value2 | result |
-| 1      | 1      | 2      |
-| 1.2    | 2.3    | 3.5    |
-
-
-[When(@&quot;I add the values&quot;)]
-internal void WhenIAddTheValues()
+<pre><code>[Test]
+public void CallingFunctionAbcDoesStuff()
 {
-    // Code to perform this step
+    var mockedDependency = new Mock&lt;IDependency&gt;();
+    var sut = new ClassToBeTested(mockedDependency.Object);
+
+    sut.Abc();
+
+    mockedDependency.Verify(x =&gt; x.Xyz(), Times.Once);
 }
 </code></pre>
 
-<p>In theory this is a great idea. Stakeholders write their requirements in the form of user stories. Typically the acceptance criteria are written in the Given, When, Then format, which can be copied and pasted into a feature file for the developer or QA engineer to write the test.</p>
+<p>What does this test? It tests that a function is called on a dependent object when the function <code>Abc()</code> is called.</p>
 
-<h3 id="bddfy">BDDfy</h3>
+<p>Why is that important? I don&rsquo;t know.</p>
 
-<p><a href="https://github.com/TestStack/TestStack.BDDfy">BDDfy</a> has a different approach. Instead of starting off with a scenario written using natural language, the developer writes a test using their framework of choice e.g. NUnit, XUnit. The output is a report in the Given, When, Then format.</p>
+<p>As a client of <code>ClassToBeTested</code> why is it important to me whether it delegates functionality to another object or performs it internally? All I care about is that calling a method has the desired effect, whether it be storing some data somewhere, sending a message, or performing a calculation. How it does this is unimportant.</p>
 
-<pre><code>internal class Add
-{
-    private readonly Calculator calculator = new Calculator();
-    private readonly Values values = new Values();
+<p>Part of the problem here is that Dependency Injection and the use of IoC containers became popular at the same time as writing tests. Previously it was very common to see a dependent object be created inside a method. Interfaces were something of a rarity. Suddenly, with the advent of IoC, every class had an interface associated with it. The whole idea that an interface could have multiple implementations was forgotten. Instead each interface would have a single implementation, and each class would have a constructor with 5 or 10 interfaces as parameters. Obviously this was hard to manage and so we needed to have IoC containers to make it simple. The end result was that we could now easily write tests, and because we were trying to test each class individually, we mocked all the dependencies and ended up testing that methods on dependencies were called at the right time.</p>
 
-    [Test]
-    [TestCase(1, 1, 2)]
-    [TestCase(1.2, 2.3, 3.5)]
-    public void ShouldBeAbleToAddTwoNumbers(decimal value1, decimal value2, decimal result)
-    {
-        this.Given(_ =&gt; _.GivenIHaveTwoValues(value1, value2))
-            .When(_ =&gt; _.WhenIAddThem())
-            .Then(_ =&gt; _.ThenIGetTheExpectedResult(result))
-            .BDDfy();
-    }
+<p>This just leads to brittle tests that change whenever anyone does any refactoring!</p>
 
-    private void GivenIHaveTwoValues(decimal value1, decimal value2)
-    {
-        values.Value1 = value1;
-        values.Value2 = value2;
-    }
+<p>For years, companies and developers have talked about how great TDD is and sometimes about their struggles with it. However, I think the original purpose and method of TDD has become distorted over time. TDD for many developers has morphed into a monster that hinders, rather than helps.</p>
 
-    private void WhenIAddThem()
-    {
-        values.Result = calculator.Add(values.Value1, values.Value2);
-    }
+<p>I first became interested in tests after working on a project which wasn&rsquo;t as successful as we all hoped. Despite it being greenfield development, parts of the code quickly became very complicated as they were poorly structured. We spent days (literally) testing and retesting as bugs were fixed and then new ones inadvertently introduced.</p>
 
-    private void ThenIGetTheExpectedResult(decimal result)
-    {
-        values.Result.ShouldBe(result);
-    }
-}
+<p>I remember the excitement of realising I could test classes by injecting the dependencies as interfaces. Suddenly it became easy to have loosely-coupled testable code. As more and more people started doing this, code quality improved, functionality became more reliable, and I no longer had to spend large amounts of time doing manual testing.</p>
 
-Scenario: Should be able to add two numbers
-    Given I have two values 1.2, 2.3
-    When I add them
-    Then I get the expected result 3.5
-</code></pre>
+<p>However, in spite of the articles I read about TDD, I found I could never really do it. Occassionally I would start with the tests when I needed to write an algorithm, but generally, I found it easier to write the tests afterwards to confirm my code did what I expected it to do.</p>
 
-<p>The idea here seems to be a recognition that often stakeholders don&rsquo;t actually create the scenarios, but developers do and so perhaps it is easier for them to do so in code and then output a report in human readable form.</p>
+<p>Over time I became convinced there was something wrong. Tests and DI had given me some benefits, but it wasn&rsquo;t enough. Too many of the tests I wrote seemed worthless.</p>
 
-<h3 id="comparison">Comparison</h3>
+<h3 id="tdd-revisited">TDD Revisited</h3>
 
-<p>In order to explore some of the differences between SpecFlow and BDDfy I created a very simple class called Calculator which can perform basic mathematical operations on two numbers. I then created the same tests using both SpecFlow and BDDfy. You can get the code <a href="https://github.com/ElasticMint/specflow_bddfy_example">here</a>.</p>
-
-<p>I&rsquo;ve used SpecFlow for a number of years now, but this was my first experience with BDDfy.</p>
-
-<p>What I&rsquo;ve seen with SpecFlow is that the tests often become very hard to maintain. The idea of writing a test using natural language is great. However I&rsquo;m not convinced the same care and attention is usually applied to the test code as to the production code. I also think the features of the tool are often underused and perhaps not understood by those writing the code.</p>
-
-<p>SpecFlow has its own dependency injection engine. This means that reusable code can easily be pulled out into service classes. Instances of these classes can be injected into the constructor of any class within the test and don&rsquo;t need to be &ldquo;newed up&rdquo;. SpecFlow will create a single instance which lasts the lifetime of a test meaning any data such as parameters or return values can be persisted across the various test steps.</p>
-
-<p>Looking at the code I wrote, in what after all is a very trivial example, there seems to be a lot of it! There are Feature and Steps files for each mathematical operation. In addition there is a CommonSteps file for steps found in multiple features. Then there is a simple class to hold the data related to tests. In comparison, I created 5 files in total for the BDDfy version.</p>
-
-<p>As this is such a simple example, I haven&rsquo;t created files which contain steps to be run either before or after a test. Typically I would create classes with names like BeforeScenarioSteps and place well named methods in their which perform the required actions. The problem I have with this is that the code starts getting spread out all over the place. You really have to understand how SpecFlow works and be disciplined in how you structure your code in order to avoid spaghetti.</p>
-
-<p>BDDfy provides several ways of configuring the tests. I opted to use the Fluent configuration because I wanted to pass data in to my tests and this seemed the simplest way. As a complete novice to the framework I found I was able to very quickly get a test running and with minimal code. The one misgiving I had was that I repeated code. I would need to spend a bit more time thinking about how to organise things in order to avoid that. The other bugbear for me was that some of the documentation wasn&rsquo;t finished, although there are good examples in Git.</p>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>I really liked how BDDfy kept all the relevant code in one place whereas with SpecFlow I&rsquo;m often struggling to navigate around the codebase. For me SpecFlow works well when the code is well-organised, but I think that&rsquo;s hard to do. I&rsquo;m very keen to try BDDfy on something more substantial to see how I get on.</p>
-
-<h5 id="further-reading">Further reading</h5>
+<p>What does TDD look like?</p>
 
 <ul>
-<li><a href="http://specflow.org/">SpecFlow home page</a></li>
-<li><a href="https://github.com/TestStack/TestStack.BDDfy">BDDfy home page</a></li>
-<li><a href="https://github.com/ElasticMint/specflow_bddfy_example">Sample code</a></li>
+<li>Write a failing test</li>
+<li>Write code to make the test pass</li>
+<li>Refactor</li>
 </ul>
+
+<p>Sounds simple. But when you are writing tests for each class, it quickly becomes frustrating. Plus, the tests don&rsquo;t drive the design as you&rsquo;ve already designed it in your head.</p>
+
+<p>The problem is that many developers, myself included, tend to think of a class as being a unit. Any tests that you write at that level will only test part of the problem you are trying to solve. And when you come back to them 6 months down the line, the chances are you&rsquo;re not going to understand what they do.</p>
+
+<p>Imagine a requirement to manage a basket on an e-commerce website. It might look like this:</p>
+
+<pre><code>Given I have an empty basket
+When I add an item to the basket
+Then my basket will contain the added item
+</code></pre>
+
+<p>In order to meet this requirement you will need a module for managing baskets. This might be a microservice or just one endpoint among many on a webservice. Regardless of how it&rsquo;s implemented, the observable outcome will be the same. Adding an item to the basket will cause the basket to contain that item.</p>
+
+<p>If we write a test at the module level then this is easy to do before writing any code. If you really want to, you can use a tool like SpecFlow which converts human-readable Gherkin into test methods. Personally though, I don&rsquo;t think anyone ever reads those tests, so I&rsquo;m quite happy to use the unit testing tool which I use for testing classes.</p>
+
+<p>In writing code to make that test pass, I can make it as smelly and dirty as I want. It doesn&rsquo;t matter. I just need the test to pass. There might already be classes I can reuse to help me, or I can just write it all inside the public facing method which gets called.</p>
+
+<p>Once the test passes, it&rsquo;s refactoring time. There&rsquo;s no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be <code>internal</code>. (Another thing we tend not to do!)</p>
+
+<p>It might be appropriate to create instances of these extracted classes inline with the <code>new</code> keyword, especially if construction is very simple and only uses data that is present at the point it is created. Sometimes, it will make sense to use a factory to create a dependency. I once extracted a calculation which involved a number of branches into a set of classes with one class for each combination of variables, and then used a factory to create an instance of the correct type - see <a href="http://www.blackwasp.co.uk/Strategy.aspx">Strategy pattern</a>.</p>
+
+<p>In a lot of code that I see, most dependencies are simply injected into the constructor. We&rsquo;ve become used to creating interfaces with only a single implementation. While there is still a place for dependency injection, maybe we don&rsquo;t need all these interfaces and not all these dependencies need to be injected.</p>
+
+<p>As a result of this approach I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.</p>
+
+<p>By changing where we write our tests and going back to TDD, we can stop them being such a burden, and get an increased benefit from them. We won&rsquo;t have as many, but code-coverage will remain high (never something to be relied on!), and we can realise the promise of being able to refactor with confidence.</p>
 
                         </div>
                         
