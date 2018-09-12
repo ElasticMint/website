@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/2018/09/24/what-is-bespoke-software/</loc>
+    <lastmod>2018-09-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/09/11/too-many-tests/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
   </url>
@@ -43,20 +48,14 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/agile/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/agile/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/bdd/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/agile/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,8 +66,14 @@
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/tags/bdd/</loc>
+    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+    <lastmod>2018-09-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -79,20 +84,14 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/cyber-dojo/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,19 +102,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
+    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/</loc>
+    <lastmod>2018-09-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/categories/frameworks/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -135,20 +140,14 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.elasticmint.com/categories/pair-programming/</loc>
     <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/planning/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -159,7 +158,7 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/project/</loc>
+    <loc>https://www.elasticmint.com/tags/planning/</loc>
     <lastmod>2018-08-29T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -171,8 +170,8 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/refactoring/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+    <loc>https://www.elasticmint.com/tags/project/</loc>
+    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,13 +182,25 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/</loc>
+    <loc>https://www.elasticmint.com/tags/refactoring/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/tdd/</loc>
+    <loc>https://www.elasticmint.com/categories/software/</loc>
+    <lastmod>2018-09-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/software/</loc>
+    <lastmod>2018-09-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -201,13 +212,19 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/testing/</loc>
+    <loc>https://www.elasticmint.com/tags/tdd/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/testing/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/testing/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
     <priority>0</priority>
   </url>
