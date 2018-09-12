@@ -7,7 +7,9 @@ According to putthison.com the word 'originated shoemaking, but gained in popula
 - Made-to-measure - the materials and the cut are tailored based on a single fitting
 - Bespoke - garments are made through a series of fittings
 
-Translating this into software, we can think of 'made-to-measure' being like the Waterfall development process, where we get the requirements up-front, build the software and then deliver it.  This process does not cater for any changes to the original specification. I see bespoke software development as an iterative process, requiring an intimate understanding of the problem and a strong relationship between the developer and the customer. If we start by delivering a minimal viable product, customers get to use the software as soon as it is ready - to try it out for size so to speak.  Through a series of iterations and feedback, we can amend, add and remove features until we have software that works as we want it. 
+Translating this into software, we can think of 'made-to-measure' as being like a fixed-scope, Waterfall development process, where we get the requirements up-front, build the software and then deliver it.  This process does not cater for any changes to the original specification. 
+
+I see bespoke software development as an iterative process, requiring an intimate understanding of the problem and a strong relationship between the developer and the customer. If we start by delivering a minimal viable product, customers get to use the software as soon as it is ready - to try it out for size so to speak.  Through a series of iterations and feedback, we can amend, add and remove features until we have software that works as we want it. 
 
 As with tailoring, the bespoke software may take a little longer to produce and require a little more active involvement of the customer during production, but the result is something that is precisely the right fit.
 
