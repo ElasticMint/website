@@ -2,7 +2,7 @@
 
 Do you remember the first time you used an ORM (Object Relational Mapper)? For me it was something I wrote to make it easier to map data related to testing electronic devices into a SQL database. Different devices generated different test data, and so I used a convention to map the property names on the classes to the SQL tables and columns. At the time I didn't even know what an ORM was. I was just trying to avoid writing repetitive code.
 
-Some time later I met NHibernate. Once I got past the horrible xml configuration for the mapping I really liked that I could work with objects in code and not really think about the database. Certainly, I didn't miss writing code to use ADO .Net like that below.
+Sometime later I met NHibernate. Once I got past the horrible xml configuration for the mapping I really liked that I could work with objects in code and not really think about the database. Certainly, I didn't miss writing code to use ADO .Net like that below.
 
 ```
 using (var conn = new SqlConnection(connectionString))
