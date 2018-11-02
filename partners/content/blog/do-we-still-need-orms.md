@@ -1,4 +1,11 @@
-# Do We Still Need ORMs?
++++
+title = "Do We Still Need Orms?"
+date = "2018-11-02T09:11:04Z"
+tags = ["ORM", "architecture", "frameworks", "software"]
+categories = ["architecture"]
+banner = "img/banners/blogs/ORM.PNG"
+author = "Andy Garner"
++++
 
 Do you remember the first time you used an ORM (Object Relational Mapper)? For me it was something I wrote to make it easier to map data related to testing electronic devices into a SQL database. Different devices generated different test data, and so I used a convention to map the property names on the classes to the SQL tables and columns. At the time I didn't even know what an ORM was. I was just trying to avoid writing repetitive code.
 

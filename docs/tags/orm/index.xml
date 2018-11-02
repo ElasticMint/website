@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orm on Elastic Mint</title>
+    <link>https://www.elasticmint.com/tags/orm/</link>
+    <description>Recent content in Orm on Elastic Mint</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 02 Nov 2018 09:11:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.elasticmint.com/tags/orm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do We Still Need Orms?</title>
+      <link>https://www.elasticmint.com/blog/2018/11/02/do-we-still-need-orms/</link>
+      <pubDate>Fri, 02 Nov 2018 09:11:04 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2018/11/02/do-we-still-need-orms/</guid>
+      <description>Do you remember the first time you used an ORM (Object Relational Mapper)? For me it was something I wrote to make it easier to map data related to testing electronic devices into a SQL database. Different devices generated different test data, and so I used a convention to map the property names on the classes to the SQL tables and columns. At the time I didn&amp;rsquo;t even know what an ORM was.</description>
+    </item>
+    
+  </channel>
+</rss>
