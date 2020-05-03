@@ -26,7 +26,8 @@ h6,
 
 /* Navigation */
 .navbar ul.nav > li > a {
-  margin: 0px;
+  margin: 0;
+    border: 0;
 }
 
 .navbar ul.nav > li > a:hover {
@@ -38,17 +39,18 @@ h6,
 
 @media (min-width: 1200px) {
   .navbar-nav > li > a {
-    padding: 60px 10px;
+    padding: 25px 10px 20px 10px;
   }
 }
 
 a.navbar-brand.home img  {
-  width: 100px;
+  /*width: 100px;*/
+    height: 60px;
 }
 
 @media (min-width: 768px) {
   a.navbar-brand.home img  {
-    width: 200px;
+    /*width: 200px;*/
   }  
 
   .navbar-default .navbar-nav > li > a:active,
@@ -143,6 +145,10 @@ a.navbar-brand.home img  {
 
 .recaptcha-panel {
   margin: 20px 0;
+}
+
+.home-slogan {
+    clip-path: none;
 }
 
 .home-slogan-section {
@@ -250,6 +256,12 @@ a.navbar-brand.home img  {
 }
 
 a.navbar-brand { display: none;}
+
+header {
+    position: relative;
+    z-index: 10000;
+}
+
 .logo-inverted {height: 40px; display: inline-block; margin-top: -10px;}
 
 .background-preqin { background: url('../img/assetmngt.jpg') top right repeat;}
@@ -328,6 +340,8 @@ a.navbar-brand { display: none;}
   padding: 9px 10px !important;
 }
 
-
+.bio-image {
+    height: 215px!important;
+}
 
 

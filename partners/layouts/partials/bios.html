@@ -2,16 +2,6 @@
 
 <section class="bar background-white no-mb">
         <div class="container">
-
-            <div class="col-md-12">
-                <div class="heading text-center">
-                    <h2>{{ .Site.Params.bios.title }}</h2>
-                </div>
-
-                <p class="lead">
-                  {{ .Site.Params.bios.subtitle | markdownify }}
-                </p>
-            </div>
             {{ if isset .Site.Params "bios" }}
             {{ if .Site.Params.bios.enable }}
             {{ if gt (len .Site.Data.bios) 0 }}
@@ -20,8 +10,8 @@
             <div class="post">
                 <div class="row">
                     <div class="col-md-4 box-simple">
-                        <div class="image">
-                            <img src="{{ $element.photo }}" class="grayscale"></i>
+                        <div class="">
+                            <img src="{{ $element.photo }}" class="bio-image">
                         </div>
                     </div>
                     <div class="col-md-8 box-simple">

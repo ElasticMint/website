@@ -1,18 +1,14 @@
 {{ if isset .Site.Params "tech" }} {{ if .Site.Params.tech.enable }}
 <section class="bar background-white no-mb no-mb " id="tech">
     <div class="container">
-
         <div class="col-md-12">
             <div class="heading text-center">
                 <h2>{{ .Site.Params.tech.title }}</h2>
             </div>
-
             <p class="lead">
                 {{ .Site.Params.tech.subtitle | markdownify }}
             </p>
-
         </div>
-
         <div class="col-md-12">
             <div class="row peopleprocesstech">
                 <div class="col-md-2 text-center">
@@ -21,31 +17,37 @@
                 <div class="col-md-10">
                     <div class="panel-box">
                         <div class="panel-text">
-                        <p>Elastic Mint are a team of .NET experts each with over 15 years experience in developing software.</p>
-                        <p>We have worked on a wide variety of applications ranging from e-commerce sites written in ASP
-                            .Net deployed to both AWS and Azure, to small web applications deployed on a single server. We
-                            view ourselves as full-stack developers, working on all layers from the UI to the database, and
-                            specialising on the backend.
-                        </p>
-                        <p>We value practices such as Continuous Integration and Deployment, and Test Driven Development,
-                            which give rapid feedback on our work and any problems that may arise.
+                            <p>Elastic Mint are a team of experts with many years experience in developing software.</p>
+                            <p>
+                                We have worked on a wide variety of applications ranging from e-commerce sites written in ASP.Net
+                                deployed to both AWS and Azure, to small web applications deployed on a single server.
+                            </p>
+                            <p>
+                                While we are happy to turn our hands to any technology, our main focus is on the Microsoft stack 
+                                e.g. .Net Core, EF Core, SQL Server, Razor pages, Azure. We like these tools because they are 
+                                well-supported with good documentation and there are always new developments. At the moment we 
+                                are closely looking at Blazor and how it enables us to build the whole stack of an application 
+                                with C#. This could be a real benefit to our clients after they take over support of the software
+                                we have built as the same person should be able to understand and work on the full stack.
+                            </p>
+                            <p>
+                                We value practices such as Continuous Integration and Deployment, and Test Driven Development. 
+                                This allows us to quickly deploy new versions of our software to an environment and rapidly 
+                                gain feedback from our clients, thus allowing us to easily adapt to any changes requested.
+                            </p>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="read-more text-center">
+                            <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="read-more text-center">
-                        <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
-                    </p>
-                </div>
-            </div>
         </div>
-
     </div>
-
-    </div>
-    <!-- /.container -->
 </section>
-<!-- /.bar -->
 {{ end }} {{ end }}

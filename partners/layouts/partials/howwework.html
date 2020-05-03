@@ -1,54 +1,52 @@
 {{ if isset .Site.Params "howwework" }} {{ if .Site.Params.howwework.enable }}
 <section class="bar background-white no-mb no-mb" id="howwework">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-12">
-          <div class="heading">
-              <h2>How we work</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h2>How we work</h2>
+                </div>
             </div>
-      </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box-image text-center no-mt">
+                    <img src="{{ .Site.BaseURL}}/img/engage.png">
+                </div>
+                <div class="box-text engage">
+                    <h3>Engage</h3>
+                    <p>We engage with our customers to properly understand the problem they are trying to solve.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-image text-center no-mt">
+                    <img src="{{ .Site.BaseURL}}/img/automate.png">
+                </div>
+                <div class="box-text automate">
+                    <h3>Automate</h3>
+                    <p>We automate the build, test and deployment process so we can concentrate on developing new features.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="box-image text-center no-mt">
+                    <img src="{{ .Site.BaseURL}}/img/deliver.png">
+                </div>
+                <div class="box-text deliver">
+                    <h3>Deliver</h3>
+                    <p>
+                        We work with businesses to identify which features add the most value and regularly deliver fully working, usable
+                        software.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="read-more">
+                    <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-4"> 
-          <div class="box-image text-center no-mt">
-              <img src="{{ .Site.BaseURL}}/img/engage.png"></i>
-          </div>
-
-        <div class="box-text engage">
-            <h3>Engage</h3>
-            <p>We engage with our customers to properly understand the problem they are trying to solve.</p>
-     
-        </div>     
-       </div>
-      <div class="col-md-4">
-          <div class="box-image text-center no-mt">
-              <img src="{{ .Site.BaseURL}}/img/automate.png"></i>
-          </div>
-          <div class="box-text automate">
-            <h3>Automate</h3>
-            <p>We automate the build, test and deployment process so we can concentrate on developing new features.</p>
-          </div>
-      </div>
-      <div class="col-md-4 ">
-          <div class="box-image text-center no-mt">
-              <img src="{{ .Site.BaseURL}}/img/deliver.png"></i>
-          </div>
-          <div class="box-text deliver">
-            <h3>Deliver</h3>
-            <p>We work with businesses to identify which features add the most value and regularly deliver fully working, usable
-              software.</p>
-          </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p class="read-more">
-          <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- /.container -->
 </section>
-<!-- /.bar -->
 {{ end }} {{ end }}
