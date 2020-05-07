@@ -1,4 +1,4 @@
-<section class="bar background-mint no-mb no-mb no-pb" id="contact">
+<section class="bar background-mint mb-0 pb-0" id="contact">
     <div class="container">
 
         <div class="row">
@@ -12,8 +12,9 @@
                         <h3>Ready to talk?</h3>
                     </div>
 
-                    <div class="panel-heading ">
-                        As always, the best way to start is with a conversation. Send us your details and let's start talking!
+                    <div class="pl-0 pb-5">
+                        As always, the best way to start is with a conversation. Send us your details and let's start 
+                        talking!
                     </div>
 
                     <div id="contact-message"></div>
@@ -25,37 +26,45 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="name">{{ i18n "contactName" }}</label>
-                                    <input type="text" class="form-control" name="name" placeholder="full name..." id="name" required>
+                                    <input type="text" class="form-control" name="name" 
+                                           placeholder="full name..." id="name" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="email">{{ i18n "contactMail" }}</label>
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="valid email address..." required>
+                                    <input type="text" class="form-control" name="email" id="email" 
+                                           placeholder="valid email address..." required>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="message">{{ i18n "contactMessage" }}</label>
-                                    <textarea id="message" class="form-control" name="message" placeholder="please detail how we can help you..." required></textarea>
+                                    <textarea id="message" class="form-control" name="message" 
+                                              placeholder="please detail how we can help you..." required></textarea>
                                 </div>
                             </div>
 
                             <div class="col-sm-12">
                                 <div class="recaptcha-panel">
-                                    <div class="g-recaptcha" data-sitekey="6LcaeVAUAAAAADN7AOg_XBBK6WIaGsxPUCTDnlJ6"></div>
+                                    <div class="g-recaptcha" 
+                                         data-sitekey="6LcaeVAUAAAAADN7AOg_XBBK6WIaGsxPUCTDnlJ6"></div>
                                 </div>
                                 <button type="submit" class="btn btn-template-main-blue"><i class="fa fa-envelope-o"></i>
                                     {{ i18n "contactSend" }}</button>
 
                             </div>
 
-                            <div class="col-sm-12 text-center panel-heading">
+                            <div class="col-sm-12 text-center pl-0">
                                 <div class="form-group">
-                                    <div id="errormessage" class="alert alert-error" style="display: none;">You need to click
-                                        I am not a robot to submit form.</div>
-                                    <div id="successmessage" class="alert alert-success" style="display: none;">Details successfully
-                                        submitted. We'll be in touch</div>
+                                    <div id="errormessage" class="alert alert-error" style="display: none;">
+                                        You need to click
+                                        I am not a robot to submit form.
+                                    </div>
+                                    <div id="successmessage" class="alert alert-success" style="display: none;">
+                                        Details successfully
+                                        submitted. We'll be in touch
+                                    </div>
                                 </div>
                             </div>
 
