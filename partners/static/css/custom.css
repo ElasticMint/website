@@ -224,7 +224,7 @@ a.navbar-brand.home img {
 
 .navbar-default {
     border: none;
-    background-color: transparent;
+    background-color: white;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
