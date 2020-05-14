@@ -1,115 +1,111 @@
 {{ if isset .Site.Params "values" }} {{ if .Site.Params.values.enable }}
-<section class="bar background-gray no-mb no-mb" id="ourvalues">
+<section class="bar background-gray mb-0" id="ourvalues">
     <div class="container">
-
         <div class="col-md-12">
             <div class="heading text-center">
                 <h2>{{ .Site.Params.values.title }}</h2>
             </div>
-
             <p class="lead">
                 {{ .Site.Params.values.subtitle | markdownify }}
             </p>
-
         </div>
-
         <div class="col-md-12">
             <div class="">
-                <!-- <ul class="heading nav nav-stacked"> -->
-
                 <div class="text-left">
-                    <p>You might recognise our values. When we came together as a partnership one of the first things we
+                    <p>
+                        You might recognise our values. When we came together as a partnership one of the first things we
                         did was to list all the things we would always do and all the things we would never do. For example,
                         some of things that appeared in the 'always do' list were to be open and transparent about what we
                         do, communicate both good and bad news, work collaboratively and deliver software we are proud of.
                         Some of the things in the 'never do' list included ignoring customer feedback and delivering low
                         quality work. When we looked at what we had come up with we realised that all of these things are
-                        summed up nicely by the Extreme Programming values.</p>
+                        summed up nicely by the Extreme Programming values.
+                    </p>
                 </div>
-
-                <div class="row peopleprocesstech">
-                    <div class="col-md-2 text-center pad-people">
+                <div class="row m-0 pb-10">
+                    <div class="col-md-2 text-center pt-0">
                         <img src="{{ .Site.BaseURL}}/img/people.png" title="Elastic Mint engage with respect and courage">
                     </div>
                     <div class="col-md-10">
                         <div class="panel-box">
-                            <div class="panel-heading">Respect</div>
+                            <div class="panel-heading pl-0">Respect</div>
                             <div class="panel-text">
-                                <p>Respect is about giving and feeling respect as a valued team member.
-                                We respect the expertise of the people we work with. We work with people who respect
-                                our expertise and who respect our right to accept responsibility and receive authority
-                                over our own work.</p>
+                                <p>
+                                    Respect is about giving and feeling respect as a valued team member.
+                                    We respect the expertise of the people we work with. We work with people who respect
+                                    our expertise and who respect our right to accept responsibility and receive authority
+                                    over our own work.
+                                </p>
                             </div>
-                        </div>      
+                        </div>
                         <div class="panel-box">
-                            <div class="panel-heading">Courage</div>
+                            <div class="panel-heading pl-0">Courage</div>
                             <div class="panel-text">
-                                <p>Courage is about doing the right thing. We will tell the truth
+                                <p>
+                                    Courage is about doing the right thing. We will tell the truth
                                     about progress and estimates. We will adapt to changes whenever they happen. We don't
                                     fear anything because no one ever works alone.
                                 </p>
                             </div>
-                        </div>                              
+                        </div>
                     </div>
                 </div>
-                <div class="row peopleprocesstech pad-communication">
+                <div class="row m-0 pb-10">
                     <div class="col-md-2 text-center">
-                            <img src="{{ .Site.BaseURL}}/img/engage_green.png" title="Elastic Mint believe communication is a big part of bringing our values to life">
-                    </div>                   
+                        <img src="{{ .Site.BaseURL}}/img/engage_green.png" 
+                             title="Elastic Mint believe communication is a big part of bringing our values to life">
+                    </div>
                     <div class="col-md-10">
                         <div class="panel-box">
-                            <div class="panel-heading">Communication</div>
+                            <div class="panel-heading pl-0">Communication</div>
                             <div class="panel-text">
-                                <p>Communication is a big part of bringing our values to life. We believe smaller teams communicate and work more effectively than larger teams. 
-                                    Everyone is part of the team and we communicate daily. We work together on everything from requirements to code. We create the best solution to your problem we can, together.
+                                <p>
+                                    Communication is a big part of bringing our values to life. We believe smaller teams 
+                                    communicate and work more effectively than larger teams.
+                                    Everyone is part of the team and we communicate daily. We work together on everything 
+                                    from requirements to code. We create the best solution to your problem we can, together.
                                 </p>
                             </div>
-                        </div>           
-                    </div>
-                   
-                </div>
-                <div class="row peopleprocesstech">
-                        <div class="col-md-2 text-center pad-process">
-                            <img src="{{ .Site.BaseURL}}/img/process.png" title="Elastic Mint deliver working software with simplicity and feedback in mind">
                         </div>
+                    </div>
+                </div>
+                <div class="row m-0 pb-10">
+                    <div class="col-md-2 text-center pt-0">
+                        <img src="{{ .Site.BaseURL}}/img/process.png" 
+                             title="Elastic Mint deliver working software with simplicity and feedback in mind">
+                    </div>
                     <div class="col-md-10">
                         <div class="panel-box">
-                            <div class="panel-heading">Simplicity</div>
+                            <div class="panel-heading pl-0">Simplicity</div>
                             <div class="panel-text">
                                 <p>
                                     Simplicity is about doing just enough and no more than is needed.
                                     Working in small, simple steps means we can get feedback sooner. This, in turn, allows
                                     people we work with to make more informed decisions about what to develop next and
-                                    allows the early mitigation of failures. Another benefit of simplicty is that the
+                                    allows the early mitigation of failures. Another benefit of simplicity is that the
                                     cost of change is lowered, making our software easier to maintain and extend.
                                 </p>
                             </div>
-                        </div>    
+                        </div>
                         <div class="panel-box">
-                            <div class="panel-heading">Feedback</div>
+                            <div class="panel-heading pl-0">Feedback</div>
                             <div class="panel-text">
-                                <p>Feedback is about delivering working software in each iteration
+                                <p>
+                                    Feedback is about delivering working software in each iteration
                                     so that we can demonstrate our software early and often. In doing so we are able
                                     to gain feedback from the people we are working with and can plan what to do next
                                     based on that feedback. We will talk about the project and remain flexible enough
                                     to adapt our process to it, not the other way around.
                                 </p>
                             </div>
-                        </div>    
+                        </div>
                     </div>
-                    
                 </div>
-
                 <p class="read-more text-center">
                     <a href="{{ .Site.BaseURL }}/#contact" class="btn btn-template-main-blue scroll-to">Start a conversation</a>
                 </p>
             </div>
         </div>
-
     </div>
-
-    </div>
-    <!-- /.container -->
 </section>
-<!-- /.bar -->
 {{ end }} {{ end }}

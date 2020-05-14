@@ -17,36 +17,46 @@ paginate = 10
 
 # Main menu
 
+[[menu.main]]
+     name = "Home"
+     url  = "/index.html"
+     identifier = "home"
+     weight = 1
 
-# [[menu.main]]
-#     name = "Our Offer"
-#     url  = "/index.html#ouroffer"
-#     weight = 1
+[[menu.main]]
+     name = "Why Choose Elastic Mint?"
+     url  = "/index.html#whychooseelasticmint"
+     weight = 1
+     parent="home"
     
 [[menu.main]]
     name = "How We Work"
-    url  = "/index.html"
+    url  = "/index.html#howwework"
     weight = 2
+     parent="home"
 
 [[menu.main]]
     name = "Our Values"
     url  = "/index.html#ourvalues"
     weight = 3
+     parent="home"
 
 [[menu.main]]
-    name = "Our Story"
-    url  = "/ourstory"
+    name = "Our Team"
+    url  = "/team"
     weight = 4
 
 [[menu.main]]
     name = "Technologies"
     url  = "/index.html#tech"
     weight = 5
+     parent="home"
 
 [[menu.main]]
     name = "Case study"
     url  = "/index.html#casestudy"
     weight = 6
+     parent="home"
 
 [[menu.main]]
     name = "Contact"
@@ -64,12 +74,6 @@ paginate = 10
     name = "LinkedIn"
     url="https://www.linkedin.com/company/elastic-mint-ltd/"
     pre = "<i class='fa fa-2x fa-linkedin'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "GitHub"
-    url = "https://github.com/elasticmint"
-    pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
     weight = 4
@@ -109,9 +113,9 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "jon@thinkexpedite.com"
+    email = "it@elasticmint.com"
 
-    about_us = "Our Story"
+    about_us = "Our Team"
     copyright = "Copyright (c) 2018, Elastic Mint Ltd. All rights reserved."
 
     # Format dates with Go's time formatting
@@ -124,7 +128,7 @@ paginate = 10
         <br>BS1 5EH
         <br>UK
         </p>
-        <br>Tel: <a href="tel:07845 663 874">+44 (0)7845 663 874</a>
+        <br>Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a>
         <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
       </p>
       """
@@ -139,8 +143,11 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Call us on <i class="fa fa-phone"></i> <a href="tel:07845 663 874">+44 (0)7845 663 874</a> or <i class="fa fa-envelope"></i> at <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
-      <p class="hidden-md hidden-lg"><img src="/img/logo-bw.jpg" class="logo-inverted" alt="Elastic Mint"> <a href="tel:07845 663 874" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+    text = """<p class="hidden-sm hidden-xs">Call us on <i class="fa fa-phone"></i> 
+        <a href="tel:07498 219 994">+44 (0)7498 219 994</a> or <i class="fa fa-envelope"></i> at 
+        <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
+        <p class="hidden-md hidden-lg"><img src="/img/logo-bw.jpg" class="logo-inverted" alt="Elastic Mint"> 
+        <a href="tel:07498 219 994" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
       """
@@ -157,19 +164,18 @@ paginate = 10
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
 
-[params.ourstory]
+[params.team]
     enable = true
-    title = "Our Story"
-    link_url = "/ourstory"
-    link_text = "Read about how Elastic Mint came into being"
-    synopsis = "Elastic Mint was born from the desire to deliver excellent software using smaller teams of extremely experienced developers."
+    title = "Our Team"
+    link_url = "/team"
+    link_text = "Meet the Elastic Mint team"
 
-[params.offering]
+[params.whychooseelasticmint]
     enable = true
-    title = "Our Offer"
+    title = "Why choose Elastic Mint?"
     subtitle = ""
-    link_url = "/ouroffer"
-    link_text = "Read about the services we offer"
+    link_url = "/whychooseelasticmint"
+    link_text = "Read about why to choose Elastic Mint"
 
 [params.howwework]
     enable = true
@@ -200,7 +206,7 @@ paginate = 10
 
 [params.bios]
     enable = true
-    title = "Meet the team"
+    title = "Our Team"
     subtitle = ""
 
 
