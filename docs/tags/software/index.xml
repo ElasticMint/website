@@ -6,10 +6,19 @@
     <description>Recent content in Software on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 02 Nov 2018 09:11:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 16:54:55 +0100</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Future of Software Development</title>
+      <link>https://www.elasticmint.com/blog/2020/05/15/future-of-software-greater-digitisation/</link>
+      <pubDate>Fri, 15 May 2020 16:54:55 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2020/05/15/future-of-software-greater-digitisation/</guid>
+      <description>The Future of software development is driven by greater digitisation One thing we can be sure about when talking about the future of software development is that there will be a future. That said it will look very different from how it is today. According to IDC it took around 40 years to create the first 500 million apps but only 4 years to develop the next 500 million. Whilst predictions vary few question the inexorable rise of the internet.</description>
+    </item>
     
     <item>
       <title>Do We Still Need Orms?</title>
