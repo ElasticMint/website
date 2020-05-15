@@ -105,7 +105,11 @@ h6,
 }
 
 .box-image-text.blog .content h4 {
-    height: 75px;
+    height: 125px;
+}
+
+.box-image-text.blog .author-category {
+    height: 50px;
 }
 
 .box-image-text.blog .intro {
