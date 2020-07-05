@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/2020/07/05/increasing-certainty-in-times-of-uncertainty/</loc>
+    <lastmod>2020-07-05T08:12:18+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2020/05/15/future-of-software-greater-digitisation/</loc>
     <lastmod>2020-05-15T16:54:55+01:00</lastmod>
   </url>
@@ -95,7 +100,7 @@
   
   <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2020-05-15T16:54:55+01:00</lastmod>
+    <lastmod>2020-07-05T08:12:18+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -131,7 +136,7 @@
   
   <url>
     <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2020-05-15T16:54:55+01:00</lastmod>
+    <lastmod>2020-07-05T08:12:18+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,13 +222,13 @@
   
   <url>
     <loc>https://www.elasticmint.com/tags/software/</loc>
-    <lastmod>2020-05-15T16:54:55+01:00</lastmod>
+    <lastmod>2020-07-05T08:12:18+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.elasticmint.com/categories/software/</loc>
-    <lastmod>2020-05-15T16:54:55+01:00</lastmod>
+    <lastmod>2020-07-05T08:12:18+01:00</lastmod>
     <priority>0</priority>
   </url>
   
