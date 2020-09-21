@@ -6,10 +6,21 @@
     <description>Recent content in Architecture on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 02 Nov 2018 09:11:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 16:33:52 +0100</lastBuildDate>
     
 	<atom:link href="https://www.elasticmint.com/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why We Sweat the Small Stuff</title>
+      <link>https://www.elasticmint.com/blog/2020/09/21/why-we-sweat-the-small-stuff/</link>
+      <pubDate>Mon, 21 Sep 2020 16:33:52 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2020/09/21/why-we-sweat-the-small-stuff/</guid>
+      <description>Have you heard the phrase “Don’t sweat the small stuff”? It comes from a book by Richard Carlson called Don&amp;rsquo;t Sweat the Small Stuff and It&amp;rsquo;s All Small Stuff all about stopping little things in life driving you crazy.
+In many areas of life this makes a lot of sense, however when it comes to writing code we’ve found that the “small stuff” really matters.
+The problem is that after you have solved someone’s problems and written the code that does what they want, at some point there will be a new problem.</description>
+    </item>
     
     <item>
       <title>Do We Still Need Orms?</title>

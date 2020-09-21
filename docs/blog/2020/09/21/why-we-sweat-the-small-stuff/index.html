@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bespoke software</title>
+  <title>Why We Sweat the Small Stuff</title>
   <meta name="author" content="" />
 
   
@@ -57,9 +57,9 @@
   <link rel="alternate" href="https://www.elasticmint.com/index.xml" type="application/rss+xml" title="Elastic Mint">
 
   
-  <meta property="og:title" content="Bespoke software" />
+  <meta property="og:title" content="Why We Sweat the Small Stuff" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/blog/2018/09/24/what-is-bespoke-software//" />
+  <meta property="og:url" content="/blog/2020/09/21/why-we-sweat-the-small-stuff//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -108,9 +108,9 @@
             <a class="navbar-brand home p-15 pt-0 pb-0 m-5"
                href="https://www.elasticmint.com/">
 
-                <img src="https://www.elasticmint.com/img/logo.jpg" alt="Bespoke software logo">
+                <img src="https://www.elasticmint.com/img/logo.jpg" alt="Why We Sweat the Small Stuff logo">
 
-                <span class="sr-only">Bespoke software - go to homepage</span>
+                <span class="sr-only">Why We Sweat the Small Stuff - go to homepage</span>
             </a>
 
             <div class="navbar-buttons">
@@ -206,7 +206,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
-                        <h1>Bespoke software</h1>    
+                        <h1>Why We Sweat the Small Stuff</h1>    
                 </div>                
             </div>
         </div>
@@ -223,28 +223,65 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Gordon Barrs</a> | Sep 24 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Andy Garner</a> | Sep 21 2020</p>
 
                         <div id="post-content">
-                          
+                          <p>Have you heard the phrase “Don’t sweat the small stuff”? It comes from a book by Richard Carlson called <a href="https://www.amazon.co.uk/Dont-Sweat-Small-Stuff-Overtaking/dp/0340708018">Don&rsquo;t Sweat the Small Stuff and It&rsquo;s All Small Stuff</a> all about stopping little things in life driving you crazy.</p>
 
-<h1 id="what-is-bespoke-software">What is bespoke software?</h1>
+<p>In many areas of life this makes a lot of sense, however when it comes to writing code we’ve found that the “small stuff” really matters.</p>
 
-<p>Bespoke is just a fancy word for custom, right? Well, yes. And no.</p>
+<p>The problem is that after you have solved someone’s problems and written the code that does what they want, at some point there will be a new problem. And then someone, quite possibly not you, is going to have to look at what you have done and work out what needs to change on order to solve this new problem.</p>
 
-<p>According to putthison.com the word &lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&rsquo; <sup><a href="https://putthison.com/the-overuse-of-the-word-bespoke-many-words-are/">1</a></sup>  There are several levels of custom-made clothes:</p>
+<p>Writing code is hard. Organising your thoughts so that it makes sense to other people is even harder. The next person to read this code is going to have a hard enough time understanding it, so the least we can do is sweat the small stuff, care about the details, and do whatever we can to make their life job easier.</p>
+
+<p>Of course, lots of companies have coding standards and that’s all well and good, but we believe in taking things beyond that and have a philosophy of making code as maintainable as possible for the next person. Among other things this involves thinking about the following:</p>
 
 <ul>
-<li>Made-to-order - only the materials are customised</li>
-<li>Made-to-measure - the materials and the cut are tailored based on a single fitting</li>
-<li>Bespoke - garments are made through a series of fittings</li>
+<li>Does the name I have given this variable/method/class accurately describe its purpose?</li>
+<li>Is it easy to look at a method and understand what it does?</li>
+<li>Is the important information regarding a method/class easy to find?</li>
+<li>Are there any abbreviations or spelling mistakes which might make it harder for someone to understand?</li>
+<li>Does a class do one thing well or has it become a dumping ground for lots of unrelated functionality?</li>
+<li>Are names consistent throughout the code?</li>
 </ul>
 
-<p>Translating this into software development, we can think of &lsquo;made-to-measure&rsquo; as being like a fixed-scope, Waterfall development process, where we get the requirements up-front, build the software and then deliver it.  This process does not cater for any changes to the original specification.</p>
+<p>Let’s work through an example of how we might apply some of these questions to the issue of positioning parameters for a method.</p>
 
-<p>I see bespoke software development as an iterative process, requiring an intimate understanding of the problem and a strong relationship between the developer and the customer. If we start by delivering a minimal viable product, customers get to use the software as soon as it is ready - to try it out for size so to speak.  Through a series of iterations and feedback, we can amend, add and remove features until we have software that works as we want it.</p>
+<p>How often have you seen a method that looks something like this?</p>
 
-<p>As with tailoring, the bespoke software may take a little longer to produce and require a little more active involvement of the customer during production, but the result is something that is precisely the right fit.</p>
+<pre><code>private static ReturnType DoSomething(Parameter1 parameter1, Parameter2 parameter2, Parameter3 parameter3, Parameter4 parameter4) 
+</code></pre>
+
+<p>For the purposes of this example let’s not worry about what the method does, the parameters or the return value. Let’s just assume there is a good reason for all the parameters. The problem is that this is a really long line. The chances are that in order to read all the parameters you will need to scroll across in your editor. And you can guarantee that the parameter you are interested in will be the last one!</p>
+
+<p>So what can we do? How about splitting some of the parameters onto separate lines?</p>
+
+<pre><code>private static ReturnType DoSomething(Parameter1 parameter1,  
+    Parameter2 parameter2, Parameter3 parameter3, Parameter4 parameter4) 
+</code></pre>
+
+<p>This is much better. At least everything is visible without scrolling, but those three parameters all on the same line are still hard to read. The middle one especially can easily be lost between the other two.</p>
+
+<pre><code>private static ReturnType DoSomething(Parameter1 parameter1,  
+    Parameter2 parameter2,  
+    Parameter3 parameter3,  
+    Parameter4 parameter4) 
+</code></pre>
+
+<p>Now the parameters have been split on to their own lines. However, the first parameter does not line up with the other parameters. This might mean that someone completely misses it and doesn&rsquo;t realise it&rsquo;s there. Potentially this is confusing.</p>
+
+<pre><code>private static ReturnType DoSomething( 
+    Parameter1 parameter1,  
+    Parameter2 parameter2,  
+    Parameter3 parameter3,  
+    Parameter4 parameter4) 
+</code></pre>
+
+<p>Finally, each parameter is aligned and on its own line. When someone reads this method, they can easily see all the parameters. If necessary, they can easily add or remove a parameter. The important information is easy to find and someone should be able to quickly understand the parameters required for this method. Now all someone needs to do is understand the code inside the method!</p>
+
+<p>Now some people might look at that example and argue that it’s a lot of fuss about not very much, and taking that code in isolation they might be right. But in a codebase with many hundreds or even thousands of lines of code, applying this kind of thinking at least shows the next person that care and thought has gone into it. It can make the difference between venting frustration about whatever idiot wrote the code and focussing on what the code actually does.</p>
+
+<p>In short sweating the small stuff makes the next person’s job easier and that person might just be you!</p>
 
                         </div>
                         

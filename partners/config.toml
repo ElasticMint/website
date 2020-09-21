@@ -42,7 +42,7 @@ paginate = 10
      parent="home"
 
 [[menu.main]]
-    name = "Our Team"
+    name = "Our Leadership Team"
     url  = "/team"
     weight = 4
 
@@ -115,7 +115,7 @@ paginate = 10
     # Enable the contact form by entering your Formspree.io email
     email = "it@elasticmint.com"
 
-    about_us = "Our Team"
+    about_us = "Our Leadership Team"
     copyright = "Copyright (c) 2018, Elastic Mint Ltd. All rights reserved."
 
     # Format dates with Go's time formatting
@@ -166,7 +166,7 @@ paginate = 10
 
 [params.team]
     enable = true
-    title = "Our Team"
+    title = "Our Leadership Team"
     link_url = "/team"
     link_text = "Meet the Elastic Mint team"
 
@@ -206,7 +206,7 @@ paginate = 10
 
 [params.bios]
     enable = true
-    title = "Our Team"
+    title = "Our Leadership Team"
     subtitle = ""
 
 
