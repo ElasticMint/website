@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Elastic Mint</title>
+    <link>https://www.elasticmint.com/about/</link>
+    <description>Recent content in Abouts on Elastic Mint</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://www.elasticmint.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://www.elasticmint.com/about/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/contact/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://www.elasticmint.com/about/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/history/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>How We Work</title>
+      <link>https://www.elasticmint.com/about/howwework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/howwework/</guid>
+      <description>How we workEngageWe engage with our customers to properly understand the problem they are trying to solve.You would be forgiven for thinking that there is nothing particularly differentiating aboutthis. Any company worth its salt would seek to understand what the requirement is and in thiswe are no different.Where we differ from others is that we take a very flexible approach that allows for a certainamount of change in need and requirement along the way.</description>
+    </item>
+    
+    <item>
+      <title>Leadership Team</title>
+      <link>https://www.elasticmint.com/about/leadershipteam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/leadershipteam/</guid>
+      <description>Andy Garner - PartnerAndy has been developing software professionally since 2001 starting off with Visual Basic and C++, and then continuing with C# and the various incarnations of ASP.Net. He has delivered software for companies both big and small including Just Eat, ASOS, Capita, Imperial Civil Engineering and the Cotswold Group.Having experienced both success and failure on projects, he believes passionately that getting the basics right is vital to delivering quality working software.</description>
+    </item>
+    
+    <item>
+      <title>Our Values</title>
+      <link>https://www.elasticmint.com/about/ourvalues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/ourvalues/</guid>
+      <description>Our ValuesYou might recognise our values. When we came together as a partnership one of the first things wedid was to list all the things we would always do and all the things we would never do. For example,some of things that appeared in the &#39;always do&#39; list were to be open and transparent about what wedo, communicate both good and bad news, work collaboratively and deliver software we are proud of.</description>
+    </item>
+    
+  </channel>
+</rss>

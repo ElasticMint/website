@@ -1,10 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.elasticmint.com/blog/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/software/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/software/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/</loc>
+    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2020/09/21/consequences-of-achieving-business-objectives-overlooked/</loc>
     <lastmod>2020-09-21T16:48:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/architecture/</loc>
+    <lastmod>2020-09-21T16:33:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/architecture/</loc>
+    <lastmod>2020-09-21T16:33:52+01:00</lastmod>
   </url>
   
   <url>
@@ -33,13 +73,83 @@
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
+    <lastmod>2018-11-02T09:11:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/orm/</loc>
+    <lastmod>2018-11-02T09:11:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/09/24/what-is-bespoke-software/</loc>
     <lastmod>2018-09-24T12:00:00+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/tags/agile/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/agile/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/refactoring/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/refactoring/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/tdd/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/tdd/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/testing/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/testing/</loc>
+    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/09/11/too-many-tests/</loc>
     <lastmod>2018-09-11T13:37:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/planning/</loc>
+    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/planning/</loc>
+    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/project/</loc>
+    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/project/</loc>
+    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,8 +168,58 @@
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/cyber-dojo/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/pair-programming/</loc>
+    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/dotnet/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/blog/2018/04/16/fixing-intermittent-test-failures/</loc>
     <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/frameworks/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/ncrunch/</loc>
+    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/tags/bdd/</loc>
+    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.elasticmint.com/categories/bdd/</loc>
+    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,105 +238,59 @@
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/agile/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/dotnet/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/agile/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/architecture/</loc>
-    <lastmod>2020-09-21T16:33:52+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/architecture/</loc>
-    <lastmod>2020-09-21T16:33:52+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/agileprocess/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/bdd/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/apidesign/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/bdd/</loc>
-    <lastmod>2018-04-11T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/casestudies/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/contact/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/services/distributedteamleadership/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/cyber-dojo/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/elasticsearch/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/cyber-dojo/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/dotnet/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/expertise/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/dotnet/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/history/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/</loc>
-    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/howwework/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/frameworks/</loc>
-    <lastmod>2018-11-02T09:11:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/frameworks/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/ncrunch/</loc>
-    <lastmod>2018-04-16T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/orm/</loc>
-    <lastmod>2018-11-02T09:11:04+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/about/leadershipteam/</loc>
   </url>
   
   <url>
@@ -184,97 +298,27 @@
   </url>
   
   <url>
+    <loc>https://www.elasticmint.com/about/ourvalues/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.elasticmint.com/values/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/pair-programming/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/services/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/pair-programming/</loc>
-    <lastmod>2018-04-19T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/services/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/tags/planning/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/services/softwaredevelopment/</loc>
   </url>
   
   <url>
-    <loc>https://www.elasticmint.com/categories/planning/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/project/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/project/</loc>
-    <lastmod>2018-08-29T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/refactoring/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/refactoring/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/software/</loc>
-    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/software/</loc>
-    <lastmod>2020-09-21T16:48:18+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/tdd/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/tdd/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/tags/testing/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.elasticmint.com/categories/testing/</loc>
-    <lastmod>2018-09-11T13:37:01+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.elasticmint.com/services/technologyconsultancy/</loc>
   </url>
   
 </urlset>

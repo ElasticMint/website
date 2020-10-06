@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bdd on Elastic Mint</title>
+    <title>BDD on Elastic Mint</title>
     <link>https://www.elasticmint.com/tags/bdd/</link>
-    <description>Recent content in Bdd on Elastic Mint</description>
+    <description>Recent content in BDD on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 11 Apr 2018 09:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.elasticmint.com/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 11 Apr 2018 09:00:00 +0000</lastBuildDate><atom:link href="https://www.elasticmint.com/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BDD frameworks compared - SpecFlow and BDDfy</title>
       <link>https://www.elasticmint.com/blog/2018/04/11/bdd-frameworks-compared/</link>

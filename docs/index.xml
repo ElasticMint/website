@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic Mint</title>
@@ -6,11 +6,7 @@
     <description>Recent content on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 21 Sep 2020 16:48:18 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 16:48:18 +0100</lastBuildDate><atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Consequences of Achieving Business Objectives are too often Overlooked</title>
       <link>https://www.elasticmint.com/blog/2020/09/21/consequences-of-achieving-business-objectives-overlooked/</link>
@@ -75,7 +71,7 @@ Of course, all businesses have to assume a degree of business certainty; otherwi
       
       <guid>https://www.elasticmint.com/blog/2018/09/24/what-is-bespoke-software/</guid>
       <description>What is bespoke software? Bespoke is just a fancy word for custom, right? Well, yes. And no.
-According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; 1 There are several levels of custom-made clothes:
+According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; [1] ( https://putthison.com/the-overuse-of-the-word-bespoke-many-words-are/)There are several levels of custom-made clothes:
  Made-to-order - only the materials are customised Made-to-measure - the materials and the cut are tailored based on a single fitting Bespoke - garments are made through a series of fittings  Translating this into software development, we can think of &amp;lsquo;made-to-measure&amp;rsquo; as being like a fixed-scope, Waterfall development process, where we get the requirements up-front, build the software and then deliver it.</description>
     </item>
     
@@ -157,6 +153,114 @@ There are the obvious things like the kind of people you have on the team. If th
     </item>
     
     <item>
+      <title>.Net</title>
+      <link>https://www.elasticmint.com/expertise/dotnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/expertise/dotnet/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>About Elastic Mint</title>
+      <link>https://www.elasticmint.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Process</title>
+      <link>https://www.elasticmint.com/expertise/agileprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/expertise/agileprocess/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>API Design</title>
+      <link>https://www.elasticmint.com/expertise/apidesign/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/expertise/apidesign/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>Case Studies</title>
+      <link>https://www.elasticmint.com/casestudies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/casestudies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://www.elasticmint.com/about/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/contact/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>Distributed Team Leadership / Management</title>
+      <link>https://www.elasticmint.com/services/distributedteamleadership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/distributedteamleadership/</guid>
+      <description>Distributed Team Leadership / ManagementIncreasingly companies have distributed teams of developers working in multiple locations. Sometimes these developers are allin the same country, and sometimes they are spread all around the world.Working with distributed teams is hard. Different time-zones, languages and cultures all conspire to make communication difficult,which can lead to problems like misunderstood requirements and lack of cohesion within teams.</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://www.elasticmint.com/expertise/elasticsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/expertise/elasticsearch/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>Expertise</title>
+      <link>https://www.elasticmint.com/expertise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/expertise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://www.elasticmint.com/about/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/history/</guid>
+      <description>blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>How We Work</title>
+      <link>https://www.elasticmint.com/about/howwework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/howwework/</guid>
+      <description>How we workEngageWe engage with our customers to properly understand the problem they are trying to solve.You would be forgiven for thinking that there is nothing particularly differentiating aboutthis. Any company worth its salt would seek to understand what the requirement is and in thiswe are no different.Where we differ from others is that we take a very flexible approach that allows for a certainamount of change in need and requirement along the way.</description>
+    </item>
+    
+    <item>
+      <title>Leadership Team</title>
+      <link>https://www.elasticmint.com/about/leadershipteam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/leadershipteam/</guid>
+      <description>Andy Garner - PartnerAndy has been developing software professionally since 2001 starting off with Visual Basic and C++, and then continuing with C# and the various incarnations of ASP.Net. He has delivered software for companies both big and small including Just Eat, ASOS, Capita, Imperial Civil Engineering and the Cotswold Group.Having experienced both success and failure on projects, he believes passionately that getting the basics right is vital to delivering quality working software.</description>
+    </item>
+    
+    <item>
       <title>Our Leadership Team</title>
       <link>https://www.elasticmint.com/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,11 +271,48 @@ There are the obvious things like the kind of people you have on the team. If th
     
     <item>
       <title>Our Values</title>
+      <link>https://www.elasticmint.com/about/ourvalues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/about/ourvalues/</guid>
+      <description>Our ValuesYou might recognise our values. When we came together as a partnership one of the first things wedid was to list all the things we would always do and all the things we would never do. For example,some of things that appeared in the &#39;always do&#39; list were to be open and transparent about what wedo, communicate both good and bad news, work collaboratively and deliver software we are proud of.</description>
+    </item>
+    
+    <item>
+      <title>Our Values</title>
       <link>https://www.elasticmint.com/values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.elasticmint.com/values/</guid>
       <description>You might recognise our values. When we came together as a partnership one of the first things we did was to list all the things we would always do and all the things we would never do. For example, some of things that appeared in the &amp;lsquo;always do&amp;rsquo; list were to be open and transparent about what we do, communicate both good and bad news, work collaboratively and deliver software we are proud of.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://www.elasticmint.com/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>https://www.elasticmint.com/services/softwaredevelopment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/softwaredevelopment/</guid>
+      <description>Software DevelopmentElastic Mint are a team of experts with many years experience in developing software.
+We have worked on a wide variety of applications ranging from e-commerce sites written in ASP.Netdeployed to both AWS and Azure, to small web applications deployed on a single server.While we are happy to turn our hands to any technology, our main focus is on the Microsoft stacke.</description>
+    </item>
+    
+    <item>
+      <title>Technology Consultancy</title>
+      <link>https://www.elasticmint.com/services/technologyconsultancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/technologyconsultancy/</guid>
+      <description>Technology ConsultancyAt Elastic Mint we specialise in providing technology experts who can advise on technology choices based on many years of experience.This enables us to give reliable advice to senior management who need to make strategic decisions. It also enables us to joinexisting teams and give them guidance on how to get the most out of the technologies they are using, and the practices they needto follow to be successful.</description>
     </item>
     
   </channel>

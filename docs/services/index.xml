@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Elastic Mint</title>
+    <link>https://www.elasticmint.com/services/</link>
+    <description>Recent content in Services on Elastic Mint</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://www.elasticmint.com/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Distributed Team Leadership / Management</title>
+      <link>https://www.elasticmint.com/services/distributedteamleadership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/distributedteamleadership/</guid>
+      <description>Distributed Team Leadership / ManagementIncreasingly companies have distributed teams of developers working in multiple locations. Sometimes these developers are allin the same country, and sometimes they are spread all around the world.Working with distributed teams is hard. Different time-zones, languages and cultures all conspire to make communication difficult,which can lead to problems like misunderstood requirements and lack of cohesion within teams.</description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>https://www.elasticmint.com/services/softwaredevelopment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/softwaredevelopment/</guid>
+      <description>Software DevelopmentElastic Mint are a team of experts with many years experience in developing software.
+We have worked on a wide variety of applications ranging from e-commerce sites written in ASP.Netdeployed to both AWS and Azure, to small web applications deployed on a single server.While we are happy to turn our hands to any technology, our main focus is on the Microsoft stacke.</description>
+    </item>
+    
+    <item>
+      <title>Technology Consultancy</title>
+      <link>https://www.elasticmint.com/services/technologyconsultancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/services/technologyconsultancy/</guid>
+      <description>Technology ConsultancyAt Elastic Mint we specialise in providing technology experts who can advise on technology choices based on many years of experience.This enables us to give reliable advice to senior management who need to make strategic decisions. It also enables us to joinexisting teams and give them guidance on how to get the most out of the technologies they are using, and the practices they needto follow to be successful.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -24,49 +24,150 @@ paginate = 10
      weight = 1
 
 [[menu.main]]
-     name = "Why Choose Elastic Mint?"
-     url  = "/index.html#whychooseelasticmint"
-     weight = 1
-     parent="home"
+    name="Services"
+    url="/services"
+    identifier = "services"
+    weight=2
+
+[[menu.main]]
+    name="Software Development"
+    url="/services/softwaredevelopment"
+    parent="services"
+    weight=1
+
+[[menu.main]]
+    name="Technology Consultancy"
+    url="/services/technologyconsultancy"
+    parent="services"
+    weight=2
+
+[[menu.main]]
+    name="Distributed Team Leadership / Management"
+    url="/services/distributedteamleadership"
+    parent="services"
+    weight=3
+
+[[menu.main]]
+    name="Expertise"
+    url="/expertise"
+    identifier="expertise"
+    weight=3
+
+[[menu.main]]
+    name=".Net"
+    url="/expertise/dotnet"
+    parent="expertise"
+    weight=1
+
+[[menu.main]]
+    name="Elasticsearch"
+    url="/expertise/elasticsearch"
+    parent="expertise"
+    weight=2
+
+[[menu.main]]
+    name="API Design"
+    url="/expertise/apidesign"
+    parent="expertise"
+    weight=3
+
+[[menu.main]]
+    name="Agile Process"
+    url="/expertise/agileprocess"
+    parent="expertise"
+    weight=4
+
+[[menu.main]]
+    name="Case Studies"
+    url="/casestudies"
+    identifier="casestudies"
+    weight=4
+
+[[menu.main]]
+    name="About"
+    url="/about"
+    identifier="about"
+    weight=4
+
+[[menu.main]]
+    name="History"
+    url="/about/history"
+    parent="about"
+    weight=1
+
+[[menu.main]]
+    name="Leadership Team"
+    url="/about/leadershipteam"
+    parent="about"
+    weight=2
+
+[[menu.main]]
+    name="How We Work"
+    url="/about/howwework"
+    parent="about"
+    weight=3
+
+[[menu.main]]
+    name="Our Values"
+    url="/about/ourvalues"
+    parent="about"
+    weight=3
+
+[[menu.main]]
+    name="Contact"
+    url="/about/contact"
+    parent="about"
+    weight=4
+
+[[menu.main]]
+    name="Blog"
+    url="/blog"
+    weight=5
+
+# [[menu.main]]
+#      name = "Why Choose Elastic Mint?"
+#      url  = "/index.html#whychooseelasticmint"
+#      weight = 1
+#      parent="home"
     
-[[menu.main]]
-    name = "How We Work"
-    url  = "/index.html#howwework"
-    weight = 2
-     parent="home"
+# [[menu.main]]
+#     name = "How We Work"
+#     url  = "/index.html#howwework"
+#     weight = 2
+#      parent="home"
 
-[[menu.main]]
-    name = "Our Values"
-    url  = "/index.html#ourvalues"
-    weight = 3
-     parent="home"
+# [[menu.main]]
+#     name = "Our Values"
+#     url  = "/index.html#ourvalues"
+#     weight = 3
+#      parent="home"
 
-[[menu.main]]
-    name = "Our Leadership Team"
-    url  = "/team"
-    weight = 4
+# [[menu.main]]
+#     name = "Our Leadership Team"
+#     url  = "/team"
+#     weight = 4
 
-[[menu.main]]
-    name = "Technologies"
-    url  = "/index.html#tech"
-    weight = 5
-     parent="home"
+# [[menu.main]]
+#     name = "Technologies"
+#     url  = "/index.html#tech"
+#     weight = 5
+#      parent="home"
 
-[[menu.main]]
-    name = "Case study"
-    url  = "/index.html#casestudy"
-    weight = 6
-     parent="home"
+# [[menu.main]]
+#     name = "Case study"
+#     url  = "/index.html#casestudy"
+#     weight = 6
+#      parent="home"
 
-[[menu.main]]
-    name = "Contact"
-    url  = "/#contact"
-    weight = 7
+# [[menu.main]]
+#     name = "Contact"
+#     url  = "/#contact"
+#     weight = 7
 
-[[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-    weight = 8
+# [[menu.main]]
+#     name = "Blog"
+#     url  = "/blog/"
+#     weight = 8
 
 # Top bar social links menu
 [[menu.topbar]]
@@ -122,16 +223,6 @@ paginate = 10
     date_format = "Jan _2 2006"
 
     logo = "img/logo.png"
-    address = """<p><strong>Elastic Mint</strong>
-        <br>13-14 Orchard Street
-        <br>Bristol
-        <br>BS1 5EH
-        <br>UK
-        </p>
-        <br>Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a>
-        <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
-      </p>
-      """
 
     latitude = "51.453868"
     longitude = "-2.599787"
@@ -143,13 +234,21 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Call us on <i class="fa fa-phone"></i> 
-        <a href="tel:07498 219 994">+44 (0)7498 219 994</a> or <i class="fa fa-envelope"></i> at 
-        <a href="mailto:info@elasticmint.com">info@elasticmint.com</a></p>
-        <p class="hidden-md hidden-lg"><img src="/img/logo-bw.jpg" class="logo-inverted" alt="Elastic Mint"> 
-        <a href="tel:07498 219 994" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-      </p>
+    text = """
+    <span class="d-none d-sm-block">
+        <p>
+            Call us on <i class="fa fa-phone"></i> 
+            <a href="tel:07498 219 994">+44 (0)7498 219 994</a> or <i class="fa fa-envelope"></i> at 
+            <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
+        </p>
+    </span>
+    <span class="d-block d-sm-none">
+        <p>
+            <img src="/img/logo-bw.jpg" class="logo-inverted" alt="Elastic Mint"> 
+            <a href="tel:07498 219 994" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+            <a href="mailto:info@elasticmint.com" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+        </p>
+    </span>
       """
 
 # Enable and disable widgets for the right sidebar

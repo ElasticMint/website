@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software on Elastic Mint</title>
+    <title>software on Elastic Mint</title>
     <link>https://www.elasticmint.com/tags/software/</link>
-    <description>Recent content in Software on Elastic Mint</description>
+    <description>Recent content in software on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 21 Sep 2020 16:48:18 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.elasticmint.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 16:48:18 +0100</lastBuildDate><atom:link href="https://www.elasticmint.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Consequences of Achieving Business Objectives are too often Overlooked</title>
       <link>https://www.elasticmint.com/blog/2020/09/21/consequences-of-achieving-business-objectives-overlooked/</link>
@@ -75,7 +71,7 @@ Of course, all businesses have to assume a degree of business certainty; otherwi
       
       <guid>https://www.elasticmint.com/blog/2018/09/24/what-is-bespoke-software/</guid>
       <description>What is bespoke software? Bespoke is just a fancy word for custom, right? Well, yes. And no.
-According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; 1 There are several levels of custom-made clothes:
+According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; [1] ( https://putthison.com/the-overuse-of-the-word-bespoke-many-words-are/)There are several levels of custom-made clothes:
  Made-to-order - only the materials are customised Made-to-measure - the materials and the cut are tailored based on a single fitting Bespoke - garments are made through a series of fittings  Translating this into software development, we can think of &amp;lsquo;made-to-measure&amp;rsquo; as being like a fixed-scope, Waterfall development process, where we get the requirements up-front, build the software and then deliver it.</description>
     </item>
     
