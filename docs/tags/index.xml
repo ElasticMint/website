@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Elastic Mint</title>
@@ -6,53 +6,22 @@
     <description>Recent content in Tags on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Sep 2018 13:37:01 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.elasticmint.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 08 Oct 2020 13:16:37 +0100</lastBuildDate><atom:link href="https://www.elasticmint.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agile</title>
-      <link>https://www.elasticmint.com/tags/agile/</link>
-      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
+      <title>software</title>
+      <link>https://www.elasticmint.com/tags/software/</link>
+      <pubDate>Thu, 08 Oct 2020 13:16:37 +0100</pubDate>
       
-      <guid>https://www.elasticmint.com/tags/agile/</guid>
+      <guid>https://www.elasticmint.com/tags/software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Architecture</title>
+      <title>architecture</title>
       <link>https://www.elasticmint.com/tags/architecture/</link>
       <pubDate>Mon, 21 Sep 2020 16:33:52 +0100</pubDate>
       
       <guid>https://www.elasticmint.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bdd</title>
-      <link>https://www.elasticmint.com/tags/bdd/</link>
-      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/bdd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cyber Dojo</title>
-      <link>https://www.elasticmint.com/tags/cyber-dojo/</link>
-      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/cyber-dojo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dotnet</title>
-      <link>https://www.elasticmint.com/tags/dotnet/</link>
-      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/dotnet/</guid>
       <description></description>
     </item>
     
@@ -66,16 +35,7 @@
     </item>
     
     <item>
-      <title>Ncrunch</title>
-      <link>https://www.elasticmint.com/tags/ncrunch/</link>
-      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/ncrunch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Orm</title>
+      <title>ORM</title>
       <link>https://www.elasticmint.com/tags/orm/</link>
       <pubDate>Fri, 02 Nov 2018 09:11:04 +0000</pubDate>
       
@@ -84,34 +44,16 @@
     </item>
     
     <item>
-      <title>Pair Programming</title>
-      <link>https://www.elasticmint.com/tags/pair-programming/</link>
-      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      <title>agile</title>
+      <link>https://www.elasticmint.com/tags/agile/</link>
+      <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
-      <guid>https://www.elasticmint.com/tags/pair-programming/</guid>
+      <guid>https://www.elasticmint.com/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Planning</title>
-      <link>https://www.elasticmint.com/tags/planning/</link>
-      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project</title>
-      <link>https://www.elasticmint.com/tags/project/</link>
-      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Refactoring</title>
+      <title>refactoring</title>
       <link>https://www.elasticmint.com/tags/refactoring/</link>
       <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
@@ -120,16 +62,7 @@
     </item>
     
     <item>
-      <title>Software</title>
-      <link>https://www.elasticmint.com/tags/software/</link>
-      <pubDate>Mon, 21 Sep 2020 16:48:18 +0100</pubDate>
-      
-      <guid>https://www.elasticmint.com/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tdd</title>
+      <title>TDD</title>
       <link>https://www.elasticmint.com/tags/tdd/</link>
       <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
@@ -138,11 +71,74 @@
     </item>
     
     <item>
-      <title>Testing</title>
+      <title>testing</title>
       <link>https://www.elasticmint.com/tags/testing/</link>
       <pubDate>Tue, 11 Sep 2018 13:37:01 +0100</pubDate>
       
       <guid>https://www.elasticmint.com/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>planning</title>
+      <link>https://www.elasticmint.com/tags/planning/</link>
+      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/planning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project</title>
+      <link>https://www.elasticmint.com/tags/project/</link>
+      <pubDate>Wed, 29 Aug 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyber-dojo</title>
+      <link>https://www.elasticmint.com/tags/cyber-dojo/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/cyber-dojo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pair programming</title>
+      <link>https://www.elasticmint.com/tags/pair-programming/</link>
+      <pubDate>Thu, 19 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/pair-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotNet</title>
+      <link>https://www.elasticmint.com/tags/dotnet/</link>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCrunch</title>
+      <link>https://www.elasticmint.com/tags/ncrunch/</link>
+      <pubDate>Mon, 16 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/ncrunch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BDD</title>
+      <link>https://www.elasticmint.com/tags/bdd/</link>
+      <pubDate>Wed, 11 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.elasticmint.com/tags/bdd/</guid>
       <description></description>
     </item>
     

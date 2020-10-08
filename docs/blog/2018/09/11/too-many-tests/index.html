@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  ﻿<head>
+  <head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -17,7 +17,7 @@
   <meta name="description" content="Helping businesses deliver their digital strategy with bespoke software">	
   
 
-  <meta name="generator" content="Hugo 0.42.1" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <link href="https://fonts.googleapis.com/css?family=Signika|Signika+Negative" rel="stylesheet">
   
@@ -226,18 +226,11 @@
                         <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Andy Garner</a> | Sep 11 2018</p>
 
                         <div id="post-content">
-                          
-
-<p>Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn&rsquo;t bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes we used test scripts, other times we just played around trying to break functionally. And then we couldn&rsquo;t remember what we had done to break it!</p>
-
+                          <p>Sometimes it seems that we simply go from one extreme to another. Once upon a time developers didn&rsquo;t bother to write tests. Everything was tested manually. When changes were made the whole thing would need to be manually tested again. Sometimes we used test scripts, other times we just played around trying to break functionally. And then we couldn&rsquo;t remember what we had done to break it!</p>
 <p>Managers would roll their eyes in frustration when developers talked about writing unit tests. How would writing more code make applications more reliable and faster to develop? Until one day a critical mass was reached, and suddenly everyone was doing it. Automated tests proliferated. High code-coverage became a mark of pride. Some companies went a step further and required a certain level of code-coverage or the build would break and (presumably!) bad things would happen.</p>
-
 <h3 id="the-problem-with-tests">The Problem With Tests</h3>
-
 <p>So what have all these tests achieved?</p>
-
 <p>Have you ever seen a test like this?</p>
-
 <pre><code>[Test]
 public void CallingFunctionAbcDoesStuff()
 {
@@ -248,63 +241,36 @@ public void CallingFunctionAbcDoesStuff()
 
     mockedDependency.Verify(x =&gt; x.Xyz(), Times.Once);
 }
-</code></pre>
-
-<p>What does this test? It tests that a function is called on a dependent object when the function <code>Abc()</code> is called.</p>
-
+</code></pre><p>What does this test? It tests that a function is called on a dependent object when the function <code>Abc()</code> is called.</p>
 <p>Why is that important? I don&rsquo;t know.</p>
-
 <p>As a client of <code>ClassToBeTested</code> why is it important to me whether it delegates functionality to another object or performs it internally? All I care about is that calling a method has the desired effect, whether it be storing some data somewhere, sending a message, or performing a calculation. How it does this is unimportant.</p>
-
 <p>Part of the problem here is that Dependency Injection and the use of IoC containers became popular at the same time as writing tests. Previously it was very common to see a dependent object be created inside a method. Interfaces were something of a rarity. Suddenly, with the advent of IoC, every class had an interface associated with it. The whole idea that an interface could have multiple implementations was forgotten. Instead each interface would have a single implementation, and each class would have a constructor with 5 or 10 interfaces as parameters. Obviously this was hard to manage and so we needed to have IoC containers to make it simple. The end result was that we could now easily write tests, and because we were trying to test each class individually, we mocked all the dependencies and ended up testing that methods on dependencies were called at the right time.</p>
-
 <p>This just leads to brittle tests that change whenever anyone does any refactoring!</p>
-
 <p>For years, companies and developers have talked about how great TDD is and sometimes about their struggles with it. However, I think the original purpose and method of TDD has become distorted over time. TDD for many developers has morphed into a monster that hinders, rather than helps.</p>
-
 <p>I first became interested in tests after working on a project which wasn&rsquo;t as successful as we all hoped. Despite it being greenfield development, parts of the code quickly became very complicated as they were poorly structured. We spent days (literally) testing and retesting as bugs were fixed and then new ones inadvertently introduced.</p>
-
 <p>I remember the excitement of realising I could test classes by injecting the dependencies as interfaces. Suddenly it became easy to have loosely-coupled testable code. As more and more people started doing this, code quality improved, functionality became more reliable, and I no longer had to spend large amounts of time doing manual testing.</p>
-
 <p>However, in spite of the articles I read about TDD, I found I could never really do it. Occassionally I would start with the tests when I needed to write an algorithm, but generally, I found it easier to write the tests afterwards to confirm my code did what I expected it to do.</p>
-
 <p>Over time I became convinced there was something wrong. Tests and DI had given me some benefits, but it wasn&rsquo;t enough. Too many of the tests I wrote seemed worthless.</p>
-
 <h3 id="tdd-revisited">TDD Revisited</h3>
-
 <p>What does TDD look like?</p>
-
 <ul>
 <li>Write a failing test</li>
 <li>Write code to make the test pass</li>
 <li>Refactor</li>
 </ul>
-
 <p>Sounds simple. But when you are writing tests for each class, it quickly becomes frustrating. Plus, the tests don&rsquo;t drive the design as you&rsquo;ve already designed it in your head.</p>
-
 <p>The problem is that many developers, myself included, tend to think of a class as being a unit. Any tests that you write at that level will only test part of the problem you are trying to solve. And when you come back to them 6 months down the line, the chances are you&rsquo;re not going to understand what they do.</p>
-
 <p>Imagine a requirement to manage a basket on an e-commerce website. It might look like this:</p>
-
 <pre><code>Given I have an empty basket
 When I add an item to the basket
 Then my basket will contain the added item
-</code></pre>
-
-<p>In order to meet this requirement you will need a module for managing baskets. This might be a microservice or just one endpoint among many on a webservice. Regardless of how it&rsquo;s implemented, the observable outcome will be the same. Adding an item to the basket will cause the basket to contain that item.</p>
-
+</code></pre><p>In order to meet this requirement you will need a module for managing baskets. This might be a microservice or just one endpoint among many on a webservice. Regardless of how it&rsquo;s implemented, the observable outcome will be the same. Adding an item to the basket will cause the basket to contain that item.</p>
 <p>If we write a test at the module level then this is easy to do before writing any code. If you really want to, you can use a tool like SpecFlow which converts human-readable Gherkin into test methods. Personally though, I don&rsquo;t think anyone ever reads those tests, so I&rsquo;m quite happy to use the unit testing tool which I use for testing classes.</p>
-
 <p>In writing code to make that test pass, I can make it as smelly and dirty as I want. It doesn&rsquo;t matter. I just need the test to pass. There might already be classes I can reuse to help me, or I can just write it all inside the public facing method which gets called.</p>
-
 <p>Once the test passes, it&rsquo;s refactoring time. There&rsquo;s no need to write any more tests because we already know it works. Any classes that are extracted should not be exposed publically. In the world of C#, this means they should be <code>internal</code>. (Another thing we tend not to do!)</p>
-
 <p>It might be appropriate to create instances of these extracted classes inline with the <code>new</code> keyword, especially if construction is very simple and only uses data that is present at the point it is created. Sometimes, it will make sense to use a factory to create a dependency. I once extracted a calculation which involved a number of branches into a set of classes with one class for each combination of variables, and then used a factory to create an instance of the correct type - see <a href="http://www.blackwasp.co.uk/Strategy.aspx">Strategy pattern</a>.</p>
-
 <p>In a lot of code that I see, most dependencies are simply injected into the constructor. We&rsquo;ve become used to creating interfaces with only a single implementation. While there is still a place for dependency injection, maybe we don&rsquo;t need all these interfaces and not all these dependencies need to be injected.</p>
-
 <p>As a result of this approach I will have far fewer tests, any tests I do have will not be tied to my implementation, and if I need to refactor at some point in the future I can do so easily.</p>
-
 <p>By changing where we write our tests and going back to TDD, we can stop them being such a burden, and get an increased benefit from them. We won&rsquo;t have as many, but code-coverage will remain high (never something to be relied on!), and we can realise the promise of being able to refactor with confidence.</p>
 
                         </div>
@@ -312,7 +278,7 @@ Then my basket will contain the added item
                         
                         <div id="comments">
                             <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -388,7 +354,7 @@ Then my basket will contain the added item
             <li><a href="https://www.elasticmint.com/categories/refactoring">refactoring (1)</a>
             </li>
             
-            <li><a href="https://www.elasticmint.com/categories/software">software (6)</a>
+            <li><a href="https://www.elasticmint.com/categories/software">software (7)</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/categories/tdd">tdd (2)</a>
@@ -638,6 +604,19 @@ Then my basket will contain the added item
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
+                        <a href="https://www.elasticmint.com/blog/2020/10/08/timely-warning/">
+                          
+                            <img src="https://www.elasticmint.com/img/banners/blogs/GreyComputerMonitor.jpg" class="img-responsive" alt="A Timely Warning">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://www.elasticmint.com/blog/2020/10/08/timely-warning/">A Timely Warning</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
                         <a href="https://www.elasticmint.com/blog/2020/09/21/consequences-of-achieving-business-objectives-overlooked/">
                           
                             <img src="https://www.elasticmint.com/img/banners/blogs/desktop-glasses.jpg" class="img-responsive" alt="The Consequences of Achieving Business Objectives are too often Overlooked">
@@ -662,19 +641,6 @@ Then my basket will contain the added item
                     </div>
                 </div>
                 
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://www.elasticmint.com/blog/2020/08/14/things-gifted-developers-possess/">
-                          
-                            <img src="https://www.elasticmint.com/img/banners/blogs/Developer10Things.jpg" class="img-responsive" alt="The 10 Most Important Things Truly Gifted Software Developers Possess">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://www.elasticmint.com/blog/2020/08/14/things-gifted-developers-possess/">The 10 Most Important Things Truly Gifted Software Developers Possess</a></h5>
-                    </div>
-                </div>
-                
             </div>
 
             <hr class="hidden-md hidden-lg">
@@ -688,16 +654,15 @@ Then my basket will contain the added item
 
           <h4>Contact</h4>
 
-            <strong>Elastic Mint</strong>
-        <br>13-14 Orchard Street
-        <br>Bristol
-        <br>BS1 5EH
-        <br>UK
-        </p>
-        <br>Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a>
-        <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
-      </p>
-      
+          <p>
+            <strong>Elastic Mint</strong><br> 
+            13-14 Orchard Street<br>
+            Bristol<br>
+            BS1 5EH<br>
+            UK<br>
+        </p><br>
+        Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a><br>
+        Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
 
 
             <hr class="hidden-md hidden-lg hidden-sm">
@@ -735,7 +700,7 @@ Then my basket will contain the added item
     
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -766,5 +731,5 @@ if (!doNotTrack) {
 
 
 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+  </body>
 </html>

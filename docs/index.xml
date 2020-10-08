@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic Mint</title>
@@ -6,10 +6,16 @@
     <description>Recent content on Elastic Mint</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 21 Sep 2020 16:48:18 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 08 Oct 2020 13:16:37 +0100</lastBuildDate><atom:link href="https://www.elasticmint.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Timely Warning</title>
+      <link>https://www.elasticmint.com/blog/2020/10/08/timely-warning/</link>
+      <pubDate>Thu, 08 Oct 2020 13:16:37 +0100</pubDate>
+      
+      <guid>https://www.elasticmint.com/blog/2020/10/08/timely-warning/</guid>
+      <description>A timely warning that most businesses should heed It was bemusing to note that the governments &amp;ldquo;£12bn&amp;rdquo; test and trace system failed in its primary purpose because of a spreadsheet glitch&amp;quot;. It was bemusing because there are an amazing number of businesses that still rely on manual processes that would be cheaper and more reliable if they were automated.
+In the movie world, process automation and AI is generally painted as a bad thing - Terminator, War Games, I, Robot etc.</description>
+    </item>
     
     <item>
       <title>The Consequences of Achieving Business Objectives are too often Overlooked</title>
@@ -75,7 +81,7 @@ Of course, all businesses have to assume a degree of business certainty; otherwi
       
       <guid>https://www.elasticmint.com/blog/2018/09/24/what-is-bespoke-software/</guid>
       <description>What is bespoke software? Bespoke is just a fancy word for custom, right? Well, yes. And no.
-According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; 1 There are several levels of custom-made clothes:
+According to putthison.com the word &amp;lsquo;originated in shoemaking, but gained in popularity through custom tailoring in England, where lengths of cloths were said to be “spoken for” or “bespoken” by another customer.&amp;rsquo; [1] ( https://putthison.com/the-overuse-of-the-word-bespoke-many-words-are/)There are several levels of custom-made clothes:
  Made-to-order - only the materials are customised Made-to-measure - the materials and the cut are tailored based on a single fitting Bespoke - garments are made through a series of fittings  Translating this into software development, we can think of &amp;lsquo;made-to-measure&amp;rsquo; as being like a fixed-scope, Waterfall development process, where we get the requirements up-front, build the software and then deliver it.</description>
     </item>
     

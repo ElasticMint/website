@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  ﻿<head>
+  <head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
@@ -17,7 +17,7 @@
   <meta name="description" content="Helping businesses deliver their digital strategy with bespoke software">	
   
 
-  <meta name="generator" content="Hugo 0.42.1" />
+  <meta name="generator" content="Hugo 0.75.1" />
 
   <link href="https://fonts.googleapis.com/css?family=Signika|Signika+Negative" rel="stylesheet">
   
@@ -227,15 +227,10 @@
 
                         <div id="post-content">
                           <p>Have you heard the phrase “Don’t sweat the small stuff”? It comes from a book by Richard Carlson called <a href="https://www.amazon.co.uk/Dont-Sweat-Small-Stuff-Overtaking/dp/0340708018">Don&rsquo;t Sweat the Small Stuff and It&rsquo;s All Small Stuff</a> all about stopping little things in life driving you crazy.</p>
-
 <p>In many areas of life this makes a lot of sense, however when it comes to writing code we’ve found that the “small stuff” really matters.</p>
-
 <p>The problem is that after you have solved someone’s problems and written the code that does what they want, at some point there will be a new problem. And then someone, quite possibly not you, is going to have to look at what you have done and work out what needs to change on order to solve this new problem.</p>
-
 <p>Writing code is hard. Organising your thoughts so that it makes sense to other people is even harder. The next person to read this code is going to have a hard enough time understanding it, so the least we can do is sweat the small stuff, care about the details, and do whatever we can to make their life job easier.</p>
-
 <p>Of course, lots of companies have coding standards and that’s all well and good, but we believe in taking things beyond that and have a philosophy of making code as maintainable as possible for the next person. Among other things this involves thinking about the following:</p>
-
 <ul>
 <li>Does the name I have given this variable/method/class accurately describe its purpose?</li>
 <li>Is it easy to look at a method and understand what it does?</li>
@@ -244,43 +239,26 @@
 <li>Does a class do one thing well or has it become a dumping ground for lots of unrelated functionality?</li>
 <li>Are names consistent throughout the code?</li>
 </ul>
-
 <p>Let’s work through an example of how we might apply some of these questions to the issue of positioning parameters for a method.</p>
-
 <p>How often have you seen a method that looks something like this?</p>
-
 <pre><code>private static ReturnType DoSomething(Parameter1 parameter1, Parameter2 parameter2, Parameter3 parameter3, Parameter4 parameter4) 
-</code></pre>
-
-<p>For the purposes of this example let’s not worry about what the method does, the parameters or the return value. Let’s just assume there is a good reason for all the parameters. The problem is that this is a really long line. The chances are that in order to read all the parameters you will need to scroll across in your editor. And you can guarantee that the parameter you are interested in will be the last one!</p>
-
+</code></pre><p>For the purposes of this example let’s not worry about what the method does, the parameters or the return value. Let’s just assume there is a good reason for all the parameters. The problem is that this is a really long line. The chances are that in order to read all the parameters you will need to scroll across in your editor. And you can guarantee that the parameter you are interested in will be the last one!</p>
 <p>So what can we do? How about splitting some of the parameters onto separate lines?</p>
-
 <pre><code>private static ReturnType DoSomething(Parameter1 parameter1,  
     Parameter2 parameter2, Parameter3 parameter3, Parameter4 parameter4) 
-</code></pre>
-
-<p>This is much better. At least everything is visible without scrolling, but those three parameters all on the same line are still hard to read. The middle one especially can easily be lost between the other two.</p>
-
+</code></pre><p>This is much better. At least everything is visible without scrolling, but those three parameters all on the same line are still hard to read. The middle one especially can easily be lost between the other two.</p>
 <pre><code>private static ReturnType DoSomething(Parameter1 parameter1,  
     Parameter2 parameter2,  
     Parameter3 parameter3,  
     Parameter4 parameter4) 
-</code></pre>
-
-<p>Now the parameters have been split on to their own lines. However, the first parameter does not line up with the other parameters. This might mean that someone completely misses it and doesn&rsquo;t realise it&rsquo;s there. Potentially this is confusing.</p>
-
+</code></pre><p>Now the parameters have been split on to their own lines. However, the first parameter does not line up with the other parameters. This might mean that someone completely misses it and doesn&rsquo;t realise it&rsquo;s there. Potentially this is confusing.</p>
 <pre><code>private static ReturnType DoSomething( 
     Parameter1 parameter1,  
     Parameter2 parameter2,  
     Parameter3 parameter3,  
     Parameter4 parameter4) 
-</code></pre>
-
-<p>Finally, each parameter is aligned and on its own line. When someone reads this method, they can easily see all the parameters. If necessary, they can easily add or remove a parameter. The important information is easy to find and someone should be able to quickly understand the parameters required for this method. Now all someone needs to do is understand the code inside the method!</p>
-
+</code></pre><p>Finally, each parameter is aligned and on its own line. When someone reads this method, they can easily see all the parameters. If necessary, they can easily add or remove a parameter. The important information is easy to find and someone should be able to quickly understand the parameters required for this method. Now all someone needs to do is understand the code inside the method!</p>
 <p>Now some people might look at that example and argue that it’s a lot of fuss about not very much, and taking that code in isolation they might be right. But in a codebase with many hundreds or even thousands of lines of code, applying this kind of thinking at least shows the next person that care and thought has gone into it. It can make the difference between venting frustration about <em>&ldquo;whatever idiot wrote the code&rdquo;</em> and focussing on what the code actually does.</p>
-
 <p>In short sweating the small stuff makes the next person’s job easier and that person might just be you!</p>
 
                         </div>
@@ -288,7 +266,7 @@
                         
                         <div id="comments">
                             <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -364,7 +342,7 @@
             <li><a href="https://www.elasticmint.com/categories/refactoring">refactoring (1)</a>
             </li>
             
-            <li><a href="https://www.elasticmint.com/categories/software">software (6)</a>
+            <li><a href="https://www.elasticmint.com/categories/software">software (7)</a>
             </li>
             
             <li><a href="https://www.elasticmint.com/categories/tdd">tdd (2)</a>
@@ -614,6 +592,19 @@
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
+                        <a href="https://www.elasticmint.com/blog/2020/10/08/timely-warning/">
+                          
+                            <img src="https://www.elasticmint.com/img/banners/blogs/GreyComputerMonitor.jpg" class="img-responsive" alt="A Timely Warning">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://www.elasticmint.com/blog/2020/10/08/timely-warning/">A Timely Warning</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
                         <a href="https://www.elasticmint.com/blog/2020/09/21/consequences-of-achieving-business-objectives-overlooked/">
                           
                             <img src="https://www.elasticmint.com/img/banners/blogs/desktop-glasses.jpg" class="img-responsive" alt="The Consequences of Achieving Business Objectives are too often Overlooked">
@@ -638,19 +629,6 @@
                     </div>
                 </div>
                 
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://www.elasticmint.com/blog/2020/08/14/things-gifted-developers-possess/">
-                          
-                            <img src="https://www.elasticmint.com/img/banners/blogs/Developer10Things.jpg" class="img-responsive" alt="The 10 Most Important Things Truly Gifted Software Developers Possess">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://www.elasticmint.com/blog/2020/08/14/things-gifted-developers-possess/">The 10 Most Important Things Truly Gifted Software Developers Possess</a></h5>
-                    </div>
-                </div>
-                
             </div>
 
             <hr class="hidden-md hidden-lg">
@@ -664,16 +642,15 @@
 
           <h4>Contact</h4>
 
-            <strong>Elastic Mint</strong>
-        <br>13-14 Orchard Street
-        <br>Bristol
-        <br>BS1 5EH
-        <br>UK
-        </p>
-        <br>Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a>
-        <br>Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
-      </p>
-      
+          <p>
+            <strong>Elastic Mint</strong><br> 
+            13-14 Orchard Street<br>
+            Bristol<br>
+            BS1 5EH<br>
+            UK<br>
+        </p><br>
+        Tel: <a href="tel:07498 219 994">+44 (0)7498 219 994</a><br>
+        Email: <a href="mailto:info@elasticmint.com">info@elasticmint.com</a>
 
 
             <hr class="hidden-md hidden-lg hidden-sm">
@@ -711,7 +688,7 @@
     
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -742,5 +719,5 @@ if (!doNotTrack) {
 
 
 
-  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+  </body>
 </html>
