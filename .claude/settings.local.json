@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(find:*)",
-      "WebFetch(domain:elasticmint.github.io)"
+      "WebFetch(domain:elasticmint.github.io)",
+      "Bash(python:*)"
     ],
     "deny": []
   }
