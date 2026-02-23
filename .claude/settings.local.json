@@ -4,7 +4,9 @@
       "Bash(find:*)",
       "WebFetch(domain:elasticmint.github.io)",
       "Bash(python:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cd:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
