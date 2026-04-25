@@ -46,5 +46,5 @@ Since this is a static site with no build process:
 
 - The site uses absolute paths for assets, so it needs to be served from a web server root
 - Forms use Gravity Forms but won't function without backend processing
-- The site includes Google Analytics tracking (UA-116651606-1)
+- The site includes Google Analytics tracking (GA4 measurement ID: G-9D70PLKZQD), embedded as a gtag.js snippet directly after the `<head>` tag in every content `index.html`. HTTrack redirect stubs (`docs/indexXXXX.html`), RSS feeds (`*/feed/index.html`), and `wp-json/index.html` are intentionally not tagged.
 - Mobile responsive with breakpoints at 1440px, 1080px, 960px, 740px, 640px, 500px

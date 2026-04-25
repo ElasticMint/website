@@ -6,7 +6,9 @@
       "Bash(python:*)",
       "Bash(grep:*)",
       "Bash(cd:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(cat)",
+      "Read(//tmp/**)"
     ],
     "deny": []
   }
