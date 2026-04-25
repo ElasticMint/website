@@ -26,7 +26,7 @@
 
 
 
-	
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <title>The Dangers Of Trying To Future-Proof Code - Elastic Mint</title>
@@ -38,6 +38,7 @@
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 
+
 	<meta name="description" content="Over-engineering in the name of future-proofing can harm more than it helps. Learn why premature abstraction and speculative reuse create technical debt." />
 	<link rel="canonical" href="index.html" />
 	<meta property="og:locale" content="en_GB" />
@@ -46,16 +47,16 @@
 	<meta property="og:description" content="Over-engineering in the name of future-proofing can harm more than it helps. Learn why premature abstraction and speculative reuse create technical debt." />
 	<meta property="og:url" content="https://www.elasticmint.com/the-dangers-of-trying-to-future-proof-code/" />
 	<meta property="og:site_name" content="Elastic Mint" />
-	<meta property="article:published_time" content="2021-06-29T09:18:38+00:00" />
-	<meta property="article:modified_time" content="2024-11-25T07:24:12+00:00" />
 	<meta property="og:image" content="https://www.elasticmint.com/wp-content/uploads/2021/06/Hammer-and-Nut-scaled.jpg" />
 	<meta property="og:image:width" content="2560" />
 	<meta property="og:image:height" content="1283" />
 	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="article:published_time" content="2021-06-29T09:18:38+00:00" />
+	<meta property="article:modified_time" content="2024-11-25T07:24:12+00:00" />
 	<meta name="author" content="Andy" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:creator" content="@elasticmint" />
 	<meta name="twitter:site" content="@elasticmint" />
+	<meta name="twitter:creator" content="@elasticmint" />
 	<meta name="twitter:label1" content="Written by" />
 	<meta name="twitter:data1" content="Andy" />
 	<meta name="twitter:label2" content="Estimated reading time" />
@@ -67,12 +68,11 @@
 <link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
 <link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Feed" href="../feed/index.html" />
 <link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Comments Feed" href="../comments/feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; The Dangers Of Trying To Future-Proof Code Comments Feed" href="feed/index.html" />
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.elasticmint.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"}};
 /*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍🔥","🐦​🔥")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 /* ]]> */
 </script>
 <style id='wp-emoji-styles-inline-css' type='text/css'>
@@ -119,45 +119,45 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <header class="row header-bar">
 
 	<div class="row inner-head">
-    
+
 		<a href="../index.html" class="logo head">
 			<img src="../wp-content/themes/ElasticMint/images/logo.png" alt="Elastic Mint">
 		</a>
-		
+
 		<div class="head-right">
-		
+
 			<div class="row">
 			</div>
-			
-			<div class="row">			
-				
+
+			<div class="row">
+
 				<div class="mobile-menu-open">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-				
+
 				<a href="../contact/index.html" class="button green contact-head"><i class="fa fas fa-envelope"></i> <span>Contact</span></a>
-				
+
 				<div class="wrap-search">
-				
+
 					<div class="button white open-search">
 						<i class="fa fa-search"></i>
 					</div>
-					
+
 						<form method="get" id="searchform" action="https://www.elasticmint.com/">
 		<input type="text" class="field" name="s" id="s" placeholder="Search" />
 			</form>
-					
+
 					<div class="close-search">
 						<i class="fas fa-times"></i>
 					</div>
-					
+
 				</div>
-				
+
 				<div class="menu">
-				
+
 					<nav class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../fractional-cto/index.html">Fractional CTO</a></li>
 <li id="menu-item-346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-346"><a href="../about/index.html">About</a>
 <ul class="sub-menu">
@@ -183,24 +183,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </ul>
 </li>
 <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="../case-studies/index.html">Case Studies</a></li>
-<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="../blog/index.html">Blog</a></li>
-</ul></nav>				
+<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-573"><a href="../blog/index.html">Blog</a></li>
+</ul></nav>
 				</div>
-				
+
 			</div>
-			
+
 		</div>
-    	        
+
   </div>
   <!-- .inside -->
-    
+
 </header>
 <!-- #header-bar -->
-	
+
+
 <div id="closemenu" class="close-menu-overlay"></div>
 
 <nav id="menu-h">
-        
+
         <ul>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="../fractional-cto/index.html"><span>Fractional CTO</span><span class="open-sub"></span></a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-346"><a href="../about/index.html"><span>About</span><span class="open-sub"></span></a>
@@ -227,11 +228,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="../case-studies/index.html"><span>Case Studies</span><span class="open-sub"></span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="../blog/index.html"><span>Blog</span><span class="open-sub"></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-573"><a href="../blog/index.html"><span>Blog</span><span class="open-sub"></span></a></li>
 <li><a href="../contact/index.html">Contact</a></li>
-        </ul>      
-              
+        </ul>
+
 </nav>
+
 
 <div id="site-container" class="row container">
 
@@ -408,139 +410,122 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <footer class="row">
 
-		
+
 	<div class="inside">
-    
+
 		<div class="row footer-top">
-		
+
 			<div class="footer-t-left">
-				
+
 				<a href="../index.html" class="logo">
 					<img src="../wp-content/themes/ElasticMint/images/logo-white.png" alt="Elastic Mint">
 				</a>
-				
+
 				<span>
 					Based in Bristol, UK				</span>
-					
-			</div>
-			
-			<div class="footer-t-right">
-				
-				
-				<div class="social-links">
-					
-											
 
-						
+			</div>
+
+			<div class="footer-t-right">
+
+
+				<div class="social-links">
+
+
+
+
 						<a target="_blank" href="https://www.linkedin.com/company/elastic-mint-ltd/" title="Linkedin"><i class="fa fab fa-linkedin-in"></i></a>
 
-					
-											
 
-						
+
+
+
 						<a target="_blank" href="https://twitter.com/elasticmint" title="Twitter"><i class="fa fab fa-twitter"></i></a>
 
-					
-											
 
-						
+
+
+
 						<a target="_blank" href="mailto:info@elasticmint.com" title="Email"><i class="fa fas fa-envelope"></i></a>
 
 									</div>
-				
+
 			</div>
-			
+
 		</div>
-		
+
    	<div class="marg">
-		
+
 			<div class="twenty">
-							
+
 				<div class="row footer-title">
 					About
 				</div>
-				
+
 				<ul class="footer-menu"><nav class="menu-footer-about-menu-container"><ul id="menu-footer-about-menu" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="../about/our-values/index.html">Our values</a></li>
 <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="../about/history/index.html">History</a></li>
 <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="../about/how-we-work/index.html">How we work</a></li>
 <li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="../about/leadership-team/index.html">Leadership team</a></li>
 </ul></nav></ul>
-						 
+
 			</div>
-			
+
 			<div class="fourty">
-			
+
 				<div class="row footer-title">
 					Services
 				</div>
-				
+
 				<ul class="footer-menu"><nav class="menu-footer-services-menu-container"><ul id="menu-footer-services-menu" class="menu"><li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="../services/distributed-team-leadership-management/index.html">Tech Leadership</a></li>
 <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="../services/technology-consultancy/index.html">Technology Consultancy</a></li>
 <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="../services/bespoke-software-development/index.html">Software Development</a></li>
 </ul></nav></ul>
-				
+
 			</div>
-			
+
 			<div class="twenty">
-				
+
 				<div class="row footer-title">
 					Expertise
 				</div>
-				
+
 				<ul class="footer-menu"><nav class="menu-footer-expertise-menu-container"><ul id="menu-footer-expertise-menu" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="../expertise/net/index.html">.Net and Azure</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="../expertise/agile-process/index.html">Agile Methodologies</a></li>
 <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="../expertise/api-design/index.html">API Design</a></li>
 <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="../expertise/database-technologies/index.html">Database Technologies</a></li>
 </ul></nav></ul>
-			
+
 			</div>
-			
+
 			<div class="twenty">
-				
+
 				<ul class="footer-menu larger"><nav class="menu-footer-final-menu-container"><ul id="menu-footer-final-menu" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="../case-studies/index.html">Case Studies</a></li>
 <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="../contact/index.html">Contact</a></li>
 <li id="menu-item-409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-409"><a rel="privacy-policy" href="../privacy-policy/index.html">Privacy Policy</a></li>
 </ul></nav></ul>
-				
+
 			</div>
-			
+
 		</div>
-        
+
 		<div class="row copy">
-	
+
 			<div class="copy-left">
 				Copyright &copy; 2025 Elastic Mint Ltd. All rights reserved.
 			</div>
-				
+
 			<div class="copy-right">
 				Website Design and Development by <a href="http://auburn.co.uk/" target="_blank">Auburn Creative</a>.
 			</div>
-				
+
 		</div>
-		
+
   </div>
-    
+
 </footer>
 
-</div>
-<!-- #site-container -->
-<link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" />
-<script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-<script src="../wp-content/themes/ElasticMint/js/anime.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-(function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})();
-</script>
-<script type="text/javascript" src="../wp-content/themes/ElasticMint/js/all.js"></script>
-
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ElasticMint\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<link rel='stylesheet' id='font-awesome-css' href='../../use.fontawesome.com/releases/v5.15.4/css/all0899.css?ver=6.8.1' type='text/css' media='all' />
-<script type="text/javascript" src="../wp-includes/js/comment-reply.min0899.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
-
+</div> <!-- #site-container --> <link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" /> <script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> <script src="../wp-content/themes/ElasticMint/js/anime.min.js"></script> <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script> (function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})(); </script> <script type="text/javascript" src="../wp-content/themes/ElasticMint/js/all.js"></script>
+<script type="speculationrules"> {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ElasticMint\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]} </script> <link rel='stylesheet' id='font-awesome-css' href='../../use.fontawesome.com/releases/v5.15.4/css/all0899.css?ver=6.8.1' type='text/css' media='all' /> <script type="text/javascript" src="../wp-includes/js/comment-reply.min0899.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
 </body>
 
 

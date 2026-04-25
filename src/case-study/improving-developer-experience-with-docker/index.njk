@@ -1,0 +1,188 @@
+---
+layout: base.njk
+permalink: case-study/improving-developer-experience-with-docker/index.html
+title: 'Improving Developer Experience with Docker - Elastic Mint'
+description: 'Elastic Mint created a Docker-based development pattern at Preqin that lets developers debug instantly from source control with no manual setup required.'
+canonical: 'index.html'
+ogType: 'article'
+ogTitle: 'Improving Developer Experience with Docker - Elastic Mint'
+ogDescription: 'Elastic Mint created a Docker-based development pattern at Preqin that lets developers debug instantly from source control with no manual setup required.'
+ogUrl: 'https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/'
+ogImage: 'https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg'
+ogImageWidth: '225'
+ogImageHeight: '225'
+ogImageType: 'image/jpeg'
+articleModifiedTime: '2024-11-19T11:17:59+00:00'
+twitterLabel1: 'Estimated reading time'
+twitterData1: '2 minutes'
+bodyClass: 'wp-singular case-study-template-default single single-case-study postid-554 wp-theme-ElasticMint singular'
+oembedJsonHref: 'wp-json/oembed/1.0/embeda2c2.json?url=https%3A%2F%2Fwww.elasticmint.com%2Fcase-study%2Fimproving-developer-experience-with-docker%2F'
+oembedXmlHref: 'wp-json/oembed/1.0/embed5943?url=https%3A%2F%2Fwww.elasticmint.com%2Fcase-study%2Fimproving-developer-experience-with-docker%2F&format=xml'
+schemaGraph: '{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/","url":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/","name":"Improving Developer Experience with Docker - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"primaryImageOfPage":{"@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/#primaryimage"},"image":{"@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/#primaryimage"},"thumbnailUrl":"https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg","datePublished":"2024-02-18T11:46:48+00:00","dateModified":"2024-11-19T11:17:59+00:00","breadcrumb":{"@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/#primaryimage","url":"https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg","width":225,"height":225},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Improving Developer Experience with Docker"}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy","description":"A refreshing approach to bespoke software development","publisher":{"@id":"https://www.elasticmint.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.elasticmint.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy","url":"https://www.elasticmint.com/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/#/schema/logo/image/","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060,"caption":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy"},"image":{"@id":"https://www.elasticmint.com/#/schema/logo/image/"},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"]}]}'
+postBody: '</div>
+<!-- #site-container -->
+<link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="../../wp-content/themes/ElasticMint/js/anime.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+(function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})();
+</script>
+<script type="text/javascript" src="../../wp-content/themes/ElasticMint/js/all.js"></script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ElasticMint\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel=''stylesheet'' id=''font-awesome-css'' href=''https://use.fontawesome.com/releases/v5.15.4/css/all0899.css?ver=6.8.1'' type=''text/css'' media=''all'' />
+<script type="text/javascript" src="../../wp-includes/js/comment-reply.min0899.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>'
+---
+{% raw %}
+<div class="row blog-top">
+	
+	<canvas id="myCanvas"></canvas>
+	
+	<div class="row overlay-canvas">
+	
+		<div class="inside centered">
+			
+				<div class="wrap-title static">
+					
+					<div class="row aos-init aos-animate" data-aos="fade-up">
+					
+						<div class="wrap-content">
+							<h4>18.02.24</h4>
+							
+														<h1>Improving Developer Experience with Docker</h1>
+							
+						</div>
+						
+					</div>
+					
+					<div class="row aos-init aos-animate" data-aos="fade-down">
+
+						<div class="wrap-content larger thumbnail-wrap">
+							
+							<div class="over-cats">
+																							</div>
+							
+							<img width="225" height="225" src="../../wp-content/uploads/2024/11/Preqin-Logo.jpg" class="attachment-blog-horiz size-blog-horiz wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg 225w, https://www.elasticmint.com/wp-content/uploads/2024/11/Preqin-Logo.jpg 150w" sizes="(max-width: 225px) 100vw, 225px" />							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+		</div>
+		
+	</div>
+	
+	<div class="row featured-and-cats overlay-canvas standard-content halfs">
+		
+		<div class="inside">
+			
+			<div class="wrap-content aos-init aos-animate" data-aos="fade-up">
+				<p><em>In December 2023, Elastic Mint celebrated five years of partnership with Preqin, a leading financial services company providing data and insights in the global alternatives community. During this period, we were involved in a number of projects related to Preqin Pro, their alternative assets data platform.</em></p>
+<h2>API Dependencies</h2>
+<p>One of the challenges of developing APIs for systems that contain many moving parts is that they often depend on multiple external services. This can lead to developers needing to configure lots of things on their local machine before they can debug. Very often, the knowledge relating to setting up a developer machine is in an out-of-date document somewhere. It may even be locked in the mind of whichever developers have been around the longest!</p>
+<p>At Elastic Mint, we believe that a developer should be able to check out the latest code from source control and start working on it as quickly as possible.</p>
+<h2>Docker to the Rescue</h2>
+<p>During our partnership with Preqin we developed a pattern for developing ASP .Net Core APIs using Docker to enable the API to run against any external dependencies while debugging in Visual Studio. This involved creating a Dockerfile for the API and then creating a Docker Compose project which included any external dependencies. These dependencies could be a database like MongoDB or SQL Server, an AWS service or another API.</p>
+<p>We were able to include the Docker images for specific versions of database that were used in the production environment. We used tools like LocalStack to emulate AWS and MockServer to mock other APIs. The default configuration meant the API would work against all these dependencies.</p>
+<p>The end result was that a developer could get the code from source control, open the solution in Visual Studio, specify the startup project and then immediately start debugging. This will avoid hours of installing services and frustration because no one remembers how to set up a developer machine.</p>
+<p>Having developed the patterns, we built a Visual Studio template to provide a starting point for new APIs. Over the course of a year, this template was used many times, saving countless hours not only during initial development but also for future developers who will maintain these APIs.</p>
+<p><strong>Technologies:</strong> ASP .Net Core, Elasticsearch, XUnit, Docker</p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="row blog-posts related">
+
+	<div class="inside">
+	
+		<h4>Related case studies</h4>
+		
+		<div class="marg-small">
+		
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../developing-assistive-technology-for-visual-impairments/index.html">
+						
+						<span class="over-date">
+							
+							<h4>19.11.24</h4>
+							
+						</span>
+						
+						<img width="351" height="144" src="../../wp-content/uploads/2024/11/University-Bath-Logo.png" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" srcset="https://www.elasticmint.com/wp-content/uploads/2024/11/University-Bath-Logo.png 351w, https://www.elasticmint.com/wp-content/uploads/2024/11/University-Bath-Logo-300x123.png 300w" sizes="(max-width: 351px) 100vw, 351px" />					</a>
+					
+					<h2><a href="../developing-assistive-technology-for-visual-impairments/index.html">Developing Assistive Technology for Visual Impairments</a></h2>
+					
+				</div>
+			
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../data-import-visualisation-for-pei-group/index.html">
+						
+						<span class="over-date">
+							
+							<h4>19.11.24</h4>
+							
+						</span>
+						
+						<img width="200" height="200" src="../../wp-content/uploads/2024/11/PEI-Icon.png" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" srcset="https://www.elasticmint.com/wp-content/uploads/2024/11/PEI-Icon.png 200w, https://www.elasticmint.com/wp-content/uploads/2024/11/PEI-Icon-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />					</a>
+					
+					<h2><a href="../data-import-visualisation-for-pei-group/index.html">Data Import &#038; Visualisation for PEI Group</a></h2>
+					
+				</div>
+			
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../development-of-a-custom-portal-for-showcasing-internal-projects/index.html">
+						
+						<span class="over-date">
+							
+							<h4>18.02.24</h4>
+							
+						</span>
+						
+						<img width="125" height="125" src="../../wp-content/uploads/2021/03/leadership-team.png" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" loading="lazy" />					</a>
+					
+					<h2><a href="../development-of-a-custom-portal-for-showcasing-internal-projects/index.html">Development of a Custom Portal for Showcasing Internal Projects</a></h2>
+					
+				</div>
+			
+						
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+		
+		<div class="wrap-content">
+			
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+			
+			<h2 class="aos-init aos-animate" data-aos="fade-up">If you are seeking help with complex .NET software development projects, we are the partner of choice</h2>
+			
+							<a  class="aos-init aos-animate" data-aos="fade-down" class="button green" href="../../contact/index.html" target="_self">Get started</a>
+						
+		</div>
+			
+	</div>
+	
+</div>
+{% endraw %}

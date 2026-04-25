@@ -1,0 +1,216 @@
+---
+layout: base.njk
+permalink: coding-tip-making-code-readable-with-extension-methods/index.html
+title: 'Readable Code with C# Extension Methods - Elastic Mint'
+description: 'A practical C# coding tip: how to use extension methods to write more readable, fluent and reusable code without cluttering your classes.'
+canonical: 'index.html'
+ogType: 'article'
+ogTitle: 'Readable Code with C# Extension Methods - Elastic Mint'
+ogDescription: 'A practical C# coding tip: how to use extension methods to write more readable, fluent and reusable code without cluttering your classes.'
+ogUrl: 'https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/'
+ogImage: 'https://www.elasticmint.com/wp-content/uploads/2021/01/desktop-glasses-scaled.jpg'
+ogImageWidth: '2560'
+ogImageHeight: '1704'
+ogImageType: 'image/jpeg'
+articlePublishedTime: '2021-05-04T08:26:29+00:00'
+articleModifiedTime: '2024-11-25T07:24:13+00:00'
+author: 'Andy'
+twitterCreator: '@elasticmint'
+twitterLabel1: 'Written by'
+twitterData1: 'Andy'
+twitterLabel2: 'Estimated reading time'
+twitterData2: '2 minutes'
+bodyClass: 'wp-singular post-template-default single single-post postid-434 single-format-standard wp-theme-ElasticMint singular'
+pageId: '434'
+pageType: 'posts'
+oembedJsonHref: 'wp-json/oembed/1.0/embeda09d.json?url=https%3A%2F%2Fwww.elasticmint.com%2Fcoding-tip-making-code-readable-with-extension-methods%2F'
+oembedXmlHref: 'wp-json/oembed/1.0/embed197a?url=https%3A%2F%2Fwww.elasticmint.com%2Fcoding-tip-making-code-readable-with-extension-methods%2F&format=xml'
+schemaGraph: '{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#article","isPartOf":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/"},"author":{"name":"Andy","@id":"https://www.elasticmint.com/#/schema/person/526698f5827a951afc3220bf4d37d08e"},"headline":"Coding Tip &#8211; Making Code Readable with Extension Methods","datePublished":"2021-05-04T08:26:29+00:00","dateModified":"2024-11-25T07:24:13+00:00","mainEntityOfPage":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/"},"wordCount":323,"publisher":{"@id":"https://www.elasticmint.com/#organization"},"image":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#primaryimage"},"thumbnailUrl":"https://www.elasticmint.com/wp-content/uploads/2021/01/desktop-glasses-scaled.jpg","articleSection":["Uncategorized"],"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/","url":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/","name":"Readable Code with C# Extension Methods - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"primaryImageOfPage":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#primaryimage"},"image":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#primaryimage"},"thumbnailUrl":"https://www.elasticmint.com/wp-content/uploads/2021/01/desktop-glasses-scaled.jpg","datePublished":"2021-05-04T08:26:29+00:00","dateModified":"2024-11-25T07:24:13+00:00","breadcrumb":{"@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#primaryimage","url":"https://www.elasticmint.com/wp-content/uploads/2021/01/desktop-glasses-scaled.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2021/01/desktop-glasses-scaled.jpg","width":2560,"height":1704},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.elasticmint.com/blog/"},{"@type":"ListItem","position":3,"name":"Coding Tip &#8211; Making Code Readable with Extension Methods"}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy","description":"A refreshing approach to bespoke software development","publisher":{"@id":"https://www.elasticmint.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.elasticmint.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy","url":"https://www.elasticmint.com/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/#/schema/logo/image/","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060,"caption":"Elastic Mint Bespoke Software Development company in Bristol offering Software Development and IT Consultancy"},"image":{"@id":"https://www.elasticmint.com/#/schema/logo/image/"},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"]},{"@type":"Person","@id":"https://www.elasticmint.com/#/schema/person/526698f5827a951afc3220bf4d37d08e","name":"Andy","image":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/6362b9f5d9db9f5240bd5b9df62c892634f001fb7477495c6a0b6638be496c9f?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/6362b9f5d9db9f5240bd5b9df62c892634f001fb7477495c6a0b6638be496c9f?s=96&d=mm&r=g","caption":"Andy"},"url":"https://www.elasticmint.com/author/andy/"}]}'
+postBody: '</div>
+<!-- #site-container -->
+<link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="../wp-content/themes/ElasticMint/js/anime.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+(function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})();
+</script>
+<script type="text/javascript" src="../wp-content/themes/ElasticMint/js/all.js"></script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ElasticMint\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel=''stylesheet'' id=''font-awesome-css'' href=''../../use.fontawesome.com/releases/v5.15.4/css/all0899.css?ver=6.8.1'' type=''text/css'' media=''all'' />
+<script type="text/javascript" src="../wp-includes/js/comment-reply.min0899.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>'
+---
+{% raw %}
+<div class="row blog-top">
+	
+	<canvas id="myCanvas"></canvas>
+	
+	<div class="row overlay-canvas">
+	
+		<div class="inside centered">
+			
+				<div class="wrap-title static">
+					
+					<div class="row aos-init aos-animate" data-aos="fade-up">
+					
+						<div class="wrap-content">
+							<h4>04.05.21</h4>
+							<h1>Coding Tip &#8211; Making Code Readable with Extension Methods</h1>
+						</div>
+						
+					</div>
+					
+					<div class="row aos-init aos-animate" data-aos="fade-down">
+
+						<div class="wrap-content larger thumbnail-wrap">
+							
+							<div class="over-cats">
+															</div>
+							
+							<img width="1270" height="563" src="../wp-content/uploads/2021/01/desktop-glasses-1270x563.jpg" class="attachment-blog-horiz size-blog-horiz wp-post-image" alt="" decoding="async" fetchpriority="high" />							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+		</div>
+		
+	</div>
+	
+	<div class="row featured-and-cats overlay-canvas standard-content halfs">
+		
+		<div class="inside">
+			
+			<div class="wrap-content aos-init aos-animate" data-aos="fade-up">
+				<p>Extension methods have been available in C# for many years now. As with all language features they are open to abuse, but used well they can enable developers to produce fluent interfaces and stateless methods for reuse.</p>
+<p>One of my bugbears is code that is hard to understand. Or more accurately code I have to think about in order to understand.</p>
+<h2>Configuring Services in Application Startup</h2>
+<p>Take the Startup class in ASP .Net Core APIs. In the <em>ConfigureServices() </em>method there is often a lot of code adding services to the <em>IServiceCollection</em> to enable Dependency Injection. This code can be overwhelming when you first look at it. E.g.</p>
+<pre>services
+    .AddScoped&lt;IMyService, MyService&gt;()
+    .AddScoped&lt;IMyService2, MyService2&gt;()
+    .AddScoped&lt;IMyService3, MyService3&gt;() 
+    ...</pre>
+<p>I like to organise code according to the functionality it supports. Many of these services support a specific area of functionality. A well-named extension method placed in the folder for a particular piece of functionality makes it easy to group configuring services it relies on together. The intention of the code in the <em>ConfigureServices() </em>method then becomes much easier to understand. E.g.</p>
+<pre>services
+    .AddFeature1()
+    .AddFeature2()
+    .AddFeature3()
+    ...</pre>
+<p>&nbsp;</p>
+<h2>Dynamically Building Database Queries</h2>
+<p>Another area I find extension methods useful is with dynamically building up queries using the Elasticsearch Nest client or the MongoDB Driver. Very often, I have to build a query based on an optional parameter in the request. This can lead to lots of if statements checking for the parameter. If the parameter is present the query is then extended. E.g.</p>
+<pre>var filter = Builders&lt;MyCollection&gt;.Filter.Empty;
+
+if (property1!= null)
+{
+    filter &amp;= Builders&lt;MyCollection&gt;.Filter.Eq(x =&gt; x.Property1, property1);
+}
+
+...</pre>
+<p>Very quickly this code can become so long and unreadable that it&#8217;s hard to understand what the intention is. Moving this code into extension methods leads to code like this where the intention is much clearer.</p>
+<pre>var filter = Builders&lt;MyCollection&gt;.Filter
+    .Empty
+    .ByProperty1(property1)
+    .ByProperty2(property2) 
+    ...;</pre>
+<p>The obvious benefit to all this is that it helps the next person who works on this to quickly understand what the code is trying to do. It&#8217;s easier to make changes and there are likely to be fewer bugs.</p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="row blog-posts related">
+
+	<div class="inside">
+	
+		<h4>Related articles</h4>
+		
+		<div class="marg-small">
+		
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../from-offshore-to-hybrid-ensuring-success-with-uk-based-intermediaries/index.html">
+						
+						<span class="over-date">
+							
+							<h4>13.06.24</h4>
+							
+						</span>
+						
+						<img width="770" height="600" src="../wp-content/uploads/2024/05/An_abstract_digital_illustration_collaboration_1920x1080-770x600.png" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" />					</a>
+					
+					<h2><a href="../from-offshore-to-hybrid-ensuring-success-with-uk-based-intermediaries/index.html">From Offshore to Hybrid: Ensuring Success with UK-Based Intermediaries</a></h2>
+					
+				</div>
+			
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../avoiding-the-legacy-trap-strategies-to-maintain-cutting-edge-software/index.html">
+						
+						<span class="over-date">
+							
+							<h4>22.04.24</h4>
+							
+						</span>
+						
+						<img width="770" height="600" src="../wp-content/uploads/2024/04/images_OHlSY7vKtIZ9Mh8LkGnG-770x600.png" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" />					</a>
+					
+					<h2><a href="../avoiding-the-legacy-trap-strategies-to-maintain-cutting-edge-software/index.html">Avoiding the Legacy Trap: Strategies to Maintain Cutting-Edge Software</a></h2>
+					
+				</div>
+			
+					
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+			
+					<a class="img-wrap" href="../from-old-to-bold-managing-change-and-skills-in-legacy-system-overhauls/index.html">
+						
+						<span class="over-date">
+							
+							<h4>10.04.24</h4>
+							
+						</span>
+						
+						<img width="770" height="600" src="../wp-content/uploads/2024/04/DALL%c2%b7E-2024-04-10-14.26.43-A-cartoony-image-depicting-a-developer-standing-in-the-middle-of-a-rapidly-changing-digital-lands" class="attachment-blog-item size-blog-item wp-post-image" alt="" decoding="async" loading="lazy" />					</a>
+					
+					<h2><a href="../from-old-to-bold-managing-change-and-skills-in-legacy-system-overhauls/index.html">From Old to Bold: Managing Change and Skills in Legacy System Overhauls</a></h2>
+					
+				</div>
+			
+						
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+		
+		<div class="wrap-content">
+			
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+			
+			<h2 class="aos-init aos-animate" data-aos="fade-up">Get the right solution that works for you</h2>
+			
+							<a  class="aos-init aos-animate" data-aos="fade-down" class="button green" href="../contact/index.html" target="_self">Get started</a>
+						
+		</div>
+			
+	</div>
+	
+</div>
+{% endraw %}

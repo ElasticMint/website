@@ -31,7 +31,7 @@
 <meta name="viewport" content="width=device-width" />
 <title>{{ title }}</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/ElasticMint/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="{{ prefix }}wp-content/themes/ElasticMint/style.css" />
 <!--[if lt IE 9]>
 <script src="https://www.elasticmint.com/wp-content/themes/ElasticMint/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -47,18 +47,49 @@
 	<meta property="og:description" content="{{ ogDescription or description }}" />
 	<meta property="og:url" content="{{ ogUrl }}" />
 	<meta property="og:site_name" content="Elastic Mint" />
+{%- if ogImage %}
+	<meta property="og:image" content="{{ ogImage }}" />
+{%- endif %}
+{%- if ogImageWidth %}
+	<meta property="og:image:width" content="{{ ogImageWidth }}" />
+{%- endif %}
+{%- if ogImageHeight %}
+	<meta property="og:image:height" content="{{ ogImageHeight }}" />
+{%- endif %}
+{%- if ogImageType %}
+	<meta property="og:image:type" content="{{ ogImageType }}" />
+{%- endif %}
+{%- if articlePublishedTime %}
+	<meta property="article:published_time" content="{{ articlePublishedTime }}" />
+{%- endif %}
 {%- if articleModifiedTime %}
 	<meta property="article:modified_time" content="{{ articleModifiedTime }}" />
 {%- endif %}
+{%- if author %}
+	<meta name="author" content="{{ author }}" />
+{%- endif %}
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@elasticmint" />
+{%- if twitterCreator %}
+	<meta name="twitter:creator" content="{{ twitterCreator }}" />
+{%- endif %}
+{%- if twitterLabel1 %}
+	<meta name="twitter:label1" content="{{ twitterLabel1 }}" />
+	<meta name="twitter:data1" content="{{ twitterData1 }}" />
+{%- endif %}
+{%- if twitterLabel2 %}
+	<meta name="twitter:label2" content="{{ twitterLabel2 }}" />
+	<meta name="twitter:data2" content="{{ twitterData2 }}" />
+{%- endif %}
+{%- if schemaGraph %}
 	<script type="application/ld+json" class="yoast-schema-graph">{{ schemaGraph | safe }}</script>
+{%- endif %}
 	<!-- / Yoast SEO plugin. -->
 
 
 <link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
-<link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Feed" href="feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Comments Feed" href="comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Feed" href="{{ prefix }}feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Elastic Mint &raquo; Comments Feed" href="{{ prefix }}comments/feed/index.html" />
 <script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.elasticmint.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"}};
@@ -80,7 +111,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 </style>
-<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min0899.css?ver=6.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='{{ prefix }}wp-includes/css/dist/block-library/style.min0899.css?ver=6.8.1' type='text/css' media='all' />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -91,18 +122,24 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" id="jquery-js"></script>
-<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/{{ pageId }}.json" />
-<link rel='shortlink' href='index.html' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="{{ oembedJsonHref }}" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="{{ oembedXmlHref | safe }}" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" id="jquery-js"></script>
+<link rel="https://api.w.org/" href="{{ prefix }}wp-json/index.html" />{% if pageId and pageType %}<link rel="alternate" title="JSON" type="application/json" href="{{ prefix }}wp-json/wp/v2/{{ pageType }}/{{ pageId }}.json" />{% endif %}
+{%- if shortlinkHref %}
+<link rel='shortlink' href='{{ prefix }}{{ shortlinkHref }}' />
+{%- endif %}
+{%- if oembedJsonHref %}
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="{{ prefix }}{{ oembedJsonHref }}" />
+{%- endif %}
+{%- if oembedXmlHref %}
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="{{ prefix }}{{ oembedXmlHref }}" />
+{%- endif %}
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
 			/* Disable Publish Date on Case Studies Template */
 .single-case-study .wrap-title .wrap-content h4, .news-item .over-date, .page-template-CaseStudies .over-date {
 	display: none;
 }
 /* /Disable Publish Date on Case Studies Template */		</style>
-		<link rel="shortcut icon" href="wp-content/themes/ElasticMint/favicon.png" />
+		<link rel="shortcut icon" href="{{ prefix }}wp-content/themes/ElasticMint/favicon.png" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -119,26 +156,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 {{ content | safe }}
 
 {% include "footer.njk" %}
-
-</div>
-<!-- #site-container -->
-<link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" />
-<script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-<script src="wp-content/themes/ElasticMint/js/anime.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-(function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})();
-</script>
-<script type="text/javascript" src="wp-content/themes/ElasticMint/js/all.js"></script>
-
-<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ElasticMint\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-<link rel='stylesheet' id='font-awesome-css' href='../use.fontawesome.com/releases/v5.15.4/css/all0899.css?ver=6.8.1' type='text/css' media='all' />
-<script type="text/javascript" src="wp-includes/js/comment-reply.min0899.js?ver=6.8.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
-
+{{ postBody | safe }}
 </body>
 
 
