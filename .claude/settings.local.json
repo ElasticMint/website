@@ -12,7 +12,10 @@
       "Bash(npm --version)",
       "Bash(npm install *)",
       "Bash(git diff *)",
-      "Bash(npx eleventy *)"
+      "Bash(npx eleventy *)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(git checkout *)",
+      "Bash(git clean *)"
     ],
     "deny": []
   }
