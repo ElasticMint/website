@@ -18,7 +18,6 @@ This is a static WordPress website that has been exported to HTML. The site belo
     - `/js/all.js` - Combined JavaScript (jQuery, bxSlider, anime.js, etc.)
     - `/images/` - Theme images
   - `/uploads/` - Media files organized by year/month
-  - `/plugins/gravityforms/` - Form plugin assets
 
 ### Technology Stack
 - Static HTML (exported from WordPress)
@@ -45,6 +44,5 @@ Since this is a static site with no build process:
 ## Important Notes
 
 - The site uses absolute paths for assets, so it needs to be served from a web server root
-- Forms use Gravity Forms but won't function without backend processing
 - The site includes Google Analytics tracking (GA4 measurement ID: G-9D70PLKZQD), embedded as a gtag.js snippet directly after the `<head>` tag in every content `index.html`. HTTrack redirect stubs (`docs/indexXXXX.html`), RSS feeds (`*/feed/index.html`), and `wp-json/index.html` are intentionally not tagged.
 - Mobile responsive with breakpoints at 1440px, 1080px, 960px, 740px, 640px, 500px
