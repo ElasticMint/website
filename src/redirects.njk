@@ -1,0 +1,23 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: redirect
+permalink: "{{ redirect.from }}"
+eleventyExcludeFromCollections: true
+layout: false
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting&hellip;</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.elasticmint.com{{ redirect.to }}">
+<meta http-equiv="refresh" content="0; url={{ redirect.to }}">
+<script>window.location.replace("{{ redirect.to }}")</script>
+</head>
+<body>
+<p>This page has moved to <a href="{{ redirect.to }}">{{ redirect.to }}</a>.</p>
+</body>
+</html>

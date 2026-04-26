@@ -8,7 +8,14 @@
       "Bash(cd:*)",
       "Bash(ls:*)",
       "Bash(cat)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(git diff *)",
+      "Bash(npx eleventy *)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(git checkout *)",
+      "Bash(git clean *)"
     ],
     "deny": []
   }

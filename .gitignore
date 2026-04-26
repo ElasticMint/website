@@ -1,0 +1,4 @@
+node_modules/
+.eleventy-cache/
+.cache/
+*.log

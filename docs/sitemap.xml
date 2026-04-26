@@ -11,69 +11,63 @@
 
   <!-- Services -->
   <url>
-    <loc>https://www.elasticmint.com/services/</loc>
+    <loc>https://www.elasticmint.com/services.html</loc>
     <lastmod>2023-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/services/bespoke-software-development/</loc>
+    <loc>https://www.elasticmint.com/services/software-development.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/services/distributed-team-leadership-management/</loc>
+    <loc>https://www.elasticmint.com/services/tech-leadership.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/services/technology-consultancy/</loc>
+    <loc>https://www.elasticmint.com/services/consultancy.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/fractional-cto/</loc>
+    <loc>https://www.elasticmint.com/fractional-cto.html</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://www.elasticmint.com/bespoke-software/</loc>
-    <lastmod>2024-11-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <!-- Expertise -->
   <url>
-    <loc>https://www.elasticmint.com/expertise/</loc>
+    <loc>https://www.elasticmint.com/expertise.html</loc>
     <lastmod>2023-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/expertise/net/</loc>
+    <loc>https://www.elasticmint.com/expertise/net.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/expertise/agile-process/</loc>
+    <loc>https://www.elasticmint.com/expertise/agile.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/expertise/api-design/</loc>
+    <loc>https://www.elasticmint.com/expertise/api-design.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/expertise/database-technologies/</loc>
+    <loc>https://www.elasticmint.com/expertise/databases.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -81,31 +75,31 @@
 
   <!-- About -->
   <url>
-    <loc>https://www.elasticmint.com/about/</loc>
+    <loc>https://www.elasticmint.com/about.html</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/about/history/</loc>
+    <loc>https://www.elasticmint.com/about/history.html</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/about/how-we-work/</loc>
+    <loc>https://www.elasticmint.com/about/how-we-work.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/about/our-values/</loc>
+    <loc>https://www.elasticmint.com/about/values.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/about/leadership-team/</loc>
+    <loc>https://www.elasticmint.com/about/leadership.html</loc>
     <lastmod>2024-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -113,125 +107,125 @@
 
   <!-- Case Studies -->
   <url>
-    <loc>https://www.elasticmint.com/case-studies/</loc>
+    <loc>https://www.elasticmint.com/case-studies.html</loc>
     <lastmod>2021-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/automated-testing-with-elasticsearch/</loc>
+    <loc>https://www.elasticmint.com/case-studies/elasticsearch-testing.html</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/data-import-visualisation-for-pei-group/</loc>
+    <loc>https://www.elasticmint.com/case-studies/pei-group.html</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/developing-assistive-technology-for-visual-impairments/</loc>
+    <loc>https://www.elasticmint.com/case-studies/assistive-tech.html</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/development-of-a-custom-portal-for-showcasing-internal-projects/</loc>
+    <loc>https://www.elasticmint.com/case-studies/internal-portal.html</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/improving-developer-experience-with-docker/</loc>
+    <loc>https://www.elasticmint.com/case-studies/docker-dx.html</loc>
     <lastmod>2024-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/case-study/migrating-from-legacy-applications/</loc>
+    <loc>https://www.elasticmint.com/case-studies/legacy-migration.html</loc>
     <lastmod>2024-11-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/case-study/developing-an-mvp-for-hwwc/</loc>
-    <lastmod>2024-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://www.elasticmint.com/blog/</loc>
+    <loc>https://www.elasticmint.com/blog.html</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/from-offshore-to-hybrid-ensuring-success-with-uk-based-intermediaries/</loc>
+    <loc>https://www.elasticmint.com/blog/offshore-to-hybrid.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/from-old-to-bold-managing-change-and-skills-in-legacy-system-overhauls/</loc>
+    <loc>https://www.elasticmint.com/blog/managing-legacy-change.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/avoiding-the-legacy-trap-strategies-to-maintain-cutting-edge-software/</loc>
+    <loc>https://www.elasticmint.com/blog/avoiding-the-legacy-trap.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/bridging-the-past-and-future-ai-driven-strategies-for-legacy-software-overhaul/</loc>
+    <loc>https://www.elasticmint.com/blog/ai-legacy-overhaul.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/choosing-the-right-tool-elasticsearch/</loc>
+    <loc>https://www.elasticmint.com/blog/elasticsearch-vs-alternatives.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/coding-tip-making-code-readable-with-extension-methods/</loc>
+    <loc>https://www.elasticmint.com/blog/extension-methods.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/do-we-still-need-orms/</loc>
+    <loc>https://www.elasticmint.com/blog/do-we-need-orms.html</loc>
     <lastmod>2024-11-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/the-dangers-of-trying-to-future-proof-code/</loc>
+    <loc>https://www.elasticmint.com/blog/future-proof-code.html</loc>
     <lastmod>2024-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/why-we-sweat-the-small-stuff/</loc>
+    <loc>https://www.elasticmint.com/blog/why-sweat-the-small-stuff.html</loc>
     <lastmod>2024-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.elasticmint.com/blog/bespoke-software.html</loc>
+    <lastmod>2024-11-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Other -->
   <url>
-    <loc>https://www.elasticmint.com/contact/</loc>
+    <loc>https://www.elasticmint.com/contact.html</loc>
     <lastmod>2023-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/privacy-policy/</loc>
+    <loc>https://www.elasticmint.com/privacy-policy.html</loc>
     <lastmod>2021-03-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
