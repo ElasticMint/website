@@ -4,47 +4,98 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a static WordPress website that has been exported to HTML. The site belongs to Elastic Mint, a bespoke software development company in Bristol. The entire site is contained within the `/docs` folder.
+This is the marketing website for Elastic Mint, a bespoke software development company in Bristol. It's a static site built with [Eleventy (11ty)](https://www.11ty.dev/), deployed via GitHub Pages from the `/docs` folder on `master` (custom domain: www.elasticmint.com, see `CNAME`).
+
+The site originated as a WordPress export but has since been converted to an Eleventy-templated static site. Many of the original WordPress assets (theme CSS/JS in `wp-content/themes/ElasticMint/`, media uploads in `wp-content/uploads/`) are still served as-is — only the HTML pages and chrome are now templated.
 
 ## Architecture
 
-### Directory Structure
-- `/docs/` - Main website root containing all static HTML files
-  - WordPress-style URL structure with individual folders for each page/post
-  - Each page typically has its own `index.html` file
-- `/docs/wp-content/` - WordPress assets directory
-  - `/themes/ElasticMint/` - Custom theme assets
-    - `style.css` - Main stylesheet
-    - `/js/all.js` - Combined JavaScript (jQuery, bxSlider, anime.js, etc.)
-    - `/images/` - Theme images
-  - `/uploads/` - Media files organized by year/month
-  - `/plugins/gravityforms/` - Form plugin assets
+### Directory layout
 
-### Technology Stack
-- Static HTML (exported from WordPress)
-- jQuery-based JavaScript
-- CSS with custom fonts (Intro, Rubik)
-- Animation libraries: anime.js, Paper.js, GSAP (TimelineLite)
-- Slider: bxSlider
-- No build process or package management
+- `/src/` — **source of truth** (what you edit). Eleventy input.
+  - `index.njk`, `about.njk`, `services.njk`, `blog.njk`, `case-studies.njk`, etc. — top-level pages.
+  - `about/`, `services/`, `expertise/`, `case-studies/`, `blog/` — sub-pages, one `.njk` per page.
+  - `_includes/` — shared layout/chrome:
+    - `base.njk` — full HTML wrapper (head, scripts, body shell). Per-page data injected via frontmatter (title, description, og:*, schemaGraph, bodyClass, etc.).
+    - `header.njk` — top bar + main menu.
+    - `nav-mobile.njk` — secondary mobile nav.
+    - `footer.njk` — site footer.
+  - `_data/redirects.json` — URL redirect mapping (old path → new URL). Each entry generates a tiny meta-refresh stub at the old path so SEO equity transfers.
+  - `redirects.njk` — Eleventy pagination template that emits one stub per `redirects.json` entry.
+- `/docs/` — Eleventy output, served by GitHub Pages. **Do not edit `.html` files in here directly — they're regenerated.** Static assets (`wp-content/`, `sitemap.xml`, `robots.txt`, `CNAME`) live here too and are served as-is.
+- `.eleventy.js` — build config (input: `src`, output: `docs`).
 
-## Common Development Tasks
+### Key conventions
 
-Since this is a static site with no build process:
+- All in-site URLs are **absolute root-relative** (`/about.html`, `/wp-content/themes/ElasticMint/style.css`). No relative `../` walking.
+- Pages with `<canvas id="myCanvas">` (homepage, blog posts, case studies) set `usesCanvas: true` in frontmatter; `base.njk` only loads paper.js for those pages.
+- Icons are **inline SVG** (no Font Awesome dependency).
 
-### Making Changes
-- Edit HTML files directly in their respective directories
-- CSS changes: `/docs/wp-content/themes/ElasticMint/style.css`
-- JavaScript changes: `/docs/wp-content/themes/ElasticMint/js/all.js`
+### Technology stack
 
-### Testing
-- Open HTML files directly in a browser or use a local HTTP server
-- Python: `python -m http.server 8000` (from `/docs` directory)
-- Node.js: `npx http-server ./docs`
+- **Build**: Eleventy 3.x (Node)
+- **Templates**: Nunjucks (`.njk`)
+- **CSS**: theme stylesheet at `/docs/wp-content/themes/ElasticMint/style.css` (custom fonts: Intro, Rubik)
+- **JS libraries** (loaded via CDN from `base.njk`):
+  - jQuery 1.11.2 (legacy — required by theme's `all.js`)
+  - SimpleBar 6.3.2 (custom scrollbars)
+  - paper.js 0.12.11 (canvas pages only)
+  - GSAP 3.6.0 (TimelineLite animations)
+  - anime.js (theme-bundled at `/wp-content/themes/ElasticMint/js/anime.min.js`)
+  - AOS 2.3.1 (scroll-triggered fade animations)
+- **Theme JS**: `/docs/wp-content/themes/ElasticMint/js/all.js` (combined, minified). Calls `.bxSlider()` on `#values` and `.testers-make` — bxSlider isn't currently loaded, which throws and halts execution at that point. Known limitation.
+- **Mobile breakpoints**: 1440px, 1080px, 960px, 740px, 640px, 500px
 
-## Important Notes
+## Common development tasks
 
-- The site uses absolute paths for assets, so it needs to be served from a web server root
-- Forms use Gravity Forms but won't function without backend processing
-- The site includes Google Analytics tracking (GA4 measurement ID: G-9D70PLKZQD), embedded as a gtag.js snippet directly after the `<head>` tag in every content `index.html`. HTTrack redirect stubs (`docs/indexXXXX.html`), RSS feeds (`*/feed/index.html`), and `wp-json/index.html` are intentionally not tagged.
-- Mobile responsive with breakpoints at 1440px, 1080px, 960px, 740px, 640px, 500px
+### Making content changes
+
+```bash
+# Install once
+npm install
+
+# Edit a page
+$EDITOR src/about.njk          # or src/blog/<slug>.njk, src/case-studies/<slug>.njk, etc.
+
+# Rebuild
+npx eleventy
+
+# Preview
+# Use VS Code Live Server or `npx http-server ./docs` and open the page.
+```
+
+### Adding a new page
+
+1. Create `src/<path>.njk` with frontmatter (`layout: base.njk`, `permalink: <path>.html`, plus `title`, `description`, `canonical`, `ogUrl`, `bodyClass`, etc.).
+2. If the page should appear in the main menu, edit `src/_includes/header.njk` and `src/_includes/nav-mobile.njk`.
+3. Add a corresponding entry to `docs/sitemap.xml`.
+4. `npx eleventy` to build.
+
+### Adding a redirect (old URL → new URL)
+
+Add an entry to `src/_data/redirects.json`:
+```json
+{ "from": "old/path/index.html", "to": "/new-path.html" }
+```
+Run `npx eleventy`. A meta-refresh stub is generated at the `from` path.
+
+### Editing shared chrome
+
+- Header/menu: `src/_includes/header.njk` and `src/_includes/nav-mobile.njk`
+- Footer: `src/_includes/footer.njk`
+- HTML head, scripts: `src/_includes/base.njk`
+
+Changes here propagate to every page on rebuild.
+
+### Editing theme styles or vendor JS
+
+- CSS: `docs/wp-content/themes/ElasticMint/style.css` (edited directly — not regenerated by Eleventy)
+- JS: `docs/wp-content/themes/ElasticMint/js/all.js` (minified; edit with care)
+
+## Important notes
+
+- The site needs to be served from a web server root (custom domain via CNAME). Absolute `/wp-content/...` paths assume root-served deployment.
+- Forms: contact page uses Calendly + mailto link. There's no server-side form handler.
+- Google Analytics: GA4 (measurement ID `G-9D70PLKZQD`), embedded once in `base.njk` so every generated page gets it.
+- Original audit-driven SEO fixes (sitemap, meta descriptions, title length, URL slugs) are all in place. Sitemap at `docs/sitemap.xml` lists all 36 canonical URLs.
+- The `feature/restructure_folders_pages` branch was where the WordPress → Eleventy migration happened (commits late April 2026). All historical context for *why* things are structured this way is in those commit messages.
