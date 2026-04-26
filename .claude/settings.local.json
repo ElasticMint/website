@@ -15,7 +15,9 @@
       "Bash(npx eleventy *)",
       "Bash(PYTHONIOENCODING=utf-8 python *)",
       "Bash(git checkout *)",
-      "Bash(git clean *)"
+      "Bash(git clean *)",
+      "Bash(sed -n '12,40p' src/fractional-cto.njk)",
+      "Bash(sed -n '12,40p' src/services/software-development.njk)"
     ],
     "deny": []
   }
