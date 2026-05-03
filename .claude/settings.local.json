@@ -32,7 +32,8 @@
       "Bash(git -C \"C:/Git/ElasticMint/website\" log --oneline -5)",
       "Bash(node .tmp_check.js)",
       "PowerShell($path = 'C:\\\\Git\\\\ElasticMint\\\\website\\\\src\\\\_includes\\\\footer.njk'; $content = [System.IO.File]::ReadAllText\\($path\\); $needle = \"`r`n`r`n`r`n`r`n`r`n`t`t`t`t`t`t<a target=`\"_blank`\" href=`\"https://twitter.com/elasticmint`\" title=`\"Twitter`\">\"; $idx = $content.IndexOf\\($needle\\); if \\($idx -lt 0\\) { Write-Output 'NEEDLE NOT FOUND'; exit 1 }; $endMarker = '</a>'; $endIdx = $content.IndexOf\\($endMarker, $idx\\) + $endMarker.Length; $removed = $content.Substring\\($idx, $endIdx - $idx\\); Write-Output \\('Removing ' + $removed.Length + ' chars'\\); $new = $content.Substring\\(0, $idx\\) + $content.Substring\\($endIdx\\); [System.IO.File]::WriteAllText\\($path, $new\\); Write-Output 'OK')",
-      "Bash(node .tmp_console.js)"
+      "Bash(node .tmp_console.js)",
+      "Bash(node .tmp_consent.js)"
     ],
     "deny": []
   }

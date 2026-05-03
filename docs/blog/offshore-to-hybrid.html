@@ -17,7 +17,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ajax.googleapis.com https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ajax.googleapis.com https://unpkg.com https://cdnjs.cloudflare.com https://t.contentsquare.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <title>Offshore to Hybrid: UK Software Teams - Elastic Mint</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -99,8 +99,15 @@
 		gtag('js', new Date());
 		gtag('config', 'G-9D70PLKZQD');
 	}
-	if (consent === 'accepted') loadGA();
+	function loadCS() {
+		var s = document.createElement('script');
+		s.async = true;
+		s.src = 'https://t.contentsquare.net/uxa/05e69e37baf18.js';
+		document.head.appendChild(s);
+	}
+	if (consent === 'accepted') { loadGA(); loadCS(); }
 	window.__loadGA = loadGA;
+	window.__loadCS = loadCS;
 	window.__cookieConsent = consent;
 })();
 </script>
@@ -517,6 +524,7 @@
 	if (accept) accept.addEventListener('click', function() {
 		try { localStorage.setItem('cookie_consent', 'accepted'); } catch(e) {}
 		if (window.__loadGA) window.__loadGA();
+		if (window.__loadCS) window.__loadCS();
 		dismiss();
 	});
 	if (reject) reject.addEventListener('click', function() {
