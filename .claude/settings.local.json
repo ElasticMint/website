@@ -19,7 +19,21 @@
       "Bash(sed -n '12,40p' src/fractional-cto.njk)",
       "Bash(sed -n '12,40p' src/services/software-development.njk)",
       "Bash(git ls-tree *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "PowerShell($path = 'C:\\\\Git\\\\ElasticMint\\\\website\\\\docs\\\\wp-content\\\\themes\\\\ElasticMint\\\\style.css'; $content = [System.IO.File]::ReadAllText\\($path\\); $oldBlock = '.copy::after{content:\"\";display:block;clear:both}.copy .copy-right{margin-top:-1.2rem}.fabe-badge{display:block;width:6rem;height:6rem;border-radius:50%}'; if \\(-not $content.Contains\\($oldBlock\\)\\) { Write-Output 'OLD BLOCK NOT FOUND'; exit 1 }; $newBlock = '.fabe-col{margin-left:auto;padding:0 2rem;display:flex;align-items:flex-start;justify-content:flex-end}.fabe-badge{display:block;width:8rem;height:8rem;border-radius:50%}'; $new = $content.Replace\\($oldBlock, $newBlock\\); [System.IO.File]::WriteAllText\\($path, $new\\); Write-Output 'OK')",
+      "PowerShell($path = 'C:\\\\Git\\\\ElasticMint\\\\website\\\\docs\\\\wp-content\\\\themes\\\\ElasticMint\\\\style.css'; $content = [System.IO.File]::ReadAllText\\($path\\); $old = '.fabe-badge{display:block;width:8rem;height:8rem;border-radius:50%}'; if \\(-not $content.Contains\\($old\\)\\) { Write-Output 'NOT FOUND'; exit 1 }; $new = $content.Replace\\($old, '.fabe-badge{display:block;width:11rem;height:11rem;border-radius:50%}'\\); [System.IO.File]::WriteAllText\\($path, $new\\); Write-Output 'OK')",
+      "Bash(awk 'BEGIN{RS=\"@media\"} /max-width:960px/' \"C:/Git/ElasticMint/website/docs/wp-content/themes/ElasticMint/style.css\")",
+      "Bash(awk 'BEGIN{RS=\"@media\"} /max-width:500px/' \"C:/Git/ElasticMint/website/docs/wp-content/themes/ElasticMint/style.css\")",
+      "Bash(npx http-server *)",
+      "Bash(curl -s http://127.0.0.1:8765/index.html)",
+      "Bash(npx playwright *)",
+      "Bash(node .tmp_mobile_check.js)",
+      "Bash(git -C \"C:/Git/ElasticMint/website\" status --short)",
+      "Bash(git -C \"C:/Git/ElasticMint/website\" log --oneline -5)",
+      "Bash(node .tmp_check.js)",
+      "PowerShell($path = 'C:\\\\Git\\\\ElasticMint\\\\website\\\\src\\\\_includes\\\\footer.njk'; $content = [System.IO.File]::ReadAllText\\($path\\); $needle = \"`r`n`r`n`r`n`r`n`r`n`t`t`t`t`t`t<a target=`\"_blank`\" href=`\"https://twitter.com/elasticmint`\" title=`\"Twitter`\">\"; $idx = $content.IndexOf\\($needle\\); if \\($idx -lt 0\\) { Write-Output 'NEEDLE NOT FOUND'; exit 1 }; $endMarker = '</a>'; $endIdx = $content.IndexOf\\($endMarker, $idx\\) + $endMarker.Length; $removed = $content.Substring\\($idx, $endIdx - $idx\\); Write-Output \\('Removing ' + $removed.Length + ' chars'\\); $new = $content.Substring\\(0, $idx\\) + $content.Substring\\($endIdx\\); [System.IO.File]::WriteAllText\\($path, $new\\); Write-Output 'OK')",
+      "Bash(node .tmp_console.js)",
+      "Bash(node .tmp_consent.js)"
     ],
     "deny": []
   }
