@@ -105,68 +105,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog -->
-  <url>
-    <loc>https://www.elasticmint.com/blog/offshore-to-hybrid.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/managing-legacy-change.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/avoiding-the-legacy-trap.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/ai-legacy-overhaul.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/elasticsearch-vs-alternatives.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/extension-methods.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/do-we-need-orms.html</loc>
-    <lastmod>2024-11-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/future-proof-code.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/why-sweat-the-small-stuff.html</loc>
-    <lastmod>2024-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.elasticmint.com/blog/bespoke-software.html</loc>
-    <lastmod>2024-11-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <!-- Other -->
   <url>
     <loc>https://www.elasticmint.com/contact.html</loc>

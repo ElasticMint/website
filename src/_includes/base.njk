@@ -32,7 +32,7 @@
 <!--[if lt IE 9]>
 <script src="https://www.elasticmint.com/wp-content/themes/ElasticMint/js/html5.js" type="text/javascript"></script>
 <![endif]-->
-<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+{% if noindex %}<meta name='robots' content='noindex, nofollow' />{% else %}<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />{% endif %}
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 
 
