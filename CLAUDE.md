@@ -13,22 +13,22 @@ The site originated as a WordPress export but has since been converted to an Ele
 ### Directory layout
 
 - `/src/` — **source of truth** (what you edit). Eleventy input.
-  - `index.njk`, `about.njk`, `services.njk`, `blog.njk`, `case-studies.njk`, etc. — top-level pages.
-  - `about/`, `services/`, `expertise/`, `case-studies/`, `blog/` — sub-pages, one `.njk` per page.
+  - `index.njk`, `about.njk`, `services.njk`, `ai.njk`, `case-studies.njk`, `fractional-cto.njk`, `contact.njk`, `privacy-policy.njk`, `404.njk` — top-level pages.
+  - `services/`, `case-studies/` — sub-pages, one `.njk` per page.
   - `_includes/` — shared layout/chrome:
     - `base.njk` — full HTML wrapper (head, scripts, body shell). Per-page data injected via frontmatter (title, description, og:*, schemaGraph, bodyClass, etc.).
     - `header.njk` — top bar + main menu.
     - `nav-mobile.njk` — secondary mobile nav.
     - `footer.njk` — site footer.
-  - `_data/redirects.json` — URL redirect mapping (old path → new URL). Each entry generates a tiny meta-refresh stub at the old path so SEO equity transfers.
-  - `redirects.njk` — Eleventy pagination template that emits one stub per `redirects.json` entry.
+  - `_data/redirects.json` — URL redirect mapping (old path → new URL). Currently empty (`[]`) — all migration redirects from the WordPress→Eleventy restructure have been removed. The 404 page handles stale links instead. Add an entry here if you ever need to redirect a specific URL again.
+  - `redirects.njk` — Eleventy pagination template that emits one meta-refresh stub per `redirects.json` entry. Inactive while `redirects.json` is empty; kept in place so adding a redirect is just a JSON edit.
 - `/docs/` — Eleventy output, served by GitHub Pages. **Do not edit `.html` files in here directly — they're regenerated.** Static assets (`wp-content/`, `sitemap.xml`, `robots.txt`, `CNAME`) live here too and are served as-is.
 - `.eleventy.js` — build config (input: `src`, output: `docs`).
 
 ### Key conventions
 
 - All in-site URLs are **absolute root-relative** (`/about.html`, `/wp-content/themes/ElasticMint/style.css`). No relative `../` walking.
-- Pages with `<canvas id="myCanvas">` (homepage, blog posts, case studies) set `usesCanvas: true` in frontmatter; `base.njk` only loads paper.js for those pages.
+- Pages with `<canvas id="myCanvas">` (homepage, case studies) set `usesCanvas: true` in frontmatter; `base.njk` only loads paper.js for those pages.
 - Icons are **inline SVG** (no Font Awesome dependency).
 
 ### Technology stack
@@ -55,7 +55,7 @@ The site originated as a WordPress export but has since been converted to an Ele
 npm install
 
 # Edit a page
-$EDITOR src/about.njk          # or src/blog/<slug>.njk, src/case-studies/<slug>.njk, etc.
+$EDITOR src/about.njk          # or src/services/<page>.njk, src/case-studies/<slug>.njk, etc.
 
 # Rebuild
 npx eleventy
@@ -95,7 +95,10 @@ Changes here propagate to every page on rebuild.
 ## Important notes
 
 - The site needs to be served from a web server root (custom domain via CNAME). Absolute `/wp-content/...` paths assume root-served deployment.
+- Treat `/wp-content/` as the site's assets folder. The name is a legacy from the WordPress export — CSS, JS, fonts, theme images, and media uploads all live underneath it. Don't restructure it to a more conventional `/assets/` or `/static/` layout: hundreds of URL references across templates and embedded inside `schemaGraph` JSON strings would need updating, internal `url(...)` references in `style.css` would need fixing, and any inbound link to a media file (LinkedIn embeds, search-engine image cache, etc.) would break. The folder name is repo-internal noise; the URLs are stable and that matters more.
 - Forms: contact page uses Calendly + mailto link. There's no server-side form handler.
 - Google Analytics: GA4 (measurement ID `G-9D70PLKZQD`), embedded once in `base.njk` so every generated page gets it.
-- Original audit-driven SEO fixes (sitemap, meta descriptions, title length, URL slugs) are all in place. Sitemap at `docs/sitemap.xml` lists all 36 canonical URLs.
+- Original audit-driven SEO fixes (sitemap, meta descriptions, title length, URL slugs) are all in place. Sitemap at `docs/sitemap.xml` lists all 18 canonical URLs.
+- 404 page at `src/404.njk` builds to `/404.html`. GitHub Pages auto-serves it for any unfound URL with HTTP 404 status. Don't add it to the sitemap.
+- `base.njk` honours a `noindex: true` frontmatter flag — the page emits `<meta name='robots' content='noindex, nofollow' />` instead of the default `index, follow`. Used by `404.njk`; available to any other page that needs it.
 - The `feature/restructure_folders_pages` branch was where the WordPress → Eleventy migration happened (commits late April 2026). All historical context for *why* things are structured this way is in those commit messages.

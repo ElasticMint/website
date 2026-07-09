@@ -1,0 +1,99 @@
+---
+layout: base.njk
+permalink: /blog/
+title: 'Blog - Elastic Mint'
+description: 'Honest, practical writing on building bespoke software: what it costs, when to build it, and how to avoid an expensive wrong turn. From the team at Elastic Mint.'
+canonical: 'https://www.elasticmint.com/blog/'
+ogType: 'website'
+ogTitle: 'Blog - Elastic Mint'
+ogDescription: 'Honest, practical writing on building bespoke software: what it costs, when to build it, and how to avoid an expensive wrong turn.'
+ogUrl: 'https://www.elasticmint.com/blog/'
+bodyClass: 'wp-singular blog page-template-default page wp-theme-ElasticMint singular'
+schemaGraph: '{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://www.elasticmint.com/blog/","url":"https://www.elasticmint.com/blog/","name":"Blog - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"breadcrumb":{"@id":"https://www.elasticmint.com/blog/#breadcrumb"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Blog"}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint","publisher":{"@id":"https://www.elasticmint.com/#organization"},"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint","url":"https://www.elasticmint.com/","logo":{"@type":"ImageObject","@id":"https://www.elasticmint.com/#/schema/logo/image/","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"]}]}'
+---
+<style>
+.blog-index-list{max-width:800px;margin:0 auto}
+.blog-index-item{padding:2.5rem 0;border-bottom:1px solid #e3ecea}
+.blog-index-item:first-child{padding-top:0}
+.blog-index-item .blog-meta{color:#18cc9c;text-transform:uppercase;letter-spacing:2px;font-size:1.3rem;margin-bottom:0.6rem}
+.blog-index-item h2{font-size:2.4rem;margin:0 0 1rem}
+.blog-index-item h2 a{color:inherit;text-decoration:none}
+.blog-index-item h2 a:hover{color:#18cc9c}
+.blog-index-item p{margin:0 0 1.2rem}
+.blog-index-item .blog-read{font-weight:600;text-decoration:none;color:#18cc9c}
+.blog-empty{max-width:800px;margin:0 auto;text-align:center}
+</style>
+
+<div class="row hero">
+
+	<div class="hero-bg row aos-init aos-animate" data-aos="zoom-in" style="background-image: url(/wp-content/uploads/2021/01/service-top.png);">
+
+		<div class="inside">
+
+			<div class="row hero-wrap">
+
+				<div class="hero-content">
+
+					<h4>BLOG</h4>
+
+					<h1>Bespoke software, explained plainly</h1>
+
+					Practical writing on what bespoke software costs, when it is worth building, and how to avoid an expensive wrong turn.
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="to-services row">
+
+	</div>
+
+</div>
+
+<div class="row service-intro">
+
+	<div class="inside">
+
+		<div class="blog-index-list aos-init aos-animate" data-aos="fade-up">
+
+			{% set posts = collections.posts | limit(5) %}
+			{% if posts | length %}
+				{% for post in posts %}
+					<div class="blog-index-item">
+						<p class="blog-meta">{{ post.date | dmyDate }}</p>
+						<h2><a href="{{ post.url }}">{{ post.data.headline }}</a></h2>
+						<p>{{ post.data.summary }}</p>
+						<a class="blog-read" href="{{ post.url }}">Read more &rarr;</a>
+					</div>
+				{% endfor %}
+			{% else %}
+				<p class="blog-empty">New writing is on the way. Check back soon.</p>
+			{% endif %}
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+
+		<div class="wrap-content">
+
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+
+			<h2 class="aos-init aos-animate" data-aos="fade-up">Get the right solution that works for you</h2>
+
+			<a class="aos-init aos-animate button green" data-aos="fade-down" href="/contact.html" target="_self">Get started</a>
+
+		</div>
+
+	</div>
+
+</div>
