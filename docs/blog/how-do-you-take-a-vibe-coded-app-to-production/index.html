@@ -19,7 +19,7 @@
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ajax.googleapis.com https://unpkg.com https://cdnjs.cloudflare.com https://t.contentsquare.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
-<title>What do you do when nobody can maintain your app? - Elastic Mint</title>
+<title>How do you take a vibe-coded app to production? - Elastic Mint</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,18 +36,18 @@
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 
 
-	<meta name="description" content="If nobody can maintain your app, patching it blind makes it worse. Get it assessed by someone who can read the code, then decide what to keep or rebuild." />
-	<link rel="canonical" href="https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/" />
+	<meta name="description" content="Vibe coding gets you a working prototype fast. Production is a higher bar. Here&#39;s what goes wrong, and how to get a vibe-coded app ready for real use." />
+	<link rel="canonical" href="https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/" />
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="What do you do when nobody can maintain your app? - Elastic Mint" />
-	<meta property="og:description" content="If nobody can maintain your app, patching it blind makes it worse. Get it assessed by someone who can read the code, then decide what to keep or rebuild." />
-	<meta property="og:url" content="https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/" />
+	<meta property="og:title" content="How do you take a vibe-coded app to production? - Elastic Mint" />
+	<meta property="og:description" content="Vibe coding gets you a working prototype fast. Production is a higher bar. Here&#39;s what goes wrong, and how to get a vibe-coded app ready for real use." />
+	<meta property="og:url" content="https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/" />
 	<meta property="og:site_name" content="Elastic Mint" />
 	<meta name="author" content="Elastic Mint" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@elasticmint" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/#article","isPartOf":{"@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/"},"author":{"@id":"https://www.elasticmint.com/#organization"},"publisher":{"@id":"https://www.elasticmint.com/#organization"},"headline":"What do you do when nobody can maintain your app?","description":"If nobody can maintain your app, patching it blind makes it worse. Get it assessed by someone who can read the code, then decide what to keep or rebuild.","datePublished":"2026-08-03T00:00:00.000Z","dateModified":"2026-08-03T00:00:00.000Z","mainEntityOfPage":{"@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/"},"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/","url":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/","name":"What do you do when nobody can maintain your app? - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"datePublished":"2026-08-03T00:00:00.000Z","dateModified":"2026-08-03T00:00:00.000Z","breadcrumb":{"@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/#breadcrumb"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.elasticmint.com/blog/"},{"@type":"ListItem","position":3,"name":"What do you do when nobody can maintain your app?"}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint","publisher":{"@id":"https://www.elasticmint.com/#organization"},"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint","url":"https://www.elasticmint.com/","logo":{"@type":"ImageObject","@id":"https://www.elasticmint.com/#/schema/logo/image/","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"]}]}</script>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/#article","isPartOf":{"@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/"},"author":{"@id":"https://www.elasticmint.com/#organization"},"publisher":{"@id":"https://www.elasticmint.com/#organization"},"headline":"How do you take a vibe-coded app to production?","description":"Vibe coding gets you a working prototype fast. Production is a higher bar. Here's what goes wrong, and how to get a vibe-coded app ready for real use.","datePublished":"2026-08-03T00:00:00.000Z","dateModified":"2026-08-03T00:00:00.000Z","mainEntityOfPage":{"@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/"},"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/","url":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/","name":"How do you take a vibe-coded app to production? - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"datePublished":"2026-08-03T00:00:00.000Z","dateModified":"2026-08-03T00:00:00.000Z","breadcrumb":{"@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/#breadcrumb"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/blog/how-do-you-take-a-vibe-coded-app-to-production/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.elasticmint.com/blog/"},{"@type":"ListItem","position":3,"name":"How do you take a vibe-coded app to production?"}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint","publisher":{"@id":"https://www.elasticmint.com/#organization"},"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint","url":"https://www.elasticmint.com/","logo":{"@type":"ImageObject","@id":"https://www.elasticmint.com/#/schema/logo/image/","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"]}]}</script>
 
 <style>.single-case-study .wrap-title .wrap-content h4, .news-item .over-date, .page-template-CaseStudies .over-date {
 	display: none;
@@ -242,7 +242,7 @@
 
 					<h4>BLOG</h4>
 
-					<h1>What do you do when nobody can maintain your app?</h1>
+					<h1>How do you take a vibe-coded app to production?</h1>
 
 				</div>
 
@@ -266,37 +266,45 @@
 
 			<p class="blog-meta">03.08.26</p>
 
-			<p>If nobody can maintain your app, you have a working product built on a black box, and the answer is not to keep patching it in the dark. It is to get someone who understands how the code works to assess it, then decide what to preserve, what to document, and what to rebuild. An app being unmaintainable does not mean it is worthless. It means you have reached the limit of what you can safely change without help.</p>
-<p>This has become common, because the fastest ways to build an app, no-code platforms and AI-generated code, are also the ways most likely to leave you with something that runs but that nobody can confidently change. Here is how you get back in control.</p>
+			<p>Vibe coding, building an app by describing what you want to an AI and letting it write the code, is very good at getting you a working prototype fast. Production is a different bar. Taking a vibe-coded app to production means closing the gap between &quot;it works when I show it&quot; and &quot;it holds up with real users, real data, and someone who can maintain it.&quot; You get there by having the code assessed by someone who understands how AI-generated code fails, hardening the parts that carry real risk, and deciding honestly what to keep, rebuild or hand over.</p>
+<p>The good news is that this rarely means throwing away what you have. The trap is assuming that because the app runs, it is ready. &quot;It runs&quot; is where the work starts, not where it ends.</p>
 <div class="key-takeaways">
 <h2>Key takeaways</h2>
 <ul>
-<li>An app nobody can maintain is one you can no longer change safely, even though it currently runs.</li>
-<li>This is common with AI-generated and no-code builds, where the workings are a black box to everyone, including whoever first made it.</li>
-<li>The first move is an assessment by someone who can actually read the code, not more blind patching, which usually makes things worse.</li>
-<li>You rarely need a full rebuild. The real risk normally sits in a few specific parts that can be documented, replaced or rebuilt.</li>
-<li>The goal is an app you own and can change, not one that depends on a tool or a person you cannot replace.</li>
+<li>Vibe coding means building an app by prompting an AI to write the code, rather than writing it yourself. It is excellent for a fast prototype.</li>
+<li>Production is a higher bar than a working demo: real users, real data, and code someone can safely maintain.</li>
+<li>The gap between &quot;it works when I show it&quot; and &quot;I can run a business on it&quot; is where vibe-coded apps get into trouble.</li>
+<li>Taking one to production is usually about hardening the risky parts, not rewriting everything.</li>
+<li>Get the app assessed by someone who knows how AI-generated code fails before you rely on it, not after something breaks.</li>
 </ul>
 </div>
-<h2>What &quot;nobody can maintain it&quot; actually means</h2>
-<p>Running and maintainable are not the same thing. An app is maintainable when someone can understand what it does and change it without fear of breaking something unseen. It is unmaintainable when any change is a gamble, because no one can predict what else will move.</p>
-<p>This is the black box problem. With AI-generated code, the app can look professionally built and still be understood by no one, because the tool wrote it and nobody read it closely. With a no-code platform, the logic can be locked inside a product you do not control, in a form you cannot export or inspect. Either way, the thing you depend on is a thing you cannot see into.</p>
-<h2>How you end up here</h2>
-<p>Nobody sets out to build something unmaintainable. It happens because the speed that helped at the start becomes a debt later. You built fast to launch, prove the idea, or hit a deadline. There were no tests, little documentation, and no deliberate structure, because those things slow you down and the point was to move. Then the person who built it moved on, or the tool did the building and never really understood it either.</p>
-<p>None of that is a moral failing. It is the predictable trade you make when you optimise for speed. The bill just arrives later, on the day you need to change something and find you cannot.</p>
-<h2>Why patching it blind makes it worse</h2>
-<p>The tempting response is to keep making small changes and hope. In a codebase nobody understands, that is how small problems become big ones. Every change risks breaking something elsewhere, and with no tests to catch it, you often find out from your users. Each quick fix adds another fragile layer, and the app gets harder to reason about, not easier. You are digging while standing in the hole.</p>
-<h2>What to do first: get it assessed</h2>
-<p>Before you decide anything, get the app read by someone senior enough to understand how it works and, crucially, how it fails. This is the same judgement that tells the difference between code that looks right and code that is right. A proper assessment maps what the app does, finds where the genuine risk sits, usually around security, data and the parts most likely to break under change, and gives you an honest picture: what is fine, what needs documenting, and what needs replacing.</p>
-<p>That picture is the thing you have been missing. You cannot make a sensible decision about a black box until someone has opened it.</p>
-<h2>Do you need to rebuild, or can it be rescued?</h2>
-<p>Usually it can be rescued. A full rebuild is the dramatic option, and it is sometimes right, but more often the fix is to stabilise what you have: add tests so changes stop being a gamble, document how it works, replace the risky parts, and migrate off a platform if it has you locked in. You keep the value that already works and spend only where the risk actually is.</p>
-<p>A rebuild earns its cost when the foundation genuinely cannot carry the business you are trying to run on it. If it comes to that, our guide to <a href="/blog/how-much-does-bespoke-software-cost-uk/">what bespoke software costs in the UK</a> covers how that work is scoped and priced.</p>
-<h2>When it is fine to leave it alone</h2>
-<p>Not every unmaintainable app is a problem to solve. If it does its job, holds nothing sensitive, and you almost never need to change it, then leaving it as it is can be the right, cheap decision. Do not spend money rescuing something you do not need to touch. The signal to act is when you need the app to change and cannot, or when it holds real customer data and the risks in that black box become your responsibility. That is the same line we drew around whether it is <a href="/blog/is-it-safe-to-launch-an-app-built-with-ai/">safe to launch an app built with AI</a> in the first place.</p>
+<h2>What vibe coding is good at, and where it stops</h2>
+<p>Vibe coding is genuinely good at the early bit: getting an idea onto the screen, proving something is possible, and doing it fast without a development team. If that is what you need right now, it is a great tool and this post is not telling you to stop.</p>
+<p>Where it stops is the part it does not force you to think about. Nothing in the process makes you consider what happens when a stranger uses the app in a way you did not expect, when hundreds of people use it at once, or when you need to change it in six months. AI is fluent enough to produce code that looks right. Looking right and being right are different things, and the difference is exactly the part that matters in production.</p>
+<h2>What actually goes wrong with a vibe-coded app</h2>
+<p>In our experience the problems cluster in the same few places, because they are the parts AI gets plausibly wrong and a quick build skips:</p>
+<ul>
+<li><strong>Security.</strong> Logins and permissions that let the wrong person see the wrong data, secrets left where a browser can read them, and user input that was never treated as hostile.</li>
+<li><strong>Data and privacy.</strong> If the app holds personal information, UK GDPR is your responsibility as the business, no matter what built it.</li>
+<li><strong>Reliability.</strong> Code that works for one careful user can fall over when real numbers of people hit it at once.</li>
+<li><strong>Maintainability.</strong> The app runs, but it is a black box no one, including you, can change with confidence. That is fine until the day it needs to change.</li>
+</ul>
+<p>We go deeper on the safety side of this in <a href="/blog/is-it-safe-to-launch-an-app-built-with-ai/">is it safe to launch an app built with AI</a>. For production, the point is that all four have to be dealt with, not just the one you happened to notice.</p>
+<h2>Why &quot;it works&quot; is not the same as &quot;it's in production&quot;</h2>
+<p>A demo proves the happy path works when one careful person clicks through in the expected order. Production is the opposite of that. It is strangers doing the unexpected, some of them deliberately, on data that actually matters, at a volume you did not test. Most of what separates a prototype from a product is invisible until those conditions arrive, which is why so many vibe-coded apps feel finished and then are not. Reaching that realisation is not failure. It is the normal moment where speed has to hand over to judgement.</p>
+<h2>What taking it to production actually involves</h2>
+<p>The route is usually the same, and it is rarely a full rebuild.</p>
+<ol>
+<li><strong>Assessment.</strong> Someone senior reads the code, maps what it does, and finds where the real risk sits. This gives you the honest picture a black box has been hiding: what is fine, what needs documenting, and what needs replacing.</li>
+<li><strong>Hardening.</strong> Fix the security-sensitive parts, add tests so changing the app stops being a gamble, document how it works, and replace or migrate anything that cannot be trusted or is locked inside a platform you do not control.</li>
+<li><strong>Decide, part by part.</strong> Keep what is sound, rebuild only what has to be. Most vibe-coded apps have more salvageable in them than their owners fear.</li>
+</ol>
+<p>If it does turn into a proper build, our guide to <a href="/blog/how-much-does-bespoke-software-cost-uk/">what bespoke software costs in the UK</a> covers how that work gets scoped and priced.</p>
+<h2>When to leave it as a prototype</h2>
+<p>Sometimes the honest answer is not to productionise it at all. If the app exists to test an idea, holds no real data, and nothing serious happens if it breaks, then keeping it as a cheap, disposable prototype is the right call. Do not spend money making something robust that only needs to survive a few friendly users. The signal to invest is real users and real data. Until then, let it stay a prototype.</p>
 <h2>What to do next</h2>
-<p>If your app matters and nobody can maintain it, the single most useful next step is an honest assessment by someone who can read the code, before your next attempt to change it rather than after it goes wrong.</p>
-<p>Who understands how your app actually works, and what happens the day you need to change it? If you cannot answer that comfortably, that is the conversation worth having now.</p>
+<p>If your vibe-coded app is heading for real users, the most valuable next step is an honest assessment of the code before you rely on it, not after something goes wrong.</p>
+<p>What would your app have to survive in front of real customers, and has anyone checked whether it can? That is the conversation worth having before you call it production.</p>
 
 
 		</article>
