@@ -1,18 +1,18 @@
 ---
 headline: "How much does bespoke software cost in the UK?"
-description: "Bespoke software in the UK runs from roughly £10k to £50k for most SMEs. Here is what decides where your project lands, and how it gets priced."
+description: "Most bespoke software we quote for runs from roughly £5k to £50k, though it varies. Here is what decides where a project lands, and how it gets priced."
 date: 2026-07-13
 summary: "What bespoke software really costs in the UK, the five things that move the price, and the two ways a build gets priced."
 ---
-For most small and medium-sized businesses in the UK, a bespoke software build costs between **£10,000 and £50,000**. Simple internal tools sit at the lower end. Multi-user platforms that work across web and mobile sit higher. The range is wide because the price is decided less by the idea and more by a handful of specific things: how many types of user it serves, how much it has to connect to other systems, how complex the data is, and how clearly you can describe what you want.
+For most small and medium-sized businesses in the UK, a bespoke software build costs somewhere between **£5,000 and £50,000**. That is not a hard rule. It is simply the range we have quoted for most often, and most of the projects we see come inside it. Simple internal tools sit at the lower end. Multi-user platforms that work across web and mobile sit higher. The range is wide because the price is decided less by the idea and more by a handful of specific things: how many types of user it serves, how much it has to connect to other systems, how complex the data is, and how clearly you can describe what you want.
 
-We price and build this work for a living, so the figures here are the ones we actually use, not a guess. Where we quote a wider market figure rather than our own, we say so.
+We price and build this work for a living. Where we quote a wider market figure rather than our own, we say so.
 
 <div class="key-takeaways">
 
 ## Key takeaways
 
-- Most SME bespoke builds in the UK land between **£10,000 and £50,000**. Larger, regulated or enterprise platforms run well beyond that.
+- Most SME bespoke builds we quote for land between **£5,000 and £50,000**. Larger, regulated or enterprise platforms run well beyond it.
 - UK agency day rates run roughly **£400 to £900 a day**. Our senior rate sits between **£500 and £650**, depending on the expertise the work calls for.
 - The price is mostly senior people's time, so what moves it is **how many senior days** the work needs, driven by user roles, integrations, data and the platforms you target.
 - There are **two ways to price a build**: a fixed price, or a day rate. Which one you can use depends on how clearly you can describe what you want.
@@ -34,7 +34,7 @@ So the useful question is not "what does an app cost". It is "what about my proj
 4. **Migration.** Replacing a system people already rely on is harder than building from nothing, because you have to move live data without breaking the business in the process.
 5. **Platforms and reach.** A web app is one thing. Add a mobile app on iOS and Android, and you are building and testing across more surfaces, which adds cost.
 
-Move up a band on two or three of these at once, and you move up a price tier.
+Move up on two or three of these at once, and the price rises with them.
 
 ## Two ways to price a build, and why your clarity decides which
 
@@ -62,6 +62,6 @@ Sometimes it is not. If you are still testing an idea that might not survive con
 
 ## What to do next
 
-Place your project against the five factors above and you will know roughly which band you are in before you speak to anyone. Then ask yourself how clearly you can describe what you want, because that decides whether you can get a fixed price or should start with a scope.
+Run your project past the five factors above and you will have a feel for where in that range you sit before you speak to anyone. Then ask yourself how clearly you can describe what you want, because that decides whether you can get a fixed price or should start with a scope.
 
 What are you trying to build, and how clearly can you describe it today? That is the conversation worth having.
