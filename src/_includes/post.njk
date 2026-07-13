@@ -1,0 +1,73 @@
+---
+layout: base.njk
+---
+<style>
+.blog-article{max-width:800px;margin:0 auto}
+.blog-article .blog-meta{color:#18cc9c;text-transform:uppercase;letter-spacing:2px;font-size:1.3rem;margin-bottom:0.5rem}
+.blog-article .key-takeaways{background:#f4fbf9;border-left:4px solid #18cc9c;border-radius:0.5rem;padding:2rem 2.5rem;margin:3rem 0}
+.blog-article .key-takeaways h2{margin-top:0;font-size:2rem}
+.blog-article .key-takeaways ul{margin-bottom:0}
+.blog-article h2{margin-top:3rem}
+</style>
+
+<div class="row hero">
+
+	<div class="hero-bg row aos-init aos-animate" data-aos="zoom-in" style="background-image: url(/wp-content/uploads/2021/01/service-top.png);">
+
+		<div class="inside">
+
+			<div class="row hero-wrap">
+
+				<div class="hero-content">
+
+					<h4>BLOG</h4>
+
+					<h1>{{ headline }}</h1>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="to-services row">
+
+	</div>
+
+</div>
+
+<div class="row service-intro">
+
+	<div class="inside">
+
+		<article class="make-shorter blog-article aos-init aos-animate" data-aos="fade-up">
+
+			<p class="blog-meta">{{ page.date | dmyDate }}</p>
+
+			{{ content | safe }}
+
+		</article>
+
+	</div>
+
+</div>
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+
+		<div class="wrap-content">
+
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+
+			<h2 class="aos-init aos-animate" data-aos="fade-up">Get the right solution that works for you</h2>
+
+			<a class="aos-init aos-animate button green" data-aos="fade-down" href="/contact.html" target="_self">Get started</a>
+
+		</div>
+
+	</div>
+
+</div>

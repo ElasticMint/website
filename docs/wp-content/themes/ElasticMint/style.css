@@ -19,3 +19,9 @@
 .home .case-studies h4:before{background-color:#18cc9c}
 .home .case-studies .leaf{display:none}
 .footer-menu>li{float:left;width:100%;margin:0 0 1.4rem}.footer-menu>li>a{color:#fff;text-decoration:none;font-family:intro_lightregular}.footer-menu>li>a:hover{color:#18cc9c}
+
+/* Main nav: tighten item spacing and drop the trailing gap so the full menu
+   (six items incl. Blog) fits on one line beside the Contact button instead
+   of wrapping to a second row. */
+.menu ul li{margin-right:3rem}
+.menu ul li:last-child{margin-right:0}
