@@ -28,7 +28,15 @@ The useful question is not "does it work". It is "what happens when someone uses
 
 ## Where AI-built apps tend to break
 
-The failure modes are well documented, and an AI summary of this question will list most of them: logins and permissions that let the wrong user see the wrong data, secret keys left where a browser can read them, user input that was never treated as hostile, prompt injection, and personal data handled with no regard for UK GDPR. App stores add rules of their own about disclosing AI-generated content. Newer tools can make some of this worse, because they are fluent enough to produce code that looks right in all these places while being wrong in a few of them.
+Failure modes for apps built with AI are well documented, and an AI summary of this question will list most of them:
+
+- Logins and permissions that let the wrong user see the wrong data.
+- Secret keys left where a browser can read them.
+- Usernames and passwords written straight into the code, so anyone who sees the code can log in as someone else.
+- User input that was never treated as hostile, which lets an attacker feed the app harmful data through its own forms.
+- Personal data handled with no regard for UK GDPR.
+
+App stores add rules of their own about disclosing AI-generated content. Newer tools can make some of this worse, because they are fluent enough to produce code that looks right in all these places while being wrong in a few of them.
 
 Knowing the list is the easy part. The hard part, if you did not write the code, is finding out which of these apply to your app. But the point here is simpler: none of this makes AI-built software bad. It makes it easy to get burned, the same way going offshore is not bad but is easy to have a bad experience with. The danger is shipping the parts that look finished without anyone checking the parts that are not.
 
@@ -41,7 +49,7 @@ You do not need to read the code to get a strong signal. Ask yourself:
 - Has anyone who did not build it ever read it? If the answer is no, you have no independent check on any of the above.
 - Do you know what happens when a hundred people use it at once, rather than one?
 
-If you cannot answer these with confidence, that is the moment of realisation. It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.
+If you cannot answer these with confidence, that is a clear signal that your app would benefit from a review by an experienced developer. It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.
 
 ## When launching as-is is perfectly fine
 
@@ -63,6 +71,6 @@ This is almost never a rebuild from zero. Throwing the whole thing away and star
 
 ## What to do next
 
-Place your app against the questions above. If it holds real data or serves real customers, the most valuable next step is not a rebuild and not a leap of faith. It is an independent read of the code, before you rely on it rather than after something has gone wrong.
+Place your app against the questions above. If it holds real data or serves real customers, the most valuable next step is not a rebuild and not a leap of faith. It is an independent read of the code by someone senior, before you rely on it, not after something has gone wrong.
 
-So ask yourself the honest version of the question: what is your app holding on other people's behalf, and has anyone you trust actually checked it? Answer that before you launch, not after.
+If that is where you are, send us what you have built and we will tell you where it actually stands. We start with the review, not a rebuild.

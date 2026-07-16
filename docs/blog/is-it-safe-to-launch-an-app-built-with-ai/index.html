@@ -282,7 +282,15 @@
 <p>Running is a low bar. An app is safe to launch when it protects the data it holds, behaves sensibly when lots of people use it at once, and can be maintained by someone other than the person or tool that built it. A working demo proves almost none of that. It shows that one careful person, clicking in the order you expected, can reach the end without it falling over.</p>
 <p>The useful question is not &quot;does it work&quot;. It is &quot;what happens when someone uses it in a way I did not plan for, and what am I holding on their behalf if it goes wrong&quot;.</p>
 <h2>Where AI-built apps tend to break</h2>
-<p>The failure modes are well documented, and an AI summary of this question will list most of them: logins and permissions that let the wrong user see the wrong data, secret keys left where a browser can read them, user input that was never treated as hostile, prompt injection, and personal data handled with no regard for UK GDPR. App stores add rules of their own about disclosing AI-generated content. Newer tools can make some of this worse, because they are fluent enough to produce code that looks right in all these places while being wrong in a few of them.</p>
+<p>Failure modes for apps built with AI are well documented, and an AI summary of this question will list most of them:</p>
+<ul>
+<li>Logins and permissions that let the wrong user see the wrong data.</li>
+<li>Secret keys left where a browser can read them.</li>
+<li>Usernames and passwords written straight into the code, so anyone who sees the code can log in as someone else.</li>
+<li>User input that was never treated as hostile, which lets an attacker feed the app harmful data through its own forms.</li>
+<li>Personal data handled with no regard for UK GDPR.</li>
+</ul>
+<p>App stores add rules of their own about disclosing AI-generated content. Newer tools can make some of this worse, because they are fluent enough to produce code that looks right in all these places while being wrong in a few of them.</p>
 <p>Knowing the list is the easy part. The hard part, if you did not write the code, is finding out which of these apply to your app. But the point here is simpler: none of this makes AI-built software bad. It makes it easy to get burned, the same way going offshore is not bad but is easy to have a bad experience with. The danger is shipping the parts that look finished without anyone checking the parts that are not.</p>
 <h2>How to tell whether yours is safe</h2>
 <p>You do not need to read the code to get a strong signal. Ask yourself:</p>
@@ -292,7 +300,7 @@
 <li>Has anyone who did not build it ever read it? If the answer is no, you have no independent check on any of the above.</li>
 <li>Do you know what happens when a hundred people use it at once, rather than one?</li>
 </ul>
-<p>If you cannot answer these with confidence, that is the moment of realisation. It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.</p>
+<p>If you cannot answer these with confidence, that is a clear signal that your app would benefit from a review by an experienced developer. It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.</p>
 <h2>When launching as-is is perfectly fine</h2>
 <p>Sometimes the honest answer is &quot;just launch it&quot;. If the app is an internal tool for a handful of colleagues, holds no personal data, and nothing serious happens if it falls over, the risk is low and the sensible move is to ship it and learn. The same is true of a rough prototype you are putting in front of a few friendly users to test an idea. Do not gold-plate something that exists to be thrown away.</p>
 <p>The line to watch is real users and real data. The day strangers can sign up, or the app starts holding information about actual people, the calculation changes and &quot;safe to launch&quot; stops being a formality.</p>
@@ -303,8 +311,8 @@
 <p>Second, scope the fix against that picture, not against a hunch. Now you know what you are paying someone to do, you can get a real quote, judge whether it is fair, and take it to more than one supplier. You can also start small: a good supplier will happily do the review as a contained first piece, which shows you how they work before you hand over anything bigger. How someone behaves on that small piece tells you more than any pitch.</p>
 <p>This is almost never a rebuild from zero. Throwing the whole thing away and starting again is usually the expensive answer to a problem a targeted fix would solve. If it does grow into a larger build, our guide to <a href="/blog/how-much-does-bespoke-software-cost-uk/">what bespoke software costs in the UK</a> covers how that work gets scoped and priced.</p>
 <h2>What to do next</h2>
-<p>Place your app against the questions above. If it holds real data or serves real customers, the most valuable next step is not a rebuild and not a leap of faith. It is an independent read of the code, before you rely on it rather than after something has gone wrong.</p>
-<p>So ask yourself the honest version of the question: what is your app holding on other people's behalf, and has anyone you trust actually checked it? Answer that before you launch, not after.</p>
+<p>Place your app against the questions above. If it holds real data or serves real customers, the most valuable next step is not a rebuild and not a leap of faith. It is an independent read of the code by someone senior, before you rely on it, not after something has gone wrong.</p>
+<p>If that is where you are, send us what you have built and we will tell you where it actually stands. We start with the review, not a rebuild.</p>
 
 
 		</article>
