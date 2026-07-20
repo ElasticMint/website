@@ -1,53 +1,44 @@
 ---
 headline: "Fixed price or day rate: how should you pay for a software build?"
-description: "Fixed price suits a clear spec and moves risk to your supplier. Day rate suits work still taking shape. How clearly you can describe it decides which."
+description: "Fixed price moves risk to your supplier; day rate keeps you flexible. How clearly you can describe it decides which. Plus how to stop either burning you."
 date: 2026-07-27
 summary: "The two ways a software build gets priced, when each one suits you, and how to stop either of them burning you."
 ---
 There is no universally right answer. A fixed price suits a build you can describe clearly, and it moves the risk of overrun onto your supplier. A day rate, sometimes called time and materials, suits work that is still taking shape, and it keeps you flexible while it does. The deciding factor is not which one sounds safer. It is how clearly you can describe what you want before the work starts.
 
-Get the match right and either model works well. Get it wrong, and a fixed price becomes a fight over change requests, or a day rate becomes an open-ended bill. This is our guide to picking the right one, from pricing and building this work for a living.
+Get the match right and either model works well. Get it wrong, and a fixed price becomes a fight over change requests, or a day rate becomes an open-ended bill. Most advice stops at picking the model. The part that actually protects you comes after that: knowing how each one quietly pulls on your supplier, and how to guard against it.
 
 <div class="key-takeaways">
 
 ## Key takeaways
 
-- Fixed price and day rate are not good versus bad. Each suits a different situation.
-- **Fixed price** suits a clear, agreed specification, and it moves the risk of overrun onto your supplier.
-- **Day rate** suits work that is still taking shape, and it keeps you flexible while it does.
-- What decides which you can use is how clearly you can describe the work up front, not which model feels safer.
+- Fixed price and day rate are not good versus bad. Each suits a different situation, and how clearly you can describe the work up front decides which you can use.
+- **Fixed price** suits a clear, agreed specification and moves the risk of overrun onto your supplier. **Day rate** suits work still taking shape and keeps you flexible while it does.
 - If you cannot describe it clearly yet, do not pick a model. Start with a short paid scope that produces the specification, then price the build against it.
-- Each model creates a pull on your supplier: a fixed price tempts padding and corner-cutting, a day rate tempts going slow. Trust built through a relationship protects you where the contract cannot.
+- Each model creates a pull on your supplier: a fixed price tempts padding and corner-cutting, a day rate tempts going slow. The day-rate pull is easily missed, because the invoice looks transparent.
+- No contract removes those pulls. Trust is built by starting small and watching how a supplier behaves, and it protects you where the wording cannot.
 
 </div>
 
-## What each model actually means
+## What each model means, in short
 
-**Fixed price.** You and your supplier agree what will be built and what it will cost before the work starts. If it takes longer than expected, that is the supplier's problem, not your budget's. The catch is that this only works when the scope is genuinely clear, because a fixed price is a promise against a specification. No real specification, no honest fixed price.
+**Fixed price.** You agree what will be built and what it will cost before the work starts. If it takes longer than expected, that is the supplier's problem, not your budget's. It only works when the scope is genuinely clear, because a fixed price is a promise against a specification. No real specification, no honest fixed price.
 
-**Day rate, or time and materials.** You pay for the time the work takes, usually as a daily rate for the people doing it. If the work grows or changes, the bill grows with it. In exchange you get flexibility: you can change direction as you learn without renegotiating a contract every time. The risk of the work running long sits with you, not the supplier.
+**Day rate, or time and materials.** You pay for the time the work takes, usually a daily rate for the people doing it. If the work grows or changes, the bill grows with it, and in exchange you can change direction as you learn without renegotiating a contract every time. The risk of the work running long sits with you, not the supplier.
 
-The trade-off is the same one viewed from two sides. Fixed price buys certainty and hands the supplier the risk. Day rate buys flexibility and keeps the risk with you.
+This is the trade-off: fixed price buys certainty and hands the supplier the risk, whereas day rate buys flexibility and keeps the risk with you. Choose fixed price when you can describe the outcome precisely and want a number that does not move. Choose day rate when the idea is still forming and a fixed price would be a guess, which forces both sides to pretend they know things they do not.
 
-## When fixed price is the right choice
+We walk through both models with real examples, a fixed-price build and a day-rate one, in [our guide to bespoke software costs](/blog/how-much-does-bespoke-software-cost-uk/). This post picks up where that leaves off: not which model to choose, but how each one can burn you once you have.
 
-Choose fixed price when you can describe the outcome precisely and you want certainty over your budget. It is the calmer option for you as the buyer, because the number does not move. That certainty has a price of its own: the up-front work of writing a real specification, and less room to change your mind once the build is under way.
+## The pull each model puts on your supplier
 
-It fits best when the thing you are building is well understood, the requirements are stable, and someone has done the work of pinning down what is in and what is out.
+The two models create different incentives for your supplier, and it is worth being clear-eyed about them so you know what to expect.
 
-## When day rate is the right choice
+Under a fixed price the supplier carries the overrun risk, so the rational move is to protect against it. An honest supplier builds in sensible contingency. A more cautious one adds a larger buffer you quietly pay for, and under pressure to hold the margin, corners can get cut where you cannot see them.
 
-Choose day rate when the idea is still forming and a fixed price would be a guess. If you are turning an early concept into something real, exploring what customers respond to, or expecting the shape of the product to change as you learn, a fixed price forces both sides to pretend they know things they do not. That pretence gets paid for later, either in a padded quote or in an argument over every change.
+Under a day rate the pull runs the other way. The longer it takes, the more the supplier earns, so some will work slowly or let the hours creep. This one is easily missed, because a day rate feels transparent. You can see the invoice, but not whether the work behind it took as long as it should have.
 
-Day rate keeps you moving while the picture comes into focus. The discipline it needs is on your side: you have to steer.
-
-## What each model can cost you beyond the price
-
-Two things make either model cost more than the sticker number, and both are worth seeing coming.
-
-The first is choosing the wrong model for the work. Ask for a fixed price on a vague idea and you get either a padded number, because the supplier has to price the worst case, or a low one that becomes a stream of change requests once reality arrives. Run a large, well-understood build on an uncontrolled day rate and the bill drifts with nothing pulling it back. The mismatch is the villain here, not the model.
-
-The second survives even when the model fits, because each one creates an incentive your supplier feels. Under a fixed price the supplier carries the overrun risk, so the rational move is to protect against it. An honest supplier builds in sensible contingency; a more cautious one adds a larger buffer you quietly pay for, and under pressure to hold the margin, corners can get cut where you cannot see them. Under a day rate the pull runs the other way: the longer it takes, the more the supplier earns, so some will work slowly or let the hours creep. Neither pull makes a supplier dishonest. They are just the incentives the models create, and no contract removes them completely.
+Neither pull makes a supplier dishonest. They are the incentives the models create, and no contract removes them completely. What does remove them is the thing a contract cannot buy, which is where this gets practical.
 
 ## How to protect yourself
 
@@ -61,6 +52,8 @@ Sometimes you genuinely cannot describe the build, and that is fine. The mistake
 
 ## What to do next
 
-Before you ask anyone for a price, ask yourself one question: can I describe what I want clearly enough to hold someone to it? If yes, a fixed price will serve you. If not, start with a scope or a short day-rate phase to get there, and do not let anyone sell you certainty they cannot actually deliver.
+Start with one honest question: can you describe what you want clearly enough to hold someone to it?
 
-How clearly can you describe your build today? That answer, more than anything else, decides how you should pay for it.
+If you can, ask for a fixed price, insist on seeing the written specification behind it, and hold them to both. If you cannot, do not let anyone sell you certainty they cannot deliver. Get the specification first, and the price second.
+
+If you are not sure which side of that line you sit on, that is the normal place to start, and it is exactly the thing we can help you work out. Tell us what you have in mind, and we will help you decide how it should be priced.
