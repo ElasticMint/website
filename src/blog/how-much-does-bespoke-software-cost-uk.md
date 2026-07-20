@@ -62,6 +62,6 @@ Sometimes it is not. If you are still testing an idea that might not survive con
 
 ## What to do next
 
-Run your project past the five factors above and you will have a feel for where in that range you sit before you speak to anyone. Then ask yourself how clearly you can describe what you want, because that decides whether you can get a fixed price or should start with a scope.
+Run your project past the five factors above and you will have a rough feel for where it sits before you speak to anyone. The step that turns that into a real number is a short, paid scope: a few days that leave you with a written specification, wireframes, and a fixed-price quote you own and can take to any supplier, us or someone else.
 
-What are you trying to build, and how clearly can you describe it today? That is the conversation worth having.
+If you want that number, tell us what you are trying to build and we will tell you what scoping it would take.
