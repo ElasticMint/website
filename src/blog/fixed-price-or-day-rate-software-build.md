@@ -4,7 +4,7 @@ description: "Fixed price moves risk to your supplier; day rate keeps you flexib
 date: 2026-07-27
 summary: "The two ways a software build gets priced, when each one suits you, and how to stop either of them burning you."
 ---
-There is no universally right answer. A fixed price suits a build you can describe clearly, and it moves the risk of overrun onto your supplier. A day rate, sometimes called time and materials, suits work that is still taking shape, and it keeps you flexible while it does. The deciding factor is not which one sounds safer. It is how clearly you can describe what you want before the work starts.
+There is no universally right answer. A fixed price suits a well-defined build, and it moves the risk of overrun onto your supplier. A day rate, sometimes called time and materials, suits work that is still taking shape, and it keeps you flexible while it does. The deciding factor is not which one sounds safer. It is how clearly you can describe what you want before the work starts.
 
 Get the match right and either model works well. Get it wrong, and a fixed price becomes a fight over change requests, or a day rate becomes an open-ended bill. Most advice stops at picking the model. The part that actually protects you comes after that: knowing how each one quietly pulls on your supplier, and how to guard against it.
 
@@ -42,7 +42,7 @@ Neither pull makes a supplier dishonest. They are the incentives the models crea
 
 ## How to protect yourself
 
-Simple conditions keep each model honest. For a fixed price, insist on a real written specification first, and read it; if a supplier will name a price without one, be more worried, not less. For a day rate, put a cap or checkpoints on it, agree what "done" means at each stage, and expect to see working software throughout, so you can always see where the money went and stop if the value is not there.
+Simple conditions keep each model honest. For a fixed price, insist on a real written specification first, and read it; if a supplier will name a price without one, be more worried, not less. For a day rate, put a cap or checkpoints on it and agree what "done" means at each stage. Expect to see working software throughout, so you can always see where the money went and stop if the value is not there.
 
 But safeguards only go so far, because the supplier still decides what to do with the incentive. The strongest protection is not clever wording. It is starting small, watching how a supplier behaves when the work is real, and building a relationship before you hand over anything that matters. A short paid scope or a small first phase tells you more about someone than any amount of due diligence on paper. Choose the model for the work, and the supplier for the relationship.
 
