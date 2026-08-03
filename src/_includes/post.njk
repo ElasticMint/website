@@ -8,6 +8,9 @@ layout: base.njk
 .blog-article .key-takeaways h2{margin-top:0;font-size:2rem}
 .blog-article .key-takeaways ul{margin-bottom:0}
 .blog-article h2{margin-top:3rem}
+.blog-article .post-faqs{border-top:1px solid #e2e8e6;margin-top:4rem;padding-top:1rem}
+.blog-article .post-faqs h3{margin-top:2.5rem;font-size:1.9rem}
+.blog-article .post-faqs h3:first-of-type{margin-top:1.5rem}
 </style>
 
 <div class="row hero">
@@ -47,6 +50,20 @@ layout: base.njk
 			<p class="blog-meta">{{ page.date | dmyDate }}</p>
 
 			{{ content | safe }}
+
+			{% if faqs and faqs.length %}
+			<section class="post-faqs">
+
+				<h2>FAQs</h2>
+
+				{% for f in faqs %}
+				<h3>{{ f.q }}</h3>
+
+				<p>{{ f.a | mdInline | safe }}</p>
+				{% endfor %}
+
+			</section>
+			{% endif %}
 
 		</article>
 

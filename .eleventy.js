@@ -1,4 +1,15 @@
+// markdown-it ships with Eleventy and is what renders the posts themselves. Reused here so
+// FAQ answers in frontmatter can carry links, which is how FAQs feed the interlinking plan.
+const markdownIt = require("markdown-it");
+const mdInline = markdownIt({ html: true });
+
 module.exports = function (eleventyConfig) {
+  // Render a frontmatter string as inline Markdown (links, emphasis) with no wrapping <p>.
+  // Used for FAQ answers in src/_includes/post.njk.
+  eleventyConfig.addFilter("mdInline", (value) =>
+    mdInline.renderInline(String(value || ""))
+  );
+
   // Format a date as DD.MM.YY to match the site's existing style (e.g. 26.04.26)
   eleventyConfig.addFilter("dmyDate", (value) => {
     const dt = new Date(value);

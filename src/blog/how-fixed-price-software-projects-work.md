@@ -3,6 +3,13 @@ headline: "How do fixed-price software projects work?"
 description: "A fixed-price software project fixes the price against a written spec before any code. Here's how it runs, and how change requests are handled."
 date: 2026-08-10
 summary: "How a fixed-price build actually works, what counts as a change request, and how to handle changes without the end-of-project fight."
+faqs:
+  - q: "Which is better, a fixed price or a day rate?"
+    a: "They protect different things. A fixed price protects your budget and puts the risk of overrun on the supplier. A day rate protects your ability to change direction, and puts that risk on you. Neither is the more honest model, and a supplier who only ever offers one of them is telling you something. We compare the two in [fixed price or day rate](/blog/fixed-price-or-day-rate-software-build/)."
+  - q: "What should a specification actually contain?"
+    a: "Enough that someone who has never met you could build the right thing from it. In practice that means what each screen does, who is allowed to do what, the rules the software has to follow, what it connects to, and what should happen when something goes wrong. Wireframes help, because a picture settles arguments that paragraphs do not. If you cannot tell from the document whether a feature is in or out, it is not finished."
+  - q: "Can an Agile project be fixed price?"
+    a: "Yes, but not in the way people usually mean. You cannot fix a price against a backlog that is free to change, because the price was promised against something specific. What works is fixing the price of a defined phase, delivering it, then scoping and pricing the next phase with what you learned. You keep the freedom to change direction between phases rather than during them."
 ---
 A fixed-price software project works by agreeing exactly what will be built, and for how much, before the build starts. The price is a promise made against a written specification. That is what makes it fixed, and it is also why changes have to be handled deliberately. If you change what is being built, you change the thing the price was promised against.
 
@@ -55,7 +62,7 @@ The point of this is that you stay in control. Nothing gets added silently, and 
 
 ## How to avoid the change-request fight
 
-The bad version of this, where change requests become a running battle, almost always traces to one of two things: a vague specification that left too much open, or a supplier who under-scoped to win the work and made it back through changes. You avoid both by investing in the spec, reading it, and agreeing the change process up front.
+The bad version of this, where change requests become a running battle, usually starts before the build does. A supplier who under-scoped to win the work has to recover the money somewhere, and change requests are where it surfaces. The cheapest quote is often the most expensive project. Your protection is to agree the change process before you sign, and to read the specification you are agreeing it against.
 
 Two more habits help. Keep a contingency in your budget for the changes you will want once the software is real, rather than assuming the first spec is final. And choose a supplier who raises changes early, when you can still decide, over one who quietly banks them. That behaviour is about the [relationship, not the contract](/blog/fixed-price-or-day-rate-software-build/), and it is worth more than any clause.
 
