@@ -60,7 +60,10 @@ schemaGraph: '{"@context":"https://schema.org","@graph":[{"@type":"CollectionPag
 
 		<div class="blog-index-list aos-init aos-animate" data-aos="fade-up">
 
-			{% set posts = collections.posts | limit(5) %}
+			{# Every post, newest first. Deliberately unlimited: a cap here silently drops the
+			   oldest posts off the only page that lists them. Add a filter box or pagination
+			   when the list gets unwieldy, not a limit. #}
+			{% set posts = collections.posts %}
 			{% if posts | length %}
 				{% for post in posts %}
 					<div class="blog-index-item">
