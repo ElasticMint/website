@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://www.elasticmint.com/ai.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -108,7 +108,7 @@
   <!-- Blog -->
   <url>
     <loc>https://www.elasticmint.com/blog/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -131,7 +131,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.elasticmint.com/blog/what-do-you-do-when-nobody-can-maintain-your-app/</loc>
+    <loc>https://www.elasticmint.com/blog/need-a-developer-to-take-over-a-vibe-coded-app/</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
