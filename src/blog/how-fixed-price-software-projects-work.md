@@ -17,6 +17,7 @@ Good fixed-price projects do not pretend change never happens. They have a clear
 - A change request is any work that was not in the agreed specification. Handling changes is normal, not a sign something went wrong.
 - Good suppliers price changes transparently as they come up, so you decide each one on its merits, rather than absorbing them silently or saving up a bill for the end.
 - Expect to want changes once you see the software taking shape. Budget some contingency for them instead of assuming the first spec is final.
+- Fixed pricing suits projects small enough to estimate accurately. On a large build the price is either a gamble the supplier is taking or padding you are paying for, so fixing the price of each phase in turn works better.
 
 </div>
 
@@ -62,8 +63,10 @@ Two more habits help. Keep a contingency in your budget for the changes you will
 
 If you genuinely cannot specify the work yet, because the idea is still forming or you expect big pivots, a fixed price forces a false certainty and turns every step into a change request. That is miserable for everyone. When you are in that position, a short discovery phase or a day-rate start is the honest choice, used to reach the clarity that makes a fixed price possible later.
 
+Size is the other limit, and it is less talked about. Fixed pricing works best on projects small enough to estimate with real accuracy. Past that point the estimate carries so much risk that a supplier has two choices: absorb it and hope, or pad the price until it is safe. Either way you stop getting the thing you were promised, which was a fair price for known work. On a large build, phasing the work and fixing the price of each phase in turn will usually serve you better than one big number.
+
 ## What to do next
 
 Before you sign a fixed price, ask two questions. Is the specification detailed enough that I could hand it to any supplier and get the same thing built? And do I know exactly how a change will be raised, priced and agreed once we start? If both answers are yes, a fixed price will serve you well.
 
-How clearly is your project specified today, and what have you left room to change your mind about? That is the conversation worth having before the price is fixed.
+If you are not sure whether your project is specified well enough to be priced that way, send us what you have. We will tell you what is missing, and whether a fixed price is the right shape for this work in the first place.
