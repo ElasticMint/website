@@ -2,3 +2,14 @@ node_modules/
 .eleventy-cache/
 .cache/
 *.log
+
+# Internal planning and strategy docs. Kept out of git deliberately: this repo backs a
+# public custom domain and its visibility is unconfirmed, so strategy and competitive
+# research stay local. See "GEO Strategy/2026-06-30-GEO-Blog-Strategy.md" §9.
+# Trade-off: these are NOT backed up to the remote. Keep a copy elsewhere.
+GEO Strategy/
+HANDOVER.md
+TASKS.md
+elastic-mint-website-plan.md
+ai-stats-dora-roi-2026.md
+*.zip
