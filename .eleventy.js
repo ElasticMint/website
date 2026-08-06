@@ -1,5 +1,7 @@
-// markdown-it ships with Eleventy and is what renders the posts themselves. Reused here so
-// FAQ answers in frontmatter can carry links, which is how FAQs feed the interlinking plan.
+// markdown-it is what Eleventy uses to render the posts themselves. Reused here so FAQ answers
+// in frontmatter can carry links, which is how FAQs feed the interlinking plan.
+// Declared in package.json rather than relied on as a hoisted transitive dep of Eleventy: this
+// require would break silently the day Eleventy swapped its Markdown library.
 const markdownIt = require("markdown-it");
 const mdInline = markdownIt({ html: true });
 
