@@ -22,9 +22,7 @@ module.exports = {
     schemaGraph: (data) => {
       const url = `https://www.elasticmint.com/blog/${data.page.fileSlug}/`;
       const iso = new Date(data.page.date).toISOString();
-      return JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
+      const graph = [
           {
             "@type": "Article",
             "@id": url + "#article",
@@ -95,7 +93,32 @@ module.exports = {
               "https://www.linkedin.com/company/elastic-mint-ltd/",
             ],
           },
-        ],
+      ];
+
+      // Optional FAQ block. Driven by the same `faqs` frontmatter that post.njk renders
+      // on the page, so the markup can never claim a question the reader cannot see.
+      // Answers may contain Markdown links; strip to plain text for the schema.
+      if (Array.isArray(data.faqs) && data.faqs.length) {
+        const plain = (s) =>
+          String(s || "")
+            .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+            .replace(/[*_`]/g, "")
+            .trim();
+        graph.push({
+          "@type": "FAQPage",
+          "@id": url + "#faq",
+          isPartOf: { "@id": url },
+          mainEntity: data.faqs.map((f) => ({
+            "@type": "Question",
+            name: plain(f.q),
+            acceptedAnswer: { "@type": "Answer", text: plain(f.a) },
+          })),
+        });
+      }
+
+      return JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": graph,
       });
     },
   },
