@@ -32,7 +32,7 @@ Good fixed-price projects do not pretend change never happens. They have a clear
 
 A fixed price fixes the cost of building an agreed specification. The specification is the backbone of the whole arrangement: it says what is in, what is out, and what "finished" looks like. When it is clear, the supplier can commit to a firm price and carry the risk if the work runs long. When it is vague, any price is a guess dressed up as a promise.
 
-What a fixed price does not fix is your understanding of what you want. That keeps developing, especially once you can see and use the software. This is not a flaw in you or the process. It is the single most common reason a fixed-price project meets a change request, and it is worth planning for rather than being surprised by.
+What a fixed price does not fix is your understanding of what you want. That keeps developing, especially once you can see and use the software. This is not a flaw in you or the process. It is the single most common reason for change requests in fixed-price projects. This is worth planning for rather than being surprised by.
 
 ## How a fixed-price project runs, step by step
 
@@ -62,7 +62,7 @@ The point of this is that you stay in control. Nothing gets added silently, and 
 
 ## How to avoid the change-request fight
 
-The bad version of this, where change requests become a running battle, usually starts before the build does. A supplier who under-scoped to win the work has to recover the money somewhere, and change requests are where it surfaces. The cheapest quote is often the most expensive project. Your protection is to agree the change process before you sign, and to read the specification you are agreeing it against.
+The bad version of this, where change requests become a running battle, usually starts before the build does. A supplier who under-scoped to win the work has to recover the money somewhere, and change requests are where it surfaces. That is how a cheap quote actually becomes an expensive project. Your protection is to agree the change process before you sign, and to read the specification you are agreeing it against.
 
 Two more habits help. Keep a contingency in your budget for the changes you will want once the software is real, rather than assuming the first spec is final. And choose a supplier who raises changes early, when you can still decide, over one who quietly banks them. That behaviour is about the [relationship, not the contract](/blog/fixed-price-or-day-rate-software-build/), and it is worth more than any clause.
 
