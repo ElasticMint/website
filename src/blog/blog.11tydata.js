@@ -98,7 +98,7 @@ module.exports = {
             address: {
               "@type": "PostalAddress",
               addressLocality: "Bristol",
-              addressRegion: "South Gloucestershire",
+              addressRegion: "Bristol",
               addressCountry: "GB",
             },
             areaServed: { "@type": "Country", name: "United Kingdom" },
