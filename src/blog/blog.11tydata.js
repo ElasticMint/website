@@ -92,6 +92,16 @@ module.exports = {
               "https://x.com/elasticmint",
               "https://www.linkedin.com/company/elastic-mint-ltd/",
             ],
+            // Locality only, deliberately. There is no premises a client visits, so this
+            // stays an Organization rather than a LocalBusiness and carries no streetAddress.
+            // Kept identical to the address in the .njk schemaGraph blocks.
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Bristol",
+              addressRegion: "South Gloucestershire",
+              addressCountry: "GB",
+            },
+            areaServed: { "@type": "Country", name: "United Kingdom" },
           },
       ];
 
