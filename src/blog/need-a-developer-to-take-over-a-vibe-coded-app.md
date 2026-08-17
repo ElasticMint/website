@@ -40,9 +40,9 @@ If two or more of these are true, the app has outgrown the way it was built. We 
 
 This is where it matters who you bring in, because the common advice is wrong in a specific way. Search for how to take over a vibe-coded app and you will be told to treat it as a mockup and rebuild it from scratch. Sometimes that is right. Usually it is the expensive answer to a problem a targeted fix would solve. A developer worth hiring does not start with a rebuild. They start by finding out what you actually have.
 
-1. **Assessment.** Someone senior reads the code, maps what it does, and finds where the real risk sits. This turns a black box into an honest list: what is fine, what needs documenting, and what needs replacing. It is cheap next to a build and commits you to nothing.
+1. **Assessment.** [Someone senior reads the code](/services/consultancy.html), maps what it does, and finds where the real risk sits. This turns a black box into an honest list: what is fine, what needs documenting, and what needs replacing. It is cheap next to a build and commits you to nothing.
 2. **Hardening.** Fix the security-sensitive parts, add tests so changing the app stops being a gamble, and document how it works, so it stops being a black box.
-3. **Decide, part by part.** Keep what is sound, rebuild only what has to be. Most vibe-coded apps have more salvageable in them than their owners fear, but not all of them, and treating salvage as the automatic answer is its own trap. Sometimes starting again is the honest call: when the app was built on the wrong technology and no targeted fix can save it, or, for an app built on a no-code platform, when it is locked in and cannot simply be moved. Watch for sunk-cost thinking too, where the money already spent tempts you to keep paying to rescue code you would be better off replacing.
+3. **Decide, part by part.** Keep what is sound, [rebuild only what has to be](/services/software-development.html). Most vibe-coded apps have more salvageable in them than their owners fear, but not all of them, and treating salvage as the automatic answer is its own trap. Sometimes starting again is the honest call: when the app was built on the wrong technology and no targeted fix can save it, or, for an app built on a no-code platform, when it is locked in and cannot simply be moved. Watch for sunk-cost thinking too, where the money already spent tempts you to keep paying to rescue code you would be better off replacing.
 
 If it does turn into a proper build, our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers how that work gets scoped and priced.
 
@@ -50,10 +50,10 @@ If it does turn into a proper build, our guide to [what bespoke software costs i
 
 The instinct, once you have accepted you need help, is to hire the first developer who sounds confident and ask them to sort it out. That is how people get burned a second time: a vague brief, someone you have no way to judge, and a bill for work you cannot check.
 
-Do it in two steps instead. First, get the assessment above as a small, contained, paid piece of work. It gives you an honest picture and shows you how the developer works before you hand over anything bigger. Second, scope the fix against that picture, not against a hunch, so you can get a real quote, judge whether it is fair, and take it to more than one supplier. How someone behaves on that first small piece tells you more than any pitch.
+Do it in two steps instead. First, get the assessment above as a small, contained, paid piece of work. It gives you an honest picture and shows you how the developer works before you hand over anything bigger. Second, [scope the fix](/services/scoping.html) against that picture, not against a hunch, so you can get a real quote, judge whether it is fair, and take it to more than one supplier. How someone behaves on that first small piece tells you more than any pitch.
 
 ## What to do next
 
 If your vibe-coded app has crossed into real users and real data, the question is no longer whether it works. It is whether what you have can be trusted with the people using it, and that is a question someone has to answer by reading the code.
 
-If that is where you are, tell us what you have built and we will give you an honest picture of what it would take to get it onto solid ground, and how much of what you have already stands up. We start with that assessment, not a rebuild.
+If that is where you are, [tell us what you have built](/contact.html) and we will give you an honest picture of what it would take to get it onto solid ground, and how much of what you have already stands up. We start with that assessment, not a rebuild.

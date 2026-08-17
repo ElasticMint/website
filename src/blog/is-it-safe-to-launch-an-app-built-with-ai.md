@@ -6,7 +6,7 @@ summary: "Whether an AI-built app is safe for real users, how to tell if yours i
 ---
 An app built with AI can be safe to launch. It is just not safe by default. AI is very good at producing something that works in a demo and looks finished, then fails in the specific places it tends to get wrong: how it handles logins, how it stores personal data, and what happens when real people use it in numbers. Whether yours is safe to launch depends on what it does and who it is for.
 
-This is not an argument against building with AI. We use it every day. It is an argument against trusting the parts of the job where being confidently wrong is expensive. Most advice on this question stops at "get a developer to review it." That is correct, and useless if you are not a developer and have no way to judge one. So the real question for most founders is not only whether the app is safe. It is how to find that out when you cannot read the code yourself, and how to bring in help without getting burned a second time.
+This is not an argument against building with AI. [We use it every day](/ai.html). It is an argument against trusting the parts of the job where being confidently wrong is expensive. Most advice on this question stops at "get a developer to review it." That is correct, and useless if you are not a developer and have no way to judge one. So the real question for most founders is not only whether the app is safe. It is how to find that out when you cannot read the code yourself, and how to bring in help without getting burned a second time.
 
 <div class="key-takeaways">
 
@@ -49,7 +49,7 @@ You do not need to read the code to get a strong signal. Ask yourself:
 - Has anyone who did not build it ever read it? If the answer is no, you have no independent check on any of the above.
 - Do you know what happens when a hundred people use it at once, rather than one?
 
-If you cannot answer these with confidence, that is a clear signal that your app would benefit from a review by an experienced developer. It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.
+If you cannot answer these with confidence, that is a clear signal that your app would benefit from a [review by an experienced developer](/services/consultancy.html). It does not mean the app is worthless. It means you have reached the wall where careful judgement has to replace speed.
 
 ## When launching as-is is perfectly fine
 
@@ -65,7 +65,7 @@ Do it in two steps instead.
 
 First, get an independent review before any fixing. Someone senior, who knows how AI-generated code fails, reads the parts that carry the risk and gives you an honest written picture: what is fine, what needs fixing, what needs replacing, and how urgent each one is. This is cheap next to a build, it commits you to nothing, and it turns a black box into a list you can make decisions against. Often most of the app is sound and the real danger sits in three or four specific places.
 
-Second, scope the fix against that picture, not against a hunch. Now you know what you are paying someone to do, you can get a real quote, judge whether it is fair, and take it to more than one supplier. You can also start small: a good supplier will happily do the review as a contained first piece, which shows you how they work before you hand over anything bigger. How someone behaves on that small piece tells you more than any pitch.
+Second, [scope the fix](/services/scoping.html) against that picture, not against a hunch. Now you know what you are paying someone to do, you can get a real quote, judge whether it is fair, and take it to more than one supplier. You can also start small: a good supplier will happily do the review as a contained first piece, which shows you how they work before you hand over anything bigger. How someone behaves on that small piece tells you more than any pitch.
 
 This is almost never a rebuild from zero. Throwing the whole thing away and starting again is usually the expensive answer to a problem a targeted fix would solve. If it does grow into a larger build, our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers how that work gets scoped and priced.
 
@@ -73,4 +73,4 @@ This is almost never a rebuild from zero. Throwing the whole thing away and star
 
 Place your app against the questions above. If it holds real data or serves real customers, the most valuable next step is not a rebuild and not a leap of faith. It is an independent read of the code by someone senior, before you rely on it, not after something has gone wrong.
 
-If that is where you are, send us what you have built and we will tell you where it actually stands. We start with the review, not a rebuild.
+If that is where you are, [send us what you have built](/contact.html) and we will tell you where it actually stands. We start with the review, not a rebuild.
