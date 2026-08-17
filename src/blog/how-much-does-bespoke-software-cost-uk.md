@@ -3,8 +3,12 @@ headline: "How much does bespoke software cost in the UK?"
 description: "Most bespoke software we quote for runs from roughly £5k to £50k, though it varies. Here is what decides where a project lands, and how it gets priced."
 date: 2026-07-13
 summary: "What bespoke software really costs in the UK, the five things that move the price, and the two ways a build gets priced."
+ctaHeading: "Want a real number?"
+ctaTitle: "Turn the range into a fixed price"
+ctaButton: "See how scoping works"
+ctaUrl: "/services/scoping.html"
 ---
-For most small and medium-sized businesses in the UK, a bespoke software build costs somewhere between **£5,000 and £50,000**. That is not a hard rule. It is simply the range we have quoted for most often, and most of the projects we see come inside it. Simple internal tools sit at the lower end. Multi-user platforms that work across web and mobile sit higher. The range is wide because the price is decided less by the idea and more by a handful of specific things: how many types of user it serves, how much it has to connect to other systems, how complex the data is, and how clearly you can describe what you want.
+For most small and medium-sized businesses in the UK, a [bespoke software build](/services/software-development.html) costs somewhere between **£5,000 and £50,000**. That is not a hard rule. It is simply the range we have quoted for most often, and most of the projects we see come inside it. Simple internal tools sit at the lower end. Multi-user platforms that work across web and mobile sit higher. The range is wide because the price is decided less by the idea and more by a handful of specific things: how many types of user it serves, how much it has to connect to other systems, how complex the data is, and how clearly you can describe what you want.
 
 We price and build this work for a living. Where we quote a wider market figure rather than our own, we say so.
 
@@ -40,21 +44,21 @@ Move up on two or three of these at once, and the price rises with them.
 
 There are two common ways a build gets priced, and which one you can use depends on how clearly you can describe what you want.
 
-**Fixed price.** When the specification is clear, the whole build can be committed to a fixed price. That is how we delivered Benefits Buddy, a staff-benefits platform with several types of user across web and mobile. The scope was written down in phases before any code, so the price was firm and the risk of overrun sat with us, not the client. A fixed price is the calmer option for you as the buyer. It needs the up-front work of a clear specification to be possible at all.
+**Fixed price.** When the specification is clear, the whole build can be committed to a fixed price. That is how we delivered [Benefits Buddy](/case-studies/benefits-buddy.html), a staff-benefits platform with several types of user across web and mobile. The scope was written down in phases before any code, so the price was firm and the risk of overrun sat with us, not the client. A fixed price is the calmer option for you as the buyer. It needs the up-front work of a clear specification to be possible at all.
 
-**Day rate, or time and materials.** When the idea is still taking shape, a fixed price would be a guess, and a bad one. For an assistive-technology app we built with the University of Bath, the goal was to turn an early idea into something that worked, and the shape of it changed as we learned. There we worked to an estimate based on a day rate, which kept things flexible while the product found its feet. The trade-off is that more of the risk sits with you if the work runs longer than expected.
+**Day rate, or time and materials.** When the idea is still taking shape, a fixed price would be a guess, and a bad one. For an [assistive-technology app we built with the University of Bath](/case-studies/assistive-tech.html), the goal was to turn an early idea into something that worked, and the shape of it changed as we learned. There we worked to an estimate based on a day rate, which kept things flexible while the product found its feet. The trade-off is that more of the risk sits with you if the work runs longer than expected.
 
 The pattern underneath both is simple: **the clearer you are about what you want, the easier it is to price, and the more of the risk you can hand to your supplier.** If you cannot describe it precisely yet, that is fine. It just means starting with a scoping step or a short day-rate phase to get there.
 
 ## The thing most cost articles miss: a fixed price you can take anywhere
 
-The widest, most useless cost ranges online exist because nobody has scoped the work. We deal with that before the build. Our scoping step interviews your key people, defines what is in and out, and gives you a detailed specification, interactive wireframes, and a **fixed-price quote valid for six months**. You own that specification. You can bring the build to us, or take it to any other supplier. Either way you have turned a frightening range into a firm number, and you keep something of value even if you walk away.
+The widest, most useless cost ranges online exist because nobody has scoped the work. We deal with that before the build. Our [scoping step](/services/scoping.html) interviews your key people, defines what is in and out, and gives you a detailed specification, interactive wireframes, and a **fixed-price quote valid for six months**. You own that specification. You can bring the build to us, or take it to any other supplier. Either way you have turned a frightening range into a firm number, and you keep something of value even if you walk away.
 
 We would rather give you a real number after a short paid scope than a scary range before it.
 
 ## What about hiring a contractor instead?
 
-Another route is to hire a developer through a recruitment agency. That is usually priced as a day rate, and the recruiter's margin typically adds **15% to 20%** on top of what the developer is paid. You also take on directing the work and the risk if it goes wrong. It can be the right model when you have the in-house expertise to lead the work. It is the wrong one when you need a team that owns the outcome and hands you finished, tested software.
+Another route is to hire a developer through a recruitment agency. That is usually priced as a day rate, and the recruiter's margin typically adds **15% to 20%** on top of what the developer is paid. You also take on directing the work and the risk if it goes wrong. It can be the right model when you have the in-house expertise to lead the work. It is the wrong one when you need a team that owns the outcome and hands you finished, tested software. We weigh the two routes up properly in [should you hire a developer or an agency](/blog/should-you-hire-a-developer-or-an-agency/).
 
 ## When bespoke software is not the right answer
 
@@ -62,6 +66,6 @@ Sometimes it is not. If you are still testing an idea that might not survive con
 
 ## What to do next
 
-Run your project past the five factors above and you will have a rough feel for where it sits before you speak to anyone. The step that turns that into a real number is a short, paid scope: a few days that leave you with a written specification, wireframes, and a fixed-price quote you own and can take to any supplier, us or someone else.
+Run your project past the five factors above and you will have a rough feel for where it sits before you speak to anyone. The step that turns that into a real number is a [short, paid scope](/services/scoping.html): a few days that leave you with a written specification, wireframes, and a fixed-price quote you own and can take to any supplier, us or someone else.
 
 If you want that number, tell us what you are trying to build and we will tell you what scoping it would take.

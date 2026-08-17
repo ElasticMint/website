@@ -6,6 +6,14 @@ module.exports = {
   tags: "post",
   ogType: "article",
   author: "Elastic Mint",
+  // Default end-of-post call to action. Deliberately a small ask, because most
+  // readers arrive from a question rather than with a project in hand. Any post
+  // can override these four in its own frontmatter to match what it is about;
+  // post.njk carries the same fallbacks so a partial override is safe.
+  ctaHeading: "Next step",
+  ctaTitle: "Tell us what you are weighing up",
+  ctaButton: "Get in touch",
+  ctaUrl: "/contact.html",
   bodyClass:
     "wp-singular post-template-default single single-post wp-theme-ElasticMint singular",
   eleventyComputed: {
@@ -92,6 +100,16 @@ module.exports = {
               "https://x.com/elasticmint",
               "https://www.linkedin.com/company/elastic-mint-ltd/",
             ],
+            // Locality only, deliberately. There is no premises a client visits, so this
+            // stays an Organization rather than a LocalBusiness and carries no streetAddress.
+            // Kept identical to the address in the .njk schemaGraph blocks.
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Bristol",
+              addressRegion: "Bristol",
+              addressCountry: "GB",
+            },
+            areaServed: { "@type": "Country", name: "United Kingdom" },
           },
       ];
 
