@@ -3,6 +3,10 @@ headline: "Fixed price or day rate: how should you pay for a software build?"
 description: "Fixed price moves risk to your supplier; day rate keeps you flexible. How clearly you can describe it decides which. Plus how to stop either burning you."
 date: 2026-07-27
 summary: "The two ways a software build gets priced, when each one suits you, and how to stop either of them burning you."
+ctaHeading: "Not sure which one fits?"
+ctaTitle: "We will tell you how yours should be priced"
+ctaButton: "Book a 30-minute call"
+ctaUrl: "/contact.html"
 ---
 There is no universally right answer. A fixed price suits a well-defined build, and it moves the risk of overrun onto your supplier. A day rate, sometimes called time and materials, suits work that is still taking shape, and it keeps you flexible while it does. The deciding factor is not which one sounds safer. It is how clearly you can describe what you want before the work starts.
 

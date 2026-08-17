@@ -6,6 +6,14 @@ module.exports = {
   tags: "post",
   ogType: "article",
   author: "Elastic Mint",
+  // Default end-of-post call to action. Deliberately a small ask, because most
+  // readers arrive from a question rather than with a project in hand. Any post
+  // can override these four in its own frontmatter to match what it is about;
+  // post.njk carries the same fallbacks so a partial override is safe.
+  ctaHeading: "Next step",
+  ctaTitle: "Tell us what you are weighing up",
+  ctaButton: "Get in touch",
+  ctaUrl: "/contact.html",
   bodyClass:
     "wp-singular post-template-default single single-post wp-theme-ElasticMint singular",
   eleventyComputed: {

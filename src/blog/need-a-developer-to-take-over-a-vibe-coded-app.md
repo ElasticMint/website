@@ -3,6 +3,10 @@ headline: "Do you need a developer to take over your vibe-coded app?"
 description: "Often you do not. It depends on real users and real data, not on how it was built. How to tell when you need a developer, and what a good one does first."
 date: 2026-08-03
 summary: "When a vibe-coded app actually needs a developer to take it over, what a good one does before reaching for a rebuild, and how to bring them in without getting burned."
+ctaHeading: "Ready for someone to look at it?"
+ctaTitle: "We start with an assessment, not a rebuild"
+ctaButton: "Ask about an assessment"
+ctaUrl: "/services/consultancy.html"
 ---
 Not always. A vibe-coded app, one built by describing what you want to an AI and letting it write the code, can be perfectly fine left as it is. You need a developer to take it over when it starts carrying real weight: real users, real data, or money. Below that line, bringing someone in is often money you do not need to spend. Above it, the code that felt finished in a demo is usually the thing standing between you and a product you can run a business on.
 

@@ -3,6 +3,10 @@ headline: "How do fixed-price software projects work?"
 description: "A fixed-price software project fixes the price against a written spec before any code. Here's how it runs, and how change requests are handled."
 date: 2026-08-10
 summary: "How a fixed-price build actually works, what counts as a change request, and how to handle changes without the end-of-project fight."
+ctaHeading: "Is your specification ready to be priced?"
+ctaTitle: "We will tell you what is missing"
+ctaButton: "Get in touch"
+ctaUrl: "/contact.html"
 faqs:
   - q: "Which is better, a fixed price or a day rate?"
     a: "They protect different things. A fixed price protects your budget and puts the risk of overrun on the supplier. A day rate protects your ability to change direction, and puts that risk on you. Neither is the more honest model, and a supplier who only ever offers one of them is telling you something. We compare the two in [fixed price or day rate](/blog/fixed-price-or-day-rate-software-build/)."

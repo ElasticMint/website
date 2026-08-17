@@ -3,6 +3,10 @@ headline: "Should you hire a developer or an agency?"
 description: "Hire an individual for small, well-defined work you can judge yourself. Hire a firm when the software matters. The label matters less than who writes it."
 date: 2026-08-17
 summary: "When one developer is the right answer, when it is not, and the questions that tell you more than the words developer and agency ever will."
+ctaHeading: "Still weighing it up?"
+ctaTitle: "An honest view, even if that means not us"
+ctaButton: "Book a 30-minute call"
+ctaUrl: "/contact.html"
 faqs:
   - q: "What are the key differences between a freelancer and an agency?"
     a: "Cost is the difference people expect, and it is the least reliable one. Day rates overlap far more than the labels suggest, and the cheaper rate is not the cheaper project if the work has to be redone later or nobody can maintain it. What genuinely differs is cover when your developer is unavailable, and whether there is a company carrying contractual obligations when something goes wrong. Our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers the money side properly."

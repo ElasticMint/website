@@ -47,7 +47,7 @@ layout: base.njk
 
 		<article class="make-shorter blog-article aos-init aos-animate" data-aos="fade-up">
 
-			<p class="blog-meta">{{ page.date | dmyDate }}</p>
+			<p class="blog-meta">{{ page.date | dmyDate }}{% if author %} &middot; {{ author }}{% endif %}</p>
 
 			{{ content | safe }}
 
@@ -77,11 +77,14 @@ layout: base.njk
 
 		<div class="wrap-content">
 
-			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+			{# Per-post CTA. Each post sets ctaHeading/ctaTitle/ctaButton/ctaUrl in its
+			   frontmatter so the ask matches what the reader has just read. Defaults live
+			   in blog/blog.11tydata.js; the `or` fallbacks here cover a partial override. #}
+			<h4 class="aos-init aos-animate" data-aos="fade-down">{{ ctaHeading or "Next step" }}</h4>
 
-			<h2 class="aos-init aos-animate" data-aos="fade-up">Get the right solution that works for you</h2>
+			<h2 class="aos-init aos-animate" data-aos="fade-up">{{ ctaTitle or "Tell us what you are weighing up" }}</h2>
 
-			<a class="aos-init aos-animate button green" data-aos="fade-down" href="/contact.html" target="_self">Get started</a>
+			<a class="aos-init aos-animate button green" data-aos="fade-down" href="{{ ctaUrl or '/contact.html' }}" target="_self">{{ ctaButton or "Get in touch" }}</a>
 
 		</div>
 

@@ -3,6 +3,10 @@ headline: "How much does bespoke software cost in the UK?"
 description: "Most bespoke software we quote for runs from roughly £5k to £50k, though it varies. Here is what decides where a project lands, and how it gets priced."
 date: 2026-07-13
 summary: "What bespoke software really costs in the UK, the five things that move the price, and the two ways a build gets priced."
+ctaHeading: "Want a real number?"
+ctaTitle: "Turn the range into a fixed price"
+ctaButton: "See how scoping works"
+ctaUrl: "/services/scoping.html"
 ---
 For most small and medium-sized businesses in the UK, a [bespoke software build](/services/software-development.html) costs somewhere between **£5,000 and £50,000**. That is not a hard rule. It is simply the range we have quoted for most often, and most of the projects we see come inside it. Simple internal tools sit at the lower end. Multi-user platforms that work across web and mobile sit higher. The range is wide because the price is decided less by the idea and more by a handful of specific things: how many types of user it serves, how much it has to connect to other systems, how complex the data is, and how clearly you can describe what you want.
 

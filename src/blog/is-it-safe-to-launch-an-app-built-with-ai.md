@@ -3,6 +3,10 @@ headline: "Is it safe to launch an app built with AI?"
 description: "An app built with AI can be safe to launch, but not on trust. If you cannot check the code yourself, here is how to bring in help without getting burned."
 date: 2026-07-20
 summary: "Whether an AI-built app is safe for real users, how to tell if yours is ready, and what to do when you cannot check the code yourself."
+ctaHeading: "Not sure where yours stands?"
+ctaTitle: "Find out what is sound and what is not"
+ctaButton: "Ask about a code review"
+ctaUrl: "/services/consultancy.html"
 ---
 An app built with AI can be safe to launch. It is just not safe by default. AI is very good at producing something that works in a demo and looks finished, then fails in the specific places it tends to get wrong: how it handles logins, how it stores personal data, and what happens when real people use it in numbers. Whether yours is safe to launch depends on what it does and who it is for.
 
