@@ -3,11 +3,15 @@ headline: "Is a paid discovery phase worth it?"
 description: "Usually yes, if you own what it produces and could take it elsewhere. What a discovery phase should deliver, what it costs in the UK, and when to skip it."
 date: 2026-08-24
 summary: "What a discovery phase should leave you holding, what it costs in the UK, and how to tell a genuine one from a sales meeting with a nicer name."
+ctaHeading: "Weighing up a discovery phase?"
+ctaTitle: "See exactly what you would be holding at the end"
+ctaButton: "See what scoping delivers"
+ctaUrl: "/services/scoping.html"
 faqs:
   - q: "How long does a discovery phase last?"
-    a: "The work itself is usually one to two weeks for a typical small or medium project. Elapsed time is a different question, and it is almost always decided by your side rather than ours. If the people who know how the business actually works can give us a couple of days between them, it moves quickly. If they can only spare an hour a week, it stretches, and the report is worse for it."
+    a: "The work itself is usually one to two weeks for a typical small or medium project. Elapsed time is a different question, and it is almost always decided by your side rather than ours. If the people who know how the business actually works can give us a couple of days between them, it moves quickly. If they can only spare an hour a week, it stretches, and the report is worse for it. Our own [scoping step](/services/scoping.html) is built around that, which is why it is measured in days of your people's time rather than months of ours."
   - q: "What should a discovery phase include?"
-    a: "Time with the people who do the work, not only the people who commissioned the project. A look at whatever systems and spreadsheets are already in use, because that is where the real process lives. Enough design to make the thing discussable rather than theoretical. And a written record of what was decided and what was deliberately left out, so nobody relitigates it halfway through the build."
+    a: "Time with the people who do the work, not only the people who commissioned the project. A look at whatever systems and spreadsheets are already in use, because that is where the real process lives. Enough design to make the thing discussable rather than theoretical. And a written record of what was decided and what was deliberately left out, so nobody relitigates it halfway through the build. That record is what a [fixed price](/blog/how-fixed-price-software-projects-work/) is later promised against."
 ---
 A paid discovery phase is worth it when it ends with something you own and could hand to a different supplier. It is not worth it when all you get is a proposal from the company that ran it.
 
@@ -31,7 +35,9 @@ The test is portability. If you could hand what you have to three other supplier
 
 If you want to know what a build will cost, you should end up with a **written specification** saying what the software does, who uses it and what is out of scope, some **designs or wireframes**, because most people cannot react usefully to a description but can react immediately to a picture, and a **price** against that specification. Ask how long the price stands. A quote with no shelf life is not much of a commitment, and if it expires in a fortnight you cannot really take it anywhere.
 
-If you intend to go out to market, you should end up with a **findings report** and a **requirements document you can put out to tender**. The findings say what you are running now, what is wrong with it, and what your realistic options are, covering your **processes** and not only your software, because a fair share of what feels like a technology problem is a working-practice problem no new system will fix. The tender document turns that into functional, technical and implementation requirements any supplier can bid against. That is the most portable form discovery takes, because it is built to be sent to your supplier's competitors.
+That is the shape behind every build we can quote firmly. On [Benefits Buddy](/case-studies/benefits-buddy.html), a staff-benefits platform with several types of user across web and mobile, the scope was written down in phases before any code was written. The price was firm because the specification came first, not the other way round.
+
+If you intend to go out to market, you should end up with a **findings report** and a **requirements document you can put out to tender**. The findings say what you are running now, what is wrong with it, and what your realistic options are, covering your **processes** and not only your software, because a fair share of what feels like a technology problem is a working-practice problem no new system will fix. The tender document turns that into functional, technical and implementation requirements any supplier can bid against. That is the most portable form discovery takes, because it is built to be sent to your supplier's competitors. Work of that shape is closer to [independent technology consultancy](/services/consultancy.html) than to the front end of a build, and it is worth buying it that way, from someone whose only job is the recommendation.
 
 It is also why the price cannot come first. Nobody can commit to a firm number for work nobody has pinned down, which is why [fixed-price projects](/blog/how-fixed-price-software-projects-work/) start with a specification rather than a quote.
 
@@ -57,7 +63,7 @@ We have been paid to scope projects where our recommendations began with getting
 
 ## When discovery is not worth paying for
 
-If the job is small and you could describe it on a page, do not buy a process to tell you what you already know. Ask for a quote and get on with it. The same goes if you have already been through this with somebody else and own a specification: take what you have and get it priced.
+If the job is small and you could describe it on a page, do not buy a process to tell you what you already know. Ask for a quote and get on with it. The same goes if you have already been through this with somebody else and own a specification: take what you have and get it priced. We will [quote a build against a specification we did not write](/services/software-development.html), and so should anyone else worth hiring. Being told you have to buy their discovery first, when you are holding a perfectly good document, is a sales position rather than a technical one.
 
 If discovery would eat a serious share of your total budget, the answer is not to skip understanding the problem, it is to buy less of it. A couple of days that produce a rough shape and an honest range is better than a fortnight you cannot afford. Any supplier worth hiring will scale it to what is in front of them, and one who will only sell the full engagement has told you something useful.
 
@@ -65,6 +71,6 @@ If discovery would eat a serious share of your total budget, the answer is not t
 
 Before you agree to a discovery phase, ask one question: what will I be holding at the end that I could take to someone else? A supplier who answers that easily is selling you an asset. One who talks around it is selling you a step in their sales process.
 
-Our own [scoping service](/fractional-cto.html) is built to pass that test. We interview your key staff, then hand you a detailed specification, interactive wireframes and a fixed-price quote that stands for six months. All of it is yours, and you are free to take it to any supplier.
+Our own [scoping service](/services/scoping.html) is built to pass that test. We interview your key staff, then hand you a detailed specification, interactive wireframes and a fixed-price quote that stands for six months. All of it is yours, and you are free to take it to any supplier.
 
-If you are not sure your project needs one at all, tell us roughly what you are trying to build and who it is for. We will give you an honest view of what it would take to pin down, what that would cost, and whether it is worth doing in your case.
+If you are not sure your project needs one at all, tell us what you are trying to build and we will say so honestly, including when the answer is that you do not.

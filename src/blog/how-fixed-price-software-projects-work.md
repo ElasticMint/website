@@ -72,7 +72,7 @@ Two more habits help. Keep a contingency in your budget for the changes you will
 
 ## When fixed price is not the right shape
 
-If you genuinely cannot specify the work yet, because the idea is still forming or you expect big pivots, a fixed price forces a false certainty and turns every step into a change request. That is miserable for everyone. When you are in that position, a short discovery phase or a day-rate start is the honest choice, used to reach the clarity that makes a fixed price possible later.
+If you genuinely cannot specify the work yet, because the idea is still forming or you expect big pivots, a fixed price forces a false certainty and turns every step into a change request. That is miserable for everyone. When you are in that position, a short discovery phase or a day-rate start is the honest choice, used to reach the clarity that makes a fixed price possible later. Whether [a paid discovery phase is worth it](/blog/is-a-paid-discovery-phase-worth-it/) comes down to what you are left holding at the end of it.
 
 Size is the other limit, and it is less talked about. Fixed pricing works best on projects small enough to estimate with real accuracy. Past that point the estimate carries so much risk that a supplier has two choices: absorb it and hope, or pad the price until it is safe. Either way you stop getting the thing you were promised, which was a fair price for known work. On a large build, phasing the work and fixing the price of each phase in turn will usually serve you better than one big number. That is how we delivered [Benefits Buddy](/case-studies/benefits-buddy.html), where the scope was written down in phases before any code.
 
