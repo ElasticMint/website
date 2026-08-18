@@ -3,6 +3,10 @@ headline: "How do fixed-price software projects work?"
 description: "A fixed-price software project fixes the price against a written spec before any code. Here's how it runs, and how change requests are handled."
 date: 2026-08-10
 summary: "How a fixed-price build actually works, what counts as a change request, and how to handle changes without the end-of-project fight."
+ctaHeading: "Is your specification ready to be priced?"
+ctaTitle: "We will tell you what is missing"
+ctaButton: "Get in touch"
+ctaUrl: "/contact.html"
 faqs:
   - q: "Which is better, a fixed price or a day rate?"
     a: "They protect different things. A fixed price protects your budget and puts the risk of overrun on the supplier. A day rate protects your ability to change direction, and puts that risk on you. Neither is the more honest model, and a supplier who only ever offers one of them is telling you something. We compare the two in [fixed price or day rate](/blog/fixed-price-or-day-rate-software-build/)."
@@ -32,13 +36,13 @@ Good fixed-price projects do not pretend change never happens. They have a clear
 
 A fixed price fixes the cost of building an agreed specification. The specification is the backbone of the whole arrangement: it says what is in, what is out, and what "finished" looks like. When it is clear, the supplier can commit to a firm price and carry the risk if the work runs long. When it is vague, any price is a guess dressed up as a promise.
 
-What a fixed price does not fix is your understanding of what you want. That keeps developing, especially once you can see and use the software. This is not a flaw in you or the process. It is the single most common reason a fixed-price project meets a change request, and it is worth planning for rather than being surprised by.
+What a fixed price does not fix is your understanding of what you want. That keeps developing, especially once you can see and use the software. This is not a flaw in you or the process. It is the single most common reason for change requests in fixed-price projects. This is worth planning for rather than being surprised by.
 
 ## How a fixed-price project runs, step by step
 
 Most fixed-price builds follow the same shape:
 
-1. **Scope and specify.** Before any code, the work is pinned down: what it does, who uses it, what is in and out, often with wireframes so you can see it. Our scoping step produces a detailed specification, interactive wireframes, and a fixed-price quote you can take to any supplier, not just us.
+1. **Scope and specify.** Before any code, the work is pinned down: what it does, who uses it, what is in and out, often with wireframes so you can see it. Our [scoping step](/services/scoping.html) produces a detailed specification, interactive wireframes, and a fixed-price quote you can take to any supplier, not just us.
 2. **Agree the price and the phases.** The build is usually broken into phases with their own deliverables, so payment and progress track each other.
 3. **Build to the spec.** The team builds what was agreed, ideally showing you working software at each phase rather than at the very end.
 4. **Accept against the spec.** "Done" is measured against the specification you signed off, not against a moving target.
@@ -62,7 +66,7 @@ The point of this is that you stay in control. Nothing gets added silently, and 
 
 ## How to avoid the change-request fight
 
-The bad version of this, where change requests become a running battle, usually starts before the build does. A supplier who under-scoped to win the work has to recover the money somewhere, and change requests are where it surfaces. The cheapest quote is often the most expensive project. Your protection is to agree the change process before you sign, and to read the specification you are agreeing it against.
+The bad version of this, where change requests become a running battle, usually starts before the build does. A supplier who under-scoped to win the work has to recover the money somewhere, and change requests are where it surfaces. That is how a cheap quote actually becomes an expensive project. Your protection is to agree the change process before you sign, and to read the specification you are agreeing it against.
 
 Two more habits help. Keep a contingency in your budget for the changes you will want once the software is real, rather than assuming the first spec is final. And choose a supplier who raises changes early, when you can still decide, over one who quietly banks them. That behaviour is about the [relationship, not the contract](/blog/fixed-price-or-day-rate-software-build/), and it is worth more than any clause.
 
@@ -70,10 +74,10 @@ Two more habits help. Keep a contingency in your budget for the changes you will
 
 If you genuinely cannot specify the work yet, because the idea is still forming or you expect big pivots, a fixed price forces a false certainty and turns every step into a change request. That is miserable for everyone. When you are in that position, a short discovery phase or a day-rate start is the honest choice, used to reach the clarity that makes a fixed price possible later.
 
-Size is the other limit, and it is less talked about. Fixed pricing works best on projects small enough to estimate with real accuracy. Past that point the estimate carries so much risk that a supplier has two choices: absorb it and hope, or pad the price until it is safe. Either way you stop getting the thing you were promised, which was a fair price for known work. On a large build, phasing the work and fixing the price of each phase in turn will usually serve you better than one big number.
+Size is the other limit, and it is less talked about. Fixed pricing works best on projects small enough to estimate with real accuracy. Past that point the estimate carries so much risk that a supplier has two choices: absorb it and hope, or pad the price until it is safe. Either way you stop getting the thing you were promised, which was a fair price for known work. On a large build, phasing the work and fixing the price of each phase in turn will usually serve you better than one big number. That is how we delivered [Benefits Buddy](/case-studies/benefits-buddy.html), where the scope was written down in phases before any code.
 
 ## What to do next
 
 Before you sign a fixed price, ask two questions. Is the specification detailed enough that I could hand it to any supplier and get the same thing built? And do I know exactly how a change will be raised, priced and agreed once we start? If both answers are yes, a fixed price will serve you well.
 
-If you are not sure whether your project is specified well enough to be priced that way, send us what you have. We will tell you what is missing, and whether a fixed price is the right shape for this work in the first place.
+If you are not sure whether your project is specified well enough to be priced that way, [send us what you have](/contact.html). We will tell you what is missing, and whether a fixed price is the right shape for this work in the first place.

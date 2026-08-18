@@ -3,6 +3,10 @@ headline: "Fixed price or day rate: how should you pay for a software build?"
 description: "Fixed price moves risk to your supplier; day rate keeps you flexible. How clearly you can describe it decides which. Plus how to stop either burning you."
 date: 2026-07-27
 summary: "The two ways a software build gets priced, when each one suits you, and how to stop either of them burning you."
+ctaHeading: "Not sure which one fits?"
+ctaTitle: "We will tell you how yours should be priced"
+ctaButton: "Book a 30-minute call"
+ctaUrl: "/contact.html"
 ---
 There is no universally right answer. A fixed price suits a well-defined build, and it moves the risk of overrun onto your supplier. A day rate, sometimes called time and materials, suits work that is still taking shape, and it keeps you flexible while it does. The deciding factor is not which one sounds safer. It is how clearly you can describe what you want before the work starts.
 
@@ -22,7 +26,7 @@ Get the match right and either model works well. Get it wrong, and a fixed price
 
 ## What each model means, in short
 
-**Fixed price.** You agree what will be built and what it will cost before the work starts. If it takes longer than expected, that is the supplier's problem, not your budget's. It only works when the scope is genuinely clear, because a fixed price is a promise against a specification. No real specification, no honest fixed price.
+**[Fixed price](/blog/how-fixed-price-software-projects-work/).** You agree what will be built and what it will cost before the work starts. If it takes longer than expected, that is the supplier's problem, not your budget's. It only works when the scope is genuinely clear, because a fixed price is a promise against a specification. No real specification, no honest fixed price.
 
 **Day rate, or time and materials.** You pay for the time the work takes, usually a daily rate for the people doing it. If the work grows or changes, the bill grows with it, and in exchange you can change direction as you learn without renegotiating a contract every time. The risk of the work running long sits with you, not the supplier.
 
@@ -48,7 +52,7 @@ But safeguards only go so far, because the supplier still decides what to do wit
 
 ## When neither is the right answer yet
 
-Sometimes you genuinely cannot describe the build, and that is fine. The mistake is forcing a pricing model onto that uncertainty. The honest move is to start with a short, paid scoping phase whose only job is to produce the specification: what is in, what is out, and a firm price to build it. That is a small fixed-price step that turns a vague idea into something you can get a real quote for, from us or from anyone else. It is also where the wider question of [what bespoke software costs](/blog/how-much-does-bespoke-software-cost-uk/) stops being a scary range and becomes a number.
+Sometimes you genuinely cannot describe the build, and that is fine. The mistake is forcing a pricing model onto that uncertainty. The honest move is to start with a [short, paid scoping phase](/services/scoping.html) whose only job is to produce the specification: what is in, what is out, and a firm price to build it. That is a small fixed-price step that turns a vague idea into something you can get a real quote for, from us or from anyone else. It is also where the wider question of [what bespoke software costs](/blog/how-much-does-bespoke-software-cost-uk/) stops being a scary range and becomes a number.
 
 ## What to do next
 
@@ -56,4 +60,4 @@ Start with one honest question: can you describe what you want clearly enough to
 
 If you can, ask for a fixed price, insist on seeing the written specification behind it, and hold them to both. If you cannot, do not let anyone sell you certainty they cannot deliver. Get the specification first, and the price second.
 
-If you are not sure which side of that line you sit on, that is the normal place to start, and it is exactly the thing we can help you work out. Tell us what you have in mind, and we will help you decide how it should be priced.
+If you are not sure which side of that line you sit on, that is the normal place to start, and it is exactly the thing we can help you work out. [Tell us what you have in mind](/contact.html), and we will help you decide how it should be priced.

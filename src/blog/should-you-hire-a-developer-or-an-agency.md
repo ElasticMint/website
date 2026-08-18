@@ -3,6 +3,10 @@ headline: "Should you hire a developer or an agency?"
 description: "Hire an individual for small, well-defined work you can judge yourself. Hire a firm when the software matters. The label matters less than who writes it."
 date: 2026-08-17
 summary: "When one developer is the right answer, when it is not, and the questions that tell you more than the words developer and agency ever will."
+ctaHeading: "Still weighing it up?"
+ctaTitle: "An honest view, even if that means not us"
+ctaButton: "Book a 30-minute call"
+ctaUrl: "/contact.html"
 faqs:
   - q: "What are the key differences between a freelancer and an agency?"
     a: "Cost is the difference people expect, and it is the least reliable one. Day rates overlap far more than the labels suggest, and the cheaper rate is not the cheaper project if the work has to be redone later or nobody can maintain it. What genuinely differs is cover when your developer is unavailable, and whether there is a company carrying contractual obligations when something goes wrong. Our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers the money side properly."
@@ -37,7 +41,7 @@ The moment to stop is usually not about complexity. It is about consequence.
 
 If the software runs something your business depends on, one person is a single point of failure with no backup. They get ill, they take a better offer, they lose interest halfway through. Your project does not pause politely, it stops. The same applies over the longer term: software you rely on needs maintaining for years, and an individual is under no obligation to still be available, or even still be a developer, in three years' time.
 
-There is a quieter version of the same risk. One person building alone develops habits nobody checks. Decisions get made that only they understand, in a codebase only they can navigate. That is fine while they are there and expensive the day they are not. It is the same trap people fall into with an AI-built app they cannot maintain, arrived at by a different route.
+There is a quieter version of the same risk. One person building alone develops habits nobody checks. Decisions get made that only they understand, in a codebase only they can navigate. That is fine while they are there and expensive the day they are not. It is the same trap people fall into with [an AI-built app they cannot maintain](/blog/need-a-developer-to-take-over-a-vibe-coded-app/), arrived at by a different route.
 
 ## What "agency" actually means
 
@@ -56,7 +60,7 @@ Ask these of anyone, individual or firm, and the answers will tell you more than
 3. **Who is accountable if this goes wrong, and what can I do about it?** Contracts, insurance and continuity are the real difference between a supplier and an individual, and they only matter on the day something fails.
 4. **Can you tell me I am wrong?** Someone whose income depends entirely on your next instruction will struggle to push back. Being told your idea has a problem is worth more than being told yes quickly.
 
-We are a small senior-led firm, so our answers to these are easy: you work directly with the people writing your software, because there is nobody else for it to be handed to. We would rather you asked the questions than took our word for it.
+We are a [small senior-led firm](/about.html), so our answers to these are easy: you work directly with the people writing your software, because there is nobody else for it to be handed to. We would rather you asked the questions than took our word for it.
 
 ## When neither is the right answer
 
@@ -64,10 +68,10 @@ Sometimes the honest answer is that you need an employee, not a supplier.
 
 If software is going to be central to what your business does, and you expect to be changing it continuously for years, at some point you want that capability inside the building. Suppliers are good at getting you there and good at work with a shape and an end. They are a poor substitute for owning the thing outright when the software is the business. If that is where you are heading, the useful question is not which supplier, it is what to build in-house and when to start.
 
-And if you cannot yet describe what you want clearly enough for anyone to quote it, neither option will go well. That is not a hiring problem, it is a scoping one, and no amount of team depth fixes it. Our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers what has to be pinned down before a number means anything.
+And if you cannot yet describe what you want clearly enough for anyone to quote it, neither option will go well. That is not a hiring problem, it is a [scoping one](/services/scoping.html), and no amount of team depth fixes it. Our guide to [what bespoke software costs in the UK](/blog/how-much-does-bespoke-software-cost-uk/) covers what has to be pinned down before a number means anything.
 
 ## What to do next
 
 Work out which situation you are actually in before you start looking. Small and contained with technical judgement in-house points to an individual. Business-critical, long-lived, or beyond your ability to assess points to a firm. Then ignore the label and ask the four questions above, of everyone, including us.
 
-If you are not sure which side of that line your project sits on, tell us what you are trying to build and roughly what it needs to do. We will give you an honest view, including telling you if you would be better off with one good developer than with us.
+If you are not sure which side of that line your project sits on, [tell us what you are trying to build](/contact.html) and roughly what it needs to do. We will give you an honest view, including telling you if you would be better off with one good developer than with us.
