@@ -63,6 +63,15 @@
 .case-category{position:absolute;top:1rem;left:1rem;background:#18cc9c;color:#fff;padding:0.6rem 1.2rem;border-radius:5px;z-index:2}
 .case-category h4{color:#fff;margin:0;padding:0;font-size:1.1rem;letter-spacing:2px}
 .case-category h4:before{display:none}
+/* Mobile-only legal links. Hidden by default because the footer menu already carries
+   them; shown at exactly the 640px breakpoint where style.css sets
+   `footer .fourty, footer .twenty {display:none}` and takes that menu away. */
+.footer-legal{display:none}
+@media(max-width:640px){
+	.footer-legal{display:flex;flex-wrap:wrap;justify-content:center;gap:0 2.5rem;margin:0 0 1rem}
+	.footer-legal a{color:#fff;font-family:intro_lightregular,sans-serif;font-size:1.4rem;text-decoration:underline;min-height:44px;display:inline-flex;align-items:center}
+	.footer-legal a:hover{color:#18cc9c}
+}
 /* The removed header search box was invisible (visibility:hidden in style.css) but
    still reserved 5.1rem plus a 1rem margin, which is what separated the main menu
    from the Contact button. Both float right, so with the spacer gone they sat flush
@@ -569,6 +578,12 @@
 				</a>
 			</div>
 
+		</div>
+
+		
+		<div class="row footer-legal">
+			<a href="/privacy-policy.html">Privacy Policy</a>
+			<a href="#cookie-settings" data-cookie-settings>Cookie Settings</a>
 		</div>
 
 		<div class="row copy">

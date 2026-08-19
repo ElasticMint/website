@@ -90,6 +90,16 @@
 
 		</div>
 
+		{# Below 640px style.css hides footer .twenty and .fourty, which takes the whole
+		   footer menu with it, and the mobile burger menu carries no legal links. That
+		   left phone users with no route to the privacy policy and no way to withdraw
+		   cookie consent, which has to be as easy as giving it. This row appears only at
+		   the width where those columns vanish, so the links are never unreachable. #}
+		<div class="row footer-legal">
+			<a href="/privacy-policy.html">Privacy Policy</a>
+			<a href="#cookie-settings" data-cookie-settings>Cookie Settings</a>
+		</div>
+
 		<div class="row copy">
 
 			<div class="copy-left">
