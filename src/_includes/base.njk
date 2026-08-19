@@ -74,7 +74,9 @@
 	<meta name="twitter:data2" content="{{ twitterData2 }}" />
 {%- endif %}
 {%- if schemaGraph %}
-	<script type="application/ld+json" class="yoast-schema-graph">{{ schemaGraph | safe }}</script>
+	{# schemaGraph carries only this page's own nodes. The shared Organization and WebSite are
+	   appended by the filter, from src/_data/schema.js. #}
+	<script type="application/ld+json">{{ schemaGraph | withSharedSchema | safe }}</script>
 {%- endif %}
 
 <style>.single-case-study .wrap-title .wrap-content h4, .news-item .over-date, .page-template-CaseStudies .over-date {
