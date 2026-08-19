@@ -74,43 +74,10 @@ module.exports = {
               { "@type": "ListItem", position: 3, name: data.headline },
             ],
           },
-          {
-            "@type": "WebSite",
-            "@id": "https://www.elasticmint.com/#website",
-            url: "https://www.elasticmint.com/",
-            name: "Elastic Mint",
-            publisher: { "@id": "https://www.elasticmint.com/#organization" },
-            inLanguage: "en-GB",
-          },
-          {
-            "@type": "Organization",
-            "@id": "https://www.elasticmint.com/#organization",
-            name: "Elastic Mint",
-            url: "https://www.elasticmint.com/",
-            logo: {
-              "@type": "ImageObject",
-              "@id": "https://www.elasticmint.com/#/schema/logo/image/",
-              url: "https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg",
-              contentUrl:
-                "https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg",
-              width: 1500,
-              height: 1060,
-            },
-            sameAs: [
-              "https://x.com/elasticmint",
-              "https://www.linkedin.com/company/elastic-mint-ltd/",
-            ],
-            // Locality only, deliberately. There is no premises a client visits, so this
-            // stays an Organization rather than a LocalBusiness and carries no streetAddress.
-            // Kept identical to the address in the .njk schemaGraph blocks.
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Bristol",
-              addressRegion: "Bristol",
-              addressCountry: "GB",
-            },
-            areaServed: { "@type": "Country", name: "United Kingdom" },
-          },
+          // WebSite and Organization used to be written out again here. They now come from
+          // ../_data/schema.js via the `withSharedSchema` filter in base.njk, the same route the
+          // .njk pages use, so the two generators can no longer drift apart. Declare only
+          // post-specific nodes below this point.
       ];
 
       // Optional FAQ block. Driven by the same `faqs` frontmatter that post.njk renders
