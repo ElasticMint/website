@@ -48,7 +48,7 @@ There are two common ways a build gets priced, and which one you can use depends
 
 **Day rate, or time and materials.** When the idea is still taking shape, a fixed price would be a guess, and a bad one. For an [assistive-technology app we built with the University of Bath](/case-studies/assistive-tech.html), the goal was to turn an early idea into something that worked, and the shape of it changed as we learned. There we worked to an estimate based on a day rate, which kept things flexible while the product found its feet. The trade-off is that more of the risk sits with you if the work runs longer than expected.
 
-The pattern underneath both is simple: **the clearer you are about what you want, the easier it is to price, and the more of the risk you can hand to your supplier.** If you cannot describe it precisely yet, that is fine. It just means starting with a scoping step or a short day-rate phase to get there.
+The pattern underneath both is simple: **the clearer you are about what you want, the easier it is to price, and the more of the risk you can hand to your supplier.** If you cannot describe it precisely yet, that is fine. It just means starting with a scoping step or a short day-rate phase to get there. If you are wondering whether that step is worth paying for, we have written about [paid discovery phases](/blog/is-a-paid-discovery-phase-worth-it/) and how to judge one.
 
 ## The thing most cost articles miss: a fixed price you can take anywhere
 

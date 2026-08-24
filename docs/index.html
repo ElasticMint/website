@@ -400,7 +400,11 @@
 </div>
 
 <div class="row ai-band" style="background-color:#fff; padding:5rem 2rem 6rem; border-top:1px solid #eef7f5;">
-	<div class="inside" style="max-width:900px; margin:0 auto; text-align:center;">
+	<!-- width:100% matters. style.css sets .inside{width:1400px;max-width:100%}, so the max-width
+	     is what makes it shrink on small screens. Overriding max-width alone left width:1400px
+	     capped at 900px, which overflowed every phone. Setting width:100% restores the shrink and
+	     max-width still caps it at 900px on desktop. -->
+	<div class="inside" style="width:100%; max-width:900px; margin:0 auto; text-align:center;">
 		<h4 style="margin-bottom:2.5rem;">AI in our work</h4>
 		<h2 class="aos-init aos-animate" data-aos="fade-up">AI makes us faster. Twenty years on the tools makes us right.</h2>
 		<p class="aos-init aos-animate" data-aos="fade-up" style="margin:1.5rem 0 2.5rem;">We use AI every day, and it&#8217;s transformed how quickly we ship. When it comes to jobs like scaffolding, drafting tests, exploring an unfamiliar API, or working through a refactor, it&#8217;s made a huge difference. What it hasn&#8217;t changed is the need for judgement and experience. That still sits with us.</p>
