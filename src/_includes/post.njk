@@ -79,10 +79,12 @@ layout: base.njk
 
 			{# Per-post CTA. Each post sets ctaHeading/ctaTitle/ctaButton/ctaUrl in its
 			   frontmatter so the ask matches what the reader has just read. Defaults live
-			   in blog/blog.11tydata.js; the `or` fallbacks here cover a partial override. #}
+			   in blog/blog.11tydata.js; the `or` fallbacks here cover a partial override.
+			   A post can drop the sub-heading entirely with `ctaTitle: false`, leaving the
+			   small heading and the button on their own. #}
 			<h4 class="aos-init aos-animate" data-aos="fade-down">{{ ctaHeading or "Next step" }}</h4>
 
-			<h2 class="aos-init aos-animate" data-aos="fade-up">{{ ctaTitle or "Tell us what you are weighing up" }}</h2>
+			{% if ctaTitle %}<h2 class="aos-init aos-animate" data-aos="fade-up">{{ ctaTitle }}</h2>{% endif %}
 
 			<a class="aos-init aos-animate button green" data-aos="fade-down" href="{{ ctaUrl or '/contact.html' }}" target="_self">{{ ctaButton or "Get in touch" }}</a>
 
