@@ -65,7 +65,7 @@ AI-built apps skew this further, because generated code is optimised for produci
 
 ## When a rebuild is not the right answer
 
-If you have built an app just to test an idea and it has done that, then you are done. If however you have gone as far as you can go using AI and still not proven your idea, then carrying on may be the right thing. It is not uncommon for AI solutions to have limitations which can only be solved with bespoke code.
+If you have built an app just to test an idea and it has done that, then you are done. If AI has taken you as far as it can and the idea is still unproven, carrying on may be worth it. It is not uncommon for AI solutions to have limitations which can only be solved with bespoke code.
 
 If analysis reveals that there are only a limited number of problems, it is often cheaper and quicker just to fix rather than rebuild. We have covered some of this in our post about [whether you should ask a developer to take over your vibe-coded app](/blog/need-a-developer-to-take-over-a-vibe-coded-app/).
 
