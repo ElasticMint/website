@@ -11,7 +11,7 @@ faqs:
   - q: "How do you replace a system without disrupting the business?"
     a: "Usually by not replacing it all at once. You can build the new system alongside the old one and move people across when it is ready, or modernise a piece at a time and leave the rest running. Either way you will be paying for two systems for a while. Most of the disruption comes from things nobody wrote down, so it is worth looking for those early."
   - q: "Is replacing a legacy system worth it?"
-    a: "It depends on what the system is stopping the business doing. If you can name that, it may well be worth it. If the answer is that the database is old and the screens look dated, then probably not. The clearest reason to replace is that the technology underneath is no longer supported."
+    a: "It depends on what the system is stopping the business doing. If there is a clear business need that cannot be met by the current system, then potentially yes. If the answer is that the database is old and the screens look dated, then probably not. The clearest reason to replace is that the technology underneath is no longer supported."
   - q: "How long does it take to modernise a system?"
     a: "Usually longer than planned. Preqin ran their old and new systems alongside each other for around two years, and the modernisation as a whole took several years. Modernising a piece at a time can take longer still, although the business keeps working throughout. Nobody can give you a sensible timescale until they have [looked at what you have](/services/consultancy.html)."
 ---
@@ -21,7 +21,7 @@ The standard answer to whether you should replace or rewrite a working system is
 
 ## Key takeaways
 
-- A working system often holds years of undocumented knowledge about how your business runs.
+- A working system often contains years of undocumented knowledge about how your business runs.
 - The strongest reason to replace is that the technology underneath is no longer supported.
 - Replacing a system often involves a period of running the old and new system alongside each other and keeping their data in sync.
 - Often the best way to modernise is one component or piece of functionality at a time.
