@@ -35,7 +35,8 @@
       "Bash(node .tmp_console.js)",
       "Bash(node .tmp_consent.js)",
       "WebFetch(domain:find-and-update.company-information.service.gov.uk)",
-      "WebFetch(domain:help.calendly.com)"
+      "WebFetch(domain:help.calendly.com)",
+      "WebSearch"
     ],
     "deny": []
   }

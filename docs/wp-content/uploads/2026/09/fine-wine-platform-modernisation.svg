@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="351" height="144" viewBox="0 0 351 144" role="img" aria-label="Fine wine merchant platform">
+  <path d="M155,52 C155,60.5 162,67 175.5,67 C189,67 196,60.5 196,52 Z" fill="#18cc9c" opacity="0.9"/>
+  <path d="M140,28 L211,28" stroke="#0a1626" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M140,28 C140,55 149,68 175.5,68 C202,68 211,55 211,28" fill="none" stroke="#0a1626" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="175.5" y1="68" x2="175.5" y2="97" stroke="#0a1626" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="157" y1="101" x2="194" y2="101" stroke="#0a1626" stroke-width="2.5" stroke-linecap="round"/>
+
+  <text x="175.5" y="121" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#0a1626" text-anchor="middle">Fine Wine Merchant Platform</text>
+</svg>

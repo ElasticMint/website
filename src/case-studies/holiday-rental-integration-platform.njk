@@ -1,0 +1,177 @@
+---
+layout: base.njk
+usesCanvas: true
+permalink: case-studies/holiday-rental-integration-platform.html
+title: 'Event-Driven Integration Platform for a European Holiday Rental Group - Elastic Mint'
+description: 'We led technical delivery of an event-driven integration platform connecting one of Europe''s largest holiday rental providers to partner inventory.'
+canonical: 'https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html'
+ogType: 'article'
+ogTitle: 'Event-Driven Integration Platform for a European Holiday Rental Group - Elastic Mint'
+ogDescription: 'We led technical delivery of an event-driven integration platform connecting one of Europe''s largest holiday rental providers to partner inventory.'
+ogUrl: 'https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html'
+ogImage: 'https://www.elasticmint.com/wp-content/uploads/2026/09/holiday-rental-integration-platform.svg'
+ogImageWidth: '351'
+ogImageHeight: '144'
+ogImageType: 'image/svg+xml'
+articlePublishedTime: '2026-09-01T00:00:00+00:00'
+articleModifiedTime: '2026-09-01T00:00:00+00:00'
+twitterLabel1: 'Estimated reading time'
+twitterData1: '2 minutes'
+bodyClass: 'wp-singular case-study-template-default single single-case-study wp-theme-ElasticMint singular'
+schemaGraph: '{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html","url":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html","name":"Event-Driven Integration Platform for a European Holiday Rental Group - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"primaryImageOfPage":{"@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html#primaryimage"},"image":{"@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html#primaryimage"},"thumbnailUrl":"https://www.elasticmint.com/wp-content/uploads/2026/09/holiday-rental-integration-platform.svg","datePublished":"2026-09-01T00:00:00+00:00","dateModified":"2026-09-01T00:00:00+00:00","breadcrumb":{"@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html#breadcrumb"},"inLanguage":"en-GB"},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html#primaryimage","url":"https://www.elasticmint.com/wp-content/uploads/2026/09/holiday-rental-integration-platform.svg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2026/09/holiday-rental-integration-platform.svg","width":351,"height":144},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/case-studies/holiday-rental-integration-platform.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Event-Driven Integration Platform for a European Holiday Rental Group"}]}]}'
+---
+{% raw %}
+<div class="row blog-top">
+
+	<canvas id="myCanvas"></canvas>
+
+	<div class="row overlay-canvas">
+
+		<div class="inside centered">
+
+				<div class="wrap-title static">
+
+					<div class="row aos-init aos-animate" data-aos="fade-up">
+
+						<div class="wrap-content">
+							<h4>01.09.26</h4>
+
+														<h1>Event-Driven Integration Platform for a European Holiday Rental Group</h1>
+
+						</div>
+
+					</div>
+
+					<div class="row aos-init aos-animate" data-aos="fade-down">
+
+						<div class="wrap-content larger thumbnail-wrap">
+
+							<div class="over-cats">
+																							</div>
+
+							<img width="351" height="144" src="/wp-content/uploads/2026/09/holiday-rental-integration-platform.svg" class="attachment-blog-horiz size-blog-horiz wp-post-image" alt="European holiday rental integration platform" decoding="async" fetchpriority="high" />
+						</div>
+
+					</div>
+
+				</div>
+
+		</div>
+
+	</div>
+
+	<div class="row featured-and-cats overlay-canvas standard-content halfs">
+
+		<div class="inside">
+
+			<div class="wrap-content aos-init aos-animate" data-aos="fade-up">
+				<p data-pm-slice="1 1 []"><strong>Overview</strong><br />
+Elastic Mint led the technical delivery of an integration platform for one of Europe&#8217;s largest holiday rental providers. The platform acts as a modern middleware layer, connecting the group&#8217;s internal booking systems directly to third-party property inventory partners.</p>
+<p><strong>The Challenge</strong><br />
+Bringing third-party property inventory onto the platform could not come at the expense of the core booking service. The existing approach meant translating disparate XML formats from each partner, keeping availability and pricing accurate in real time, and guarding against double bookings whenever a partner&#8217;s API retried a failed request.</p>
+<p><strong>Our Approach</strong><br />
+We designed and delivered an event-driven serverless architecture on AWS, covering availability sync, pricing updates and the booking flow itself.</p>
+<ol start="1" data-spread="false">
+<li><strong>Event-driven serverless architecture</strong>: built on AWS Lambda and EventBridge so availability sync, pricing updates and the booking flow could each evolve independently, without one partner integration affecting another.</li>
+<li><strong>At-most-once booking state machine</strong>: eliminated race conditions and double-booking risk when a partner&#8217;s API retried a failed request, protecting a part of the platform with a direct line to customer trust.</li>
+<li><strong>Partner data normalisation</strong>: translated each partner&#8217;s XML format into a consistent internal model, isolating the rest of the platform from the quirks of any one integration.</li>
+<li><strong>Local developer tooling</strong>: built tooling that let engineers run and debug the full integration locally, keeping delivery pace high without depending on shared cloud environments for every change.</li>
+</ol>
+<p>The platform was built in C# and .NET, running on AWS Lambda, EventBridge, SQS, S3 and DynamoDB, with infrastructure managed through Terraform, deployed via GitHub Actions, and OpenTelemetry providing visibility across the event-driven flow.</p>
+<p><strong>Outcome</strong><br />
+We verified availability, pricing and booking flows end-to-end across multiple partner scenarios ahead of go-live, and the platform passed two full OWASP Top 10 security audits with zero critical findings. High-velocity delivery, underpinned by disciplined test-driven development, automated pull request review and a smooth developer onboarding process, meant new partner integrations could be added with confidence rather than risk.</p>
+<p><strong>Where we go next</strong><br />
+Elastic Mint remains well placed to extend the platform to further partners and integration scenarios as the group&#8217;s partnership network grows, building on the event-driven foundations and delivery practices already in place.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<div class="row blog-posts related">
+
+	<div class="inside">
+
+		<h4>Related case studies</h4>
+
+		<div class="marg-small">
+
+
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+
+					<a class="img-wrap" href="/case-studies/fine-wine-platform-modernisation.html">
+
+						<span class="over-date">
+
+							<h4>01.09.26</h4>
+
+						</span>
+
+						<img width="351" height="144" src="/wp-content/uploads/2026/09/fine-wine-platform-modernisation.svg" class="attachment-blog-item size-blog-item wp-post-image" alt="UK fine wine merchant trading platform" decoding="async" />					</a>
+
+					<h2><a href="/case-studies/fine-wine-platform-modernisation.html">Platform Modernisation and Production Go-Live for a UK Fine Wine Merchant</a></h2>
+
+				</div>
+
+
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+
+					<a class="img-wrap" href="/case-studies/millbrook-healthcare.html">
+
+						<span class="over-date">
+
+							<h4>26.04.26</h4>
+
+						</span>
+
+						<img width="351" height="150" src="/wp-content/uploads/2026/04/Millbrook-Healthcare-Full-Logo-FINAL-2024.webp" class="attachment-blog-item size-blog-item wp-post-image" alt="Millbrook Healthcare" decoding="async" />					</a>
+
+					<h2><a href="/case-studies/millbrook-healthcare.html">Platform Foundations for Millbrook Healthcare</a></h2>
+
+				</div>
+
+
+				<div class="third news-item aos-init aos-animate" data-aos="fade-up">
+
+					<a class="img-wrap" href="/case-studies/benefits-buddy.html">
+
+						<span class="over-date">
+
+							<h4>26.04.26</h4>
+
+						</span>
+
+						<img width="351" height="197" src="/wp-content/uploads/2026/01/HWWA-Consulting-Logo-Navy-RGB.svg" class="attachment-blog-item size-blog-item wp-post-image" alt="HWWA Consulting" decoding="async" />					</a>
+
+					<h2><a href="/case-studies/benefits-buddy.html">Benefits Buddy for HWWA Consulting</a></h2>
+
+				</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+
+		<div class="wrap-content">
+
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Start a project</h4>
+
+			<h2 class="aos-init aos-animate" data-aos="fade-up">If you're building a new product or modernising an existing one, we are the partner of choice</h2>
+
+							<a class="aos-init aos-animate button green" data-aos="fade-down" href="/contact.html" target="_self">Get started</a>
+
+		</div>
+
+	</div>
+
+</div>
+{% endraw %}
