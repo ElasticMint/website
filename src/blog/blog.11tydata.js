@@ -30,6 +30,8 @@ module.exports = {
     schemaGraph: (data) => {
       const url = `https://www.elasticmint.com/blog/${data.page.fileSlug}/`;
       const iso = new Date(data.page.date).toISOString();
+      // `updated` in a post's frontmatter records a substantive edit after publishing.
+      const modifiedIso = data.updated ? new Date(data.updated).toISOString() : iso;
       const graph = [
           {
             "@type": "Article",
@@ -40,7 +42,7 @@ module.exports = {
             headline: data.headline,
             description: data.description,
             datePublished: iso,
-            dateModified: iso,
+            dateModified: modifiedIso,
             mainEntityOfPage: { "@id": url },
             inLanguage: "en-GB",
           },
@@ -51,7 +53,7 @@ module.exports = {
             name: data.title,
             isPartOf: { "@id": "https://www.elasticmint.com/#website" },
             datePublished: iso,
-            dateModified: iso,
+            dateModified: modifiedIso,
             breadcrumb: { "@id": url + "#breadcrumb" },
             inLanguage: "en-GB",
           },

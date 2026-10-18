@@ -25,3 +25,10 @@
    of wrapping to a second row. */
 .menu ul li{margin-right:3rem}
 .menu ul li:last-child{margin-right:0}
+
+/* Case study cards: the theme halves them below 960px, which leaves two cramped cards
+   side by side on a phone. One per row from 640px down. */
+@media (max-width:640px){.third.news-item{width:100%!important}}
+
+/* Homepage hero and "How we can help" buttons: centre them once the columns stack. */
+@media (max-width:960px){.home-hero .fourty>.row,.intro .sixty>.row{text-align:center}}
