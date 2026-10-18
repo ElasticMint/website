@@ -2,6 +2,7 @@
 headline: "Do you need a developer to take over your vibe-coded app?"
 description: "Often you do not. It depends on real users and real data, not on how it was built. How to tell when you need a developer, and what a good one does first."
 date: 2026-08-03
+updated: 2026-08-17
 summary: "When a vibe-coded app actually needs a developer to take it over, what a good one does before reaching for a rebuild, and how to bring them in without getting burned."
 ctaHeading: "Ready for someone to look at it?"
 ctaTitle: "We start with an assessment, not a rebuild"

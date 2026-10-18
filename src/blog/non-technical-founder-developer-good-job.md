@@ -3,6 +3,7 @@ headline: "How can a non-technical founder tell if their developer is doing a go
 description: "You cannot judge the code, but you can judge delivery, quality and how they work with you. What to watch, and when a second opinion is worth it."
 date: 2026-10-05
 summary: "What a non-technical founder can judge without reading the code, who should own the code and accounts, and when a second opinion is worth paying for."
+featured: true
 ctaHeading: "Not sure what you are paying for?"
 ctaTitle: false
 ctaButton: "Ask about a review"

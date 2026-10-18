@@ -2,6 +2,7 @@
 headline: "Is a paid discovery phase worth it?"
 description: "Usually yes, if you own what it produces and could take it elsewhere. What a discovery phase should deliver, what it costs in the UK, and when to skip it."
 date: 2026-08-24
+updated: 2026-09-14
 summary: "What a discovery phase should leave you holding, what it costs in the UK, and how to tell a genuine one from a sales meeting with a nicer name."
 ctaHeading: "Weighing up a discovery phase?"
 ctaTitle: "See exactly what you would be holding at the end"

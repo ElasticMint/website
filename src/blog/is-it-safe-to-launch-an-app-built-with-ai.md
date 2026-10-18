@@ -2,7 +2,9 @@
 headline: "Is it safe to launch an app built with AI?"
 description: "An app built with AI can be safe to launch, but not on trust. If you cannot check the code yourself, here is how to bring in help without getting burned."
 date: 2026-07-20
+updated: 2026-08-17
 summary: "Whether an AI-built app is safe for real users, how to tell if yours is ready, and what to do when you cannot check the code yourself."
+featured: true
 ctaHeading: "Not sure where yours stands?"
 ctaTitle: "Find out what is sound and what is not"
 ctaButton: "Ask about a code review"

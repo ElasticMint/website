@@ -2,6 +2,7 @@
 headline: "How do fixed-price software projects work?"
 description: "A fixed-price software project fixes the price against a written spec before any code. Here's how it runs, and how change requests are handled."
 date: 2026-08-10
+updated: 2026-08-18
 summary: "How a fixed-price build actually works, what counts as a change request, and how to handle changes without the end-of-project fight."
 ctaHeading: "Is your specification ready to be priced?"
 ctaTitle: "We will tell you what is missing"
