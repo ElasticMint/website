@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-GB">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-GB">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-GB">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-GB">
+<!--<![endif]-->
+
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://ajax.googleapis.com https://unpkg.com https://cdnjs.cloudflare.com https://t.contentsquare.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.contentsquare.com https://*.contentsquare.net; worker-src 'self' blob:; base-uri 'self'; form-action 'self'" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>Should you build bespoke software or buy something off the shelf? - Elastic Mint</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="/wp-content/themes/ElasticMint/fonts/intro-regular-webfont.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/wp-content/themes/ElasticMint/fonts/intro-light-webfont.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ElasticMint/style.css" />
+<link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link rel="preload" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /><link rel="stylesheet" href="https://unpkg.com/simplebar@6.3.2/dist/simplebar.css" /></noscript>
+<!--[if lt IE 9]>
+<script src="https://www.elasticmint.com/wp-content/themes/ElasticMint/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+
+
+	<meta name="description" content="If a product already does what you need, buying is nearly always cheaper. When building makes sense, what owning commits you to, and the risk of building cheaply." />
+	<link rel="canonical" href="https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Should you build bespoke software or buy something off the shelf? - Elastic Mint" />
+	<meta property="og:description" content="If a product already does what you need, buying is nearly always cheaper. When building makes sense, what owning commits you to, and the risk of building cheaply." />
+	<meta property="og:url" content="https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/" />
+	<meta property="og:site_name" content="Elastic Mint" />
+	<meta property="og:image" content="https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg" />
+	<meta property="og:image:width" content="1500" />
+	<meta property="og:image:height" content="1060" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:alt" content="Elastic Mint" />
+	<meta name="author" content="Elastic Mint" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@elasticmint" />
+	<meta name="twitter:image" content="https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg" />
+	
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/#article","isPartOf":{"@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/"},"author":{"@id":"https://www.elasticmint.com/#organization"},"publisher":{"@id":"https://www.elasticmint.com/#organization"},"headline":"Should you build bespoke software or buy something off the shelf?","description":"If a product already does what you need, buying is nearly always cheaper. When building makes sense, what owning commits you to, and the risk of building cheaply.","datePublished":"2026-10-19T00:00:00.000Z","dateModified":"2026-10-19T00:00:00.000Z","mainEntityOfPage":{"@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/"},"inLanguage":"en-GB"},{"@type":"WebPage","@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/","url":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/","name":"Should you build bespoke software or buy something off the shelf? - Elastic Mint","isPartOf":{"@id":"https://www.elasticmint.com/#website"},"datePublished":"2026-10-19T00:00:00.000Z","dateModified":"2026-10-19T00:00:00.000Z","breadcrumb":{"@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/#breadcrumb"},"inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.elasticmint.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.elasticmint.com/blog/"},{"@type":"ListItem","position":3,"name":"Should you build bespoke software or buy something off the shelf?"}]},{"@type":"FAQPage","@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/#faq","isPartOf":{"@id":"https://www.elasticmint.com/blog/should-you-build-bespoke-software-or-buy-off-the-shelf/"},"mainEntity":[{"@type":"Question","name":"Can you start with an off-the-shelf product and move to bespoke software later?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it is often a sensible way to start. Using a product for a while teaches you what you actually need, which makes a later build much easier to scope and price."}},{"@type":"Question","name":"Can a product be customised instead of building from scratch?","acceptedAnswer":{"@type":"Answer","text":"Often it can. Some products can be extended through an API, which lets a developer connect them to your other systems or add the piece that is missing. That is usually far cheaper than building the whole system, although you are still dependent on the vendor."}},{"@type":"Question","name":"Who owns the data if you subscribe to a product?","acceptedAnswer":{"@type":"Answer","text":"You should, but check the contract says so before you sign up. Make sure you can export all of your data in a format you can use, so you can move to another product, or to a bespoke system, if you ever need to."}}]},{"@type":"WebSite","@id":"https://www.elasticmint.com/#website","url":"https://www.elasticmint.com/","name":"Elastic Mint","description":"A refreshing approach to bespoke software development","publisher":{"@id":"https://www.elasticmint.com/#organization"},"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://www.elasticmint.com/#organization","name":"Elastic Mint","legalName":"Elastic Mint Ltd","url":"https://www.elasticmint.com/","description":"Elastic Mint is a bespoke software development consultancy in Bristol, UK. We work with growing businesses that cannot afford to get their software wrong. We build new systems, modernise old ones, and give independent advice on how to move them forwards.","logo":{"@type":"ImageObject","@id":"https://www.elasticmint.com/#/schema/logo/image/","inLanguage":"en-GB","url":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","contentUrl":"https://www.elasticmint.com/wp-content/uploads/2023/02/LOGO_mint-back.jpg","width":1500,"height":1060},"image":{"@id":"https://www.elasticmint.com/#/schema/logo/image/"},"sameAs":["https://x.com/elasticmint","https://www.linkedin.com/company/elastic-mint-ltd/"],"address":{"@type":"PostalAddress","addressLocality":"Bristol","addressRegion":"Bristol","addressCountry":"GB"},"areaServed":{"@type":"Country","name":"United Kingdom"}}]}</script>
+
+<style>.single-case-study .wrap-title .wrap-content h4, .news-item .over-date, .page-template-CaseStudies .over-date {
+	display: none;
+}
+.case-category{position:absolute;top:1rem;left:1rem;background:#18cc9c;color:#fff;padding:0.6rem 1.2rem;border-radius:5px;z-index:2}
+.case-category h4{color:#fff;margin:0;padding:0;font-size:1.1rem;letter-spacing:2px}
+.case-category h4:before{display:none}
+/* Mobile-only legal links. Hidden by default because the footer menu already carries
+   them; shown at exactly the 640px breakpoint where style.css sets
+   `footer .fourty, footer .twenty {display:none}` and takes that menu away. */
+.footer-legal{display:none}
+@media(max-width:640px){
+	.footer-legal{display:flex;flex-wrap:wrap;justify-content:center;gap:0 2.5rem;margin:0 0 1rem}
+	.footer-legal a{color:#fff;font-family:intro_lightregular,sans-serif;font-size:1.4rem;text-decoration:underline;min-height:44px;display:inline-flex;align-items:center}
+	.footer-legal a:hover{color:#18cc9c}
+}
+/* The removed header search box was invisible (visibility:hidden in style.css) but
+   still reserved 5.1rem plus a 1rem margin, which is what separated the main menu
+   from the Contact button. Both float right, so with the spacer gone they sat flush
+   against each other. This restores the same gap, matching the 3.7rem the search
+   box narrowed to below 960px. */
+.contact-head{margin-left:6.1rem}
+@media(min-width:1081px){.contact-head svg{vertical-align:-0.15em;margin-right:.35em}}
+@media(max-width:960px){.contact-head{margin-left:4.7rem}}
+#cookie-consent[hidden]{display:none}
+#cookie-consent{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0a1626;color:#fff;padding:1.5rem 2rem;box-shadow:0 -2px 10px rgba(0,0,0,0.2);font-family:Rubik,sans-serif}
+#cookie-consent .cc-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+#cookie-consent p{margin:0;flex:1 1 280px;font-size:1.4rem;line-height:1.5;color:#fff}
+#cookie-consent a{color:#18cc9c;text-decoration:underline}
+#cookie-consent .cc-buttons{display:flex;gap:1rem;flex-shrink:0}
+#cookie-consent button{padding:1rem 2rem;font-size:1.3rem;font-family:intro_regularregular,sans-serif;text-transform:uppercase;letter-spacing:1.5px;border-radius:5px;cursor:pointer;border:none}
+#cookie-consent button.accept{background:#18cc9c;color:#fff}
+#cookie-consent button.accept:hover{background:#139c77}
+#cookie-consent button.reject{background:#fff;color:#000}
+#cookie-consent button.reject:hover{background:#000;color:#fff}
+#cookie-consent button:focus-visible{outline:3px solid #18cc9c;outline-offset:2px}
+/* When reopened from the footer the banner is a settings panel, so mark whichever
+   choice is currently in force rather than presenting both as equally live. */
+#cookie-consent[data-state="accepted"] button.accept:after,
+#cookie-consent[data-state="rejected"] button.reject:after{content:" \2713"}
+@media(max-width:740px){ #cookie-consent{padding:.8rem 1.2rem} #cookie-consent .cc-inner{gap:.8rem;flex-wrap:nowrap;align-items:center} #cookie-consent p{font-size:1.1rem;line-height:1.4;flex:1 1 0;min-width:0} #cookie-consent .cc-buttons{flex-shrink:0;gap:.5rem} #cookie-consent button{padding:.6rem 1rem;font-size:1rem;letter-spacing:1px}}
+@media(max-width:420px){ #cookie-consent .cc-buttons{flex-direction:column} #cookie-consent button{width:100%;min-width:6rem}}
+@media(max-width:1080px){.contact-head{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}.mobile-menu-open{min-height:44px;min-width:44px;padding:9px 7px}}
+</style>
+		<link rel="shortcut icon" href="/wp-content/themes/ElasticMint/favicon.png" />
+
+<!--
+	Google Consent Mode v2 + Contentsquare.
+
+	Two different models, deliberately:
+
+	- Google Analytics loads on every page, but with every consent signal denied by
+	  default. In that state gtag.js sets no cookies and cannot identify a browser
+	  between visits; it sends cookieless pings that still count towards aggregate
+	  totals. Accepting sends a `consent update` that turns analytics_storage on.
+	  Note this does not buy us GA4's behavioural modelling, which Google only
+	  applies above roughly a thousand denied events a day. At our traffic the gain
+	  is better aggregate counts, not modelled users.
+	- Contentsquare is not covered by Consent Mode and records session behaviour,
+	  so it stays hard-blocked and only loads once someone has accepted.
+
+	The ad_* signals stay denied permanently. We run no advertising, so there is
+	nothing to grant them for; they are declared because Consent Mode v2 expects
+	them to be present.
+-->
+<script>
+(function() {
+	var GA_ID = 'G-9D70PLKZQD';
+	var STORAGE_KEY = 'cookie_consent';
+	// Re-ask roughly every six months rather than treating one click as permanent.
+	var CONSENT_MAX_AGE_MS = 182 * 24 * 60 * 60 * 1000;
+
+	// Stored as JSON: {state:'accepted'|'rejected', ts:<epoch ms>}.
+	// The previous implementation stored a bare 'accepted'/'rejected' string with no
+	// timestamp, under a banner that named only Google Analytics. Contentsquare is now
+	// disclosed as well, so that older consent was not given against what we actually
+	// do. Those values are ignored on purpose and the banner asks once more.
+	function readConsent() {
+		var raw = null;
+		try { raw = localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+		if (!raw) return null;
+		var parsed;
+		try { parsed = JSON.parse(raw); } catch (e) { return null; }
+		if (!parsed || (parsed.state !== 'accepted' && parsed.state !== 'rejected')) return null;
+		if (!parsed.ts || (Date.now() - parsed.ts) > CONSENT_MAX_AGE_MS) return null;
+		return parsed.state;
+	}
+
+	function writeConsent(state) {
+		try {
+			localStorage.setItem(STORAGE_KEY, JSON.stringify({ state: state, ts: Date.now() }));
+		} catch (e) {}
+	}
+
+	// Google's own snippet pushes to a bare `dataLayer` and leans on it resolving as
+	// an implicit global. Naming window explicitly does the same job without that.
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { window.dataLayer.push(arguments); }
+	window.gtag = gtag;
+
+	// Defaults have to be queued before gtag.js is requested, or the first hit goes
+	// out under the wrong assumption.
+	gtag('consent', 'default', {
+		ad_storage: 'denied',
+		ad_user_data: 'denied',
+		ad_personalization: 'denied',
+		analytics_storage: 'denied',
+		functionality_storage: 'denied',
+		personalization_storage: 'denied',
+		security_storage: 'granted'
+	});
+	gtag('set', 'ads_data_redaction', true);
+
+	var consent = readConsent();
+	// The stored choice is read synchronously above, so the update can be queued
+	// straight away and there is no need for a wait_for_update delay.
+	if (consent === 'accepted') {
+		gtag('consent', 'update', { analytics_storage: 'granted' });
+	}
+
+	gtag('js', new Date());
+	gtag('config', GA_ID);
+
+	var ga = document.createElement('script');
+	ga.async = true;
+	ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+	document.head.appendChild(ga);
+
+	function loadCS() {
+		if (window.__csLoaded) return;
+		window.__csLoaded = true;
+		var s = document.createElement('script');
+		s.async = true;
+		s.src = 'https://t.contentsquare.net/uxa/05e69e37baf18.js';
+		document.head.appendChild(s);
+	}
+	if (consent === 'accepted') { loadCS(); }
+
+	// Clearing these matters on withdrawal: a consent update stops new cookies being
+	// written but leaves any that already exist sitting on the browser.
+	function clearGACookies() {
+		var names = document.cookie.split(';').map(function(c) {
+			return c.split('=')[0].trim();
+		}).filter(function(n) {
+			return n.indexOf('_ga') === 0 || n.indexOf('_gid') === 0 || n.indexOf('_gcl') === 0;
+		});
+		var host = location.hostname;
+		var domains = ['', host, '.' + host];
+		var bare = host.replace(/^www\./, '');
+		if (bare !== host) { domains.push(bare, '.' + bare); }
+		names.forEach(function(name) {
+			domains.forEach(function(d) {
+				document.cookie = name + '=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT' +
+					(d ? '; domain=' + d : '');
+			});
+		});
+	}
+
+	window.__consent = {
+		state: consent,
+		accept: function() {
+			writeConsent('accepted');
+			gtag('consent', 'update', { analytics_storage: 'granted' });
+			loadCS();
+			this.state = 'accepted';
+		},
+		reject: function() {
+			var wasAccepted = this.state === 'accepted';
+			writeConsent('rejected');
+			gtag('consent', 'update', { analytics_storage: 'denied' });
+			clearGACookies();
+			this.state = 'rejected';
+			// Contentsquare cannot be unloaded once its script is running, so a genuine
+			// withdrawal has to reload the page to actually stop it.
+			if (wasAccepted) { location.reload(); }
+		}
+	};
+})();
+</script>
+</head>
+
+<body class="wp-singular post-template-default single single-post wp-theme-ElasticMint singular">
+
+<div id="cookie-consent" role="region" aria-label="Cookie choices" hidden>
+	<div class="cc-inner">
+		
+		<p>We would like to set analytics cookies, to see how this site is used and how people move around it. Nothing is set unless you accept. <a href="/privacy-policy.html#cookies">Cookies and privacy</a></p>
+		<div class="cc-buttons">
+			<button type="button" class="accept" id="cookie-accept">Accept</button>
+			<button type="button" class="reject" id="cookie-reject">Reject</button>
+		</div>
+	</div>
+</div>
+
+<header class="row header-bar">
+
+	<div class="row inner-head">
+
+		<a href="/" class="logo head">
+			<img src="/wp-content/themes/ElasticMint/images/logo.png" alt="Elastic Mint">
+		</a>
+
+		<div class="head-right">
+
+			<div class="row">
+			</div>
+
+			<div class="row">
+
+				<div class="mobile-menu-open">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<a href="/contact.html" class="button green contact-head"><svg width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg> <span>Contact</span></a>
+
+				
+
+				<div class="menu">
+
+					<nav class="menu-main-menu-container"><ul class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/about.html">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#our-values">Our values</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#history">History</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#how-we-work">How we work</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#team">Leadership team</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/services.html">Services</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/software-development.html">Software Development</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/scoping.html">Software Scoping</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/consultancy.html">Technology Consultancy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/fractional-cto.html">Fractional CTO</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/ai.html">AI</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/case-studies.html">Case Studies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/blog/">Blog</a></li>
+</ul></nav>
+				</div>
+
+			</div>
+
+		</div>
+
+  </div>
+  <!-- .inside -->
+
+</header>
+<!-- #header-bar -->
+
+
+<div id="closemenu" class="close-menu-overlay"></div>
+
+<nav id="menu-h">
+
+        <ul>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/"><span>Home</span><span class="open-sub"></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/about.html"><span>About</span><span class="open-sub"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#our-values"><span>Our values</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#history"><span>History</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#how-we-work"><span>How we work</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#team"><span>Leadership team</span><span class="open-sub"></span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/services.html"><span>Services</span><span class="open-sub"></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/software-development.html"><span>Software Development</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/scoping.html"><span>Software Scoping</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/consultancy.html"><span>Technology Consultancy</span><span class="open-sub"></span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/fractional-cto.html"><span>Fractional CTO</span><span class="open-sub"></span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/ai.html"><span>AI</span><span class="open-sub"></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/case-studies.html"><span>Case Studies</span><span class="open-sub"></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/blog/"><span>Blog</span><span class="open-sub"></span></a></li>
+<li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+</nav>
+
+
+<div id="site-container" class="row container">
+
+<style>
+.blog-article{width:100%;max-width:800px;margin:0 auto;overflow-wrap:break-word}
+.blog-article .blog-meta{color:#18cc9c;text-transform:uppercase;letter-spacing:2px;font-size:1.3rem;margin-bottom:0.5rem}
+.blog-article .key-takeaways{background:#f4fbf9;border-left:4px solid #18cc9c;border-radius:0.5rem;padding:2rem 2.5rem;margin:3rem 0}
+.blog-article .key-takeaways h2{margin-top:0;font-size:2rem}
+.blog-article .key-takeaways ul{margin-bottom:0}
+.blog-article h2{margin-top:3rem}
+.blog-article .post-faqs{border-top:1px solid #e2e8e6;margin-top:4rem;padding-top:1rem}
+.blog-article .post-faqs h3{margin-top:2.5rem;font-size:1.9rem}
+.blog-article .post-faqs h3:first-of-type{margin-top:1.5rem}
+</style>
+
+<div class="row hero">
+
+	<div class="hero-bg row aos-init aos-animate" data-aos="zoom-in" style="background-image: url(/wp-content/uploads/2026/08/hero-team-mid.jpg);">
+
+		<div class="inside">
+
+			<div class="row hero-wrap">
+
+				<div class="hero-content">
+
+					<h4>BLOG</h4>
+
+					<h1>Should you build bespoke software or buy something off the shelf?</h1>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="to-services row">
+
+	</div>
+
+</div>
+
+<div class="row service-intro">
+
+	<div class="inside">
+
+		<article class="make-shorter blog-article aos-init aos-animate" data-aos="fade-up">
+
+			<p class="blog-meta">19.10.26 &middot; Elastic Mint</p>
+
+			<p>If a product already does what your business needs, buying it is nearly always cheaper, quicker and safer than building your own, and bespoke software only makes sense when nothing on the market fits or the software is part of what you sell. That may sound like an odd thing for a company that builds bespoke software to say, but we are not in the business of taking money from businesses who cannot afford it. We recently reviewed a system that had been built for a small healthcare business, and our advice was to look at commercial products before spending any more on it.</p>
+<div class="key-takeaways">
+<h2>Key takeaways</h2>
+<ul>
+<li>Check the market before you build anything, because if a product already does the job it will almost certainly be cheaper.</li>
+<li>Building is worth considering when your business has processes no product covers, or when the software is what you sell.</li>
+<li>Owning software means paying to host, secure, back up, maintain and update it for as long as you use it.</li>
+<li>Software built on the cheap is rarely cheap in the end, whether it came from a favour, the lowest bidder or an AI app builder.</li>
+<li>If you do build, set a realistic budget and choose a partner you trust, even if they are not the cheapest.</li>
+</ul>
+</div>
+<h2>Do you run your business on it, or are you selling it?</h2>
+<p>For most of the things a business needs to do, such as taking bookings, sending invoices or managing customers, software already exists. There are usually several products to choose from, and it is nearly always cheaper to try them out before talking to a developer.</p>
+<p>If the software is simply the tool you use to run your day-to-day operations, an off-the-shelf product is very likely the better choice. It may not work exactly the way you do things now, but it is worth asking whether your process could change to fit the product, because that is often cheaper than changing the product to fit you.</p>
+<p>If your business has its own processes that are not covered by any tool, and they are part of what makes you different, then building may be worth it.</p>
+<p>The other case is when the software is part of what you are selling. If you have a good idea for a product, test the idea before you build it. That might simply start with some market research, talking to potential customers about what they use now and what they would pay for. A very simple proof of concept can also help, as long as everyone accepts it will be thrown away once it has done its job.</p>
+<h2>What owning software commits you to</h2>
+<p>When you own your software, you effectively become a software vendor as well as whatever your business actually is. A subscription product comes with secure hosting, backups and data protection, all kept up to date by the vendor. If you build your own, those become your responsibility, along with fixing bugs, adding new features and modernising the technology as it ages. We cover what that adds up to in <a href="/blog/what-does-it-cost-to-maintain-software-after-launch/">what it costs to maintain software after launch</a>.</p>
+<p>The difference in cost can be large. A system like the one we reviewed could easily cost £30,000 to £40,000 to build properly, which is in line with <a href="/blog/how-much-does-bespoke-software-cost-uk/">what most bespoke builds cost</a>. A ready-made product for the same job will often cost somewhere between £20 and £100 per user each month. Even at the top of that range, five people would cost £6,000 a year, so it would take five to seven years to spend what the build cost, and that is before you have paid anything to maintain it.</p>
+<p>These are not hard numbers, but a gap like that is typical, and it is what you should expect if you decide to build. Some people argue that owning becomes cheaper once you have enough users, because subscription costs grow with every person you add. There may be cases where that is true, but we doubt it happens often, because the costs of owning software carry on for as long as you use it. If you build, it should be because nothing on the market does what you need, and not to save money.</p>
+<h2>Software built on the cheap</h2>
+<p>There seems to be an opinion going round that building software is now cheap and easy, partly because of AI. There is also a temptation to hire developers at very low rates, and on freelance marketplaces it can feel like a race to the bottom, with people asking for whole systems at prices nobody could build them for properly.</p>
+<p>Building software is hard, and it requires discipline, commitment and a clear idea of what you are building. It also costs more than people might like to think.</p>
+<p>The system we reviewed shows what can happen when software is not properly funded. It was not vibe coded, and the code itself was reasonably tidy. However it had been built cheaply, without rigorous development practices, so there was no source control, no automated tests and only a partial handover. The business was left with something that was not fit for purpose, and that they could not easily maintain or safely run.</p>
+<p>AI has transformed software development, but these tools only make sense in the hands of experienced developers. They make skilled developers faster, and they do not remove the need for robust practices such as source control, automated deployments and testing.</p>
+<p>People also often miss the ongoing costs of vibe-coded apps. The platforms that build them are often cheap or free to start with, but you are locking yourself into their platform, and you end up paying a monthly fee based on usage. These apps are not as cheap as they look, and <a href="/blog/need-a-developer-to-take-over-a-vibe-coded-app/">moving one somewhere else</a> can mean rebuilding parts of it.</p>
+<p>If you already have something like this, get it reviewed before you spend more on it, and do not hold on to it just because of the money that has already gone into it.</p>
+<h2>If you do decide to build</h2>
+<p>Whichever way you go, start by writing down what you need the system to do. That is what any product would be assessed against, and what any build would be scoped from, and a <a href="/blog/is-a-paid-discovery-phase-worth-it/">paid discovery phase</a> can help if you are not sure. Then check whether a product already does it, and how much it costs. A smaller system is cheaper to buy, build and secure, so it is worth asking which parts you really need.</p>
+<p>If you still decide to build, set a budget and make sure it is realistic. Then find a partner you trust, who will tell you when something is not worth building, and do not just go with the cheapest option.</p>
+<p>If you are weighing up this decision, <a href="/contact.html">tell us what you need</a> and we will tell you whether we think it is worth building.</p>
+
+
+			
+			<section class="post-faqs">
+
+				<h2>FAQs</h2>
+
+				
+				<h3>Can you start with an off-the-shelf product and move to bespoke software later?</h3>
+
+				<p>Yes, and it is often a sensible way to start. Using a product for a while teaches you what you actually need, which makes a later build much easier to scope and price.</p>
+				
+				<h3>Can a product be customised instead of building from scratch?</h3>
+
+				<p>Often it can. Some products can be extended through an API, which lets a developer connect them to your other systems or add the piece that is missing. That is usually far cheaper than building the whole system, although you are still dependent on the vendor.</p>
+				
+				<h3>Who owns the data if you subscribe to a product?</h3>
+
+				<p>You should, but check the contract says so before you sign up. Make sure you can export all of your data in a format you can use, so you can move to another product, or to a bespoke system, if you ever need to.</p>
+				
+
+			</section>
+			
+
+		</article>
+
+	</div>
+
+</div>
+
+<div class="row standard-content cta">
+
+	<div class="inside">
+
+		<div class="wrap-content">
+
+			
+			<h4 class="aos-init aos-animate" data-aos="fade-down">Not sure whether to build or buy?</h4>
+
+			
+
+			<a class="aos-init aos-animate button green" data-aos="fade-down" href="/contact.html" target="_self">Talk it through</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<footer class="row">
+
+
+	<div class="inside">
+
+		<div class="row footer-top">
+
+			<div class="footer-t-left">
+
+				<a href="/" class="logo">
+					<img src="/wp-content/themes/ElasticMint/images/logo-white.png" alt="Elastic Mint">
+				</a>
+
+				<span>
+					Based in Bristol, UK				</span>
+
+			</div>
+
+			<div class="footer-t-right">
+
+
+				<div class="social-links">
+
+
+
+
+						<a target="_blank" href="https://www.linkedin.com/company/elastic-mint-ltd/" title="Linkedin"><svg width="1em" height="1em" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+
+
+
+
+
+
+						<a target="_blank" href="mailto:info@elasticmint.com" title="Email"><svg width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+
+									</div>
+
+			</div>
+
+		</div>
+
+   	<div class="marg">
+
+			<div class="twenty">
+
+				<div class="row footer-title">
+					About
+				</div>
+
+				<ul class="footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#our-values">Our values</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#history">History</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#how-we-work">How we work</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html#team">Leadership team</a></li>
+</ul>
+
+			</div>
+
+			<div class="fourty">
+
+				<div class="row footer-title">
+					Services
+				</div>
+
+				<ul class="footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/software-development.html">Software Development</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/scoping.html">Software Scoping</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/services/consultancy.html">Technology Consultancy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/fractional-cto.html">Fractional CTO</a></li>
+</ul>
+
+			</div>
+
+			<div class="twenty">
+
+				<ul class="footer-menu larger"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/ai.html">AI</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/case-studies.html">Case Studies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact.html">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy"><a rel="privacy-policy" href="/privacy-policy.html">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#cookie-settings" data-cookie-settings>Cookie Settings</a></li>
+</ul>
+
+			</div>
+
+			<div class="fabe-col">
+				<a href="https://www.findabusinessexpert.com/experts/andy-garner" target="_blank" rel="noopener noreferrer" title="Vetted Expert on Find a Business Expert">
+					<img src="/wp-content/uploads/FaBE-Logo.png" alt="Vetted Expert on Find a Business Expert" class="fabe-badge" width="80" height="80">
+				</a>
+			</div>
+
+		</div>
+
+		
+		<div class="row footer-legal">
+			<a href="/privacy-policy.html">Privacy Policy</a>
+			<a href="#cookie-settings" data-cookie-settings>Cookie Settings</a>
+		</div>
+
+		<div class="row copy">
+
+			<div class="copy-left">
+				Copyright &copy; 2026 Elastic Mint Ltd. All rights reserved.
+			</div>
+
+		</div>
+
+  </div>
+
+</footer>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" id="jquery-js"></script>
+<script src="https://unpkg.com/simplebar@6.3.2/dist/simplebar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="/wp-content/themes/ElasticMint/js/anime.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+(function(){var OriginalSimpleBar=window.SimpleBar;window.SimpleBar=function(el,opts){if(!el)return null;return new OriginalSimpleBar(el,opts);};})();
+</script>
+<script src="/wp-content/themes/ElasticMint/js/all.js"></script>
+<script>
+(function() {
+	var banner = document.getElementById('cookie-consent');
+	var accept = document.getElementById('cookie-accept');
+	var reject = document.getElementById('cookie-reject');
+	var consent = window.__consent;
+	if (!banner || !consent) return;
+
+	function show() {
+		banner.removeAttribute('hidden');
+		// Reflect the current choice so reopening the banner is a settings panel
+		// rather than a fresh question with no state.
+		banner.setAttribute('data-state', consent.state || 'unset');
+	}
+	function hide() { banner.setAttribute('hidden', ''); }
+
+	// No stored choice, or a choice that has aged out, means we have to ask.
+	if (!consent.state) { show(); }
+
+	if (accept) accept.addEventListener('click', function() {
+		consent.accept();
+		hide();
+	});
+	if (reject) reject.addEventListener('click', function() {
+		hide();
+		consent.reject();
+	});
+
+	// Withdrawing has to be as easy as consenting, so the footer link reopens this
+	// and both buttons stay live whatever the current state is.
+	function openSettings(e) {
+		if (e) e.preventDefault();
+		show();
+		if (accept) accept.focus();
+	}
+	window.emOpenCookieSettings = openSettings;
+	Array.prototype.forEach.call(
+		document.querySelectorAll('[data-cookie-settings], a[href="#cookie-settings"]'),
+		function(el) { el.addEventListener('click', openSettings); }
+	);
+	if (location.hash === '#cookie-settings') { openSettings(); }
+})();
+</script>
+</body>
+
+
+</html>
