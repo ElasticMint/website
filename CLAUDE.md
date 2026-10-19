@@ -34,7 +34,8 @@ The site originated as a WordPress export but has since been converted to an Ele
 ### Key conventions
 
 - All in-site URLs are **absolute root-relative** (`/about.html`, `/wp-content/themes/ElasticMint/style.css`). No relative `../` walking.
-- Pages with `<canvas id="myCanvas">` (homepage, case studies) set `usesCanvas: true` in frontmatter; `base.njk` only loads paper.js for those pages.
+- Pages with `<canvas id="myCanvas">` (homepage and the individual case study pages) set `usesCanvas: true` in frontmatter; `base.njk` only loads paper.js for those pages. The case studies index switched to a photo hero in October 2026 and no longer uses the canvas.
+- Blog post frontmatter has two optional flags beyond the basics. `featured: true` puts the post in the homepage's "From the blog" section (newest first, undated). `updated: YYYY-MM-DD` records a substantive edit after publishing; it drives `dateModified` in the post's schema, and the post's `lastmod` in `docs/sitemap.xml` should be set to match by hand.
 - Icons are **inline SVG** (no Font Awesome dependency).
 
 ### Technology stack
@@ -108,7 +109,7 @@ Changes here propagate to every page on rebuild.
 - Treat `/wp-content/` as the site's assets folder. The name is a legacy from the WordPress export — CSS, JS, fonts, theme images, and media uploads all live underneath it. Don't restructure it to a more conventional `/assets/` or `/static/` layout: hundreds of URL references across templates and embedded inside `schemaGraph` JSON strings would need updating, internal `url(...)` references in `style.css` would need fixing, and any inbound link to a media file (LinkedIn embeds, search-engine image cache, etc.) would break. The folder name is repo-internal noise; the URLs are stable and that matters more.
 - Forms: contact page uses Calendly + mailto link. There's no server-side form handler.
 - Google Analytics: GA4 (measurement ID `G-9D70PLKZQD`), embedded once in `base.njk` so every generated page gets it.
-- Original audit-driven SEO fixes (sitemap, meta descriptions, title length, URL slugs) are all in place. Sitemap at `docs/sitemap.xml` lists all 22 canonical URLs.
+- Original audit-driven SEO fixes (sitemap, meta descriptions, title length, URL slugs) are all in place. Sitemap at `docs/sitemap.xml` lists every canonical URL (35 as of October 2026). It is maintained by hand, so add new pages and posts to it, and update `lastmod` when a page changes.
 - 404 page at `src/404.njk` builds to `/404.html`. GitHub Pages auto-serves it for any unfound URL with HTTP 404 status. Don't add it to the sitemap.
 - `base.njk` honours a `noindex: true` frontmatter flag — the page emits `<meta name='robots' content='noindex, nofollow' />` instead of the default `index, follow`. Used by `404.njk`; available to any other page that needs it.
 - The `feature/restructure_folders_pages` branch was where the WordPress → Eleventy migration happened (commits late April 2026). All historical context for *why* things are structured this way is in those commit messages.
