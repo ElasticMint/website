@@ -15,7 +15,7 @@ faqs:
   - q: "Who owns the data if you subscribe to a product?"
     a: "You should, but check the contract says so before you sign up. Make sure you can export all of your data in a format you can use, so you can move to another product, or to a bespoke system, if you ever need to."
 ---
-If a product already does what your business needs, buying it is nearly always cheaper, quicker and safer than building your own, and bespoke software only makes sense when nothing on the market fits or the software is part of what you sell. That may sound like an odd thing for a company that builds bespoke software to say, but we are not in the business of taking money from businesses who cannot afford it. We recently reviewed a system that had been built for a small healthcare business, and our advice was to look at commercial products before spending any more on it.
+If a product already does what your business needs, buying it is nearly always cheaper, quicker and safer than building your own. Bespoke software only makes sense when nothing on the market fits, or when the software is part of what you sell. That may sound like an odd thing for a company that builds bespoke software to say, but we are not in the business of taking money from businesses who cannot afford it. We recently reviewed a system that had been built for a small business, and our advice was to look at commercial products before spending any more on it.
 
 <div class="key-takeaways">
 
@@ -41,7 +41,7 @@ The other case is when the software is part of what you are selling. If you have
 
 ## What owning software commits you to
 
-When you own your software, you effectively become a software vendor as well as whatever your business actually is. A subscription product comes with secure hosting, backups and data protection, all kept up to date by the vendor. If you build your own, those become your responsibility, along with fixing bugs, adding new features and modernising the technology as it ages. We cover what that adds up to in [what it costs to maintain software after launch](/blog/what-does-it-cost-to-maintain-software-after-launch/).
+When you own your software, you effectively become a software vendor in addition to running your main business. A subscription product comes with secure hosting, backups and data protection, all kept up to date by the vendor. If you build your own, those become your responsibility, along with fixing bugs, adding new features and modernising the technology as it ages. We cover what that adds up to in [what it costs to maintain software after launch](/blog/what-does-it-cost-to-maintain-software-after-launch/).
 
 The difference in cost can be large. A system like the one we reviewed could easily cost £30,000 to £40,000 to build properly, which is in line with [what most bespoke builds cost](/blog/how-much-does-bespoke-software-cost-uk/). A ready-made product for the same job will often cost somewhere between £20 and £100 per user each month. Even at the top of that range, five people would cost £6,000 a year, so it would take five to seven years to spend what the build cost, and that is before you have paid anything to maintain it.
 
@@ -49,7 +49,7 @@ These are not hard numbers, but a gap like that is typical, and it is what you s
 
 ## Software built on the cheap
 
-There seems to be an opinion going round that building software is now cheap and easy, partly because of AI. There is also a temptation to hire developers at very low rates, and on freelance marketplaces it can feel like a race to the bottom, with people asking for whole systems at prices nobody could build them for properly.
+There seems to be an opinion going round that building software is now cheap and easy, partly because of AI. There is also a temptation to hire developers at very low rates. On freelance marketplaces it can feel like a race to the bottom, with people asking for whole systems at prices nobody could build them for properly.
 
 Building software is hard, and it requires discipline, commitment and a clear idea of what you are building. It also costs more than people might like to think.
 
